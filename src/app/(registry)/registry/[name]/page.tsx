@@ -1,8 +1,7 @@
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
+
 import { notFound } from "next/navigation";
 import { ComponentCard } from "@/components/registry/component-card";
-import { Blocks, Component, ToyBrick, ChevronRight, type LucideIcon } from "lucide-react"
+import { Blocks, Component, ToyBrick, type LucideIcon } from "lucide-react"
 import * as LucideIcons from "lucide-react"
 import { getRegistryItem, getRegistryItems } from "@/lib/registry";
 import { RegistryHeader } from "@/components/registry/registry-header";
@@ -11,10 +10,23 @@ import { ComponentActions } from "@/components/registry/component-actions";
 import { getActiveStyle } from "@/lib/styles";
 import { getPrompt } from "@/lib/utils";
 
-function getIconComponent(component: { icon: string; type: string }): LucideIcon | null {
+function getIconComponent(component: { icon?: string; type?: string }): LucideIcon | null {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
     return LucideIcons[component.icon as keyof typeof LucideIcons] as LucideIcon;
   }
+  
+  // Fallback icons based on component type
+  if (component.type) {
+    switch (component.type) {
+      case "registry:block":
+        return Blocks;
+      case "registry:component":
+        return Component;
+      case "registry:ui":
+        return ToyBrick;
+    }
+  }
+  
   return null;
 }
 
@@ -33,12 +45,13 @@ export default async function RegistryItemPage({
 }) {
   const { name } = await params;
   const component = getRegistryItem(name);
-  const allComponents = getRegistryItems();
-  const activeStyle = await getActiveStyle();
   
   if (!component) {
     notFound();
   }
+
+  const allComponents = getRegistryItems();
+  const activeStyle = await getActiveStyle();
 
   // Get the icon component from the registry data
   const IconComponent = getIconComponent(component);
