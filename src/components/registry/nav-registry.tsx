@@ -48,9 +48,9 @@ function getIconComponent(component: { icon: string; type: string }): LucideIcon
 }
 
 interface NavRegistryProps {
-  filteredBlocks: RegistryComponent[]
-  filteredComponents: RegistryComponent[]
-  filteredUiItems: RegistryComponent[]
+  filteredBlocks: { icon: string; type: string; name: string; title: string }[]
+  filteredComponents: { icon: string; type: string; name: string; title: string }[]
+  filteredUiItems: { icon: string; type: string; name: string; title: string }[]
 }
 
 export function NavRegistry({
