@@ -474,6 +474,24 @@
       ]
     },
     {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "A group of buttons that allows users to take actions with a single click or tap.",
+      "registryDependencies": [
+        "button-group",
+        "button",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
       "name": "button",
       "type": "registry:ui",
       "title": "Button",
@@ -525,6 +543,24 @@
       ]
     },
     {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "A carousel component that allows users to navigate through a list of items.",
+      "registryDependencies": [
+        "carousel",
+        "card",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
       "name": "chart",
       "type": "registry:ui",
       "title": "Chart",
@@ -548,6 +584,23 @@
       "description": "Allows users to select multiple items from a list of options.",
       "registryDependencies": [
         "checkbox",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
+      "registryDependencies": [
+        "collapsible",
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [

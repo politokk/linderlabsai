@@ -22,11 +22,14 @@ import { aspectRatio } from "@/app/demo/[name]/ui/aspect-ratio";
 import { avatar } from "@/app/demo/[name]/ui/avatar";
 import { badge } from "@/app/demo/[name]/ui/badge";
 import { breadcrumb } from "@/app/demo/[name]/ui/breadcrumb";
+import { buttonGroup } from "@/app/demo/[name]/ui/button-group";
 import { button } from "@/app/demo/[name]/ui/button";
 import { calendar } from "@/app/demo/[name]/ui/calendar";
 import { card } from "@/app/demo/[name]/ui/card";
+import { carousel } from "@/app/demo/[name]/ui/carousel";
 import { chart } from "@/app/demo/[name]/ui/chart";
 import { checkbox } from "@/app/demo/[name]/ui/checkbox";
+import { collapsible } from "@/app/demo/[name]/ui/collapsible";
 import { dataTable } from "@/app/demo/[name]/ui/data-table";
 import { datePicker } from "@/app/demo/[name]/ui/date-picker";
 import { dialog } from "@/app/demo/[name]/ui/dialog";
@@ -74,11 +77,14 @@ export const demos: { [name: string]: Demo } = {
   avatar,
   badge,
   breadcrumb,
+  "button-group": buttonGroup,
   button,
   calendar,
   card,
+  carousel,
   chart,
   checkbox,
+  collapsible,
   dialog,
   "date-picker": datePicker,
   "data-table": dataTable,
