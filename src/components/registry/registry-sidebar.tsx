@@ -156,7 +156,7 @@ export function RegistrySidebar() {
       <SidebarRail />
       <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
-        <SearchForm />
+        <SearchForm onSearchChange={setSearchTerm} />
       </SidebarHeader>
       
       <SidebarContent>
