@@ -679,7 +679,7 @@
         "name": "accordion",
         "type": "registry:ui",
         "title": "Accordion",
-        "icon": "FolderRoot",
+        "icon": "ChevronDown",
         "category": "ui",
         "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
         "registryDependencies": [
@@ -815,6 +815,21 @@
             "path": "src/app/demo/[name]/ui/badge/badge-demo.tsx",
             "type": "registry:component",
             "target": "app/badge-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/badge/badge-destructive.tsx",
+            "type": "registry:component",
+            "target": "app/badge-destructive.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/badge/badge-outline.tsx",
+            "type": "registry:component",
+            "target": "app/badge-outline.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/badge/badge-secondary.tsx",
+            "type": "registry:component",
+            "target": "app/badge-secondary.tsx"
           }
         ]
       },
@@ -838,6 +853,31 @@
             "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-demo.tsx",
             "type": "registry:component",
             "target": "app/breadcrumb-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-dropdown.tsx",
+            "type": "registry:component",
+            "target": "app/breadcrumb-dropdown.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-ellipsis.tsx",
+            "type": "registry:component",
+            "target": "app/breadcrumb-ellipsis.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-link.tsx",
+            "type": "registry:component",
+            "target": "app/breadcrumb-link.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-responsive.tsx",
+            "type": "registry:component",
+            "target": "app/breadcrumb-responsive.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-separator.tsx",
+            "type": "registry:component",
+            "target": "app/breadcrumb-separator.tsx"
           }
         ]
       },
@@ -861,6 +901,66 @@
             "path": "src/app/demo/[name]/ui/button/button-demo.tsx",
             "type": "registry:component",
             "target": "app/button-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-as-child.tsx",
+            "type": "registry:component",
+            "target": "app/button-as-child.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-default.tsx",
+            "type": "registry:component",
+            "target": "app/button-default.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-destructive.tsx",
+            "type": "registry:component",
+            "target": "app/button-destructive.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-ghost.tsx",
+            "type": "registry:component",
+            "target": "app/button-ghost.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-icon.tsx",
+            "type": "registry:component",
+            "target": "app/button-icon.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-link.tsx",
+            "type": "registry:component",
+            "target": "app/button-link.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-loading.tsx",
+            "type": "registry:component",
+            "target": "app/button-loading.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-outline.tsx",
+            "type": "registry:component",
+            "target": "app/button-outline.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-rounded.tsx",
+            "type": "registry:component",
+            "target": "app/button-rounded.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-secondary.tsx",
+            "type": "registry:component",
+            "target": "app/button-secondary.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-size.tsx",
+            "type": "registry:component",
+            "target": "app/button-size.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-with-icon.tsx",
+            "type": "registry:component",
+            "target": "app/button-with-icon.tsx"
           }
         ]
       },
@@ -886,6 +986,56 @@
             "path": "src/app/demo/[name]/ui/button-group/button-group-demo.tsx",
             "type": "registry:component",
             "target": "app/button-group-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-dropdown.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-dropdown.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-input-group.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-input-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-input.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-input.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-nested.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-nested.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-orientation.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-orientation.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-popover.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-popover.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-select.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-select.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-separator.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-separator.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-size.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-size.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-split.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-split.tsx"
           }
         ]
       },
@@ -909,6 +1059,26 @@
             "path": "src/app/demo/[name]/ui/calendar/calendar-demo.tsx",
             "type": "registry:component",
             "target": "app/calendar-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/calendar/calendar-form.tsx",
+            "type": "registry:component",
+            "target": "app/calendar-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/calendar/calendar-hijri.tsx",
+            "type": "registry:component",
+            "target": "app/calendar-hijri.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/calendar/multi-calendar.tsx",
+            "type": "registry:component",
+            "target": "app/multi-calendar.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/calendar/single-calendar.tsx",
+            "type": "registry:component",
+            "target": "app/single-calendar.tsx"
           }
         ]
       },
@@ -932,6 +1102,11 @@
             "path": "src/app/demo/[name]/ui/card/card-demo.tsx",
             "type": "registry:component",
             "target": "app/card-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/card/card-with-form.tsx",
+            "type": "registry:component",
+            "target": "app/card-with-form.tsx"
           }
         ]
       },
@@ -946,7 +1121,41 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/carousel/carousel.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/carousel/carousel-demo.tsx",
+            "type": "registry:component",
+            "target": "app/carousel-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/carousel/carousel-api.tsx",
+            "type": "registry:component",
+            "target": "app/carousel-api.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/carousel/carousel-orientation.tsx",
+            "type": "registry:component",
+            "target": "app/carousel-orientation.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/carousel/carousel-plugin.tsx",
+            "type": "registry:component",
+            "target": "app/carousel-plugin.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/carousel/carousel-size.tsx",
+            "type": "registry:component",
+            "target": "app/carousel-size.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/carousel/carousel-spacing.tsx",
+            "type": "registry:component",
+            "target": "app/carousel-spacing.tsx"
+          }
         ]
       },
       {
@@ -960,7 +1169,56 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/chart/chart.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/area-chart.tsx",
+            "type": "registry:component",
+            "target": "app/area-chart.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/bar-chart.tsx",
+            "type": "registry:component",
+            "target": "app/bar-chart.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/chart-bar-demo.tsx",
+            "type": "registry:component",
+            "target": "app/chart-bar-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/chart-bar-demo-axis.tsx",
+            "type": "registry:component",
+            "target": "app/chart-bar-demo-axis.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/chart-bar-demo-grid.tsx",
+            "type": "registry:component",
+            "target": "app/chart-bar-demo-grid.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/chart-bar-demo-legend.tsx",
+            "type": "registry:component",
+            "target": "app/chart-bar-demo-legend.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/chart-bar-demo-tooltip.tsx",
+            "type": "registry:component",
+            "target": "app/chart-bar-demo-tooltip.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/chart-tooltip-demo.tsx",
+            "type": "registry:component",
+            "target": "app/chart-tooltip-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/chart/pie-chart.tsx",
+            "type": "registry:component",
+            "target": "app/pie-chart.tsx"
+          }
         ]
       },
       {
@@ -974,7 +1232,36 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/checkbox/checkbox.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/checkbox/checkbox-demo.tsx",
+            "type": "registry:component",
+            "target": "app/checkbox-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/checkbox/checkbox-disabled.tsx",
+            "type": "registry:component",
+            "target": "app/checkbox-disabled.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/checkbox/checkbox-form-multiple.tsx",
+            "type": "registry:component",
+            "target": "app/checkbox-form-multiple.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/checkbox/checkbox-form-single.tsx",
+            "type": "registry:component",
+            "target": "app/checkbox-form-single.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/checkbox/checkbox-with-text.tsx",
+            "type": "registry:component",
+            "target": "app/checkbox-with-text.tsx"
+          }
         ]
       },
       {
@@ -988,7 +1275,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/collapsible/collapsible.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/collapsible/collapsible-demo.tsx",
+            "type": "registry:component",
+            "target": "app/collapsible-demo.tsx"
+          }
         ]
       },
       {
@@ -1002,7 +1298,36 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-demo.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-dropdown-menu.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-dropdown-menu.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-form.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-popover.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-popover.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-responsive.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-responsive.tsx"
+          }
         ]
       },
       {
@@ -1016,7 +1341,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/command/command.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/command/command-demo.tsx",
+            "type": "registry:component",
+            "target": "app/command-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/command/command-dialog.tsx",
+            "type": "registry:component",
+            "target": "app/command-dialog.tsx"
+          }
         ]
       },
       {
@@ -1030,7 +1369,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/context-menu/context-menu.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/context-menu/context-menu-demo.tsx",
+            "type": "registry:component",
+            "target": "app/context-menu-demo.tsx"
+          }
         ]
       },
       {
@@ -1044,7 +1392,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/data-table/data-table.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/data-table/data-table-demo.tsx",
+            "type": "registry:component",
+            "target": "app/data-table-demo.tsx"
+          }
         ]
       },
       {
@@ -1058,7 +1415,31 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/date-picker/date-picker.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/date-picker/date-picker-demo.tsx",
+            "type": "registry:component",
+            "target": "app/date-picker-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/date-picker/date-picker-form.tsx",
+            "type": "registry:component",
+            "target": "app/date-picker-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/date-picker/date-picker-with-presets.tsx",
+            "type": "registry:component",
+            "target": "app/date-picker-with-presets.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/date-picker/date-picker-with-range.tsx",
+            "type": "registry:component",
+            "target": "app/date-picker-with-range.tsx"
+          }
         ]
       },
       {
@@ -1072,7 +1453,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/dialog/dialog.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/dialog/dialog-demo.tsx",
+            "type": "registry:component",
+            "target": "app/dialog-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/dialog/dialog-close-button.tsx",
+            "type": "registry:component",
+            "target": "app/dialog-close-button.tsx"
+          }
         ]
       },
       {
@@ -1086,7 +1481,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/drawer/drawer.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/drawer/drawer-demo.tsx",
+            "type": "registry:component",
+            "target": "app/drawer-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/drawer/drawer-dialog.tsx",
+            "type": "registry:component",
+            "target": "app/drawer-dialog.tsx"
+          }
         ]
       },
       {
@@ -1100,7 +1509,31 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu-demo.tsx",
+            "type": "registry:component",
+            "target": "app/dropdown-menu-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu-checkboxes.tsx",
+            "type": "registry:component",
+            "target": "app/dropdown-menu-checkboxes.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu-dialog.tsx",
+            "type": "registry:component",
+            "target": "app/dropdown-menu-dialog.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu-radio-group.tsx",
+            "type": "registry:component",
+            "target": "app/dropdown-menu-radio-group.tsx"
+          }
         ]
       },
       {
@@ -1115,7 +1548,46 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty-demo.tsx",
+            "type": "registry:component",
+            "target": "app/empty-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty-avatar.tsx",
+            "type": "registry:component",
+            "target": "app/empty-avatar.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty-avatar-group.tsx",
+            "type": "registry:component",
+            "target": "app/empty-avatar-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty-background.tsx",
+            "type": "registry:component",
+            "target": "app/empty-background.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty-icon.tsx",
+            "type": "registry:component",
+            "target": "app/empty-icon.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty-input-group.tsx",
+            "type": "registry:component",
+            "target": "app/empty-input-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty-outline.tsx",
+            "type": "registry:component",
+            "target": "app/empty-outline.tsx"
+          }
         ]
       },
       {
@@ -1130,7 +1602,71 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/field/field.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-demo.tsx",
+            "type": "registry:component",
+            "target": "app/field-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-checkbox.tsx",
+            "type": "registry:component",
+            "target": "app/field-checkbox.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-choice-card.tsx",
+            "type": "registry:component",
+            "target": "app/field-choice-card.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-fieldset.tsx",
+            "type": "registry:component",
+            "target": "app/field-fieldset.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-group.tsx",
+            "type": "registry:component",
+            "target": "app/field-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-input.tsx",
+            "type": "registry:component",
+            "target": "app/field-input.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-radio.tsx",
+            "type": "registry:component",
+            "target": "app/field-radio.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-responsive.tsx",
+            "type": "registry:component",
+            "target": "app/field-responsive.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-select.tsx",
+            "type": "registry:component",
+            "target": "app/field-select.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-slider.tsx",
+            "type": "registry:component",
+            "target": "app/field-slider.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-switch.tsx",
+            "type": "registry:component",
+            "target": "app/field-switch.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-textarea.tsx",
+            "type": "registry:component",
+            "target": "app/field-textarea.tsx"
+          }
         ]
       },
       {
@@ -1145,7 +1681,71 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/form/form.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-next-demo.tsx",
+            "type": "registry:component",
+            "target": "app/form-next-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-next-complex.tsx",
+            "type": "registry:component",
+            "target": "app/form-next-complex.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-demo.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-array.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-array.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-checkbox.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-checkbox.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-complex.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-complex.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-input.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-input.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-password.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-password.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-radiogroup.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-radiogroup.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-select.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-select.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-switch.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-switch.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/form-rhf-textarea.tsx",
+            "type": "registry:component",
+            "target": "app/form-rhf-textarea.tsx"
+          }
         ]
       },
       {
@@ -1159,7 +1759,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/hover-card/hover-card.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/hover-card/hover-card-demo.tsx",
+            "type": "registry:component",
+            "target": "app/hover-card-demo.tsx"
+          }
         ]
       },
       {
@@ -1173,7 +1782,46 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/input/input.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input/input-demo.tsx",
+            "type": "registry:component",
+            "target": "app/input-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input/input-disabled.tsx",
+            "type": "registry:component",
+            "target": "app/input-disabled.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input/input-file.tsx",
+            "type": "registry:component",
+            "target": "app/input-file.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input/input-form.tsx",
+            "type": "registry:component",
+            "target": "app/input-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input/input-with-button.tsx",
+            "type": "registry:component",
+            "target": "app/input-with-button.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input/input-with-label.tsx",
+            "type": "registry:component",
+            "target": "app/input-with-label.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input/input-with-text.tsx",
+            "type": "registry:component",
+            "target": "app/input-with-text.tsx"
+          }
         ]
       },
       {
@@ -1188,7 +1836,66 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-demo.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-button.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-button.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-button-group.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-button-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-custom.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-custom.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-dropdown.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-dropdown.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-icon.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-icon.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-label.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-label.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-spinner.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-spinner.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-text.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-text.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-textarea.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-textarea.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-group/input-group-tooltip.tsx",
+            "type": "registry:component",
+            "target": "app/input-group-tooltip.tsx"
+          }
         ]
       },
       {
@@ -1203,7 +1910,36 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/input-otp/input-otp.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-otp/input-otp-demo.tsx",
+            "type": "registry:component",
+            "target": "app/input-otp-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-otp/input-otp-controlled.tsx",
+            "type": "registry:component",
+            "target": "app/input-otp-controlled.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-otp/input-otp-form.tsx",
+            "type": "registry:component",
+            "target": "app/input-otp-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-otp/input-otp-pattern.tsx",
+            "type": "registry:component",
+            "target": "app/input-otp-pattern.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-otp/input-otp-separator.tsx",
+            "type": "registry:component",
+            "target": "app/input-otp-separator.tsx"
+          }
         ]
       },
       {
@@ -1218,7 +1954,61 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/item/item.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-demo.tsx",
+            "type": "registry:component",
+            "target": "app/item-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-avatar.tsx",
+            "type": "registry:component",
+            "target": "app/item-avatar.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-dropdown.tsx",
+            "type": "registry:component",
+            "target": "app/item-dropdown.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-group.tsx",
+            "type": "registry:component",
+            "target": "app/item-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-header.tsx",
+            "type": "registry:component",
+            "target": "app/item-header.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-icon.tsx",
+            "type": "registry:component",
+            "target": "app/item-icon.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-image.tsx",
+            "type": "registry:component",
+            "target": "app/item-image.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-link.tsx",
+            "type": "registry:component",
+            "target": "app/item-link.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-size.tsx",
+            "type": "registry:component",
+            "target": "app/item-size.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/item/item-variant.tsx",
+            "type": "registry:component",
+            "target": "app/item-variant.tsx"
+          }
         ]
       },
       {
@@ -1233,7 +2023,36 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/kbd/kbd.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/kbd/kbd-demo.tsx",
+            "type": "registry:component",
+            "target": "app/kbd-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/kbd/kbd-button.tsx",
+            "type": "registry:component",
+            "target": "app/kbd-button.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/kbd/kbd-group.tsx",
+            "type": "registry:component",
+            "target": "app/kbd-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/kbd/kbd-input-group.tsx",
+            "type": "registry:component",
+            "target": "app/kbd-input-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/kbd/kbd-tooltip.tsx",
+            "type": "registry:component",
+            "target": "app/kbd-tooltip.tsx"
+          }
         ]
       },
       {
@@ -1247,7 +2066,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/label/label.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/label/label-demo.tsx",
+            "type": "registry:component",
+            "target": "app/label-demo.tsx"
+          }
         ]
       },
       {
@@ -1261,7 +2089,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/menu-bar/menu-bar.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/menu-bar/menubar-demo.tsx",
+            "type": "registry:component",
+            "target": "app/menubar-demo.tsx"
+          }
         ]
       },
       {
@@ -1275,7 +2112,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/navigation-menu/navigation-menu.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/navigation-menu/navigation-menu-demo.tsx",
+            "type": "registry:component",
+            "target": "app/navigation-menu-demo.tsx"
+          }
         ]
       },
       {
@@ -1289,7 +2135,31 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/native-select/native-select.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/native-select/native-select-demo.tsx",
+            "type": "registry:component",
+            "target": "app/native-select-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/native-select/native-select-disabled.tsx",
+            "type": "registry:component",
+            "target": "app/native-select-disabled.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/native-select/native-select-groups.tsx",
+            "type": "registry:component",
+            "target": "app/native-select-groups.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/native-select/native-select-invalid.tsx",
+            "type": "registry:component",
+            "target": "app/native-select-invalid.tsx"
+          }
         ]
       },
       {
@@ -1303,7 +2173,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/pagination/pagination.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/pagination/pagination-demo.tsx",
+            "type": "registry:component",
+            "target": "app/pagination-demo.tsx"
+          }
         ]
       },
       {
@@ -1317,7 +2196,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/popover/popover.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/popover/popover-demo.tsx",
+            "type": "registry:component",
+            "target": "app/popover-demo.tsx"
+          }
         ]
       },
       {
@@ -1331,7 +2219,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/progress/progress.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/progress/progress-demo.tsx",
+            "type": "registry:component",
+            "target": "app/progress-demo.tsx"
+          }
         ]
       },
       {
@@ -1345,7 +2242,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/radio-group/radio-group.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/radio-group/radio-group-demo.tsx",
+            "type": "registry:component",
+            "target": "app/radio-group-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/radio-group/radio-group-form.tsx",
+            "type": "registry:component",
+            "target": "app/radio-group-form.tsx"
+          }
         ]
       },
       {
@@ -1359,7 +2270,31 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/resizable/resizable.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/resizable/resizable-demo.tsx",
+            "type": "registry:component",
+            "target": "app/resizable-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/resizable/resizable-demo-with-handle.tsx",
+            "type": "registry:component",
+            "target": "app/resizable-demo-with-handle.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/resizable/resizable-handle.tsx",
+            "type": "registry:component",
+            "target": "app/resizable-handle.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/resizable/resizable-vertical.tsx",
+            "type": "registry:component",
+            "target": "app/resizable-vertical.tsx"
+          }
         ]
       },
       {
@@ -1373,7 +2308,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/scroll-area/scroll-area.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/scroll-area/scroll-area-demo.tsx",
+            "type": "registry:component",
+            "target": "app/scroll-area-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/scroll-area/scroll-area-horizontal-demo.tsx",
+            "type": "registry:component",
+            "target": "app/scroll-area-horizontal-demo.tsx"
+          }
         ]
       },
       {
@@ -1387,7 +2336,26 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/select/select.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/select/select-demo.tsx",
+            "type": "registry:component",
+            "target": "app/select-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/select/select-form.tsx",
+            "type": "registry:component",
+            "target": "app/select-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/select/select-scrollable.tsx",
+            "type": "registry:component",
+            "target": "app/select-scrollable.tsx"
+          }
         ]
       },
       {
@@ -1401,7 +2369,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/separator/separator.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/separator/separator-demo.tsx",
+            "type": "registry:component",
+            "target": "app/separator-demo.tsx"
+          }
         ]
       },
       {
@@ -1415,7 +2392,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/sheet/sheet.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sheet/sheet-demo.tsx",
+            "type": "registry:component",
+            "target": "app/sheet-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sheet/sheet-side.tsx",
+            "type": "registry:component",
+            "target": "app/sheet-side.tsx"
+          }
         ]
       },
       {
@@ -1429,7 +2420,76 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-demo.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-controlled.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-controlled.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-footer.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-footer.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-group.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-group-action.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-group-action.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-group-collapsible.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-group-collapsible.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-header.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-header.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-menu.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu-action.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-menu-action.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu-badge.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-menu-badge.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu-collapsible.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-menu-collapsible.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu-sub.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-menu-sub.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sidebar/sidebar-rsc.tsx",
+            "type": "registry:component",
+            "target": "app/sidebar-rsc.tsx"
+          }
         ]
       },
       {
@@ -1443,7 +2503,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/skeleton/skeleton.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/skeleton/skeleton-demo.tsx",
+            "type": "registry:component",
+            "target": "app/skeleton-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/skeleton/skeleton-card.tsx",
+            "type": "registry:component",
+            "target": "app/skeleton-card.tsx"
+          }
         ]
       },
       {
@@ -1457,7 +2531,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/slider/slider.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/slider/slider-demo.tsx",
+            "type": "registry:component",
+            "target": "app/slider-demo.tsx"
+          }
         ]
       },
       {
@@ -1471,7 +2554,26 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/sonner/sonner.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sonner/sonner-demo.tsx",
+            "type": "registry:component",
+            "target": "app/sonner-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sonner/sonner-toasts.tsx",
+            "type": "registry:component",
+            "target": "app/sonner-toasts.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/sonner/sonner-types.tsx",
+            "type": "registry:component",
+            "target": "app/sonner-types.tsx"
+          }
         ]
       },
       {
@@ -1486,7 +2588,61 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-demo.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-badge.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-badge.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-basic.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-basic.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-button.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-button.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-color.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-color.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-custom.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-custom.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-empty.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-empty.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-input-group.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-input-group.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-item.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-item.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/spinner/spinner-size.tsx",
+            "type": "registry:component",
+            "target": "app/spinner-size.tsx"
+          }
         ]
       },
       {
@@ -1500,7 +2656,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/switch/switch.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/switch/switch-demo.tsx",
+            "type": "registry:component",
+            "target": "app/switch-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/switch/switch-form.tsx",
+            "type": "registry:component",
+            "target": "app/switch-form.tsx"
+          }
         ]
       },
       {
@@ -1514,7 +2684,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/table/table.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/table/table-demo.tsx",
+            "type": "registry:component",
+            "target": "app/table-demo.tsx"
+          }
         ]
       },
       {
@@ -1528,7 +2707,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/tabs/tabs.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/tabs/tabs-demo.tsx",
+            "type": "registry:component",
+            "target": "app/tabs-demo.tsx"
+          }
         ]
       },
       {
@@ -1542,7 +2730,41 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/textarea/textarea.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/textarea/textarea-demo.tsx",
+            "type": "registry:component",
+            "target": "app/textarea-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/textarea/textarea-disabled.tsx",
+            "type": "registry:component",
+            "target": "app/textarea-disabled.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/textarea/textarea-form.tsx",
+            "type": "registry:component",
+            "target": "app/textarea-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/textarea/textarea-with-button.tsx",
+            "type": "registry:component",
+            "target": "app/textarea-with-button.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/textarea/textarea-with-label.tsx",
+            "type": "registry:component",
+            "target": "app/textarea-with-label.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/textarea/textarea-with-text.tsx",
+            "type": "registry:component",
+            "target": "app/textarea-with-text.tsx"
+          }
         ]
       },
       {
@@ -1556,7 +2778,41 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/toggle/toggle.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle/toggle-demo.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle/toggle-disabled.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-disabled.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle/toggle-lg.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-lg.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle/toggle-outline.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-outline.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle/toggle-sm.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-sm.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle/toggle-with-text.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-with-text.tsx"
+          }
         ]
       },
       {
@@ -1570,7 +2826,46 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-demo.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-group-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-disabled.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-group-disabled.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-lg.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-group-lg.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-outline.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-group-outline.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-single.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-group-single.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-sm.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-group-sm.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-spacing.tsx",
+            "type": "registry:component",
+            "target": "app/toggle-group-spacing.tsx"
+          }
         ]
       },
       {
@@ -1584,7 +2879,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/tooltip/tooltip.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/tooltip/tooltip-demo.tsx",
+            "type": "registry:component",
+            "target": "app/tooltip-demo.tsx"
+          }
         ]
       }
     ]
