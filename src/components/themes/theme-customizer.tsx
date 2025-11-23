@@ -1,6 +1,6 @@
 "use client"
 
-import type * as React from "react"
+import * as React from "react"
 import template from "lodash/template"
 import {
   CheckIcon,
@@ -12,8 +12,7 @@ import { cn } from "@/lib/utils"
 import { useThemeConfig } from "@/components/themes/active-theme"
 import { copyToClipboardWithMeta } from "@/components/code/copy-button"
 import { Icons } from "@/components/icons/icons"
-import { baseColors, baseColorsOKLCH } from "@/lib/base-colors"
-import type { BaseColor } from "@/lib/base-colors"
+import { type BaseColor, baseColors, baseColorsOKLCH } from "@/lib/base-colors"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
@@ -251,7 +250,7 @@ function CustomizerCode({ themeName }: { themeName: string }) {
                     key={key}
                   >
                     &nbsp;&nbsp;&nbsp;--{key}: <ColorIndicator color={value} />{" "}
-                    {value};
+                    {value}
                   </span>
                 ))}
                 <span data-line className="line text-code-foreground">
@@ -270,7 +269,7 @@ function CustomizerCode({ themeName }: { themeName: string }) {
                     key={key}
                   >
                     &nbsp;&nbsp;&nbsp;--{key}: <ColorIndicator color={value} />{" "}
-                    {value};
+                      {value}
                   </span>
                 ))}
                 <span data-line className="line text-code-foreground">
