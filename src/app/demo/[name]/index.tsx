@@ -40,6 +40,7 @@ import { drawer } from "@/app/demo/[name]/ui/drawer/drawer";
 import { dropdownMenu } from "@/app/demo/[name]/ui/dropdown-menu/dropdown-menu";
 import { empty } from "@/app/demo/[name]/ui/empty/empty";
 import { field } from "@/app/demo/[name]/ui/field/field";
+import { form } from "@/app/demo/[name]/ui/form/form";
 import { hoverCard } from "@/app/demo/[name]/ui/hover-card/hover-card";
 import { inputGroup } from "@/app/demo/[name]/ui/input-group/input-group";
 import { inputOtp } from "@/app/demo/[name]/ui/input-otp/input-otp";
@@ -119,6 +120,7 @@ export const demos: { [name: string]: Demo } = {
   "dropdown-menu": dropdownMenu,
   empty,
   field,
+  form,
   "hover-card": hoverCard,
   "input-group": inputGroup,
   "input-otp": inputOtp,
