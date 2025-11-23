@@ -9,9 +9,7 @@ import { RegistryHeader } from "@/components/registry/registry-header";
 import { RegistryNavigation } from "@/components/registry/registry-navigation";
 import { ComponentActions } from "@/components/registry/component-actions";
 import { getActiveStyle } from "@/lib/styles";
-import { BlockDisplay } from "@/components/block/block-display"
 import { getPrompt } from "@/lib/utils";
-
 
 function getIconComponent(component: { icon: string; type: string }): LucideIcon | null {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
