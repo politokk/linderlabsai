@@ -51,7 +51,7 @@ import { label } from "@/app/demo/[name]/ui/label/label";
 import { menuBar } from "@/app/demo/[name]/ui/menu-bar/menu-bar";
 import { navigationMenu } from "@/app/demo/[name]/ui/navigation-menu/navigation-menu";
 import { nativeSelect } from "@/app/demo/[name]/ui/native-select/native-select";
-import { pagination } from "@/app/demo/[name]/ui/pagination";
+import { pagination } from "@/app/demo/[name]/ui/pagination/pagination";
 import { popover } from "@/app/demo/[name]/ui/popover";
 import { progress } from "@/app/demo/[name]/ui/progress";
 import { radioGroup } from "@/app/demo/[name]/ui/radio-group";
