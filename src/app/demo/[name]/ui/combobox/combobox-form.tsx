@@ -78,7 +78,6 @@ export default function ComboboxForm() {
                   <FormControl>
                     <Button
                       variant="outline"
-                      asChild
                       className={cn(
                         "w-[200px] justify-between",
                         !field.value && "text-muted-foreground"
