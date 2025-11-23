@@ -1,6 +1,6 @@
 "use server"
 
-import { formSchema, type FormState } from "./form-next-complex-schema"
+import { formSchema, type FormState } from "../schemas/form-next-complex-schema"
 
 export async function complexFormAction(
   _prevState: FormState,

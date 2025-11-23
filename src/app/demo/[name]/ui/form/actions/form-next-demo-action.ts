@@ -1,6 +1,6 @@
 "use server"
 
-import { formSchema, type FormState } from "./form-next-demo-schema"
+import { formSchema, type FormState } from "../schemas/form-next-demo-schema"
 
 export async function demoFormAction(
   _prevState: FormState,
