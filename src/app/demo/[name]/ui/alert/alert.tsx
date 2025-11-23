@@ -1,10 +1,7 @@
-import AlertDemo from "./alert-demo";
-import AlertDestructive from "./alert-destructive";
-
-export const alert = {
-  name: "alert",
-  components: {
-    Alert: <AlertDemo />,
-    AlertDestructive: <AlertDestructive />,
-  },
-};
+import { AlertPage } from "./alert-page";
+  export const alert = {
+    name: "alert",
+    components: {
+      Alert: <AlertPage />,
+    },
+  };
