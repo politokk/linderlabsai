@@ -372,12 +372,46 @@
       ]
     },
     {
+      "name": "alertDialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "A dialog that alerts the user to a message or action.",
+      "registryDependencies": [
+        "alertDialog",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
       "name": "alert",
       "type": "registry:ui",
       "title": "Alert",
       "description": "Displays a callout for user attention.",
       "registryDependencies": [
         "alert",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspectRatio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "A container for displaying a media (e.g. an image, iframe, etc.) with a specified aspect ratio.",
+      "registryDependencies": [
+        "aspectRatio",
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [

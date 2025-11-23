@@ -16,7 +16,9 @@ import { promo } from "@/app/demo/[name]/components/promo";
 
 // ui
 import { accordion } from "@/app/demo/[name]/ui/accordion";
+import { alertDialog } from "@/app/demo/[name]/ui/alert-dialog";
 import { alert } from "@/app/demo/[name]/ui/alert";
+import { aspectRatio } from "@/app/demo/[name]/ui/aspect-ratio";
 import { avatar } from "@/app/demo/[name]/ui/avatar";
 import { badge } from "@/app/demo/[name]/ui/badge";
 import { breadcrumb } from "@/app/demo/[name]/ui/breadcrumb";
@@ -66,7 +68,9 @@ export const demos: { [name: string]: Demo } = {
 
   // ui
   accordion,
+  alertDialog,
   alert,
+  aspectRatio,
   avatar,
   badge,
   breadcrumb,
