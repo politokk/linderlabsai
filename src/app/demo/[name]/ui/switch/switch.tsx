@@ -1,10 +1,19 @@
 import SwitchDemo from "./switch-demo";
 import SwitchForm from "./switch-form";
+import { ComponentWrapper } from "@/components/display/component-wrapper";
 
-export const switchComponent = {
-  name: "switch",
-  components: {
-    Default: <SwitchDemo />,
-    Form: <SwitchForm />,
-  },
-};
+
+export function switchComponent() {
+  return (
+    <div className="flex flex-1 flex-col gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ComponentWrapper name="Default" icon="ToggleRight">
+          <SwitchDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form" icon="FileCheck">
+          <SwitchForm />
+        </ComponentWrapper>
+      </div>
+    </div>
+  )
+}

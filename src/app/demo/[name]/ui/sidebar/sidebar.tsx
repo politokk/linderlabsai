@@ -7,17 +7,41 @@ import SidebarGroupCollapsible from "./sidebar-group-collapsible";
 import SidebarHeader from "./sidebar-header";
 import SidebarMenu from "./sidebar-menu";
 import SidebarMenuAction from "./sidebar-menu-action";
-  export const sidebar = {
-    name: "sidebar",
-    components: {
-      Controlled: <SidebarControlled/>,
-      Demo: <SidebarDemo/>,
-      Footer: <SidebarFooter/>,
-      Group: <SidebarGroup/>,
-      GroupAction: <SidebarGroupAction/>,
-      GroupCollapsible: <SidebarGroupCollapsible/>,
-      Header: <SidebarHeader/>,
-      Menu: <SidebarMenu/>,
-      MenuAction: <SidebarMenuAction/>,
-    },
-  };
+import { ComponentWrapper } from "@/components/display/component-wrapper";
+
+
+export function sidebar() {
+  return (
+    <div className="flex flex-1 flex-col gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ComponentWrapper name="Controlled" icon="Gamepad2">
+          <SidebarControlled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Demo" icon="PanelLeft">
+          <SidebarDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Footer" icon="PanelBottom">
+          <SidebarFooter />
+        </ComponentWrapper>
+        <ComponentWrapper name="Group" icon="Group">
+          <SidebarGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Group Action" icon="MousePointerClick">
+          <SidebarGroupAction />
+        </ComponentWrapper>
+        <ComponentWrapper name="Group Collapsible" icon="ChevronsUpDown">
+          <SidebarGroupCollapsible />
+        </ComponentWrapper>
+        <ComponentWrapper name="Header" icon="PanelTop">
+          <SidebarHeader />
+        </ComponentWrapper>
+        <ComponentWrapper name="Menu" icon="Menu">
+          <SidebarMenu />
+        </ComponentWrapper>
+        <ComponentWrapper name="Menu Action" icon="MoreVertical">
+          <SidebarMenuAction />
+        </ComponentWrapper>
+      </div>
+    </div>
+  )
+}

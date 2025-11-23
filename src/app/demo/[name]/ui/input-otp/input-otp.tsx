@@ -1,15 +1,31 @@
-  import InputOTPDemo from "./input-otp-demo";
-  import InputOTPControlled from "./input-otp-controlled";
-  import InputOTPPattern from "./input-otp-pattern";
-  import InputOTPWithSeparator from "./input-otp-separator";
-  import InputOTPForm from "./input-otp-form";
-  export const inputOtp = {
-    name: "input-otp",
-    components: {
-        Default: <InputOTPDemo/>,
-        Controlled: <InputOTPControlled/>,
-        Pattern: <InputOTPPattern/>,
-        Separator: <InputOTPWithSeparator/>,
-      Form: <InputOTPForm/>,
-    },
-  };
+import InputOTPDemo from "./input-otp-demo";
+import InputOTPControlled from "./input-otp-controlled";
+import InputOTPPattern from "./input-otp-pattern";
+import InputOTPWithSeparator from "./input-otp-separator";
+import InputOTPForm from "./input-otp-form";
+import { ComponentWrapper } from "@/components/display/component-wrapper";
+
+
+export function inputOtp() {
+  return (
+    <div className="flex flex-1 flex-col gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ComponentWrapper name="Default" icon="Hash">
+          <InputOTPDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Controlled" icon="Gamepad2">
+          <InputOTPControlled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Pattern" icon="Grid3x3">
+          <InputOTPPattern />
+        </ComponentWrapper>
+        <ComponentWrapper name="Separator" icon="Minus">
+          <InputOTPWithSeparator />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form" icon="FileText">
+          <InputOTPForm />
+        </ComponentWrapper>
+      </div>
+    </div>
+  )
+}

@@ -1,9 +1,19 @@
 import ScrollAreaDemo from "./scroll-area-demo";  
 import ScrollAreaHorizontalDemo from "./scroll-area-horizontal-demo";
-export const scrollArea = {
-  name: "scroll-area",
-  components: {
-    Default: <ScrollAreaDemo/>,
-    Horizontal: <ScrollAreaHorizontalDemo/>,
-  },
-};
+import { ComponentWrapper } from "@/components/display/component-wrapper";
+
+
+export function scrollArea() {
+  return (
+    <div className="flex flex-1 flex-col gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ComponentWrapper name="Default" icon="ArrowDown">
+          <ScrollAreaDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Horizontal" icon="ArrowRight">
+          <ScrollAreaHorizontalDemo />
+        </ComponentWrapper>
+      </div>
+    </div>
+  )
+}

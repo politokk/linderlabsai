@@ -8,16 +8,16 @@ export function badge() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Badge" icon="BadgeIcon">
+        <ComponentWrapper name="Badge" icon="Tag">
         <BadgeDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Badge Destructive" icon="BadgeDestructiveIcon">
+        <ComponentWrapper name="Badge Destructive" icon="XCircle">
           <BadgeDestructive />
         </ComponentWrapper>
-        <ComponentWrapper name="Badge Outline" icon="BadgeOutlineIcon">
+        <ComponentWrapper name="Badge Outline" icon="Circle">
           <BadgeOutline />
         </ComponentWrapper>
-        <ComponentWrapper name="Badge Secondary" icon="BadgeSecondaryIcon">
+        <ComponentWrapper name="Badge Secondary" icon="Tag">
           <BadgeSecondary />
         </ComponentWrapper>
       </div>

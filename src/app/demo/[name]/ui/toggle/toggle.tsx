@@ -6,15 +6,32 @@ import ToggleLg from "./toggle-lg";
 import ToggleOutline from "./toggle-outline";
 import ToggleSm from "./toggle-sm";
 import ToggleWithText from "./toggle-with-text";
+import { ComponentWrapper } from "@/components/display/component-wrapper";
 
-export const toggle = {
-  name: "toggle",
-  components: {
-    Default: <ToggleDemo />,
-    Disabled: <ToggleDisabled />,
-    Lg: <ToggleLg />,
-    Outline: <ToggleOutline />,
-    Sm: <ToggleSm />,
-    WithText: <ToggleWithText />,
-  },
-};
+
+export function toggle() {
+  return (
+    <div className="flex flex-1 flex-col gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ComponentWrapper name="Default" icon="ToggleLeft">
+          <ToggleDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Disabled" icon="Ban">
+          <ToggleDisabled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Large" icon="Maximize">
+          <ToggleLg />
+        </ComponentWrapper>
+        <ComponentWrapper name="Outline" icon="Circle">
+          <ToggleOutline />
+        </ComponentWrapper>
+        <ComponentWrapper name="Small" icon="Minimize">
+          <ToggleSm />
+        </ComponentWrapper>
+        <ComponentWrapper name="With Text" icon="Type">
+          <ToggleWithText />
+        </ComponentWrapper>
+      </div>
+    </div>
+  )
+}

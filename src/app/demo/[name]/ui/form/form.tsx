@@ -10,20 +10,50 @@ import FormRhfSelect from "./form-rhf-select";
 import FormRhfSwitch from "./form-rhf-switch";
 import FormRhfTextarea from "./form-rhf-textarea";
 import FormNextDemo from "./form-next-demo";
-export const form = {
-  name: "form",
-  components: {
-    FormNextComplex: <FormNextComplex/>,
-    FormRhfArray: <FormRhfArray/>,
-    FormRhfCheckbox: <FormRhfCheckbox/>,
-    FormRhfComplex: <FormRhfComplex/>,
-    FormRhfDemo: <FormRhfDemo/>,
-    FormNextDemo: <FormNextDemo/>,
-    FormRhfInput: <FormRhfInput/>,
-    FormRhfPassword: <FormRhfPassword/>,
-    FormRhfRadiogroup: <FormRhfRadiogroup/>,
-    FormRhfSelect: <FormRhfSelect/>,
-    FormRhfSwitch: <FormRhfSwitch/>,
-    FormRhfTextarea: <FormRhfTextarea/>,
-  },
-};
+import { ComponentWrapper } from "@/components/display/component-wrapper";
+
+
+export function form() {
+  return (
+    <div className="flex flex-1 flex-col gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ComponentWrapper name="Next Complex" icon="FileText">
+          <FormNextComplex />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Array" icon="List">
+          <FormRhfArray />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Checkbox" icon="CheckSquare">
+          <FormRhfCheckbox />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Complex" icon="FileCode">
+          <FormRhfComplex />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Demo" icon="FileText">
+          <FormRhfDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Next Demo" icon="File">
+          <FormNextDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Input" icon="Type">
+          <FormRhfInput />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Password" icon="Lock">
+          <FormRhfPassword />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Radio Group" icon="Circle">
+          <FormRhfRadiogroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Select" icon="ChevronDown">
+          <FormRhfSelect />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Switch" icon="ToggleRight">
+          <FormRhfSwitch />
+        </ComponentWrapper>
+        <ComponentWrapper name="RHF Textarea" icon="AlignLeft">
+          <FormRhfTextarea />
+        </ComponentWrapper>
+      </div>
+    </div>
+  )
+}

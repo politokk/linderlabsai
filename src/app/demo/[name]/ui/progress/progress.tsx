@@ -1,8 +1,15 @@
 import ProgressDemo from "./progress-demo";
+import { ComponentWrapper } from "@/components/display/component-wrapper";
 
-export const progress = {
-  name: "progress",
-  components: {
-    Default: <ProgressDemo/>,
-  },
-};
+
+export function progress() {
+  return (
+    <div className="flex flex-1 flex-col gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ComponentWrapper name="Default" icon="Activity">
+          <ProgressDemo />
+        </ComponentWrapper>
+      </div>
+    </div>
+  )
+}
