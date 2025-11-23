@@ -695,6 +695,11 @@
             "path": "src/app/demo/[name]/ui/accordion/accordion-demo.tsx",
             "type": "registry:component",
             "target": "app/accordion-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/accordion/accordion-extensive.tsx",
+            "type": "registry:component",
+            "target": "app/accordion-extensive.tsx"
           }
         ]
       },
