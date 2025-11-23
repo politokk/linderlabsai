@@ -25,7 +25,7 @@ interface SearchCommandProps {
 }
 
 // Function to get icon component from registry data
-function getIconComponent(component: RegistryComponent): LucideIcon {
+function getIconComponent(component: { icon: string; type: string }): LucideIcon {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
     return LucideIcons[component.icon as keyof typeof LucideIcons] as LucideIcon;
   }
