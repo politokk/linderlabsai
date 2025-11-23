@@ -16,7 +16,7 @@ import { promo } from "@/app/demo/[name]/components/promo";
 
 // ui
 import accordion from "@/app/demo/[name]/ui/accordion/accordion";
-import { alertDialog } from "@/app/demo/[name]/ui/alert-dialog/alert-dialog";
+import alertDialog from "@/app/demo/[name]/ui/alert-dialog/alert-dialog";
 import AlertPage from "@/app/demo/[name]/ui/alert/alert-page";
 import { aspectRatio } from "@/app/demo/[name]/ui/aspect-ratio/aspect-ratio";
 import { avatar } from "@/app/demo/[name]/ui/avatar/avatar";
