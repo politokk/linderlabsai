@@ -55,7 +55,7 @@ import { pagination } from "@/app/demo/[name]/ui/pagination/pagination";
 import { popover } from "@/app/demo/[name]/ui/popover/popover";
 import { progress } from "@/app/demo/[name]/ui/progress/progress";
 import { radioGroup } from "@/app/demo/[name]/ui/radio-group/radio-group";
-import { resizable } from "@/app/demo/[name]/ui/resizable";
+import { resizable } from "@/app/demo/[name]/ui/resizable/resizable";
 import { scrollArea } from "@/app/demo/[name]/ui/scroll-area";
 import { select } from "@/app/demo/[name]/ui/select";
 import { separator } from "@/app/demo/[name]/ui/separator";

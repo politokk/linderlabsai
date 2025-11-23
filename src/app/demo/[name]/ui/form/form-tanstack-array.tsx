@@ -96,7 +96,7 @@ export default function FormTanstackArray() {
                   <FieldGroup className="gap-4">
                     {field.state.value.map((_, index) => (
                       <form.Field
-                        key={`email-${index}-${subField.name}`}
+                        key={`email-${index}-${field.name}`}
                         name={`emails[${index}].address`}
                         render={({ field: subField }) => {
                           const isSubFieldInvalid =
