@@ -710,7 +710,7 @@
         ],
         "files": [
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-page.tsx",
+            "path": "src/app/demo/[name]/ui/alert/alert.tsx",
             "type": "registry:page",
             "target": "app/page.tsx"
           },
@@ -737,7 +737,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/alert-dialog/alert-dialog.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/alert-dialog/alert-dialog-demo.tsx",
+            "type": "registry:component",
+            "target": "app/alert-dialog-demo.tsx"
+          }
         ]
       },
       {
@@ -751,7 +760,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/aspect-ratio/aspect-ratio.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/aspect-ratio/aspect-ratio-demo.tsx",
+            "type": "registry:component",
+            "target": "app/aspect-ratio-demo.tsx"
+          }
         ]
       },
       {
@@ -765,7 +783,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/avatar/avatar.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/avatar/avatar-demo.tsx",
+            "type": "registry:component",
+            "target": "app/avatar-demo.tsx"
+          }
         ]
       },
       {
@@ -779,7 +806,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/badge/badge.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/badge/badge-demo.tsx",
+            "type": "registry:component",
+            "target": "app/badge-demo.tsx"
+          }
         ]
       },
       {
@@ -793,7 +829,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-demo.tsx",
+            "type": "registry:component",
+            "target": "app/breadcrumb-demo.tsx"
+          }
         ]
       },
       {
@@ -807,7 +852,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/button/button.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button/button-demo.tsx",
+            "type": "registry:component",
+            "target": "app/button-demo.tsx"
+          }
         ]
       },
       {
@@ -823,7 +877,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/button-group/button-group-demo.tsx",
+            "type": "registry:component",
+            "target": "app/button-group-demo.tsx"
+          }
         ]
       },
       {
@@ -837,7 +900,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/calendar/calendar.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/calendar/calendar-demo.tsx",
+            "type": "registry:component",
+            "target": "app/calendar-demo.tsx"
+          }
         ]
       },
       {
@@ -851,7 +923,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/card/card.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/card/card-demo.tsx",
+            "type": "registry:component",
+            "target": "app/card-demo.tsx"
+          }
         ]
       },
       {
