@@ -17,7 +17,6 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
-import { ScrollArea } from "@/components/ui/scroll-area"
 import {
   SidebarGroup,
   SidebarGroupContent,
@@ -28,8 +27,15 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 
+interface RegistryItem {
+  name: string
+  title: string
+  icon?: string
+  type: string
+}
+
 // Function to get icon component from registry data
-function getIconComponent(component: { icon: string; type: string }): LucideIcon {
+function getIconComponent(component: RegistryItem): LucideIcon {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
     return LucideIcons[component.icon as keyof typeof LucideIcons] as LucideIcon;
   }
@@ -48,9 +54,9 @@ function getIconComponent(component: { icon: string; type: string }): LucideIcon
 }
 
 interface NavRegistryProps {
-  filteredBlocks: { icon: string; type: string; name: string; title: string }[]
-  filteredComponents: { icon: string; type: string; name: string; title: string }[]
-  filteredUiItems: { icon: string; type: string; name: string; title: string }[]
+  filteredBlocks: RegistryItem[]
+  filteredComponents: RegistryItem[]
+  filteredUiItems: RegistryItem[]
 }
 
 export function NavRegistry({
@@ -62,7 +68,7 @@ export function NavRegistry({
   const { setOpenMobile } = useSidebar()
 
   return (
-    <ScrollArea className="h-full w-full pr-2">
+    <>
       <Collapsible defaultOpen={true} className="group/collapsible" id="blocks">
         <SidebarGroup>
           <CollapsibleTrigger className="w-full">
@@ -193,6 +199,6 @@ export function NavRegistry({
           </CollapsibleContent>
         </SidebarGroup>
       </Collapsible>
-    </ScrollArea>
+    </>
   )
 }

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Sidebar,
   SidebarContent,
@@ -131,12 +132,14 @@ export function RegistrySidebar() {
       </SidebarHeader>
       
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavRegistry
-          filteredBlocks={filteredBlocks}
-          filteredComponents={filteredComponents}
-          filteredUiItems={filteredUiItems}
-        />
+        <ScrollArea className="h-full w-full pr-2">
+          <NavMain items={data.navMain} />
+          <NavRegistry
+            filteredBlocks={filteredBlocks}
+            filteredComponents={filteredComponents}
+            filteredUiItems={filteredUiItems}
+          />
+        </ScrollArea>
       </SidebarContent>
 
       <SidebarFooter>
