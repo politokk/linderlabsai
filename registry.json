@@ -98,6 +98,7 @@
       "name": "blank",
       "type": "registry:block",
       "title": "Blank",
+      "icon": "CircleDashed",
       "description": "A blank application with all brand components and code",
       "registryDependencies": [
         "https://registry-starter.vercel.app/r/brand-header.json",
@@ -122,6 +123,7 @@
       "name": "dashboard",
       "type": "registry:block",
       "title": "Dashboard",
+      "icon": "LayoutDashboard",
       "description": "A dashboard application with your brand themed components",
       "registryDependencies": [
         "https://registry-starter.vercel.app/r/sonner.json",
@@ -146,6 +148,7 @@
       "name": "store",
       "type": "registry:block",
       "title": "Store",
+      "icon": "ShoppingCart",
       "description": "A store application with your brand themed components",
       "registryDependencies": [
         "https://registry-starter.vercel.app/r/product-grid.json",
@@ -168,6 +171,7 @@
       "name": "brand-header",
       "type": "registry:component",
       "title": "Brand Header",
+      "icon": "PanelTop",
       "description": "A styled, simple, reusable header",
       "registryDependencies": [
         "button",
@@ -199,6 +203,7 @@
       "name": "brand-sidebar",
       "type": "registry:component",
       "title": "Brand Sidebar",
+      "icon": "Sidebar",
       "description": "A styled, simple, reusable sidebar",
       "registryDependencies": [
         "badge",
@@ -228,6 +233,7 @@
       "name": "login",
       "type": "registry:component",
       "title": "Login",
+      "icon": "LogIn",
       "description": "Username & password login section with customer quote.",
       "registryDependencies": [
         "badge",
@@ -256,6 +262,7 @@
       "name": "logo",
       "type": "registry:component",
       "title": "Brand Logo",
+      "icon": "Package",
       "description": "A styled, simple, reusable logo",
       "registryDependencies": [
         "https://registry-starter.vercel.app/r/theme.json"
@@ -281,6 +288,7 @@
       "name": "hero",
       "type": "registry:component",
       "title": "Hero",
+      "icon": "RectangleHorizontal",
       "description": "Attention-grabbing section for the top of your landing pages.",
       "registryDependencies": [
         "badge",
@@ -308,6 +316,7 @@
       "name": "promo",
       "type": "registry:component",
       "title": "Promo",
+      "icon": "BadgeDollarSign",
       "description": "Attention-grabbing section to display the current promotional deal.",
       "registryDependencies": [
         "button",
@@ -334,6 +343,7 @@
       "name": "product-grid",
       "type": "registry:component",
       "title": "Product Grid",
+      "icon": "ShoppingBasket",
       "description": "Product grid displaying all products with API to fetch data",
       "registryDependencies": [
         "https://registry-starter.vercel.app/r/theme.json"
