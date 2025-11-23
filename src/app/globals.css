@@ -1,9 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
-  :root {
+:root {
     --radius: 0.875rem;
     --background: oklch(1 0 0);
     --foreground: oklch(0.37 0.04 257);
@@ -233,11 +231,12 @@
     border-color: var(--color-border, currentColor);
   }
   ::selection {
-    @apply bg-selection text-selection-foreground;
+    background-color: var(--color-selection);
+    color: var(--color-selection-foreground);
   }
 }
 
 button:not(:disabled),
 [role="button"]:not(:disabled) {
-  @apply cursor-pointer;
+  cursor: pointer;
 }
