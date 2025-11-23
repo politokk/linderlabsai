@@ -3,6 +3,7 @@
 import {
   Blocks,
   ChevronDown,
+  ChevronRight,
   Command,
   Component,
   GalleryVerticalEnd,
@@ -141,17 +142,18 @@ export function RegistrySidebar() {
         <NavMain items={data.navMain} />
         
         <ScrollArea className="h-full w-full pr-2">
-          <Collapsible defaultOpen={true} className="group/collapsible">
+          <Collapsible defaultOpen={true} className="group/collapsible" id="blocks">
             <SidebarGroup>
               <CollapsibleTrigger className="w-full">
                 <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
-                  <div className="flex min-w-0 items-center">
-                    <Blocks className="size-4 flex-shrink-0" />
-                    <span className="ml-2 transition-all duration-200">
+                  <div className="relative flex min-w-0 items-center">
+                    <Blocks className="size-3 flex-shrink-0 transition-opacity duration-200 group-hover/collapsible:opacity-0" />
+                    <ChevronDown className="absolute size-3 flex-shrink-0 opacity-0 transition-all duration-200 group-hover/collapsible:opacity-100 group-data-[state=open]/collapsible:block group-data-[state=closed]/collapsible:hidden" />
+                    <ChevronRight className="absolute size-3 flex-shrink-0 opacity-0 transition-all duration-200 group-hover/collapsible:opacity-100 group-data-[state=open]/collapsible:hidden group-data-[state=closed]/collapsible:block" />
+                    <span className="ml-2 transition-all duration-200 group-data-[collapsible=icon]:opacity-0">
                       Blocks
                     </span>
                   </div>
-                  <ChevronDown className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
                 </SidebarGroupLabel>
               </CollapsibleTrigger>
 
@@ -162,7 +164,8 @@ export function RegistrySidebar() {
                       <SidebarMenuItem key={item.name}>
                         <SidebarMenuButton
                           asChild
-                          isActive={pathname === item.name}
+                          isActive={pathname === `/registry/${item.name}`}
+                          tooltip={item.title}
                         >
                           <Link
                             onClick={() => setOpenMobile(false)}
@@ -179,17 +182,18 @@ export function RegistrySidebar() {
             </SidebarGroup>
           </Collapsible>
 
-          <Collapsible defaultOpen={true} className="group/collapsible">
+          <Collapsible defaultOpen={true} className="group/collapsible" id="components">
             <SidebarGroup>
               <CollapsibleTrigger className="w-full">
                 <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
-                  <div className="flex min-w-0 items-center">
-                    <Component className="size-4 flex-shrink-0" />
-                    <span className="ml-2 transition-all duration-200">
+                  <div className="relative flex min-w-0 items-center">
+                    <Component className="size-3 flex-shrink-0 transition-opacity duration-200 group-hover/collapsible:opacity-0" />
+                    <ChevronDown className="absolute size-3 flex-shrink-0 opacity-0 transition-all duration-200 group-hover/collapsible:opacity-100 group-data-[state=open]/collapsible:block group-data-[state=closed]/collapsible:hidden" />
+                    <ChevronRight className="absolute size-3 flex-shrink-0 opacity-0 transition-all duration-200 group-hover/collapsible:opacity-100 group-data-[state=open]/collapsible:hidden group-data-[state=closed]/collapsible:block" />
+                    <span className="ml-2 transition-all duration-200 group-data-[collapsible=icon]:opacity-0">
                       Components
                     </span>
                   </div>
-                  <ChevronDown className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
                 </SidebarGroupLabel>
               </CollapsibleTrigger>
 
@@ -200,7 +204,8 @@ export function RegistrySidebar() {
                       <SidebarMenuItem key={item.name}>
                         <SidebarMenuButton
                           asChild
-                          isActive={pathname === item.name}
+                          isActive={pathname === `/registry/${item.name}`}
+                          tooltip={item.title}
                         >
                           <Link
                             onClick={() => setOpenMobile(false)}
@@ -217,17 +222,18 @@ export function RegistrySidebar() {
             </SidebarGroup>
           </Collapsible>
 
-          <Collapsible defaultOpen={true} className="group/collapsible">
+          <Collapsible defaultOpen={true} className="group/collapsible" id="ui-primitives">
             <SidebarGroup>
               <CollapsibleTrigger className="w-full">
                 <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
-                  <div className="flex min-w-0 items-center">
-                    <ToyBrick className="size-4 flex-shrink-0" />
-                    <span className="ml-2 transition-all duration-200">
+                  <div className="relative flex min-w-0 items-center">
+                    <ToyBrick className="size-3 flex-shrink-0 transition-opacity duration-200 group-hover/collapsible:opacity-0" />
+                    <ChevronDown className="absolute size-3 flex-shrink-0 opacity-0 transition-all duration-200 group-hover/collapsible:opacity-100 group-data-[state=open]/collapsible:block group-data-[state=closed]/collapsible:hidden" />
+                    <ChevronRight className="absolute size-3 flex-shrink-0 opacity-0 transition-all duration-200 group-hover/collapsible:opacity-100 group-data-[state=open]/collapsible:hidden group-data-[state=closed]/collapsible:block" />
+                    <span className="ml-2 transition-all duration-200 group-data-[collapsible=icon]:opacity-0">
                       UI Primitives
                     </span>
                   </div>
-                  <ChevronDown className="size-4 flex-shrink-0 transition-all duration-200 group-data-[state=open]/collapsible:rotate-180" />
                 </SidebarGroupLabel>
               </CollapsibleTrigger>
               <CollapsibleContent>
@@ -237,7 +243,8 @@ export function RegistrySidebar() {
                       <SidebarMenuItem key={item.name}>
                         <SidebarMenuButton
                           asChild
-                          isActive={pathname === item.name}
+                          isActive={pathname === `/registry/${item.name}`}
+                          tooltip={item.title}
                         >
                           <Link
                             onClick={() => setOpenMobile(false)}
