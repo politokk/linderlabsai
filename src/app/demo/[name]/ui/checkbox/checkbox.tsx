@@ -10,19 +10,19 @@ export function checkbox() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Square">
+        <ComponentWrapper name="Checkbox" icon="Square">
           <CheckboxDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Disabled" icon="SquareSlash">
+        <ComponentWrapper name="Checkbox Disabled" icon="SquareSlash">
           <CheckboxDisabled />
         </ComponentWrapper>
-        <ComponentWrapper name="With Text" icon="SquareCheck">
+        <ComponentWrapper name="Checkbox With Text" icon="SquareCheck">
           <CheckboxWithText />
         </ComponentWrapper>
-        <ComponentWrapper name="Form Multiple" icon="CheckSquare">
+        <ComponentWrapper name="Checkbox Form Multiple" icon="CheckSquare">
           <CheckboxFormMultiple />
         </ComponentWrapper>
-        <ComponentWrapper name="Form Single" icon="Check">
+        <ComponentWrapper name="Checkbox Form Single" icon="Check">
           <CheckboxFormSingle />
         </ComponentWrapper>
       </div>

@@ -16,37 +16,37 @@ export function inputGroup() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Layers">
+        <ComponentWrapper name="Input Group" icon="Layers">
           <InputGroupDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Button Group" icon="SquareStack">
+        <ComponentWrapper name="Input Group Button Group" icon="SquareStack">
           <InputGroupButtonGroup />
         </ComponentWrapper>
-        <ComponentWrapper name="Button" icon="Square">
+        <ComponentWrapper name="Input Group Button" icon="Square">
           <InputGroupButton />
         </ComponentWrapper>
-        <ComponentWrapper name="Custom" icon="Wrench">
+        <ComponentWrapper name="Input Group Custom" icon="Wrench">
           <InputGroupCustom />
         </ComponentWrapper>
-        <ComponentWrapper name="Dropdown" icon="ChevronDown">
+        <ComponentWrapper name="Input Group Dropdown" icon="ChevronDown">
           <InputGroupDropdown />
         </ComponentWrapper>
-        <ComponentWrapper name="Icon" icon="Sparkles">
+        <ComponentWrapper name="Input Group Icon" icon="Sparkles">
           <InputGroupIcon />
         </ComponentWrapper>
-        <ComponentWrapper name="Label" icon="Tag">
+        <ComponentWrapper name="Input Group Label" icon="Tag">
           <InputGroupLabel />
         </ComponentWrapper>
-        <ComponentWrapper name="Spinner" icon="Loader">
+        <ComponentWrapper name="Input Group Spinner" icon="Loader">
           <InputGroupSpinner />
         </ComponentWrapper>
-        <ComponentWrapper name="Text" icon="Type">
+        <ComponentWrapper name="Input Group Text" icon="Type">
           <InputGroupText />
         </ComponentWrapper>
-        <ComponentWrapper name="Textarea" icon="AlignLeft">
+        <ComponentWrapper name="Input Group Textarea" icon="AlignLeft">
           <InputGroupTextarea />
         </ComponentWrapper>
-        <ComponentWrapper name="Tooltip" icon="Info">
+        <ComponentWrapper name="Input Group Tooltip" icon="Info">
           <InputGroupTooltip />
         </ComponentWrapper>
       </div>

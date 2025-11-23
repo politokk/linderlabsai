@@ -9,16 +9,16 @@ export function dropdownMenu() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="ChevronDown">
+        <ComponentWrapper name="Dropdown Menu" icon="ChevronDown">
           <DropdownMenuDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Checkboxes" icon="CheckSquare">
+        <ComponentWrapper name="Dropdown Menu Checkboxes" icon="CheckSquare">
           <DropdownMenuCheckboxes />
         </ComponentWrapper>
-        <ComponentWrapper name="Dialog" icon="MessageSquare">
+        <ComponentWrapper name="Dropdown Menu Dialog" icon="MessageSquare">
           <DropdownMenuDialog />
         </ComponentWrapper>
-        <ComponentWrapper name="Radio Group" icon="Circle">
+        <ComponentWrapper name="Dropdown Menu Radio Group" icon="Circle">
           <DropdownMenuRadioGroup />
         </ComponentWrapper>
       </div>

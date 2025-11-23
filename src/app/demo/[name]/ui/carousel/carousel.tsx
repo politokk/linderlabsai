@@ -11,22 +11,22 @@ export function carousel() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Images">
+        <ComponentWrapper name="Carousel" icon="Images">
           <CarouselDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Api" icon="Code">
+        <ComponentWrapper name="Carousel Api" icon="Code">
           <CarouselApiDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Orientation" icon="Compass">
+        <ComponentWrapper name="Carousel Orientation" icon="Compass">
           <CarouselOrientation />
         </ComponentWrapper>
-        <ComponentWrapper name="Plugin" icon="Plug">
+        <ComponentWrapper name="Carousel Plugin" icon="Plug">
           <CarouselPlugin />
         </ComponentWrapper>
-        <ComponentWrapper name="Size" icon="Maximize">
+        <ComponentWrapper name="Carousel Size" icon="Maximize">
           <CarouselSize />
         </ComponentWrapper>
-        <ComponentWrapper name="Spacing" icon="Space">
+        <ComponentWrapper name="Carousel Spacing" icon="Space">
           <CarouselSpacing />
         </ComponentWrapper>
       </div>

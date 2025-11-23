@@ -13,22 +13,22 @@ export function toggle() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="ToggleLeft">
+        <ComponentWrapper name="Toggle" icon="ToggleLeft">
           <ToggleDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Disabled" icon="Ban">
+        <ComponentWrapper name="Toggle Disabled" icon="Ban">
           <ToggleDisabled />
         </ComponentWrapper>
-        <ComponentWrapper name="Large" icon="Maximize">
+        <ComponentWrapper name="Toggle Large" icon="Maximize">
           <ToggleLg />
         </ComponentWrapper>
-        <ComponentWrapper name="Outline" icon="Circle">
+        <ComponentWrapper name="Toggle Outline" icon="Circle">
           <ToggleOutline />
         </ComponentWrapper>
-        <ComponentWrapper name="Small" icon="Minimize">
+        <ComponentWrapper name="Toggle Small" icon="Minimize">
           <ToggleSm />
         </ComponentWrapper>
-        <ComponentWrapper name="With Text" icon="Type">
+        <ComponentWrapper name="Toggle With Text" icon="Type">
           <ToggleWithText />
         </ComponentWrapper>
       </div>

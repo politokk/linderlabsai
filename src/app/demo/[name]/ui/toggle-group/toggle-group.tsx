@@ -12,25 +12,25 @@ export function toggleGroup() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="ToggleLeft">
+        <ComponentWrapper name="Toggle Group" icon="ToggleLeft">
           <ToggleGroupDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Disabled" icon="Ban">
+        <ComponentWrapper name="Toggle Group Disabled" icon="Ban">
           <ToggleGroupDisabled />
         </ComponentWrapper>
-        <ComponentWrapper name="Large" icon="Maximize">
+        <ComponentWrapper name="Toggle Group Large" icon="Maximize">
           <ToggleGroupLg />
         </ComponentWrapper>
-        <ComponentWrapper name="Outline" icon="Circle">
+        <ComponentWrapper name="Toggle Group Outline" icon="Circle">
           <ToggleGroupOutline />
         </ComponentWrapper>
-        <ComponentWrapper name="Single" icon="CircleDot">
+        <ComponentWrapper name="Toggle Group Single" icon="CircleDot">
           <ToggleGroupSingle />
         </ComponentWrapper>
-        <ComponentWrapper name="Small" icon="Minimize">
+        <ComponentWrapper name="Toggle Group Small" icon="Minimize">
           <ToggleGroupSm />
         </ComponentWrapper>
-        <ComponentWrapper name="Spacing" icon="Space">
+        <ComponentWrapper name="Toggle Group Spacing" icon="Space">
           <ToggleGroupSpacing />
         </ComponentWrapper>
       </div>

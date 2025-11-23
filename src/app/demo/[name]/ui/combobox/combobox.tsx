@@ -10,19 +10,19 @@ export function combobox() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Demo" icon="Search">
+        <ComponentWrapper name="Combobox" icon="Search">
           <ComboboxDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Dropdown Menu" icon="Menu">
+        <ComponentWrapper name="Combobox Dropdown Menu" icon="Menu">
           <ComboboxDropdownMenu />
         </ComponentWrapper>
-        <ComponentWrapper name="Form" icon="FileText">
+        <ComponentWrapper name="Combobox Form" icon="FileText">
           <ComboboxForm />
         </ComponentWrapper>
-        <ComponentWrapper name="Popover" icon="MessageSquare">
+        <ComponentWrapper name="Combobox Popover" icon="MessageSquare">
           <ComboboxPopover />
         </ComponentWrapper>
-        <ComponentWrapper name="Responsive" icon="Monitor">
+        <ComponentWrapper name="Combobox Responsive" icon="Monitor">
           <ComboboxResponsive />
         </ComponentWrapper>
       </div>

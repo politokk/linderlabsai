@@ -7,10 +7,10 @@ export function sheet() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Demo" icon="PanelBottom">
+        <ComponentWrapper name="Sheet" icon="PanelBottom">
           <SheetDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Side" icon="PanelRight">
+        <ComponentWrapper name="Sheet Side" icon="PanelRight">
           <SheetSide />
         </ComponentWrapper>
       </div>

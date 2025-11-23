@@ -10,19 +10,19 @@ export function kbd() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Keyboard">
+        <ComponentWrapper name="KBD" icon="Keyboard">
           <KbdDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Multiple" icon="Grid3x3">
+        <ComponentWrapper name="KBD Multiple" icon="Grid3x3">
           <KbdGroupExample />
         </ComponentWrapper>
-        <ComponentWrapper name="Input Group" icon="Layers">
+        <ComponentWrapper name="KBD Input Group" icon="Layers">
           <KbdInputGroup />
         </ComponentWrapper>
-        <ComponentWrapper name="Tooltip" icon="Info">
+        <ComponentWrapper name="KBD Tooltip" icon="Info">
           <KbdTooltip />
         </ComponentWrapper>
-        <ComponentWrapper name="Button" icon="Square">
+        <ComponentWrapper name="KBD Button" icon="Square">
           <KbdButton />
         </ComponentWrapper>
       </div>

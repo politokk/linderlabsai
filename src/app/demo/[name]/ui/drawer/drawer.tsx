@@ -7,10 +7,10 @@ export function drawer() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="SidebarOpen">
+        <ComponentWrapper name="Drawer" icon="SidebarOpen">
           <DrawerDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Dialog" icon="PanelLeft">
+        <ComponentWrapper name="Drawer Dialog" icon="PanelLeft">
           <DrawerDialogDemo />
         </ComponentWrapper>
       </div>

@@ -9,16 +9,16 @@ export function resizable() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Maximize2">
+        <ComponentWrapper name="Resizable" icon="Maximize2">
           <ResizableDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="With Handle" icon="GripVertical">
+        <ComponentWrapper name="Resizable With Handle" icon="GripVertical">
           <ResizableDemoWithHandle />
         </ComponentWrapper>
-        <ComponentWrapper name="Handle" icon="GripHorizontal">
+        <ComponentWrapper name="Resizable Handle" icon="GripHorizontal">
           <ResizableHandleDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Vertical" icon="SeparatorVertical">
+        <ComponentWrapper name="Resizable Vertical" icon="SeparatorVertical">
           <ResizableVertical />
         </ComponentWrapper>
       </div>

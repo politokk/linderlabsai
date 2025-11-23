@@ -679,7 +679,7 @@
         "name": "accordion",
         "type": "registry:ui",
         "title": "Accordion",
-        "icon": "ChevronDown",
+        "icon": "FolderRoot",
         "category": "ui",
         "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
         "registryDependencies": [
@@ -766,9 +766,14 @@
             "target": "app/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/aspect-ratio/aspect-ratio-demo.tsx",
+            "path": "src/app/demo/[name]/ui/aspect-ratio/aspect-ratio-wide-demo.tsx",
             "type": "registry:component",
-            "target": "app/aspect-ratio-demo.tsx"
+            "target": "app/aspect-ratio-wide-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/aspect-ratio/aspect-ratio-square-demo.tsx",
+            "type": "registry:component",
+            "target": "app/aspect-ratio-square-demo.tsx"
           }
         ]
       },
@@ -1107,6 +1112,16 @@
             "path": "src/app/demo/[name]/ui/card/card-with-form.tsx",
             "type": "registry:component",
             "target": "app/card-with-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/card/card-meeting-notes-demo.tsx",
+            "type": "registry:component",
+            "target": "app/card-meeting-notes-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/card/card-image-demo.tsx",
+            "type": "registry:component",
+            "target": "app/card-image-demo.tsx"
           }
         ]
       },

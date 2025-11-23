@@ -10,19 +10,19 @@ export function inputOtp() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Hash">
+        <ComponentWrapper name="Input OTP" icon="Hash">
           <InputOTPDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Controlled" icon="Gamepad2">
+        <ComponentWrapper name="Input OTP Controlled" icon="Gamepad2">
           <InputOTPControlled />
         </ComponentWrapper>
-        <ComponentWrapper name="Pattern" icon="Grid3x3">
+        <ComponentWrapper name="Input OTP Pattern" icon="Grid3x3">
           <InputOTPPattern />
         </ComponentWrapper>
-        <ComponentWrapper name="Separator" icon="Minus">
+        <ComponentWrapper name="Input OTP Separator" icon="Minus">
           <InputOTPWithSeparator />
         </ComponentWrapper>
-        <ComponentWrapper name="Form" icon="FileText">
+        <ComponentWrapper name="Input OTP Form" icon="FileText">
           <InputOTPForm />
         </ComponentWrapper>
       </div>

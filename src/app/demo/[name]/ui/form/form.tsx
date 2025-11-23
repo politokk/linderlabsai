@@ -17,40 +17,40 @@ export function form() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Next Complex" icon="FileText">
+        <ComponentWrapper name="Form Next Complex" icon="FileText">
           <FormNextComplex />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Array" icon="List">
+        <ComponentWrapper name="Form RHF Array" icon="List">
           <FormRhfArray />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Checkbox" icon="CheckSquare">
+        <ComponentWrapper name="Form RHF Checkbox" icon="CheckSquare">
           <FormRhfCheckbox />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Complex" icon="FileCode">
+        <ComponentWrapper name="Form RHF Complex" icon="FileCode">
           <FormRhfComplex />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Demo" icon="FileText">
+        <ComponentWrapper name="Form RHF Demo" icon="FileText">
           <FormRhfDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Next Demo" icon="File">
+        <ComponentWrapper name="Form Next Demo" icon="File">
           <FormNextDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Input" icon="Type">
+        <ComponentWrapper name="Form RHF Input" icon="Type">
           <FormRhfInput />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Password" icon="Lock">
+        <ComponentWrapper name="Form RHF Password" icon="Lock">
           <FormRhfPassword />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Radio Group" icon="Circle">
+        <ComponentWrapper name="Form RHF Radio Group" icon="Circle">
           <FormRhfRadiogroup />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Select" icon="ChevronDown">
+        <ComponentWrapper name="Form RHF Select" icon="ChevronDown">
           <FormRhfSelect />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Switch" icon="ToggleRight">
+        <ComponentWrapper name="Form RHF Switch" icon="ToggleRight">
           <FormRhfSwitch />
         </ComponentWrapper>
-        <ComponentWrapper name="RHF Textarea" icon="AlignLeft">
+        <ComponentWrapper name="Form RHF Textarea" icon="AlignLeft">
           <FormRhfTextarea />
         </ComponentWrapper>
       </div>

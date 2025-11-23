@@ -16,37 +16,37 @@ export function buttonGroup() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Button Group" icon="ButtonGroupIcon">
+        <ComponentWrapper name="Button Group" icon="Layers">
           <ButtonGroupDemo />
         </ComponentWrapper>
-      <ComponentWrapper name="Button Destructive" icon="ButtonDestructiveIcon">
+      <ComponentWrapper name="Button Destructive" icon="Layers2">
         <ButtonGroupNested />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Secondary" icon="ButtonSecondaryIcon">
+      <ComponentWrapper name="Button Secondary" icon="Maximize2">
         <ButtonGroupSize />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Size" icon="ButtonSizeIcon">
+      <ComponentWrapper name="Button Size" icon="Minus">
         <ButtonGroupSeparator />
       </ComponentWrapper>
-      <ComponentWrapper name="Button With Icon" icon="ButtonWithIconIcon">
+      <ComponentWrapper name="Button With Icon" icon="Split">
         <ButtonGroupSplit />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Input" icon="ButtonInputIcon">
+      <ComponentWrapper name="Button Input" icon="Type">
         <ButtonGroupInput />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Dropdown" icon="ButtonDropdownIcon">
+      <ComponentWrapper name="Button Dropdown" icon="ChevronDown">
         <ButtonGroupDropdown />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Select" icon="ButtonSelectIcon">
+      <ComponentWrapper name="Button Select" icon="CheckSquare">
         <ButtonGroupSelect />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Popover" icon="ButtonPopoverIcon">
+      <ComponentWrapper name="Button Popover" icon="MessageSquare">
         <ButtonGroupPopover />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Input Group" icon="ButtonInputGroupIcon">
+      <ComponentWrapper name="Button Input Group" icon="Group">
         <ButtonGroupInputGroup />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Orientation" icon="ButtonOrientationIcon">
+      <ComponentWrapper name="Button Orientation" icon="ListOrdered">
         <ButtonGroupOrientation />
       </ComponentWrapper>
       </div>

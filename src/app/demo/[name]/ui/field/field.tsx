@@ -17,40 +17,40 @@ export function field() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="FileText">
+        <ComponentWrapper name="Field" icon="FileText">
           <FieldDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Input" icon="Type">
+        <ComponentWrapper name="Field Input" icon="Type">
           <FieldInput />
         </ComponentWrapper>
-        <ComponentWrapper name="Textarea" icon="AlignLeft">
+        <ComponentWrapper name="Field Textarea" icon="AlignLeft">
           <FieldTextarea />
         </ComponentWrapper>
-        <ComponentWrapper name="Select" icon="ChevronDown">
+        <ComponentWrapper name="Field Select" icon="ChevronDown">
           <FieldSelect />
         </ComponentWrapper>
-        <ComponentWrapper name="Checkbox" icon="CheckSquare">
+        <ComponentWrapper name="Field Checkbox" icon="CheckSquare">
           <FieldCheckbox />
         </ComponentWrapper>
-        <ComponentWrapper name="Radio" icon="Circle">
+        <ComponentWrapper name="Field Radio" icon="Circle">
           <FieldRadio />
         </ComponentWrapper>
-        <ComponentWrapper name="Switch" icon="ToggleRight">
+        <ComponentWrapper name="Field Switch" icon="ToggleRight">
           <FieldSwitch />
         </ComponentWrapper>
-        <ComponentWrapper name="Slider" icon="SlidersHorizontal">
+        <ComponentWrapper name="Field Slider" icon="SlidersHorizontal">
           <FieldSlider />
         </ComponentWrapper>
-        <ComponentWrapper name="Fieldset" icon="LayoutGrid">
+        <ComponentWrapper name="Field Fieldset" icon="LayoutGrid">
           <FieldFieldset />
         </ComponentWrapper>
-        <ComponentWrapper name="Group" icon="Group">
+        <ComponentWrapper name="Field Group" icon="Group">
           <FieldGroup />
         </ComponentWrapper>
-        <ComponentWrapper name="Choice Card" icon="CreditCard">
+        <ComponentWrapper name="Field Choice Card" icon="CreditCard">
           <FieldChoiceCard />
         </ComponentWrapper>
-        <ComponentWrapper name="Responsive" icon="Monitor">
+        <ComponentWrapper name="Field Responsive" icon="Monitor">
           <FieldResponsive />
         </ComponentWrapper>
       </div>

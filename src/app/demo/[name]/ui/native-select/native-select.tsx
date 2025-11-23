@@ -12,13 +12,13 @@ export function nativeSelect() {
         <ComponentWrapper name="Native Select" icon="ChevronDown">
           <NativeSelectDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Disabled" icon="Ban">
+        <ComponentWrapper name="Native Select Disabled" icon="Ban">
           <NativeSelectDisabled />
         </ComponentWrapper>
-        <ComponentWrapper name="Groups" icon="Group">
+        <ComponentWrapper name="Native Select Groups" icon="Group">
           <NativeSelectGroups />
         </ComponentWrapper>
-        <ComponentWrapper name="Invalid" icon="AlertCircle">
+        <ComponentWrapper name="Native Select Invalid" icon="AlertCircle">
           <NativeSelectInvalid />
         </ComponentWrapper>
       </div>

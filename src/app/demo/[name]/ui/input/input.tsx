@@ -12,25 +12,25 @@ export function input() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Type">
+        <ComponentWrapper name="Input Default" icon="Type">
           <InputDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Disabled" icon="Ban">
+        <ComponentWrapper name="Input Disabled" icon="Ban">
           <InputDisabled />
         </ComponentWrapper>
-        <ComponentWrapper name="File" icon="File">
+        <ComponentWrapper name="Input File" icon="File">
           <InputFile />
         </ComponentWrapper>
-        <ComponentWrapper name="Form" icon="FileText">
+        <ComponentWrapper name="Input Form" icon="FileText">
           <InputForm />
         </ComponentWrapper>
-        <ComponentWrapper name="With Button" icon="MousePointerClick">
+        <ComponentWrapper name="Input With Button" icon="MousePointerClick">
           <InputWithButton />
         </ComponentWrapper>
-        <ComponentWrapper name="With Label" icon="Tag">
+        <ComponentWrapper name="Input With Label" icon="Tag">
           <InputWithLabel />
         </ComponentWrapper>
-        <ComponentWrapper name="With Text" icon="Text">
+        <ComponentWrapper name="Input With Text" icon="Text">
           <InputWithText />
         </ComponentWrapper>
       </div>

@@ -15,34 +15,34 @@ export function item() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Box">
+        <ComponentWrapper name="Item" icon="Box">
           <ItemDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Size" icon="Maximize">
+        <ComponentWrapper name="Item Size" icon="Maximize">
           <ItemSizeDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Variant" icon="Palette">
+        <ComponentWrapper name="Item Variant" icon="Palette">
           <ItemVariant />
         </ComponentWrapper>
-        <ComponentWrapper name="Avatar" icon="User">
+        <ComponentWrapper name="Item Avatar" icon="User">
           <ItemAvatar />
         </ComponentWrapper>
-        <ComponentWrapper name="Dropdown" icon="ChevronDown">
+        <ComponentWrapper name="Item Dropdown" icon="ChevronDown">
           <ItemDropdown />
         </ComponentWrapper>
-        <ComponentWrapper name="Group" icon="Group">
+        <ComponentWrapper name="Item Group" icon="Group">
           <ItemGroup />
         </ComponentWrapper>
-        <ComponentWrapper name="Header" icon="Heading">
+        <ComponentWrapper name="Item Header" icon="Heading">
           <ItemHeader />
         </ComponentWrapper>
-        <ComponentWrapper name="Icon" icon="Sparkles">
+        <ComponentWrapper name="Item Icon" icon="Sparkles">
           <ItemIcon />
         </ComponentWrapper>
-        <ComponentWrapper name="Image" icon="Image">
+        <ComponentWrapper name="Item Image" icon="Image">
           <ItemImage />
         </ComponentWrapper>
-        <ComponentWrapper name="Link" icon="Link">
+        <ComponentWrapper name="Item Link" icon="Link">
           <ItemLink />
         </ComponentWrapper>
       </div>

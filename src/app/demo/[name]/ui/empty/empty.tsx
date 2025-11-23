@@ -12,25 +12,25 @@ export function empty() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="Box">
+        <ComponentWrapper name="Empty" icon="Box">
           <EmptyDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Input Group" icon="Layers">
+        <ComponentWrapper name="Empty Input Group" icon="Layers">
           <EmptyInputGroup />
         </ComponentWrapper>
-        <ComponentWrapper name="Outline" icon="Square">
+        <ComponentWrapper name="Empty Outline" icon="Square">
           <EmptyOutline />
         </ComponentWrapper>
-        <ComponentWrapper name="Icon" icon="Image">
+        <ComponentWrapper name="Empty Icon" icon="Image">
           <EmptyIcon />
         </ComponentWrapper>
-        <ComponentWrapper name="Background" icon="Palette">
+        <ComponentWrapper name="Empty Background" icon="Palette">
           <EmptyBackground />
         </ComponentWrapper>
-        <ComponentWrapper name="Avatar" icon="User">
+        <ComponentWrapper name="Empty Avatar" icon="User">
           <EmptyAvatar />
         </ComponentWrapper>
-        <ComponentWrapper name="Avatar Group" icon="Users">
+        <ComponentWrapper name="Empty Avatar Group" icon="Users">
           <EmptyAvatarGroup />
         </ComponentWrapper>
       </div>

@@ -8,13 +8,13 @@ export function select() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Default" icon="ChevronDown">
+        <ComponentWrapper name="Select" icon="ChevronDown">
           <SelectDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Form" icon="FileText">
+        <ComponentWrapper name="Select Form" icon="FileText">
           <SelectForm />
         </ComponentWrapper>
-        <ComponentWrapper name="Scrollable" icon="ChevronsUpDown">
+        <ComponentWrapper name="Select Scrollable" icon="ChevronsUpDown">
           <SelectScrollable />
         </ComponentWrapper>
       </div>

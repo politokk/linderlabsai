@@ -14,31 +14,31 @@ export function sidebar() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Controlled" icon="Gamepad2">
+        <ComponentWrapper name="Sidebar Controlled" icon="Gamepad2">
           <SidebarControlled />
         </ComponentWrapper>
-        <ComponentWrapper name="Demo" icon="PanelLeft">
+        <ComponentWrapper name="Sidebar Demo" icon="PanelLeft">
           <SidebarDemo />
         </ComponentWrapper>
-        <ComponentWrapper name="Footer" icon="PanelBottom">
+        <ComponentWrapper name="Sidebar Footer" icon="PanelBottom">
           <SidebarFooter />
         </ComponentWrapper>
-        <ComponentWrapper name="Group" icon="Group">
+        <ComponentWrapper name="Sidebar Group" icon="Group">
           <SidebarGroup />
         </ComponentWrapper>
-        <ComponentWrapper name="Group Action" icon="MousePointerClick">
+        <ComponentWrapper name="Sidebar Group Action" icon="MousePointerClick">
           <SidebarGroupAction />
         </ComponentWrapper>
-        <ComponentWrapper name="Group Collapsible" icon="ChevronsUpDown">
+        <ComponentWrapper name="Sidebar Group Collapsible" icon="ChevronsUpDown">
           <SidebarGroupCollapsible />
         </ComponentWrapper>
-        <ComponentWrapper name="Header" icon="PanelTop">
+        <ComponentWrapper name="Sidebar Header" icon="PanelTop">
           <SidebarHeader />
         </ComponentWrapper>
-        <ComponentWrapper name="Menu" icon="Menu">
+        <ComponentWrapper name="Sidebar Menu" icon="Menu">
           <SidebarMenu />
         </ComponentWrapper>
-        <ComponentWrapper name="Menu Action" icon="MoreVertical">
+        <ComponentWrapper name="Sidebar Menu Action" icon="MoreVertical">
           <SidebarMenuAction />
         </ComponentWrapper>
       </div>
