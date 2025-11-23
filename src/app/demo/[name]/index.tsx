@@ -60,6 +60,7 @@ import { scrollArea } from "@/app/demo/[name]/ui/scroll-area/scroll-area";
 import { select } from "@/app/demo/[name]/ui/select/select";
 import { separator } from "@/app/demo/[name]/ui/separator/separator";
 import { sheet } from "@/app/demo/[name]/ui/sheet/sheet";
+import { sidebar } from "@/app/demo/[name]/ui/sidebar/sidebar";
 import { skeleton } from "@/app/demo/[name]/ui/skeleton/skeleton";
 import { slider } from "@/app/demo/[name]/ui/slider/slider";
 import { sonner } from "@/app/demo/[name]/ui/sonner/sonner";
@@ -140,6 +141,7 @@ export const demos: { [name: string]: Demo } = {
   select,
   separator,
   sheet,
+  sidebar,
   skeleton,
   slider,
   sonner,
