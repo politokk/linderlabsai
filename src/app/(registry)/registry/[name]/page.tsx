@@ -9,6 +9,7 @@ import { RegistryNavigation } from "@/components/registry/registry-navigation";
 import { ComponentActions } from "@/components/registry/component-actions";
 import { getActiveStyle } from "@/lib/styles";
 import { getPrompt } from "@/lib/utils";
+import { BlockDisplay } from "@/components/display/block-display";
 
 function getIconComponent(component: { icon?: string; type?: string }): LucideIcon | null {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
@@ -113,11 +114,10 @@ export default async function RegistryItemPage({
           )}
         </div>
         {/* Block Display */}
-        <ComponentCard
-        component={component}
-        baseUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ""}
-        prompt={getPrompt()}
-      />
+        <BlockDisplay
+          name={component.name}
+          styleName={activeStyle.name}
+        />
       </div>
 
       {/* Footer navigation - sticky at bottom of content */}

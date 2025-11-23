@@ -17,7 +17,7 @@ import { promo } from "@/app/demo/[name]/components/promo";
 // ui
 import { accordion } from "@/app/demo/[name]/ui/accordion/accordion";
 import { alertDialog } from "@/app/demo/[name]/ui/alert-dialog/alert-dialog";
-import { alert } from "@/app/demo/[name]/ui/alert/alert";
+import AlertPage from "@/app/demo/[name]/ui/alert/alert-page";
 import { aspectRatio } from "@/app/demo/[name]/ui/aspect-ratio/aspect-ratio";
 import { avatar } from "@/app/demo/[name]/ui/avatar/avatar";
 import { badge } from "@/app/demo/[name]/ui/badge/badge";
@@ -98,7 +98,7 @@ export const demos: { [name: string]: Demo } = {
   // ui
   accordion,
   "alert-dialog": alertDialog,
-  alert,
+  alert: AlertPage,
   "aspect-ratio": aspectRatio,
   avatar,
   badge,
