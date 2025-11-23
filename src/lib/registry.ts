@@ -6,6 +6,7 @@ export interface Component {
   title: string;
   description?: string;
   files?: { path: string; type: string; target: string }[];
+  icon?: string;
 }
 
 export function getRegistryItems(): Component[] {
