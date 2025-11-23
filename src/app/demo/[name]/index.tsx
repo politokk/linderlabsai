@@ -61,7 +61,7 @@ import { separator } from "@/app/demo/[name]/ui/separator/separator";
 import { sheet } from "@/app/demo/[name]/ui/sheet/sheet";
 import { skeleton } from "@/app/demo/[name]/ui/skeleton/skeleton";
 import { slider } from "@/app/demo/[name]/ui/slider/slider";
-import { sonner } from "@/app/demo/[name]/ui/sonner";
+import { sonner } from "@/app/demo/[name]/ui/sonner/sonner";
 import { spinner } from "@/app/demo/[name]/ui/spinner/spinner";
 import { switchComponent } from "@/app/demo/[name]/ui/switch";
 import { table } from "@/app/demo/[name]/ui/table";
