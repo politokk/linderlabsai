@@ -104,6 +104,16 @@
           "target": "app/themes.css"
         },
         {
+          "path": "src/layouts/block-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        },
+        {
+          "path": "src/hooks/use-layout.tsx",
+          "type": "registry:hook",
+          "target": "hooks/use-layout.tsx"
+        },
+        {
           "path": "postcss.config.mjs",
           "type": "registry:file",
           "target": "postcss.config.mjs"
@@ -391,11 +401,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -409,11 +415,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -427,11 +429,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -445,11 +443,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -463,11 +457,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -481,11 +471,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -499,11 +485,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -517,11 +499,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -537,11 +515,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -555,11 +529,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -573,11 +543,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -591,11 +557,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -609,11 +571,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -627,11 +585,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -645,11 +599,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -663,11 +613,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -681,11 +627,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -699,11 +641,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -717,11 +655,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -735,11 +669,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -753,11 +683,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -771,11 +697,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -789,11 +711,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -808,11 +726,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -827,11 +741,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -846,11 +756,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -864,11 +770,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -882,11 +784,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -901,11 +799,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -920,11 +814,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -939,11 +829,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -958,11 +844,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -976,11 +858,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -994,11 +872,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1012,11 +886,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1030,11 +900,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1048,11 +914,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1066,11 +928,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1084,11 +942,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1102,11 +956,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1120,11 +970,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1138,11 +984,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1156,11 +998,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1174,11 +1012,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1192,11 +1026,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1210,11 +1040,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1228,11 +1054,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1246,11 +1068,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1264,11 +1082,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1283,11 +1097,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1301,11 +1111,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1319,11 +1125,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1337,11 +1139,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1355,11 +1153,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1373,11 +1167,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1391,11 +1181,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       },
       {
@@ -1409,11 +1195,7 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          {
-            "path": "src/layouts/minimal-layout.tsx",
-            "type": "registry:file",
-            "target": "app/layout.tsx"
-          }
+          
         ]
       }
     ]
