@@ -15,36 +15,60 @@ import { productGrid } from "@/app/demo/[name]/components/product-grid";
 import { promo } from "@/app/demo/[name]/components/promo";
 
 // ui
-import { accordion } from "@/app/demo/[name]/ui/accordion";
-import { alertDialog } from "@/app/demo/[name]/ui/alert-dialog";
-import { alert } from "@/app/demo/[name]/ui/alert";
-import { aspectRatio } from "@/app/demo/[name]/ui/aspect-ratio";
-import { avatar } from "@/app/demo/[name]/ui/avatar";
-import { badge } from "@/app/demo/[name]/ui/badge";
-import { breadcrumb } from "@/app/demo/[name]/ui/breadcrumb";
-import { buttonGroup } from "@/app/demo/[name]/ui/button-group";
-import { button } from "@/app/demo/[name]/ui/button";
-import { calendar } from "@/app/demo/[name]/ui/calendar";
-import { card } from "@/app/demo/[name]/ui/card";
-import { carousel } from "@/app/demo/[name]/ui/carousel";
-import { chart } from "@/app/demo/[name]/ui/chart";
-import { checkbox } from "@/app/demo/[name]/ui/checkbox";
-import { collapsible } from "@/app/demo/[name]/ui/collapsible";
-import { dataTable } from "@/app/demo/[name]/ui/data-table";
-import { datePicker } from "@/app/demo/[name]/ui/date-picker";
-import { dialog } from "@/app/demo/[name]/ui/dialog";
-import { dropdownMenu } from "@/app/demo/[name]/ui/dropdown-menu";
-import { input } from "@/app/demo/[name]/ui/input";
-import { menuBar } from "@/app/demo/[name]/ui/menu-bar";
+import { accordion } from "@/app/demo/[name]/ui/accordion/accordion";
+import { alertDialog } from "@/app/demo/[name]/ui/alert-dialog/alert-dialog";
+import { alert } from "@/app/demo/[name]/ui/alert/alert";
+import { aspectRatio } from "@/app/demo/[name]/ui/aspect-ratio/aspect-ratio";
+import { avatar } from "@/app/demo/[name]/ui/avatar/avatar";
+import { badge } from "@/app/demo/[name]/ui/badge/badge";
+import { breadcrumb } from "@/app/demo/[name]/ui/breadcrumb/breadcrumb";
+import { buttonGroup } from "@/app/demo/[name]/ui/button-group/button-group";
+import { button } from "@/app/demo/[name]/ui/button/button";
+import { calendar } from "@/app/demo/[name]/ui/calendar/calendar";
+import { card } from "@/app/demo/[name]/ui/card/card";
+import { carousel } from "@/app/demo/[name]/ui/carousel/carousel";
+import { chart } from "@/app/demo/[name]/ui/chart/chart";
+import { checkbox } from "@/app/demo/[name]/ui/checkbox/checkbox";
+import { collapsible } from "@/app/demo/[name]/ui/collapsible/collapsible";
+import { combobox } from "@/app/demo/[name]/ui/combobox/combobox";
+import { command } from "@/app/demo/[name]/ui/command/command";
+import { contextMenu } from "@/app/demo/[name]/ui/context-menu/context-menu";
+import { dataTable } from "@/app/demo/[name]/ui/data-table/data-table";
+import { datePicker } from "@/app/demo/[name]/ui/date-picker/date-picker";
+import { dialog } from "@/app/demo/[name]/ui/dialog/dialog";
+import { drawer } from "@/app/demo/[name]/ui/drawer/drawer"; 
+import { dropdownMenu } from "@/app/demo/[name]/ui/dropdown-menu/dropdown-menu";
+import { empty } from "@/app/demo/[name]/ui/empty/empty";
+import { field } from "@/app/demo/[name]/ui/field/field";
+import { form } from "@/app/demo/[name]/ui/form/form";
+import { hoverCard } from "@/app/demo/[name]/ui/hover-card/hover-card";
+import { inputGroup } from "@/app/demo/[name]/ui/input-group/input-group";
+import { inputOtp } from "@/app/demo/[name]/ui/input-otp/input-otp";
+import { input } from "@/app/demo/[name]/ui/input/input";
+import { item } from "@/app/demo/[name]/ui/item/item";
+import { kbd } from "@/app/demo/[name]/ui/kbd/kbd";
+import { label } from "@/app/demo/[name]/ui/label/label";
+import { menuBar } from "@/app/demo/[name]/ui/menu-bar/menu-bar";
+import { navigationMenu } from "@/app/demo/[name]/ui/navigation-menu/navigation-menu";
+import { pagination } from "@/app/demo/[name]/ui/pagination";
+import { popover } from "@/app/demo/[name]/ui/popover";
+import { progress } from "@/app/demo/[name]/ui/progress";
+import { radioGroup } from "@/app/demo/[name]/ui/radio-group";
+import { resizable } from "@/app/demo/[name]/ui/resizable";
+import { scrollArea } from "@/app/demo/[name]/ui/scroll-area";
 import { select } from "@/app/demo/[name]/ui/select";
 import { separator } from "@/app/demo/[name]/ui/separator";
+import { sheet } from "@/app/demo/[name]/ui/sheet";
 import { skeleton } from "@/app/demo/[name]/ui/skeleton";
 import { slider } from "@/app/demo/[name]/ui/slider";
 import { sonner } from "@/app/demo/[name]/ui/sonner";
+import { spinner } from "@/app/demo/[name]/ui/spinner";
 import { switchComponent } from "@/app/demo/[name]/ui/switch";
 import { table } from "@/app/demo/[name]/ui/table";
 import { tabs } from "@/app/demo/[name]/ui/tabs";
+import { textarea } from "@/app/demo/[name]/ui/textarea";
 import { toggleGroup } from "@/app/demo/[name]/ui/toggle-group";
+import { toggle } from "@/app/demo/[name]/ui/toggle";
 import { tooltip } from "@/app/demo/[name]/ui/tooltip";
 
 interface Demo {
@@ -71,9 +95,9 @@ export const demos: { [name: string]: Demo } = {
 
   // ui
   accordion,
-  alertDialog,
+  "alert-dialog": alertDialog,
   alert,
-  aspectRatio,
+  "aspect-ratio": aspectRatio,
   avatar,
   badge,
   breadcrumb,
@@ -85,20 +109,44 @@ export const demos: { [name: string]: Demo } = {
   chart,
   checkbox,
   collapsible,
-  dialog,
-  "date-picker": datePicker,
+  combobox,
+  command,
+  "context-menu": contextMenu,
   "data-table": dataTable,
+  "date-picker": datePicker,
+  dialog,
+  drawer,
   "dropdown-menu": dropdownMenu,
+  empty,
+  field,
+  form,
+  "hover-card": hoverCard,
+  "input-group": inputGroup,
+  "input-otp": inputOtp,
   input,
-  "menu-bar": menuBar,
+  item,
+  kbd,
+  label,
+  menubar: menuBar,
+  "navigation-menu": navigationMenu,
+  pagination,
+  popover,
+  progress,
+  "radio-group": radioGroup,
+  resizable,
+  "scroll-area": scrollArea,
   select,
   separator,
+  sheet,
   skeleton,
   slider,
-  switch: switchComponent,
   sonner,
+  spinner,
+  switch: switchComponent,
   table,
   tabs,
+  textarea,
   "toggle-group": toggleGroup,
+  toggle,
   tooltip,
 };

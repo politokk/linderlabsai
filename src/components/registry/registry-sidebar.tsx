@@ -3,26 +3,24 @@
 import {
   Blocks,
   ChevronDown,
+  Command,
   Component,
+  GalleryVerticalEnd,
   Home,
   Menu,
-  Search,
   ToyBrick,
-  X,
+  AudioWaveform,
+  Figma,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
-import { RegistryLogo } from "@/components/registry/registry-logo";
-import { ModeToggle } from "@/components/registry/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Sidebar,
@@ -36,16 +34,45 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
+  SidebarRail,
 } from "@/components/ui/sidebar";
 import { getBlocks, getComponents, getUIPrimitives } from "@/lib/registry";
+import { NavUser } from "./nav-user";
+import { SearchForm } from "./search-form"
+import { TeamSwitcher } from "./team-switcher";
+
+const data = {
+  user: {
+    name: "Linder",
+    email: "hello@linderlabs.com",
+    avatar: "/linderavatar.png",
+  },
+  teams: [
+    {
+      name: "Acme Inc",
+      logo: GalleryVerticalEnd,
+      plan: "Enterprise",
+    },
+    {
+      name: "Acme Corp.",
+      logo: AudioWaveform,
+      plan: "Startup",
+    },
+    {
+      name: "Evil Corp.",
+      logo: Command,
+      plan: "Free",
+    },
+  ],
+};
 
 const uiItems = getUIPrimitives();
 const componentItems = getComponents();
 const blockItems = getBlocks();
 
 export const gettingStartedItems = [
-  { title: "Home", path: "/" },
-  { title: "Design Tokens", path: "/tokens" },
+  { title: "Home", path: "/" , icon: Home},
+  { title: "Design Tokens", path: "/tokens" , icon: Figma},
 ];
 
 export function MobileSidebarTrigger() {
@@ -96,32 +123,10 @@ export function RegistrySidebar() {
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarHeader className="border-b">
-        <div className="flex items-center justify-between px-2 py-2">
-          <Link href="/" className="flex min-w-0 items-center gap-2">
-            <RegistryLogo />
-          </Link>
-
-          <Button
-            variant="ghost"
-            className="md:hidden"
-            onClick={() => setOpenMobile(false)}
-          >
-            <X />
-          </Button>
-        </div>
-        <div className="px-2 py-2 opacity-100 transition-all duration-200">
-          <div className="relative">
-            <Search className="absolute top-2.5 left-2.5 size-4 text-muted-foreground" />
-            <Input
-              type="search"
-              placeholder="Search..."
-              className="pl-8"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
-        </div>
+      <SidebarRail />
+    <SidebarHeader>
+    <TeamSwitcher teams={data.teams} />
+        <SearchForm />
       </SidebarHeader>
 
       <SidebarContent>
@@ -281,7 +286,7 @@ export function RegistrySidebar() {
 
       <SidebarFooter>
         <div className="flex justify-end">
-          <ModeToggle />
+          <NavUser user={data.user} />
         </div>
       </SidebarFooter>
     </Sidebar>
