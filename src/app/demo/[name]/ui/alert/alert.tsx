@@ -1,4 +1,4 @@
-import { AlertPage } from "./alert-page";
+import AlertPage from "./alert-page";
   export const alert = {
     name: "alert",
     components: {

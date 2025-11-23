@@ -686,7 +686,16 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/accordion/accordion.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/accordion/accordion-demo.tsx",
+            "type": "registry:component",
+            "target": "app/accordion-demo.tsx"
+          }
         ]
       },
       {
