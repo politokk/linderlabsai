@@ -1,4 +1,4 @@
-import NavigationMenuDemo from "./native-select-demo";
+import NavigationMenuDemo from "./navigation-menu-demo";
   
   export const navigationMenu = {
     name: "navigation-menu",
