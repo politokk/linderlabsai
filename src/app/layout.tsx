@@ -3,15 +3,19 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import type { ReactNode } from "react";
-
+import { ActiveThemeProvider } from "@/components/themes/active-theme"
+import { TailwindIndicator } from "@/components/themes/tailwind-indicator"
+import { ThemeProvider } from "@/components/themes/theme-provider"
+import { Toaster } from "@/components/ui/sonner"
+import { TooltipProvider } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils";
 
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
-  title: "Registry Starter",
-  description: "Starter to help build a Shadcn Registry using Tailwind v4",
-  icons: [{ rel: "icon", url: "/favicon.svg", type: "image/svg+xml" }],
+  title: "Linderlabs UI",
+  description: "Linderlabs UI is a collection of components and tools for your projects.",
+  icons: [{ rel: "icon", url: "/favicon.ico", type: "image/svg+xml" }],
 };
 
 const GeistSans = Geist({
@@ -36,6 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
+    suppressHydrationWarning
       lang="en"
       className={cn(
         GeistSans.variable,
@@ -45,11 +50,20 @@ export default function RootLayout({
       )}
     >
       <meta
+      suppressHydrationWarning
         name="robots"
         content="noindex, nofollow, noarchive, nosnippet, noimageindex"
       />
-      <body className="flex grow">
-        {children}
+      <body suppressHydrationWarning className="text-foreground group/body theme-default overscroll-none font-sans antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]">
+        <ThemeProvider>
+          <TooltipProvider>
+            <ActiveThemeProvider initialTheme="default">
+              {children}
+              <TailwindIndicator />
+            </ActiveThemeProvider>
+            <Toaster />
+          </TooltipProvider>
+        </ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>
