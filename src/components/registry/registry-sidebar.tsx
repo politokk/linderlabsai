@@ -17,7 +17,7 @@ import {
 import * as LucideIcons from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Collapsible,
@@ -42,6 +42,7 @@ import {
 import { getBlocks, getComponents, getUIPrimitives } from "@/lib/registry";
 import { NavUser } from "./nav-user";
 import { SearchForm } from "./search-form";
+import { SearchCommand } from "./search-command";
 import { TeamSwitcher } from "./team-switcher";
 import { NavMain } from "./nav-main";
 
@@ -116,17 +117,20 @@ export function MobileSidebarTrigger() {
     </div>
   );
 }
+
 export function RegistrySidebar() {
   const pathname = usePathname();
+
   const { setOpenMobile } = useSidebar();
 
   const [searchTerm, setSearchTerm] = useState("");
+  const [commandOpen, setCommandOpen] = useState(false);
   const [filteredUiItems, setFilteredUiItems] = useState(uiItems);
   const [filteredComponents, setFilteredComponents] = useState(componentItems);
   const [filteredBlocks, setFilteredBlocks] = useState(blockItems);
 
-  // Combine all items for search
-  const allItems = React.useMemo(() => [
+  // Combine all items for search command
+  const allItems = useMemo(() => [
     ...blockItems,
     ...componentItems,
     ...uiItems,
@@ -163,7 +167,7 @@ export function RegistrySidebar() {
         <TeamSwitcher teams={data.teams} />
         <SearchForm 
           onSearchChange={setSearchTerm}
-          searchableItems={allItems}
+          onOpenCommand={() => setCommandOpen(true)}
         />
       </SidebarHeader>
       
@@ -309,6 +313,12 @@ export function RegistrySidebar() {
           <NavUser user={data.user} />
         </div>
       </SidebarFooter>
+
+      <SearchCommand
+        open={commandOpen}
+        onOpenChange={setCommandOpen}
+        searchableItems={allItems}
+      />
     </Sidebar>
   );
 }
