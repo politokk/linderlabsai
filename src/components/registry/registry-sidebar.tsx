@@ -17,7 +17,7 @@ import {
 import * as LucideIcons from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Collapsible,
@@ -116,16 +116,21 @@ export function MobileSidebarTrigger() {
     </div>
   );
 }
-
 export function RegistrySidebar() {
   const pathname = usePathname();
-
   const { setOpenMobile } = useSidebar();
 
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredUiItems, setFilteredUiItems] = useState(uiItems);
   const [filteredComponents, setFilteredComponents] = useState(componentItems);
   const [filteredBlocks, setFilteredBlocks] = useState(blockItems);
+
+  // Combine all items for search
+  const allItems = React.useMemo(() => [
+    ...blockItems,
+    ...componentItems,
+    ...uiItems,
+  ], []);
 
   useEffect(() => {
     if (searchTerm) {
@@ -156,7 +161,10 @@ export function RegistrySidebar() {
       <SidebarRail />
       <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
-        <SearchForm onSearchChange={setSearchTerm} />
+        <SearchForm 
+          onSearchChange={setSearchTerm}
+          searchableItems={allItems}
+        />
       </SidebarHeader>
       
       <SidebarContent>
