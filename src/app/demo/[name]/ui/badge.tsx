@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, AlertCircleIcon, BadgeCheckIcon, CheckIcon } from "lucide-react";
 import Link from "next/link";
 
 export const badge = {
@@ -7,7 +7,7 @@ export const badge = {
   components: {
     Default: <Badge>Badge</Badge>,
     Secondary: <Badge variant="secondary">Secondary</Badge>,
-    Outline: <Badge variant="outline">Secondary</Badge>,
+    Outline: <Badge variant="outline">Outline</Badge>,
     Destructive: <Badge variant="destructive">Destructive</Badge>,
 
     DefaultLink: (
@@ -40,6 +40,38 @@ export const badge = {
           Link
           <ArrowRight className="size-3" />
         </Link>
+      </Badge>
+    ),
+
+    Verified: (
+      <Badge
+        variant="secondary"
+        className="bg-blue-500 text-white dark:bg-blue-600"
+      >
+        <BadgeCheckIcon className="size-3" />
+        Verified
+      </Badge>
+    ),
+
+    CountDefault: (
+      <Badge className="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums">
+        8
+      </Badge>
+    ),
+    CountDestructive: (
+      <Badge
+        className="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums"
+        variant="destructive"
+      >
+        99
+      </Badge>
+    ),
+    CountOutline: (
+      <Badge
+        className="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums"
+        variant="outline"
+      >
+        20+
       </Badge>
     ),
   },
