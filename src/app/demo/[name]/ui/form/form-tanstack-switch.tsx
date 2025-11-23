@@ -76,7 +76,7 @@ export default function FormTanstackSwitch() {
           <FieldGroup>
             <form.Field
               name="twoFactor"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (

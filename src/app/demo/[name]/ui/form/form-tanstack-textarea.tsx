@@ -76,7 +76,7 @@ export default function FormTanstackTextarea() {
           <FieldGroup>
             <form.Field
               name="about"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (

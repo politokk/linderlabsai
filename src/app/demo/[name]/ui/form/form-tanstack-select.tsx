@@ -96,7 +96,7 @@ export default function FormTanstackSelect() {
           <FieldGroup>
             <form.Field
               name="language"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (

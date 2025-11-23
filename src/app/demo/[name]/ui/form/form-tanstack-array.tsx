@@ -98,7 +98,7 @@ export default function FormTanstackArray() {
                       <form.Field
                         key={`email-${index}-${subField.name}`}
                         name={`emails[${index}].address`}
-                        children={(subField) => {
+                        render={({ field: subField }) => {
                           const isSubFieldInvalid =
                             subField.state.meta.isTouched &&
                             !subField.state.meta.isValid

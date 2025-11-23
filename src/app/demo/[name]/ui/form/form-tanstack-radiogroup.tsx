@@ -98,7 +98,7 @@ export default function FormTanstackRadioGroup() {
           <FieldGroup>
             <form.Field
               name="plan"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (

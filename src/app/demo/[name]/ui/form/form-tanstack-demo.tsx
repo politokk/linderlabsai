@@ -87,7 +87,7 @@ export default function BugReportForm() {
           <FieldGroup>
             <form.Field
               name="title"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (
@@ -112,7 +112,7 @@ export default function BugReportForm() {
             />
             <form.Field
               name="description"
-              children={(field) => {
+                render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (

@@ -94,7 +94,7 @@ export default function FormTanstackCheckbox() {
           <FieldGroup>
             <form.Field
               name="responses"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (
@@ -134,7 +134,7 @@ export default function FormTanstackCheckbox() {
             <form.Field
               name="tasks"
               mode="array"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (

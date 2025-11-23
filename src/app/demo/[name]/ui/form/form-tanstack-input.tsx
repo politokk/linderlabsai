@@ -79,7 +79,7 @@ export default function FormTanstackInput() {
           <FieldGroup>
             <form.Field
               name="username"
-              children={(field) => {
+                render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (

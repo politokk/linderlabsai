@@ -121,7 +121,7 @@ export default function FormTanstackComplex() {
           <FieldGroup>
             <form.Field
               name="plan"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (
@@ -182,7 +182,7 @@ export default function FormTanstackComplex() {
             <FieldSeparator />
             <form.Field
               name="billingPeriod"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (
@@ -216,7 +216,7 @@ export default function FormTanstackComplex() {
             <form.Field
               name="addons"
               mode="array"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (
@@ -271,7 +271,7 @@ export default function FormTanstackComplex() {
             <FieldSeparator />
             <form.Field
               name="emailNotifications"
-              children={(field) => {
+              render={({ field }) => {
                 const isInvalid =
                   field.state.meta.isTouched && !field.state.meta.isValid
                 return (
