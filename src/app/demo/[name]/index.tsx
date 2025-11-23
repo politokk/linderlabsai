@@ -40,7 +40,6 @@ import { drawer } from "@/app/demo/[name]/ui/drawer/drawer";
 import { dropdownMenu } from "@/app/demo/[name]/ui/dropdown-menu/dropdown-menu";
 import { empty } from "@/app/demo/[name]/ui/empty/empty";
 import { field } from "@/app/demo/[name]/ui/field/field";
-import { form } from "@/app/demo/[name]/ui/form/form";
 import { hoverCard } from "@/app/demo/[name]/ui/hover-card/hover-card";
 import { inputGroup } from "@/app/demo/[name]/ui/input-group/input-group";
 import { inputOtp } from "@/app/demo/[name]/ui/input-otp/input-otp";
@@ -56,8 +55,8 @@ import { popover } from "@/app/demo/[name]/ui/popover/popover";
 import { progress } from "@/app/demo/[name]/ui/progress/progress";
 import { radioGroup } from "@/app/demo/[name]/ui/radio-group/radio-group";
 import { resizable } from "@/app/demo/[name]/ui/resizable/resizable";
-import { scrollArea } from "@/app/demo/[name]/ui/scroll-area";
-import { select } from "@/app/demo/[name]/ui/select";
+import { scrollArea } from "@/app/demo/[name]/ui/scroll-area/scroll-area";
+import { select } from "@/app/demo/[name]/ui/select/select";
 import { separator } from "@/app/demo/[name]/ui/separator";
 import { sheet } from "@/app/demo/[name]/ui/sheet";
 import { skeleton } from "@/app/demo/[name]/ui/skeleton";
@@ -120,7 +119,6 @@ export const demos: { [name: string]: Demo } = {
   "dropdown-menu": dropdownMenu,
   empty,
   field,
-  form,
   "hover-card": hoverCard,
   "input-group": inputGroup,
   "input-otp": inputOtp,
