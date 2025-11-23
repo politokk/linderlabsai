@@ -35,7 +35,7 @@ export default function ItemImage() {
     <div className="flex w-full max-w-md flex-col gap-6">
       <ItemGroup className="gap-4">
         {music.map((song) => (
-          <Item key={song.title} variant="outline" asChild as="li">
+          <Item key={song.title} variant="outline" asChild>
             <a href="https://www.google.com">
               <ItemMedia variant="image">
                 <Image
