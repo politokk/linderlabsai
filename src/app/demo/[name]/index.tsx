@@ -64,12 +64,12 @@ import { slider } from "@/app/demo/[name]/ui/slider/slider";
 import { sonner } from "@/app/demo/[name]/ui/sonner/sonner";
 import { spinner } from "@/app/demo/[name]/ui/spinner/spinner";
 import { switchComponent } from "@/app/demo/[name]/ui/switch/switch";
-import { table } from "@/app/demo/[name]/ui/table";
-import { tabs } from "@/app/demo/[name]/ui/tabs";
-import { textarea } from "@/app/demo/[name]/ui/textarea";
-import { toggleGroup } from "@/app/demo/[name]/ui/toggle-group";
-import { toggle } from "@/app/demo/[name]/ui/toggle";
-import { tooltip } from "@/app/demo/[name]/ui/tooltip";
+import { table } from "@/app/demo/[name]/ui/table/table";
+import { tabs } from "@/app/demo/[name]/ui/tabs/tabs";
+import { textarea } from "@/app/demo/[name]/ui/textarea/textarea";
+import { toggleGroup } from "@/app/demo/[name]/ui/toggle-group/toggle-group";
+import { toggle } from "@/app/demo/[name]/ui/toggle/toggle";
+import { tooltip } from "@/app/demo/[name]/ui/tooltip/tooltip";
 
 interface Demo {
   name: string; // this must match the `registry.json` name
