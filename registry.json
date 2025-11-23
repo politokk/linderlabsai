@@ -708,12 +708,12 @@
           {
             "path": "src/app/demo/[name]/ui/alert/alert-demo.tsx",
             "type": "registry:component",
-            "target": "components/demos/alert/alert-demo.tsx"
+            "target": "app/alert-demo.tsx"
           },
           {
             "path": "src/app/demo/[name]/ui/alert/alert-destructive.tsx",
             "type": "registry:component",
-            "target": "components/demos/alert/alert-destructive.tsx"
+            "target": "app/alert-destructive.tsx"
           }
         ]
       },
