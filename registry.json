@@ -389,6 +389,11 @@
           "target": "components/ui/tooltip.tsx"
         },
         {
+          "path": "src/components/display/component-wrapper.tsx",
+          "type": "registry:component",
+          "target": "components/display/component-wrapper.tsx"
+        },
+        {
           "path": "src/hooks/use-layout.tsx",
           "type": "registry:hook",
           "target": "hooks/use-layout.tsx"
@@ -695,7 +700,21 @@
           "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
-          
+          {
+            "path": "src/app/demo/[name]/ui/alert/alert-page.tsx",
+            "type": "registry:page",
+            "target": "app/page.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/alert/alert-demo.tsx",
+            "type": "registry:component",
+            "target": "components/demos/alert/alert-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/alert/alert-destructive.tsx",
+            "type": "registry:component",
+            "target": "components/demos/alert/alert-destructive.tsx"
+          }
         ]
       },
       {
