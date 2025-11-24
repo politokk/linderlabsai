@@ -63,7 +63,6 @@ type BlockViewerContext = {
   iframeKey?: number
   setIframeKey?: React.Dispatch<React.SetStateAction<number>>
   hideToolbar?: boolean
-  initialView?: "code" | "preview"
 }
 
 const BlockViewerContext = React.createContext<BlockViewerContext | null>(null)
@@ -81,24 +80,29 @@ function BlockViewerProvider({
   tree,
   highlightedFiles,
   hideToolbar,
-  initialView,
   children,
-}: Pick<BlockViewerContext, "item" | "tree" | "highlightedFiles" | "hideToolbar" | "initialView"> & {
+}: Pick<BlockViewerContext, "item" | "tree" | "highlightedFiles" | "hideToolbar"> & {
   children: React.ReactNode
 }) {
-  const [view, setView] = React.useState<BlockViewerContext["view"]>(initialView ?? "preview")
+  const [view, setView] = React.useState<BlockViewerContext["view"]>("preview")
   const [activeFile, setActiveFile] = React.useState <
     BlockViewerContext["activeFile"]
   >(highlightedFiles?.[0].target ?? null)
   const resizablePanelRef = React.useRef<ImperativePanelHandle>(null)
   const [iframeKey, setIframeKey] = React.useState(0)
 
-  // Sync view with initialView when it changes
+  // Listen for view changes from the header toggle
   React.useEffect(() => {
-    if (initialView) {
-      setView(initialView)
+    const handleViewChange = (event: CustomEvent<"code" | "preview">) => {
+      setView(event.detail)
     }
-  }, [initialView])
+    
+    window.addEventListener('registry-view-change', handleViewChange as EventListener)
+    
+    return () => {
+      window.removeEventListener('registry-view-change', handleViewChange as EventListener)
+    }
+  }, [])
 
   return (
     <BlockViewerContext.Provider
@@ -114,7 +118,6 @@ function BlockViewerProvider({
         iframeKey,
         setIframeKey,
         hideToolbar,
-        initialView,
       }}
     >
       <div
@@ -135,7 +138,7 @@ function BlockViewerProvider({
 
 type BlockViewerProps = Pick<
   BlockViewerContext,
-  "item" | "tree" | "highlightedFiles" | "hideToolbar" | "initialView"
+  "item" | "tree" | "highlightedFiles" | "hideToolbar"
 > & {
   children: React.ReactNode
   styleName: Style["name"]
@@ -435,7 +438,6 @@ function BlockViewer({
   tree,
   highlightedFiles,
   hideToolbar,
-  initialView,
   children,
   styleName,
   ...props
@@ -446,7 +448,6 @@ function BlockViewer({
       tree={tree}
       highlightedFiles={highlightedFiles}
       hideToolbar={hideToolbar}
-      initialView={initialView}
       {...props}
     >
       <BlockViewerToolbar styleName={styleName} />

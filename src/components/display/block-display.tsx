@@ -7,21 +7,17 @@ import {
   createFileTreeForRegistryItemFiles,
   getRegistryItem,
 } from "@/lib/registry-server"
-import { cn } from "@/lib/utils"
-import { BlockViewer } from "@/components/display/block-viewer"
-import { ComponentPreview } from "@/components/display/component-preview"
+import { BlockDisplayClient } from "@/components/display/block-display-client"
 import type { Style } from "@/lib/styles"
 
 export async function BlockDisplay({
   name,
   styleName,
   hideToolbar = false,
-  view,
 }: {
   name: string
   styleName: Style["name"]
   hideToolbar?: boolean
-  view?: "code" | "preview"
 }) {
   const item = await getCachedRegistryItem(name, styleName)
 
@@ -35,24 +31,13 @@ export async function BlockDisplay({
   ])
 
   return (
-    <BlockViewer
+    <BlockDisplayClient
       item={item}
       tree={tree}
       highlightedFiles={highlightedFiles}
       styleName={styleName}
       hideToolbar={hideToolbar}
-      initialView={view}
-    >
-      <ComponentPreview
-        name={item.name}
-        styleName={styleName}
-        hideCode
-        className={cn(
-          "my-0 **:[.preview]:h-auto **:[.preview]:p-4 **:[.preview>.p-6]:p-0",
-          item.meta?.containerClassName
-        )}
-      />
-    </BlockViewer>
+    />
   )
 }
 

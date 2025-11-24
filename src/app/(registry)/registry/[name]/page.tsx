@@ -1,31 +1,26 @@
-
 import { notFound } from "next/navigation";
-import { ComponentCard } from "@/components/registry/component-card";
-import { Blocks, Component, ToyBrick, type LucideIcon } from "lucide-react"
 import * as LucideIcons from "lucide-react"
 import { getRegistryItem, getRegistryItems } from "@/lib/registry";
 import { RegistryHeader } from "@/components/registry/registry-header";
 import { RegistryNavigation } from "@/components/registry/registry-navigation";
-import { ComponentActions } from "@/components/registry/component-actions";
 import { getActiveStyle } from "@/lib/styles";
-import { getPrompt } from "@/lib/utils";
+import { RegistryItemHeader } from "./registry-item-header";
 import { BlockDisplay } from "@/components/display/block-display";
-import { CodePreviewToggle } from "@/components/display/code-preview-toggle"
 
-function getIconComponent(component: { icon?: string; type?: string }): LucideIcon | null {
+function getIconName(component: { icon?: string; type?: string }): string | null {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
-    return LucideIcons[component.icon as keyof typeof LucideIcons] as LucideIcon;
+    return component.icon;
   }
   
   // Fallback icons based on component type
   if (component.type) {
     switch (component.type) {
       case "registry:block":
-        return Blocks;
+        return "Blocks";
       case "registry:component":
-        return Component;
+        return "Component";
       case "registry:ui":
-        return ToyBrick;
+        return "ToyBrick";
     }
   }
   
@@ -55,8 +50,8 @@ export default async function RegistryItemPage({
   const allComponents = getRegistryItems();
   const activeStyle = await getActiveStyle();
 
-  // Get the icon component from the registry data
-  const IconComponent = getIconComponent(component);
+  // Get the icon name instead of component
+  const iconName = getIconName(component);
   const currentIndex = allComponents.findIndex(c => c.name === name);
   const prevComponent = currentIndex > 0 ? allComponents[currentIndex - 1] : null;
   const nextComponent = currentIndex < allComponents.length - 1 ? allComponents[currentIndex + 1] : null;
@@ -83,42 +78,23 @@ export default async function RegistryItemPage({
   
   return (
     <div className="flex flex-col min-h-full w-full">
-    <RegistryHeader componentTitle={component.title} componentIcon={component.icon} />
-    <div className="flex-1 pb-0 pt-20 p-5 sm:pt-20 md:pt-20 sm:px-10 md:px-10">
-
-      {/* Header with title, badges, and actions */}
-      <div className="mb-4 px-2">
-          <div className="flex flex-row sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
-            <div className="flex items-center gap-3">
-              <h1 className="flex items-center gap-3 text-muted-foreground [&_svg]:text-muted-foreground scroll-m-20 text-2xl font-semibold tracking-tight sm:text-2xl xl:text-2xl">
-                {IconComponent && <IconComponent className="size-6 text-secondary-foreground" />}
-                {component.title}
-              </h1>
-            </div>
-            <div className="flex items-center gap-2 ml-auto">
-            <ComponentActions 
-                component={component} 
-                markdown={markdown}
-              />
-              <RegistryNavigation 
-                prevComponent={prevComponent}
-                nextComponent={nextComponent}
-                variant="compact"
-              />
-            </div>
-          </div>
-          {/* Description */}
-          {component.description && (
-            <p className="text-muted-foreground font-default">
-              {component.description}
-            </p>
-          )}
-        </div>
-        {/* Block Display */}
+      <RegistryHeader componentTitle={component.title} componentIcon={component.icon} />
+      <div className="flex-1 pb-0 pt-20 p-5 sm:pt-20 md:pt-20 sm:px-10 md:px-10">
+        {/* Client component for header with toggle */}
+        <RegistryItemHeader
+          component={component}
+          markdown={markdown}
+          iconName={iconName}
+          prevComponent={prevComponent}
+          nextComponent={nextComponent}
+        />
+        
+        {/* Server component for block display */}
         <BlockDisplay
-  name={component.name}
-  styleName={activeStyle.name}
-/>
+          name={component.name}
+          styleName={activeStyle.name}
+          hideToolbar={true}
+        />
       </div>
 
       {/* Footer navigation - sticky at bottom of content */}
@@ -127,6 +103,5 @@ export default async function RegistryItemPage({
         nextComponent={nextComponent}
       />
     </div>
-       
   );
 }
