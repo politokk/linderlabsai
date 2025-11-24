@@ -2,6 +2,8 @@
 @import "tw-animate-css";
 @import "./themes.css";
 
+@variant dark (&:is(.dark *));
+
 :root {
     --radius: 0.875rem;
     --background: oklch(1 0 0);
@@ -72,7 +74,6 @@
   }
   
   .dark {
-    --radius: 0.875rem;
     --background: oklch(0.13 0.01 257);
     --foreground: oklch(0.95 0.01 257);
   
@@ -82,14 +83,14 @@
     --popover: oklch(0.16 0.01 257);
     --popover-foreground: oklch(0.95 0.01 257);
   
-    --primary: oklch(0.59 0.2 277);
+    --primary: oklch(0.59 0.20 277);
     --primary-foreground: oklch(0.96 0.02 272);
   
     --secondary: oklch(0.19 0.02 257);
-    --secondary-foreground: oklch(0.7 0.08 277);
+    --secondary-foreground: oklch(0.70 0.08 277);
   
     --muted: oklch(0.19 0.01 257);
-    --muted-foreground: oklch(0.6 0.03 257);
+    --muted-foreground: oklch(0.60 0.03 257);
     --muted-secondary: oklch(0.71 0.04 257);
   
     --accent: oklch(0.26 0.09 281);
@@ -97,7 +98,7 @@
   
     --destructive: oklch(0.64 0.21 25);
     --destructive-foreground: oklch(0.97 0.01 17);
-    --success: oklch(0.7 0.15 162);
+    --success: oklch(0.70 0.15 162);
     --success-foreground: oklch(0.98 0.02 156);
     --warning: oklch(0.77 0.16 70);
     --warning-foreground: oklch(0.99 0.02 95);
@@ -110,16 +111,16 @@
   
     --border: oklch(0.25 0.01 257);
     --input: oklch(0.25 0.01 257);
-    --ring: oklch(0.59 0.2 277);
+    --ring: oklch(0.59 0.20 277);
   
     --sidebar: oklch(0.13 0.01 257);
     --sidebar-foreground: oklch(0.95 0.01 257);
-    --sidebar-primary: oklch(0.59 0.2 277);
+    --sidebar-primary: oklch(0.59 0.20 277);
     --sidebar-primary-foreground: oklch(0.13 0.01 257);
     --sidebar-accent: oklch(0.26 0.09 281);
     --sidebar-accent-foreground: oklch(0.68 0.16 277);
     --sidebar-border: oklch(0.25 0.01 257);
-    --sidebar-ring: oklch(0.59 0.2 277);
+    --sidebar-ring: oklch(0.59 0.20 277);
   
     --selection: oklch(0.26 0.09 281);
     --selection-foreground: oklch(0.68 0.16 277);
@@ -130,14 +131,14 @@
     --chart-1: oklch(0.96 0.02 272);
     --chart-2: oklch(0.93 0.03 273);
     --chart-3: oklch(0.87 0.06 274);
-    --chart-4: oklch(0.79 0.1 275);
+    --chart-4: oklch(0.79 0.10 275);
     --chart-5: oklch(0.68 0.16 277);
-    --chart-6: oklch(0.59 0.2 277);
+    --chart-6: oklch(0.59 0.20 277);
     --chart-7: oklch(0.51 0.23 277);
     --chart-8: oklch(0.46 0.21 277);
-    --chart-9: oklch(0.4 0.18 277);
+    --chart-9: oklch(0.40 0.18 277);
     --chart-10: oklch(0.36 0.14 279);
-    --chart-11: oklch(0.26 0.09 281);
+    --chart-11: oklch(0.26 0.09 281);  
   }
 
 @theme inline {
