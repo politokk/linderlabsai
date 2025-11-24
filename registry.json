@@ -1585,11 +1585,6 @@
             "path": "src/app/demo/[name]/ui/drawer/drawer-demo.tsx",
             "type": "registry:component",
             "target": "app/drawer-demo.tsx"
-          },
-          {
-            "path": "src/app/demo/[name]/ui/drawer/drawer-dialog.tsx",
-            "type": "registry:component",
-            "target": "app/drawer-dialog.tsx"
           }
         ]
       },
