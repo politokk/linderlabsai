@@ -1557,6 +1557,11 @@
             "path": "src/app/demo/[name]/ui/dialog/dialog-close-button.tsx",
             "type": "registry:component",
             "target": "app/dialog-close-button.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/dialog/dialog-scroll.tsx",
+            "type": "registry:component",
+            "target": "app/dialog-scroll.tsx"
           }
         ]
       },

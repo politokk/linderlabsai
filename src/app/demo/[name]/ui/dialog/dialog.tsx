@@ -1,5 +1,6 @@
 import DialogDemo from "./dialog-demo";
 import DialogCloseButton from "./dialog-close-button";
+import DialogScroll from "./dialog-scroll";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
@@ -12,6 +13,9 @@ export function dialog() {
         </ComponentWrapper>
         <ComponentWrapper name="Dialog Close Button" icon="X">
           <DialogCloseButton />
+        </ComponentWrapper>
+        <ComponentWrapper name="Dialog Scroll" icon="Scroll">
+          <DialogScroll />
         </ComponentWrapper>
       </div>
     </div>
