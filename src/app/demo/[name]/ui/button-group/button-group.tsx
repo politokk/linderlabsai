@@ -19,13 +19,13 @@ export function buttonGroup() {
         <ComponentWrapper name="Button Group" icon="Layers">
           <ButtonGroupDemo />
         </ComponentWrapper>
-      <ComponentWrapper name="Button Destructive" icon="Layers2">
+      <ComponentWrapper name="Button Nested" icon="Layers2">
         <ButtonGroupNested />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Secondary" icon="Maximize2">
+      <ComponentWrapper name="Button Sizes" icon="Maximize2">
         <ButtonGroupSize />
       </ComponentWrapper>
-      <ComponentWrapper name="Button Size" icon="Minus">
+      <ComponentWrapper name="Button Separator" icon="Minus">
         <ButtonGroupSeparator />
       </ComponentWrapper>
       <ComponentWrapper name="Button With Icon" icon="Split">
