@@ -1,11 +1,8 @@
 "use client";
 
 import {
-  Command,
-  GalleryVerticalEnd,
   Home,
   Menu,
-  AudioWaveform,
   Figma,
 } from "lucide-react";
 import { useEffect, useState, useMemo } from "react";
@@ -35,20 +32,11 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
-    },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
+      name: "LinderLabs",
+      accent: "UI",
+      plan: "AI",
+      avatar: "/orbs/orb-3.mp4",
+    }
   ],
   navMain: [
     {
@@ -98,6 +86,7 @@ export function RegistrySidebar() {
 
   useEffect(() => {
     if (searchTerm) {
+      setTimeout(() => {
       setFilteredUiItems(
         uiItems.filter((item) =>
           item.title.toLowerCase().includes(searchTerm.toLowerCase()),
@@ -113,10 +102,13 @@ export function RegistrySidebar() {
           item.title.toLowerCase().includes(searchTerm.toLowerCase()),
         ),
       );
+    }, 100);
     } else {
+      setTimeout(() => {
       setFilteredUiItems(uiItems);
       setFilteredComponents(componentItems);
       setFilteredBlocks(blockItems);
+    }, 100);
     }
   }, [searchTerm]);
 
