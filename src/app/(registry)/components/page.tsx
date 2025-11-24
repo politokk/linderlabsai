@@ -71,6 +71,173 @@ import CheckboxDisabled from "@/app/demo/[name]/ui/checkbox/checkbox-disabled";
 import CheckboxWithText from "@/app/demo/[name]/ui/checkbox/checkbox-with-text";
 import CheckboxFormMultiple from "@/app/demo/[name]/ui/checkbox/checkbox-form-multiple";
 import CheckboxFormSingle from "@/app/demo/[name]/ui/checkbox/checkbox-form-single";
+import CollapsibleDemo from "@/app/demo/[name]/ui/collapsible/collapsible-demo";
+import ComboboxDemo from "@/app/demo/[name]/ui/combobox/combobox-demo";
+import ComboboxDropdownMenu from "@/app/demo/[name]/ui/combobox/combobox-dropdown-menu";
+import ComboboxForm from "@/app/demo/[name]/ui/combobox/combobox-form";
+import ComboboxPopover from "@/app/demo/[name]/ui/combobox/combobox-popover";
+import ComboboxResponsive from "@/app/demo/[name]/ui/combobox/combobox-responsive";
+import ComboboxUserDemo from "@/app/demo/[name]/ui/combobox/combobox-user-demo";
+import ComboboxTagsDemo from "@/app/demo/[name]/ui/combobox/combobox-tags-demo";
+import ComboboxTimezoneDemo from "@/app/demo/[name]/ui/combobox/combobox-timezone-demo";
+import ComboboxMultiSelectDemo from "@/app/demo/[name]/ui/combobox/combobox-multi-select-demo";
+import CommandDemo from "@/app/demo/[name]/ui/command/command-demo";
+import CommandDialogDemo from "@/app/demo/[name]/ui/command/command-dialog";
+import ContextMenuDemo from "@/app/demo/[name]/ui/context-menu/context-menu-demo";
+import DataTableDemo from "@/app/demo/[name]/ui/data-table/data-table-demo";
+import DatePickerDemo from "@/app/demo/[name]/ui/date-picker/date-picker-demo";
+import DatePickerWithPresets from "@/app/demo/[name]/ui/date-picker/date-picker-with-presets";
+import DatePickerWithRange from "@/app/demo/[name]/ui/date-picker/date-picker-with-range";
+import DatePickerForm from "@/app/demo/[name]/ui/date-picker/date-picker-form";
+import DialogDemo from "@/app/demo/[name]/ui/dialog/dialog-demo";
+import DialogCloseButton from "@/app/demo/[name]/ui/dialog/dialog-close-button";
+import DialogScroll from "@/app/demo/[name]/ui/dialog/dialog-scroll";
+import DrawerDemo from "@/app/demo/[name]/ui/drawer/drawer-demo";
+import DropdownMenuDemo from "@/app/demo/[name]/ui/dropdown-menu/dropdown-menu-demo";
+import DropdownMenuCheckboxes from "@/app/demo/[name]/ui/dropdown-menu/dropdown-menu-checkboxes";
+import DropdownMenuDialog from "@/app/demo/[name]/ui/dropdown-menu/dropdown-menu-dialog";
+import DropdownMenuRadioGroup from "@/app/demo/[name]/ui/dropdown-menu/dropdown-menu-radio-group";
+import EmptyDemo from "@/app/demo/[name]/ui/empty/empty-demo";
+import EmptyInputGroup from "@/app/demo/[name]/ui/empty/empty-input-group";
+import EmptyOutline from "@/app/demo/[name]/ui/empty/empty-outline";
+import EmptyBackground from "@/app/demo/[name]/ui/empty/empty-background";
+import EmptyAvatar from "@/app/demo/[name]/ui/empty/empty-avatar";
+import EmptyAvatarGroup from "@/app/demo/[name]/ui/empty/empty-avatar-group";
+import EmptyIcon from "@/app/demo/[name]/ui/empty/empty-icon";
+import EmptyPopover from "@/app/demo/[name]/ui/empty/empty-popover";
+import FieldInput from "@/app/demo/[name]/ui/field/field-input";
+import FieldTextarea from "@/app/demo/[name]/ui/field/field-textarea";
+import FieldSelect from "@/app/demo/[name]/ui/field/field-select";
+import FieldCheckbox from "@/app/demo/[name]/ui/field/field-checkbox";
+import FieldRadio from "@/app/demo/[name]/ui/field/field-radio";
+import FieldSwitch from "@/app/demo/[name]/ui/field/field-switch";
+import FieldSlider from "@/app/demo/[name]/ui/field/field-slider";
+import FieldFieldset from "@/app/demo/[name]/ui/field/field-fieldset";
+import FieldGroup from "@/app/demo/[name]/ui/field/field-group";
+import FieldChoiceCard from "@/app/demo/[name]/ui/field/field-choice-card";
+import FieldHear from "@/app/demo/[name]/ui/field/field-hear";
+import FieldResponsive from "@/app/demo/[name]/ui/field/field-responsive";
+import FieldDemo from "@/app/demo/[name]/ui/field/field-demo";
+import HoverCardDemo from "@/app/demo/[name]/ui/hover-card/hover-card-demo";
+import InputDemo from "@/app/demo/[name]/ui/input/input-demo";
+import InputDisabled from "@/app/demo/[name]/ui/input/input-disabled";
+import InputFile from "@/app/demo/[name]/ui/input/input-file";
+import InputForm from "@/app/demo/[name]/ui/input/input-form";
+import InputWithButton from "@/app/demo/[name]/ui/input/input-with-button";
+import InputWithLabel from "@/app/demo/[name]/ui/input/input-with-label";
+import InputWithText from "@/app/demo/[name]/ui/input/input-with-text";
+import InputGroupDemo from "@/app/demo/[name]/ui/input-group/input-group-demo";
+import InputGroupButtonGroup from "@/app/demo/[name]/ui/input-group/input-group-button-group";
+import InputGroupButton from "@/app/demo/[name]/ui/input-group/input-group-button";
+import InputGroupCustom from "@/app/demo/[name]/ui/input-group/input-group-custom";
+import InputGroupDropdown from "@/app/demo/[name]/ui/input-group/input-group-dropdown";
+import InputGroupIcon from "@/app/demo/[name]/ui/input-group/input-group-icon";
+import InputGroupLabel from "@/app/demo/[name]/ui/input-group/input-group-label";
+import InputGroupSpinner from "@/app/demo/[name]/ui/input-group/input-group-spinner";
+import InputGroupText from "@/app/demo/[name]/ui/input-group/input-group-text";
+import InputGroupTextarea from "@/app/demo/[name]/ui/input-group/input-group-textarea";
+import InputGroupTooltip from "@/app/demo/[name]/ui/input-group/input-group-tooltip";
+import InputOTPDemo from "@/app/demo/[name]/ui/input-otp/input-otp-demo";
+import InputOTPControlled from "@/app/demo/[name]/ui/input-otp/input-otp-controlled";
+import InputOTPPattern from "@/app/demo/[name]/ui/input-otp/input-otp-pattern";
+import InputOTPWithSeparator from "@/app/demo/[name]/ui/input-otp/input-otp-separator";
+import InputOTPForm from "@/app/demo/[name]/ui/input-otp/input-otp-form";
+import InputOTPSpacing from "@/app/demo/[name]/ui/input-otp/input-spacing";
+import ItemDemo from "@/app/demo/[name]/ui/item/item-demo";
+import ItemVariant from "@/app/demo/[name]/ui/item/item-variant";
+import ItemAvatar from "@/app/demo/[name]/ui/item/item-avatar";
+import ItemDropdown from "@/app/demo/[name]/ui/item/item-dropdown";
+import ItemGroup from "@/app/demo/[name]/ui/item/item-group";
+import ItemHeader from "@/app/demo/[name]/ui/item/item-header";
+import ItemIcon from "@/app/demo/[name]/ui/item/item-icon";
+import ItemImage from "@/app/demo/[name]/ui/item/item-image";
+import ItemLink from "@/app/demo/[name]/ui/item/item-link";
+import KbdDemo from "@/app/demo/[name]/ui/kbd/kbd-demo";
+import KbdGroupExample from "@/app/demo/[name]/ui/kbd/kbd-group";
+import KbdInputGroup from "@/app/demo/[name]/ui/kbd/kbd-input-group";
+import KbdTooltip from "@/app/demo/[name]/ui/kbd/kbd-tooltip";
+import KbdButton from "@/app/demo/[name]/ui/kbd/kbd-button";
+import LabelDemo from "@/app/demo/[name]/ui/label/label-demo";
+import MenubarDemo from "@/app/demo/[name]/ui/menu-bar/menubar-demo";
+import NativeSelectDemo from "@/app/demo/[name]/ui/native-select/native-select-demo";
+import NativeSelectDisabled from "@/app/demo/[name]/ui/native-select/native-select-disabled";
+import NativeSelectGroups from "@/app/demo/[name]/ui/native-select/native-select-groups";
+import NativeSelectInvalid from "@/app/demo/[name]/ui/native-select/native-select-invalid";
+import NavigationMenuDemo from "@/app/demo/[name]/ui/navigation-menu/navigation-menu-demo";
+import PaginationDemo from "@/app/demo/[name]/ui/pagination/pagination-demo";
+import PopoverDemo from "@/app/demo/[name]/ui/popover/popover-demo";
+import ProgressDemo from "@/app/demo/[name]/ui/progress/progress-demo";
+import RadioGroupDemo from "@/app/demo/[name]/ui/radio-group/radio-group-demo";
+import RadioGroupForm from "@/app/demo/[name]/ui/radio-group/radio-group-form";
+import RadioGroupPlan from "@/app/demo/[name]/ui/radio-group/radio-group-plan";
+import ResizableDemo from "@/app/demo/[name]/ui/resizable/resizable-demo";
+import ResizableDemoWithHandle from "@/app/demo/[name]/ui/resizable/resizable-demo-with-handle";
+import ResizableHandleDemo from "@/app/demo/[name]/ui/resizable/resizable-handle";
+import ResizableVertical from "@/app/demo/[name]/ui/resizable/resizable-vertical";
+import ScrollAreaDemo from "@/app/demo/[name]/ui/scroll-area/scroll-area-demo";
+import ScrollAreaHorizontalDemo from "@/app/demo/[name]/ui/scroll-area/scroll-area-horizontal-demo";
+import SelectDemo from "@/app/demo/[name]/ui/select/select-demo";
+import SelectForm from "@/app/demo/[name]/ui/select/select-form";
+import SelectScrollable from "@/app/demo/[name]/ui/select/select-scrollable";
+import SeparatorDemo from "@/app/demo/[name]/ui/separator/separator-demo";
+import SheetDemo from "@/app/demo/[name]/ui/sheet/sheet-demo";
+import SheetSide from "@/app/demo/[name]/ui/sheet/sheet-side";
+import SkeletonCard from "@/app/demo/[name]/ui/skeleton/skeleton-card";
+import SkeletonDemo from "@/app/demo/[name]/ui/skeleton/skeleton-demo";
+import SliderDemo from "@/app/demo/[name]/ui/slider/slider-demo";
+import SonnerDemo from "@/app/demo/[name]/ui/sonner/sonner-demo";
+import SonnerTypes from "@/app/demo/[name]/ui/sonner/sonner-types";
+import SpinnerDemo from "@/app/demo/[name]/ui/spinner/spinner-demo";
+import SpinnerBasic from "@/app/demo/[name]/ui/spinner/spinner-basic";
+import SpinnerButton from "@/app/demo/[name]/ui/spinner/spinner-button";
+import SpinnerBadge from "@/app/demo/[name]/ui/spinner/spinner-badge";
+import SpinnerInputGroup from "@/app/demo/[name]/ui/spinner/spinner-input-group";
+import SpinnerEmpty from "@/app/demo/[name]/ui/spinner/spinner-empty";
+import SpinnerColor from "@/app/demo/[name]/ui/spinner/spinner-color";
+import SpinnerCustom from "@/app/demo/[name]/ui/spinner/spinner-custom";
+import SpinnerSize from "@/app/demo/[name]/ui/spinner/spinner-size";
+import SpinnerItem from "@/app/demo/[name]/ui/spinner/spinner-item";
+import SwitchForm from "@/app/demo/[name]/ui/switch/switch-form";
+import SwitchDemo from "@/app/demo/[name]/ui/switch/switch-demo";
+import TableDemo from "@/app/demo/[name]/ui/table/table-demo";
+import TabsDemo from "@/app/demo/[name]/ui/tabs/tabs-demo";
+import TextareaDemo from "@/app/demo/[name]/ui/textarea/textarea-demo";
+import TextareaWithLabel from "@/app/demo/[name]/ui/textarea/textarea-with-label";
+import TextareaWithText from "@/app/demo/[name]/ui/textarea/textarea-with-text";
+import TextareaDisabled from "@/app/demo/[name]/ui/textarea/textarea-disabled";
+import TextareaForm from "@/app/demo/[name]/ui/textarea/textarea-form";
+import TextareaWithButton from "@/app/demo/[name]/ui/textarea/textarea-with-button";
+import ToggleDemo from "@/app/demo/[name]/ui/toggle/toggle-demo";
+import ToggleDisabled from "@/app/demo/[name]/ui/toggle/toggle-disabled";
+import ToggleLg from "@/app/demo/[name]/ui/toggle/toggle-lg";
+import ToggleOutline from "@/app/demo/[name]/ui/toggle/toggle-outline";
+import ToggleSm from "@/app/demo/[name]/ui/toggle/toggle-sm";
+import ToggleWithText from "@/app/demo/[name]/ui/toggle/toggle-with-text";
+import ToggleGroupDemo from "@/app/demo/[name]/ui/toggle-group/toggle-group-demo";
+import ToggleGroupDisabled from "@/app/demo/[name]/ui/toggle-group/toggle-group-disabled";
+import ToggleGroupLg from "@/app/demo/[name]/ui/toggle-group/toggle-group-lg";
+import ToggleGroupOutline from "@/app/demo/[name]/ui/toggle-group/toggle-group-outline";
+import ToggleGroupSingle from "@/app/demo/[name]/ui/toggle-group/toggle-group-single";
+import ToggleGroupSm from "@/app/demo/[name]/ui/toggle-group/toggle-group-sm";
+import ToggleGroupSpacing from "@/app/demo/[name]/ui/toggle-group/toggle-group-spacing";
+import TooltipDemo from "@/app/demo/[name]/ui/tooltip/tooltip-demo";
+import FormRhfArray from "@/app/demo/[name]/ui/form/form-rhf-array";
+import FormRhfCheckbox from "@/app/demo/[name]/ui/form/form-rhf-checkbox";
+import FormRhfDemo from "@/app/demo/[name]/ui/form/form-rhf-demo";
+import FormRhfTextarea from "@/app/demo/[name]/ui/form/form-rhf-textarea";
+import FormRhfPassword from "@/app/demo/[name]/ui/form/form-rhf-password";
+import FormRhfRadiogroup from "@/app/demo/[name]/ui/form/form-rhf-radiogroup";
+import FormRhfSelect from "@/app/demo/[name]/ui/form/form-rhf-select";
+import FormRhfSwitch from "@/app/demo/[name]/ui/form/form-rhf-switch";
+import FormRhfInput from "@/app/demo/[name]/ui/form/form-rhf-input";
+import FormNextComplex from "@/app/demo/[name]/ui/form/form-next-complex";
+import FormRhfComplex from "@/app/demo/[name]/ui/form/form-rhf-complex";
+import DisplaySettings from "@/app/demo/[name]/ui/form/display-settings";
+import ChatSettings from "@/app/demo/[name]/ui/form/chat-settings";
+import AppearanceSettings from "@/app/demo/[name]/ui/form/appearance-settings";
+import ShipRegistrationForm from "@/app/demo/[name]/ui/form/ship-registration-form";
+import ShippingForm from "@/app/demo/[name]/ui/form/shipping-form";
+import NotionPromptForm from "@/app/demo/[name]/ui/form/notion-prompt-form";
 
 export default function ComponentsPage() {
   return (
@@ -290,6 +457,498 @@ export default function ComponentsPage() {
         </ComponentWrapper>
         <ComponentWrapper name="Checkbox Form Single" icon="Check">
           <CheckboxFormSingle />
+        </ComponentWrapper>
+        <ComponentWrapper name="Collapsible" icon="ChevronsUpDown">
+          <CollapsibleDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox" icon="Search">
+          <ComboboxDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Dropdown Menu" icon="Menu">
+          <ComboboxDropdownMenu />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Form" icon="FileText">
+          <ComboboxForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Popover" icon="MessageSquare">
+          <ComboboxPopover />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Responsive" icon="Monitor">
+          <ComboboxResponsive />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox User" icon="User">
+          <ComboboxUserDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Tags" icon="TagsIcon">
+          <ComboboxTagsDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Timezone" icon="Clock">
+          <ComboboxTimezoneDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Multi Select" icon="ListOrdered">
+          <ComboboxMultiSelectDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Command" icon="Terminal">
+          <CommandDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Command Dialog" icon="MessageSquare">
+          <CommandDialogDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Context Menu" icon="MousePointerClick">
+          <ContextMenuDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Data Table" icon="Table" className="md:col-span-2">
+          <DataTableDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Date Picker" icon="CalendarDays">
+          <DatePickerDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Date Picker With Presets" icon="CalendarClock">
+          <DatePickerWithPresets />
+        </ComponentWrapper>
+        <ComponentWrapper name="Date Picker With Range" icon="CalendarRange">
+          <DatePickerWithRange />
+        </ComponentWrapper>
+        <ComponentWrapper name="Date Picker Form" icon="Calendar">
+          <DatePickerForm />
+        </ComponentWrapper> 
+        <ComponentWrapper name="Dialog" icon="MessageSquare">
+          <DialogDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Dialog Close Button" icon="X">
+          <DialogCloseButton />
+        </ComponentWrapper>
+        <ComponentWrapper name="Dialog Scroll" icon="Scroll">
+          <DialogScroll />
+        </ComponentWrapper>
+        <ComponentWrapper name="Drawer" icon="SidebarOpen">
+          <DrawerDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Dropdown Menu" icon="ChevronDown">
+          <DropdownMenuDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Dropdown Menu Checkboxes" icon="CheckSquare">
+          <DropdownMenuCheckboxes />
+        </ComponentWrapper>
+        <ComponentWrapper name="Dropdown Menu Dialog" icon="MessageSquare">
+          <DropdownMenuDialog />
+        </ComponentWrapper>
+        <ComponentWrapper name="Dropdown Menu Radio Group" icon="Circle">
+          <DropdownMenuRadioGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty" icon="Box">
+          <EmptyDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Input Group" icon="Layers">
+          <EmptyInputGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Outline" icon="Square">
+          <EmptyOutline />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Background" icon="Palette">
+          <EmptyBackground />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Avatar" icon="User">
+          <EmptyAvatar />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Avatar Group" icon="Users">
+          <EmptyAvatarGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Popover" icon="PictureInPicture">
+          <EmptyPopover />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Icon" icon="Image" className="md:col-span-2">
+          <EmptyIcon />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Input" icon="Type">
+          <FieldInput />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Textarea" icon="AlignLeft">
+          <FieldTextarea />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Select" icon="ChevronDown">
+          <FieldSelect />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Checkbox" icon="CheckSquare">
+          <FieldCheckbox />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Radio" icon="Circle">
+          <FieldRadio />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Switch" icon="ToggleRight">
+          <FieldSwitch />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Slider" icon="SlidersHorizontal">
+          <FieldSlider />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Fieldset" icon="LayoutGrid">
+          <FieldFieldset />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Group" icon="Group">
+          <FieldGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Choice Card" icon="CreditCard">
+          <FieldChoiceCard />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field Hear" icon="Headset">
+          <FieldHear />
+        </ComponentWrapper>
+        <ComponentWrapper name="Hover Card" icon="MousePointer">
+          <HoverCardDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Default" icon="Type">
+          <InputDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Disabled" icon="Ban">
+          <InputDisabled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input File" icon="File">
+          <InputFile />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Form" icon="FileText">
+          <InputForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input With Button" icon="MousePointerClick">
+          <InputWithButton />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input With Label" icon="Tag">
+          <InputWithLabel />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input With Text" icon="Text">
+          <InputWithText />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group" icon="Layers">
+          <InputGroupDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Button Group" icon="SquareStack">
+          <InputGroupButtonGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Button" icon="Square">
+          <InputGroupButton />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Custom" icon="Wrench">
+          <InputGroupCustom />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Dropdown" icon="ChevronDown">
+          <InputGroupDropdown />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Icon" icon="Sparkles">
+          <InputGroupIcon />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Label" icon="Tag">
+          <InputGroupLabel />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Spinner" icon="Loader">
+          <InputGroupSpinner />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Text" icon="Type">
+          <InputGroupText />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Textarea" icon="AlignLeft">
+          <InputGroupTextarea />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input Group Tooltip" icon="Info">
+          <InputGroupTooltip />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input OTP" icon="Hash">
+          <InputOTPDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input OTP Controlled" icon="Gamepad2">
+          <InputOTPControlled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input OTP Pattern" icon="Grid3x3">
+          <InputOTPPattern />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input OTP Separator" icon="Minus">
+          <InputOTPWithSeparator />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input OTP Form" icon="FileText">
+          <InputOTPForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input OTP Spacing" icon="Spacing">
+          <InputOTPSpacing />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item" icon="Box">
+          <ItemDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item Variant" icon="Palette">
+          <ItemVariant />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item Avatar" icon="User">
+          <ItemAvatar />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item Dropdown" icon="ChevronDown">
+          <ItemDropdown />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item Group" icon="Group">
+          <ItemGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item Header" icon="Heading">
+          <ItemHeader />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item Icon" icon="Sparkles">
+          <ItemIcon />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item Image" icon="Image">
+          <ItemImage />
+        </ComponentWrapper>
+        <ComponentWrapper name="Item Link" icon="Link">
+          <ItemLink />
+        </ComponentWrapper>
+        <ComponentWrapper name="KBD" icon="Keyboard">
+          <KbdDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="KBD Multiple" icon="Grid3x3">
+          <KbdGroupExample />
+        </ComponentWrapper>
+        <ComponentWrapper name="KBD Input Group" icon="Layers">
+          <KbdInputGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="KBD Tooltip" icon="Info">
+          <KbdTooltip />
+        </ComponentWrapper>
+        <ComponentWrapper name="KBD Button" icon="Square">
+          <KbdButton />
+        </ComponentWrapper>
+        <ComponentWrapper name="Label" icon="Tag">
+          <LabelDemo />
+        </ComponentWrapper> 
+        <ComponentWrapper name="Menu Bar" icon="Menu">
+          <MenubarDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Native Select" icon="ChevronDown">
+          <NativeSelectDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Native Select Disabled" icon="Ban">
+          <NativeSelectDisabled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Native Select Groups" icon="Group">
+          <NativeSelectGroups />
+        </ComponentWrapper>
+        <ComponentWrapper name="Native Select Invalid" icon="AlertCircle">
+          <NativeSelectInvalid />
+        </ComponentWrapper>
+        <ComponentWrapper name="Navigation Menu" icon="Navigation">
+          <NavigationMenuDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Pagination" icon="ChevronsLeftRight">
+          <PaginationDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Popover" icon="MessageCircle">
+          <PopoverDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Progress" icon="Activity">
+          <ProgressDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Radio Group" icon="Circle">
+          <RadioGroupDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Radio Group Form" icon="FileText">
+          <RadioGroupForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Radio Group Plan" icon="Star">
+          <RadioGroupPlan />
+        </ComponentWrapper>
+        <ComponentWrapper name="Resizable" icon="Maximize2">
+          <ResizableDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Resizable With Handle" icon="GripVertical">
+          <ResizableDemoWithHandle />
+        </ComponentWrapper>
+        <ComponentWrapper name="Resizable Handle" icon="GripHorizontal">
+          <ResizableHandleDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Resizable Vertical" icon="SeparatorVertical">
+          <ResizableVertical />
+        </ComponentWrapper>
+        <ComponentWrapper name="Scroll Area" icon="ArrowDown">
+          <ScrollAreaDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Scroll Area Horizontal" icon="ArrowRight">
+          <ScrollAreaHorizontalDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Select" icon="ChevronDown">
+          <SelectDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Select Form" icon="FileText">
+          <SelectForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Select Scrollable" icon="ChevronsUpDown">
+          <SelectScrollable />
+        </ComponentWrapper>
+        <ComponentWrapper name="Separator" icon="Minus">
+          <SeparatorDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Sheet" icon="PanelBottom">
+          <SheetDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Sheet Side" icon="PanelRight">
+          <SheetSide />
+        </ComponentWrapper>
+        <ComponentWrapper name="Skeleton" icon="Box">
+          <SkeletonDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Skeleton Card" icon="CreditCard">
+          <SkeletonCard />
+        </ComponentWrapper>
+        <ComponentWrapper name="Slider" icon="SlidersHorizontal">
+          <SliderDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Sonner" icon="Bell">
+          <SonnerDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Sonner Types" icon="Layers">
+          <SonnerTypes />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner" icon="Loader2">
+          <SpinnerDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Basic" icon="Circle">
+          <SpinnerBasic />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Button" icon="Square">
+          <SpinnerButton />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Badge" icon="Tag">
+          <SpinnerBadge />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Input Group" icon="Layers">
+          <SpinnerInputGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Empty" icon="Box">
+          <SpinnerEmpty />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Color" icon="Palette">
+          <SpinnerColor />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Custom" icon="Wrench">
+          <SpinnerCustom />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Size" icon="Maximize">
+          <SpinnerSize />
+        </ComponentWrapper>
+        <ComponentWrapper name="Spinner Item" icon="Box">
+          <SpinnerItem />
+        </ComponentWrapper>
+        <ComponentWrapper name="Switch Default" icon="ToggleRight">
+          <SwitchDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Switch Form" icon="FileCheck">
+          <SwitchForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Table" icon="Table" className="md:col-span-2">
+          <TableDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Tabs" icon="Folder">
+          <TabsDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Textarea" icon="AlignLeft">
+          <TextareaDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Textarea With Label" icon="Tag">
+          <TextareaWithLabel />
+        </ComponentWrapper>
+        <ComponentWrapper name="Textarea With Text" icon="Text">
+          <TextareaWithText />
+        </ComponentWrapper>
+        <ComponentWrapper name="Textarea Disabled" icon="Ban">
+          <TextareaDisabled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Textarea Form" icon="FileText">
+          <TextareaForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Textarea With Button" icon="Square">
+          <TextareaWithButton />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle" icon="ToggleLeft">
+          <ToggleDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Disabled" icon="Ban">
+          <ToggleDisabled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Large" icon="Maximize">
+          <ToggleLg />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Outline" icon="Circle">
+          <ToggleOutline />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Small" icon="Minimize">
+          <ToggleSm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle With Text" icon="Type">
+          <ToggleWithText />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Group" icon="ToggleLeft">
+          <ToggleGroupDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Group Disabled" icon="Ban">
+          <ToggleGroupDisabled />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Group Large" icon="Maximize">
+          <ToggleGroupLg />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Group Single" icon="CircleDot">
+          <ToggleGroupSingle />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Group Small" icon="Minimize">
+          <ToggleGroupSm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Toggle Group Spacing" icon="Space">
+          <ToggleGroupSpacing />
+        </ComponentWrapper>
+        <ComponentWrapper name="Tooltip" icon="Info">
+          <TooltipDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Notion Prompt Form" icon="Notion">
+          <NotionPromptForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Array" icon="List">
+          <FormRhfArray />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Checkbox" icon="CheckSquare">
+          <FormRhfCheckbox />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Demo" icon="FileText">
+          <FormRhfDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Textarea" icon="AlignLeft">
+          <FormRhfTextarea />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Password" icon="Lock">
+          <FormRhfPassword />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Radio Group" icon="Circle">
+          <FormRhfRadiogroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Select" icon="ChevronDown">
+          <FormRhfSelect />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Switch" icon="ToggleRight">
+          <FormRhfSwitch />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Input" icon="Type">
+          <FormRhfInput />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form Next Complex" icon="FileText">
+          <FormNextComplex />
+        </ComponentWrapper>
+        <ComponentWrapper name="Form RHF Complex" icon="FileCode">
+          <FormRhfComplex />
+        </ComponentWrapper>
+        <ComponentWrapper name="Display Settings" icon="Monitor">
+          <DisplaySettings />
+        </ComponentWrapper>
+        <ComponentWrapper name="Chat Settings" icon="MessageSquare">
+          <ChatSettings />
+        </ComponentWrapper>
+        <ComponentWrapper name="Appearance Settings" icon="Settings">
+          <AppearanceSettings />
+        </ComponentWrapper>
+        <ComponentWrapper name="Ship Registration Form" icon="Ship">
+          <ShipRegistrationForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Shipping Form" icon="Truck">
+          <ShippingForm />
         </ComponentWrapper>
       </div>
     </div>
