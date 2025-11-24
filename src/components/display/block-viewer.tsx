@@ -286,7 +286,7 @@ function BlockViewerCode() {
         </figcaption>
         <div
           key={file?.path}
-          dangerouslySetInnerHTML={{ __html: file?.highlightedContent ?? "" }} // eslint-disable-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: file?.highlightedContent ?? "" }} 
           className="no-scrollbar overflow-y-auto"
         />
       </figure>
