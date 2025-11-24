@@ -10,6 +10,7 @@ import FieldFieldset from "./field-fieldset";
 import FieldGroup from "./field-group";
 import FieldChoiceCard from "./field-choice-card";
 import FieldResponsive from "./field-responsive";
+import FieldHear from "./field-hear";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
@@ -17,9 +18,6 @@ export function field() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Field" icon="FileText">
-          <FieldDemo />
-        </ComponentWrapper>
         <ComponentWrapper name="Field Input" icon="Type">
           <FieldInput />
         </ComponentWrapper>
@@ -50,8 +48,14 @@ export function field() {
         <ComponentWrapper name="Field Choice Card" icon="CreditCard">
           <FieldChoiceCard />
         </ComponentWrapper>
+        <ComponentWrapper name="Field Hear" icon="Headset">
+          <FieldHear />
+        </ComponentWrapper>
         <ComponentWrapper name="Field Responsive" icon="Monitor">
           <FieldResponsive />
+        </ComponentWrapper>
+        <ComponentWrapper name="Field" icon="FileText">
+          <FieldDemo />
         </ComponentWrapper>
       </div>
     </div>

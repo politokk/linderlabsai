@@ -1761,6 +1761,11 @@
             "path": "src/app/demo/[name]/ui/field/field-textarea.tsx",
             "type": "registry:component",
             "target": "app/field-textarea.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/field/field-hear.tsx",
+            "type": "registry:component",
+            "target": "app/field-hear.tsx"
           }
         ]
       },
