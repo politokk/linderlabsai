@@ -154,7 +154,7 @@ export function CopyCodeButton({
         <DrawerTrigger asChild>
         <Button
             variant="ghost"
-            size="iconSm"
+            size="iconXs"
             data-size={props.size}
             className={cn(" sm:hidden", className)}
             {...props}
@@ -183,7 +183,7 @@ export function CopyCodeButton({
         <DialogTrigger asChild>
           <Button
             variant="ghost"
-            size="iconSm"
+            size="iconXs"
             data-size={props.size}
             className={cn("group/button hidden sm:flex", className)}
             {...props}

@@ -5,7 +5,7 @@ import { GithubIcon } from "lucide-react"
 
 export function GithubButton(props: React.ComponentProps<typeof Button>) {
   return (
-    <Button variant="ghost" size="iconSm" asChild {...props}>
+    <Button variant="ghost" size="iconXs" asChild {...props}>
       <a
         href="https://github.com/politokk/linderlabs-ui-registry"
         target="_blank"
