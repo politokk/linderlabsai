@@ -3,6 +3,7 @@ import InputOTPControlled from "./input-otp-controlled";
 import InputOTPPattern from "./input-otp-pattern";
 import InputOTPWithSeparator from "./input-otp-separator";
 import InputOTPForm from "./input-otp-form";
+import InputOTPSpacing from "./input-spacing";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
@@ -24,6 +25,9 @@ export function inputOtp() {
         </ComponentWrapper>
         <ComponentWrapper name="Input OTP Form" icon="FileText">
           <InputOTPForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Input OTP Spacing" icon="Spacing">
+          <InputOTPSpacing />
         </ComponentWrapper>
       </div>
     </div>

@@ -2034,6 +2034,11 @@
             "path": "src/app/demo/[name]/ui/input-otp/input-otp-separator.tsx",
             "type": "registry:component",
             "target": "app/input-otp-separator.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/input-otp/input-spacing.tsx",
+            "type": "registry:component",
+            "target": "app/input-spacing.tsx"
           }
         ]
       },
