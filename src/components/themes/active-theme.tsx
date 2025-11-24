@@ -41,7 +41,9 @@ export function ActiveThemeProvider({
   const themeLoaded = mounted
 
   useEffect(() => {
-    setMounted(true)
+    setTimeout(() => {
+      setMounted(true)
+    }, 0)
   }, [])
 
   useEffect(() => {
