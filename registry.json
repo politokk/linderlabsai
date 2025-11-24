@@ -1782,11 +1782,6 @@
             "target": "app/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-next-demo.tsx",
-            "type": "registry:component",
-            "target": "app/form-next-demo.tsx"
-          },
-          {
             "path": "src/app/demo/[name]/ui/form/form-next-complex.tsx",
             "type": "registry:component",
             "target": "app/form-next-complex.tsx"
