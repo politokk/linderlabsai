@@ -5,6 +5,7 @@ import EmptyIcon from "./empty-icon";
 import EmptyBackground from "./empty-background";
 import EmptyAvatar from "./empty-avatar";
 import EmptyAvatarGroup from "./empty-avatar-group";
+import EmptyPopover from "./empty-popover";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
@@ -21,9 +22,6 @@ export function empty() {
         <ComponentWrapper name="Empty Outline" icon="Square">
           <EmptyOutline />
         </ComponentWrapper>
-        <ComponentWrapper name="Empty Icon" icon="Image">
-          <EmptyIcon />
-        </ComponentWrapper>
         <ComponentWrapper name="Empty Background" icon="Palette">
           <EmptyBackground />
         </ComponentWrapper>
@@ -32,6 +30,12 @@ export function empty() {
         </ComponentWrapper>
         <ComponentWrapper name="Empty Avatar Group" icon="Users">
           <EmptyAvatarGroup />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Icon" icon="Image" className="md:col-span-2">
+          <EmptyIcon />
+        </ComponentWrapper>
+        <ComponentWrapper name="Empty Popover" icon="PictureInPicture">
+          <EmptyPopover />
         </ComponentWrapper>
       </div>
     </div>

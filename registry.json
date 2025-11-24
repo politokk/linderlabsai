@@ -1677,6 +1677,11 @@
             "path": "src/app/demo/[name]/ui/empty/empty-outline.tsx",
             "type": "registry:component",
             "target": "app/empty-outline.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/empty/empty-popover.tsx",
+            "type": "registry:component",
+            "target": "app/empty-popover.tsx"
           }
         ]
       },
