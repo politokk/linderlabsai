@@ -15,15 +15,6 @@ export function chart() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Bar Chart" icon="BarChart3">
-          <BarChartComponent />
-        </ComponentWrapper>
-        <ComponentWrapper name="Area Chart" icon="LineChart">
-          <AreaChartComponent />
-        </ComponentWrapper>
-        <ComponentWrapper name="Pie Chart" icon="PieChart">
-          <PieChartComponent />
-        </ComponentWrapper>
         <ComponentWrapper name="Bar Demo" icon="BarChart">
           <ChartBarDemo />
         </ComponentWrapper>

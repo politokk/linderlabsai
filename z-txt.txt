@@ -1,5 +1,5 @@
 git add .
-git commit -m "item invite demo"
+git commit -m "chart demo"
 git push origin main    
 git push origin main --force
 
