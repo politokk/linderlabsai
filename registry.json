@@ -412,9 +412,9 @@
       "icon": "CircleDashed",
       "description": "A blank application with all brand components and code",
       "registryDependencies": [
-        "https://registry-starter.vercel.app/r/brand-header.json",
-        "https://registry-starter.vercel.app/r/brand-sidebar.json",
-        "https://registry-starter.vercel.app/r/product-grid.json",
+        "https://linderlabsai.vercel.app/r/brand-header.json",
+        "https://linderlabsai.vercel.app/r/brand-sidebar.json",
+        "https://linderlabsai.vercel.app/r/product-grid.json",
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
       "files": [
@@ -437,9 +437,9 @@
       "icon": "LayoutDashboard",
       "description": "A dashboard application with your brand themed components",
       "registryDependencies": [
-        "https://registry-starter.vercel.app/r/sonner.json",
-        "https://registry-starter.vercel.app/r/brand-header.json",
-        "https://registry-starter.vercel.app/r/brand-sidebar.json",
+        "https://linderlabsai.vercel.app/r/sonner.json",
+        "https://linderlabsai.vercel.app/r/brand-header.json",
+        "https://linderlabsai.vercel.app/r/brand-sidebar.json",
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
       "files": [
@@ -462,7 +462,7 @@
       "icon": "ShoppingCart",
       "description": "A store application with your brand themed components",
       "registryDependencies": [
-        "https://registry-starter.vercel.app/r/product-grid.json",
+        "https://linderlabsai.vercel.app/r/product-grid.json",
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
       "files": [
@@ -489,8 +489,8 @@
         "input",
         "avatar",
         "sidebar",
-        "https://registry-starter.vercel.app/r/sonner.json",
-        "https://registry-starter.vercel.app/r/logo.json",
+        "https://linderlabsai.vercel.app/r/sonner.json",
+        "https://linderlabsai.vercel.app/r/logo.json",
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
       "files": [
@@ -520,7 +520,7 @@
         "badge",
         "button",
         "sidebar",
-        "https://registry-starter.vercel.app/r/sonner.json",
+        "https://linderlabsai.vercel.app/r/sonner.json",
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
       "files": [
@@ -550,7 +550,7 @@
         "badge",
         "button",
         "https://linderlabsai.vercel.app/r/theme.json",
-        "https://registry-starter.vercel.app/r/logo.json"
+        "https://linderlabsai.vercel.app/r/logo.json"
       ],
       "files": [
         {
