@@ -1,29 +1,17 @@
 "use client";
 
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
 import type React from "react";
 
 import { FontBlock } from "@/app/(registry)/tokens/font-block";
-import { Button } from "@/components/ui/button";
+import { RegistryHeader } from "@/components/registry/registry-header";
 import { ColorBlock } from "./color-block";
 
 export default function TokensPage() {
   return (
-    <div className="container p-5 md:p-10">
-      <div className="mb-8">
-        <Button variant="ghost" size="sm" asChild className="mb-4">
-          <Link href="/">
-            <ArrowLeft className="mr-2 size-4" />
-            Back to Home
-          </Link>
-        </Button>
+    <div className="flex flex-col min-h-full w-full">
+      <RegistryHeader componentTitle="Design Tokens" componentIcon="Palette" />
 
-        <h1 className="font-bold text-3xl tracking-tight">Design Tokens</h1>
-        <p className="mt-1 text-muted-foreground">
-          A comprehensive overview of all color tokens used in the design system
-        </p>
-      </div>
+      <div className="container p-5 md:p-10 mt-10 md:mt-5">
 
       {/* Fonts */}
       <section className="mb-12">
@@ -213,6 +201,7 @@ export default function TokensPage() {
           <ColorBlock name="Sidebar Ring" className="bg-sidebar-ring" />
         </div>
       </section>
+      </div>
     </div>
   );
 }
