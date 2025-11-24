@@ -4,8 +4,10 @@ import * as React from "react"
 import * as LucideIcons from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 import { CodePreviewToggle } from "@/components/display/code-preview-toggle"
+import { ViewControls } from "@/components/display/view-controls"
 import { ComponentActions } from "@/components/registry/component-actions"
 import { RegistryNavigation } from "@/components/registry/registry-navigation"
+import type { Style } from "@/lib/styles"
 
 interface RegistryItemHeaderProps {
   component: {
@@ -19,6 +21,7 @@ interface RegistryItemHeaderProps {
   iconName: string | null
   prevComponent: { name: string; title: string } | null
   nextComponent: { name: string; title: string } | null
+  styleName: Style["name"]
 }
 
 export function RegistryItemHeader({
@@ -27,8 +30,10 @@ export function RegistryItemHeader({
   iconName,
   prevComponent,
   nextComponent,
+  styleName,
 }: RegistryItemHeaderProps) {
   const [view, setView] = React.useState<"code" | "preview">("preview")
+  const [viewport, setViewport] = React.useState<"desktop" | "tablet" | "mobile" | "fullscreen">("desktop")
 
   // Dynamically get the icon component from the icon name
   const IconComponent = React.useMemo(() => {
@@ -42,6 +47,14 @@ export function RegistryItemHeader({
     window.dispatchEvent(event)
   }, [view])
 
+  // Expose viewport state to parent via event (only for non-fullscreen)
+  React.useEffect(() => {
+    if (viewport !== "fullscreen") {
+      const event = new CustomEvent('registry-viewport-change', { detail: viewport })
+      window.dispatchEvent(event)
+    }
+  }, [viewport])
+
   return (
     <div className="mb-4 px-2">
       <div className="flex flex-row sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
@@ -53,6 +66,12 @@ export function RegistryItemHeader({
         </div>
         <div className="flex items-center gap-2 ml-auto">
           <CodePreviewToggle view={view} onViewChange={setView} />
+          <ViewControls 
+            view={viewport} 
+            onViewChange={setViewport}
+            styleName={styleName}
+            itemName={component.name}
+          />
           <ComponentActions 
             component={component} 
             markdown={markdown}

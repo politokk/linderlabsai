@@ -104,6 +104,37 @@ function BlockViewerProvider({
     }
   }, [])
 
+  // Listen for viewport changes from the header controls
+  React.useEffect(() => {
+    const handleViewportChange = (event: CustomEvent<"desktop" | "tablet" | "mobile">) => {
+      const viewport = event.detail
+      
+      // Make sure we're in preview mode
+      setView("preview")
+      
+      // Resize the panel based on viewport
+      if (resizablePanelRef.current) {
+        switch (viewport) {
+          case "desktop":
+            resizablePanelRef.current.resize(100)
+            break
+          case "tablet":
+            resizablePanelRef.current.resize(60)
+            break
+          case "mobile":
+            resizablePanelRef.current.resize(30)
+            break
+        }
+      }
+    }
+    
+    window.addEventListener('registry-viewport-change', handleViewportChange as EventListener)
+    
+    return () => {
+      window.removeEventListener('registry-viewport-change', handleViewportChange as EventListener)
+    }
+  }, [])
+
   return (
     <BlockViewerContext.Provider
       value={{

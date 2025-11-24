@@ -87,6 +87,7 @@ export default async function RegistryItemPage({
           iconName={iconName}
           prevComponent={prevComponent}
           nextComponent={nextComponent}
+          styleName={activeStyle.name}
         />
         
         {/* Server component for block display */}
