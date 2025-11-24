@@ -38,10 +38,6 @@ import { Orb } from "@/components/themes/orb"
 import Image from "next/image"
 import {
   ORB_SRC,
-  HUE_BY_THEME,
-  NEUTRAL_THEMES_LIST,
-  NEUTRAL_BRIGHTNESS,
-  THEME_OVERRIDES,
   hasOrbConfig,
   getOrbPropsForTheme,
 } from "@/lib/theme-hue"
