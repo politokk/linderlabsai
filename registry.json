@@ -2130,11 +2130,6 @@
             "target": "app/item-link.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/item/item-size.tsx",
-            "type": "registry:component",
-            "target": "app/item-size.tsx"
-          },
-          {
             "path": "src/app/demo/[name]/ui/item/item-variant.tsx",
             "type": "registry:component",
             "target": "app/item-variant.tsx"
