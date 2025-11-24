@@ -13,7 +13,7 @@ import AlertDestructiveDemo from "./alert-destructive-demo"
 import AlertDestructiveListDemo from "./alert-destructive-list-demo"
 import AlertWithActionDemo from "./alert-with-action-demo"
 
-export function alert() {
+export default function alert() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

@@ -6,7 +6,7 @@ import BreadcrumbLink from "./breadcrumb-link";
 import BreadcrumbResponsive from "./breadcrumb-responsive";
 import BreadcrumbSeparator from "./breadcrumb-separator";
 
-export function breadcrumb() {
+export default function breadcrumb() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

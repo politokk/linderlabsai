@@ -11,7 +11,7 @@ import ButtonSecondary from "./button-secondary";
 import ButtonSize from "./button-size";
 import ButtonWithIcon from "./button-with-icon";
 
-export function button() {
+export default function button() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
