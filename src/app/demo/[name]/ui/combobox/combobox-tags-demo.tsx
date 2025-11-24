@@ -76,16 +76,15 @@ export default function ComboboxTagsDemo() {
                   >
                     <span className={cn("size-2 rounded-full", skill.color)} />
                     {skill.label}
-                    <button
-                      type="button"
+                    <span
                       onClick={(e) => {
                         e.stopPropagation()
                         handleRemove(skill)
                       }}
-                      className="ml-1 rounded-full hover:bg-muted"
+                      className="ml-1 rounded-full hover:bg-muted cursor-pointer"
                     >
                       <XIcon className="size-3" />
-                    </button>
+                    </span>
                   </Badge>
                 ))
               ) : (
