@@ -1,7 +1,7 @@
 {
   "$schema": "https://linderlabsai.vercel.app/schema/registry.json",
-  "name": "LinderLabs AI",
-  "homepage": "https://linderlabsai.vercel.app/",
+  "name": "linderlabs",
+  "homepage": "https://linderlabsai.vercel.app",
   "items": [
     {
       "name": "theme",

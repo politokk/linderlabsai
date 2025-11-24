@@ -94,6 +94,6 @@ export function RegistrySetup({
 }
 
 const registrySetupCode = `"registries": {
-  "@linderlabs": "${"https://linderlabs-ui-registry-kappa.vercel.app"}/r/{name}.json"
+  "@linderlabs": "${"https://linderlabsai.vercel.app"}/r/{name}.json"
 }
 `
