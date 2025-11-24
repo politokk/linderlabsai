@@ -5,7 +5,7 @@ import type { DateRange } from "react-day-picker";
 
 import { Calendar } from "@/components/ui/calendar";
 
-export function MultiCalendar() {
+export default function MultiCalendar() {
   const [dateRange, setDateRange] = React.useState<DateRange | undefined>({
     from: new Date(2025, 5, 9),
     to: new Date(2025, 5, 26),

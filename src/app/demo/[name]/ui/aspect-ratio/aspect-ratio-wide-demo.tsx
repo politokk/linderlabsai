@@ -2,7 +2,7 @@ import Image from "next/image"
 
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
-export function AspectRatioWideDemo() {
+export default function AspectRatioWideDemo() {
   return (
     <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg">
       <Image

@@ -1,7 +1,7 @@
 import CardDemo from "./card-demo";
 import CardWithForm from "./card-with-form";
-import { CardMeetingNotesDemo } from "./card-meeting-notes-demo";
-import { CardImageDemo } from "./card-image-demo";
+import CardMeetingNotesDemo from "./card-meeting-notes-demo";
+import CardImageDemo from "./card-image-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

@@ -1,6 +1,6 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper";
-import { AspectRatioWideDemo } from "./aspect-ratio-wide-demo";
-import { AspectRatioSquareDemo } from "./aspect-ratio-square-demo";
+import AspectRatioWideDemo from "./aspect-ratio-wide-demo";
+import AspectRatioSquareDemo from "./aspect-ratio-square-demo";
   
 export function aspectRatio() {
   return (

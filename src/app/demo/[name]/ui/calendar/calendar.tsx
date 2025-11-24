@@ -1,5 +1,5 @@
-import { MultiCalendar } from "./multi-calendar";
-import { SingleCalendar } from "./single-calendar";
+import MultiCalendar from "./multi-calendar";
+import SingleCalendar from "./single-calendar";
 import CalendarDemo from "./calendar-demo";
 import CalendarForm from "./calendar-form";
 import CalendarHijri from "./calendar-hijri";

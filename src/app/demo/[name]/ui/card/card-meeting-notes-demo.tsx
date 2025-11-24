@@ -12,7 +12,7 @@ import {
     CardTitle,
   } from "@/components/ui/card"
   
-  export function CardMeetingNotesDemo() {
+  export default function CardMeetingNotesDemo() {
     return (
       <Card>
         <CardHeader>

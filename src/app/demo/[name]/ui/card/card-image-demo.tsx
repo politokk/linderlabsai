@@ -11,7 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-export function CardImageDemo() {
+export default function CardImageDemo() {
   return (
     <Card>
       <CardHeader>
