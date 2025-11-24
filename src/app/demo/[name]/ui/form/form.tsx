@@ -9,6 +9,12 @@ import FormRhfRadiogroup from "./form-rhf-radiogroup";
 import FormRhfSelect from "./form-rhf-select";
 import FormRhfSwitch from "./form-rhf-switch";
 import FormRhfTextarea from "./form-rhf-textarea";
+import AppearanceSettings from "./appearance-settings";
+import ChatSettings from "./chat-settings";
+import DisplaySettings from "./display-settings";
+import ShipRegistrationForm from "./ship-registration-form";
+import ShippingForm from "./shipping-form";
+import NotionPromptForm from "./notion-prompt-form";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
@@ -48,6 +54,24 @@ export function form() {
         </ComponentWrapper>
         <ComponentWrapper name="Form RHF Complex" icon="FileCode">
           <FormRhfComplex />
+        </ComponentWrapper>
+        <ComponentWrapper name="Display Settings" icon="Monitor">
+          <DisplaySettings />
+        </ComponentWrapper>
+        <ComponentWrapper name="Chat Settings" icon="MessageSquare">
+          <ChatSettings />
+        </ComponentWrapper>
+        <ComponentWrapper name="Appearance Settings" icon="Settings">
+          <AppearanceSettings />
+        </ComponentWrapper>
+        <ComponentWrapper name="Ship Registration Form" icon="Ship">
+          <ShipRegistrationForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Shipping Form" icon="Truck">
+          <ShippingForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Notion Prompt Form" icon="Notion">
+          <NotionPromptForm />
         </ComponentWrapper>
       </div>
     </div>

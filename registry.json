@@ -1835,6 +1835,36 @@
             "path": "src/app/demo/[name]/ui/form/form-rhf-textarea.tsx",
             "type": "registry:component",
             "target": "app/form-rhf-textarea.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/notion-prompt-form.tsx",
+            "type": "registry:component",
+            "target": "app/notion-prompt-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/appearance-settings.tsx",
+            "type": "registry:component",
+            "target": "app/appearance-settings.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/chat-settings.tsx",
+            "type": "registry:component",
+            "target": "app/chat-settings.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/display-settings.tsx",
+            "type": "registry:component",
+            "target": "app/display-settings.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/ship-registration-form.tsx",
+            "type": "registry:component",
+            "target": "app/ship-registration-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/shipping-form.tsx",
+            "type": "registry:component",
+            "target": "app/shipping-form.tsx"
           }
         ]
       },
