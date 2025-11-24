@@ -5,7 +5,6 @@ import type React from "react";
 import { FontBlock } from "@/app/(registry)/tokens/font-block";
 import { RegistryHeader } from "@/components/registry/registry-header";
 import { ColorBlock } from "./color-block";
-import { TokenFormatSelector } from "./token-format-selector";
 
 export default function TokensPage() {
   return (
@@ -13,11 +12,10 @@ export default function TokensPage() {
       <RegistryHeader componentTitle="Design Tokens" componentIcon="Palette" />
 
       <div className="container p-5 md:p-10 mt-10 md:mt-5">
-        <div className="mb-8 flex items-center justify-between">
+        <div className="mb-8">
           <p className="text-muted-foreground">
             A comprehensive overview of all color tokens used in the design system
           </p>
-          <TokenFormatSelector className="ml-auto" />
         </div>
 
       {/* Fonts */}
@@ -41,12 +39,11 @@ export default function TokensPage() {
           interface.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ColorBlock name="Background" tokenName="background" className="bg-background" />
-          <ColorBlock name="Foreground" tokenName="foreground" className="bg-foreground" />
-          <ColorBlock name="Primary" tokenName="primary" className="bg-primary" />
+          <ColorBlock name="Background" className="bg-background" />
+          <ColorBlock name="Foreground" className="bg-foreground" />
+          <ColorBlock name="Primary" className="bg-primary" />
           <ColorBlock
             name="Primary Foreground"
-            tokenName="primary-foreground"
             className="bg-primary-foreground"
           />
         </div>
@@ -60,16 +57,14 @@ export default function TokensPage() {
           interface.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ColorBlock name="Secondary" tokenName="secondary" className="bg-secondary" />
+          <ColorBlock name="Secondary" className="bg-secondary" />
           <ColorBlock
             name="Secondary Foreground"
-            tokenName="secondary-foreground"
             className="bg-secondary-foreground"
           />
-          <ColorBlock name="Accent" tokenName="accent" className="bg-accent" />
+          <ColorBlock name="Accent" className="bg-accent" />
           <ColorBlock
             name="Accent Foreground"
-            tokenName="accent-foreground"
             className="bg-accent-foreground"
           />
         </div>
@@ -83,17 +78,16 @@ export default function TokensPage() {
           elements.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ColorBlock name="Card" tokenName="card" className="bg-card" />
-          <ColorBlock name="Card Foreground" tokenName="card-foreground" className="bg-card-foreground" />
-          <ColorBlock name="Popover" tokenName="popover" className="bg-popover" />
+          <ColorBlock name="Card" className="bg-card" />
+          <ColorBlock name="Card Foreground" className="bg-card-foreground" />
+          <ColorBlock name="Popover" className="bg-popover" />
           <ColorBlock
             name="Popover Foreground"
-            tokenName="popover-foreground"
             className="bg-popover-foreground"
           />
-          <ColorBlock name="Muted" tokenName="muted" className="bg-muted" />
-          <ColorBlock name="Muted Foreground" tokenName="muted-foreground" className="bg-muted-foreground" />
-          <ColorBlock name="Muted Secondary" tokenName="muted-secondary" className="bg-muted-secondary" />
+          <ColorBlock name="Muted" className="bg-muted" />
+          <ColorBlock name="Muted Foreground" className="bg-muted-foreground" />
+          <ColorBlock name="Muted Secondary" className="bg-muted-secondary" />
         </div>
       </section>
 
@@ -104,9 +98,9 @@ export default function TokensPage() {
           Colors used for borders, inputs, and other utility elements.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ColorBlock name="Border" tokenName="border" className="bg-border" />
-          <ColorBlock name="Input" tokenName="input" className="bg-input" />
-          <ColorBlock name="Ring" tokenName="ring" className="bg-ring" />
+          <ColorBlock name="Border" className="bg-border" />
+          <ColorBlock name="Input" className="bg-input" />
+          <ColorBlock name="Ring" className="bg-ring" />
         </div>
       </section>
 
@@ -118,34 +112,30 @@ export default function TokensPage() {
           users.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ColorBlock name="Destructive" tokenName="destructive" className="bg-destructive" />
+          <ColorBlock name="Destructive" className="bg-destructive" />
           <ColorBlock
             name="Destructive Foreground"
-            tokenName="destructive-foreground"
             className="bg-destructive-foreground"
           />
-          <ColorBlock name="Success" tokenName="success" className="bg-success" />
+          <ColorBlock name="Success" className="bg-success" />
           <ColorBlock
             name="Success Foreground"
-            tokenName="success-foreground"
             className="bg-success-foreground"
           />
-          <ColorBlock name="Warning" tokenName="warning" className="bg-warning" />
+          <ColorBlock name="Warning" className="bg-warning" />
           <ColorBlock
             name="Warning Foreground"
-            tokenName="warning-foreground"
             className="bg-warning-foreground"
           />
-          <ColorBlock name="Info" tokenName="info" className="bg-info" />
-          <ColorBlock name="Info Foreground" tokenName="info-foreground" className="bg-info-foreground" />
-          <ColorBlock name="In Progress" tokenName="inProgress" className="bg-inProgress" />
+          <ColorBlock name="Info" className="bg-info" />
+          <ColorBlock name="Info Foreground" className="bg-info-foreground" />
+          <ColorBlock name="In Progress" className="bg-inProgress" />
           <ColorBlock
             name="In Progress Foreground"
-            tokenName="inProgress-foreground"
             className="bg-inProgress-foreground"
           />
-          <ColorBlock name="Link" tokenName="link" className="bg-link" />
-          <ColorBlock name="Link Foreground" tokenName="link-foreground" className="bg-link-foreground" />
+          <ColorBlock name="Link" className="bg-link" />
+          <ColorBlock name="Link Foreground" className="bg-link-foreground" />
         </div>
       </section>
 
@@ -156,10 +146,10 @@ export default function TokensPage() {
           Colors used for selected states and interactive elements.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ColorBlock name="Selection" tokenName="selection" className="bg-selection" />
-          <ColorBlock name="Selection Foreground" tokenName="selection-foreground" className="bg-selection-foreground" />
-          <ColorBlock name="Tooltip" tokenName="tooltip" className="bg-tooltip" />
-          <ColorBlock name="Tooltip Foreground" tokenName="tooltip-foreground" className="bg-tooltip-foreground" />
+          <ColorBlock name="Selection" className="bg-selection" />
+          <ColorBlock name="Selection Foreground" className="bg-selection-foreground" />
+          <ColorBlock name="Tooltip" className="bg-tooltip" />
+          <ColorBlock name="Tooltip Foreground" className="bg-tooltip-foreground" />
         </div>
       </section>
 
@@ -170,17 +160,17 @@ export default function TokensPage() {
           Colors used for data visualization and charts.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ColorBlock name="Chart 1" tokenName="chart-1" className="bg-chart-1" />
-          <ColorBlock name="Chart 2" tokenName="chart-2" className="bg-chart-2" />
-          <ColorBlock name="Chart 3" tokenName="chart-3" className="bg-chart-3" />
-          <ColorBlock name="Chart 4" tokenName="chart-4" className="bg-chart-4" />
-          <ColorBlock name="Chart 5" tokenName="chart-5" className="bg-chart-5" />
-          <ColorBlock name="Chart 6" tokenName="chart-6" className="bg-chart-6" />
-          <ColorBlock name="Chart 7" tokenName="chart-7" className="bg-chart-7" />
-          <ColorBlock name="Chart 8" tokenName="chart-8" className="bg-chart-8" />
-          <ColorBlock name="Chart 9" tokenName="chart-9" className="bg-chart-9" />
-          <ColorBlock name="Chart 10" tokenName="chart-10" className="bg-chart-10" />
-          <ColorBlock name="Chart 11" tokenName="chart-11" className="bg-chart-11" />
+          <ColorBlock name="Chart 1" className="bg-chart-1" />
+          <ColorBlock name="Chart 2" className="bg-chart-2" />
+          <ColorBlock name="Chart 3" className="bg-chart-3" />
+          <ColorBlock name="Chart 4" className="bg-chart-4" />
+          <ColorBlock name="Chart 5" className="bg-chart-5" />
+          <ColorBlock name="Chart 6" className="bg-chart-6" />
+          <ColorBlock name="Chart 7" className="bg-chart-7" />
+          <ColorBlock name="Chart 8" className="bg-chart-8" />
+          <ColorBlock name="Chart 9" className="bg-chart-9" />
+          <ColorBlock name="Chart 10" className="bg-chart-10" />
+          <ColorBlock name="Chart 11" className="bg-chart-11" />
         </div>
       </section>
 
@@ -191,26 +181,23 @@ export default function TokensPage() {
           Colors specific to the sidebar and navigation components.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-          <ColorBlock name="Sidebar" tokenName="sidebar" className="bg-sidebar" />
+          <ColorBlock name="Sidebar" className="bg-sidebar" />
           <ColorBlock
             name="Sidebar Foreground"
-            tokenName="sidebar-foreground"
             className="bg-sidebar-foreground"
           />
-          <ColorBlock name="Sidebar Primary" tokenName="sidebar-primary" className="bg-sidebar-primary" />
+          <ColorBlock name="Sidebar Primary" className="bg-sidebar-primary" />
           <ColorBlock
             name="Sidebar Primary Foreground"
-            tokenName="sidebar-primary-foreground"
             className="bg-sidebar-primary-foreground"
           />
-          <ColorBlock name="Sidebar Accent" tokenName="sidebar-accent" className="bg-sidebar-accent" />
+          <ColorBlock name="Sidebar Accent" className="bg-sidebar-accent" />
           <ColorBlock
             name="Sidebar Accent Foreground"
-            tokenName="sidebar-accent-foreground"
             className="bg-sidebar-accent-foreground"
           />
-          <ColorBlock name="Sidebar Border" tokenName="sidebar-border" className="bg-sidebar-border" />
-          <ColorBlock name="Sidebar Ring" tokenName="sidebar-ring" className="bg-sidebar-ring" />
+          <ColorBlock name="Sidebar Border" className="bg-sidebar-border" />
+          <ColorBlock name="Sidebar Ring" className="bg-sidebar-ring" />
         </div>
       </section>
       </div>
