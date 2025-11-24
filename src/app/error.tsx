@@ -24,7 +24,6 @@ export default function ErrorPage({
 
   return (
     <SidebarProvider>
-      <MobileSidebarTrigger />
       <RegistrySidebar />
       <main className="flex w-full justify-center">
         <div className="flex min-h-screen w-full flex-col items-center justify-center text-center">

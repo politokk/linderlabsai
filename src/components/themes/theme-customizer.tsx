@@ -5,6 +5,7 @@ import template from "lodash/template"
 import {
   CheckIcon,
   CopyIcon,
+  ClipboardIcon,
   PaletteIcon,
 } from "lucide-react"
 import { THEMES } from "@/lib/themes"
@@ -46,10 +47,40 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+import { toast } from "sonner"
+import { Orb } from "@/components/themes/orb"
+import {
+  ORB_SRC,
+  hasOrbConfig,
+  getOrbPropsForTheme,
+} from "@/lib/theme-hue"
 
 interface BaseColorOKLCH {
   light: Record<string, string>
   dark: Record<string, string>
+}
+
+function ThemeOrb({ themeValue, size = 16 }: { themeValue: string; size?: number }) {
+  const orbProps = getOrbPropsForTheme(themeValue)
+  
+  return (
+    <Orb
+      src={orbProps.src}
+      size={size}
+      hueDeg={orbProps.hueDeg}
+      saturate={orbProps.saturate}
+      rotateDeg={orbProps.rotateDeg}
+      imgStyle={orbProps.imgStyle}
+      wrapperStyle={orbProps.wrapperStyle}
+      imgClassName="pointer-events-none select-none"
+    />
+  )
 }
 
 export function ThemeCustomizer({ className }: React.ComponentProps<"div">) {
@@ -133,8 +164,15 @@ export function CopyCodeButton({
         </DrawerTrigger>
         <DrawerContent className="h-auto">
           <DrawerHeader>
-            <DrawerTitle className="capitalize">{activeThemeName}</DrawerTitle>
-            <DrawerDescription>
+            <DrawerTitle className="capitalize flex items-center justify-center gap-2"> 
+              {hasOrbConfig(activeThemeName) ? (
+                <ThemeOrb themeValue={activeThemeName} size={16} />
+              ) : (
+                <Orb src={ORB_SRC} size={16} hueDeg={0} saturate={1.0} rotateDeg={0} />
+              )}
+              {activeThemeName}
+            </DrawerTitle>
+            <DrawerDescription className="flex items-center justify-center gap-2">
               Copy and paste the following code into your CSS file.
             </DrawerDescription>
           </DrawerHeader>
@@ -155,7 +193,14 @@ export function CopyCodeButton({
         </DialogTrigger>
         <DialogContent className="rounded-xl border-none bg-clip-padding shadow-2xl ring-4 ring-neutral-200/80 outline-none md:max-w-2xl dark:bg-neutral-800 dark:ring-neutral-900">
           <DialogHeader>
-            <DialogTitle className="capitalize">{activeThemeName}</DialogTitle>
+            <DialogTitle className="capitalize flex items-center gap-2">
+              {hasOrbConfig(activeThemeName) ? (
+                <ThemeOrb themeValue={activeThemeName} size={16} />
+              ) : (
+                <Orb src={ORB_SRC} size={16} hueDeg={0} saturate={1.0} rotateDeg={0} />
+              )}
+              {activeThemeName}
+            </DialogTitle>
             <DialogDescription>
               Copy and paste the following code into your CSS file.
             </DialogDescription>
@@ -214,28 +259,38 @@ function CustomizerCode({ themeName }: { themeName: string }) {
               app/globals.css
             </figcaption>
             <pre className="no-scrollbar max-h-[300px] min-w-0 overflow-x-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
-              <Button
-                data-slot="copy-button"
-                size="icon"
-                variant="ghost"
-                className="bg-code text-code-foreground absolute top-3 right-2 z-10 size-7 shadow-none hover:opacity-100 focus-visible:opacity-100"
-                onClick={() => {
-                  copyToClipboardWithMeta(
-                    getThemeCodeOKLCH(activeThemeOKLCH, 0.65),
-                    {
-                      name: "copy_theme_code",
-                      properties: {
-                        theme: themeName,
-                        radius: 0.65,
-                      },
-                    }
-                  )
-                  setHasCopied(true)
-                }}
-              >
-                <span className="sr-only">Copy</span>
-                {hasCopied ? <CheckIcon className="size-3.5" /> : <CopyIcon className="size-3.5" />}
-              </Button>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      data-slot="copy-button"
+                      size="icon"
+                      variant="ghost"
+                      className="bg-code text-code-foreground absolute top-3 right-2 z-10 size-7 shadow-none hover:opacity-100 focus-visible:opacity-100"
+                      onClick={() => {
+                        copyToClipboardWithMeta(
+                          getThemeCodeOKLCH(activeThemeOKLCH, 0.65),
+                          {
+                            name: "copy_theme_code",
+                            properties: {
+                              theme: themeName,
+                              radius: 0.65,
+                            },
+                          }
+                        )
+                        setHasCopied(true)
+                        toast.success("Theme copied to clipboard")
+                      }}
+                    >
+                      <span className="sr-only">Copy</span>
+                      {hasCopied ? <CheckIcon className="size-3.5 text-muted-foreground" /> : <ClipboardIcon className="size-3.5 text-muted-foreground" />}
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    {hasCopied ? "Copied!" : "Copy theme"}
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               <code data-line-numbers data-language="css">
                 <span data-line className="line text-code-foreground">
                   &nbsp;:root &#123;
@@ -294,28 +349,38 @@ function CustomizerCode({ themeName }: { themeName: string }) {
               app/globals.css
             </figcaption>
             <pre className="no-scrollbar max-h-[300px] min-w-0 overflow-x-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
-              <Button
-                data-slot="copy-button"
-                size="icon"
-                variant="ghost"
-                className="bg-code text-code-foreground absolute top-3 right-2 z-10 size-7 shadow-none hover:opacity-100 focus-visible:opacity-100"
-                onClick={() => {
-                  copyToClipboardWithMeta(
-                    getThemeCodeHSLV4(activeTheme, 0.65),
-                    {
-                      name: "copy_theme_code",
-                      properties: {
-                        theme: themeName,
-                        radius: 0.65,
-                      },
-                    }
-                  )
-                  setHasCopied(true)
-                }}
-              >
-                <span className="sr-only">Copy</span>
-                {hasCopied ? <CheckIcon className="size-3.5 text-muted-foreground" /> : <CopyIcon className="size-3.5 text-muted-foreground" />}
-              </Button>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      data-slot="copy-button"
+                      size="icon"
+                      variant="ghost"
+                      className="bg-code text-code-foreground absolute top-3 right-2 z-10 size-7 shadow-none hover:opacity-100 focus-visible:opacity-100"
+                      onClick={() => {
+                        copyToClipboardWithMeta(
+                          getThemeCodeHSLV4(activeTheme, 0.65),
+                          {
+                            name: "copy_theme_code",
+                            properties: {
+                              theme: themeName,
+                              radius: 0.65,
+                            },
+                          }
+                        )
+                        setHasCopied(true)
+                        toast.success("Theme copied to clipboard")
+                      }}
+                    >
+                      <span className="sr-only">Copy</span>
+                      {hasCopied ? <CheckIcon className="size-3.5 text-muted-foreground" /> : <CopyIcon className="size-3.5 text-muted-foreground" />}
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    {hasCopied ? "Copied!" : "Copy theme"}
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               <code data-line-numbers data-language="css">
                 <span data-line className="line text-code-foreground">
                   &nbsp;:root &#123;
@@ -378,25 +443,35 @@ function CustomizerCode({ themeName }: { themeName: string }) {
               app/globals.css
             </figcaption>
             <pre className="no-scrollbar max-h-[300px] min-w-0 overflow-x-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
-              <Button
-                data-slot="copy-button"
-                size="icon"
-                variant="ghost"
-                className="bg-code text-code-foreground absolute top-3 right-2 z-10 size-7 shadow-none hover:opacity-100 focus-visible:opacity-100"
-                onClick={() => {
-                  copyToClipboardWithMeta(getThemeCode(activeTheme, 0.5), {
-                    name: "copy_theme_code",
-                    properties: {
-                      theme: themeName,
-                      radius: 0.5,
-                    },
-                  })
-                  setHasCopied(true)
-                }}
-              >
-                <span className="sr-only">Copy</span>
-                {hasCopied ? <CheckIcon className="size-3.5 text-muted-foreground" /> : <CopyIcon className="size-3.5 text-muted-foreground" />}
-              </Button>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      data-slot="copy-button"
+                      size="icon"
+                      variant="ghost"
+                      className="bg-code text-code-foreground absolute top-3 right-2 z-10 size-7 shadow-none hover:opacity-100 focus-visible:opacity-100"
+                      onClick={() => {
+                        copyToClipboardWithMeta(getThemeCode(activeTheme, 0.5), {
+                          name: "copy_theme_code",
+                          properties: {
+                            theme: themeName,
+                            radius: 0.5,
+                          },
+                        })
+                        setHasCopied(true)
+                        toast.success("Theme copied to clipboard")
+                      }}
+                    >
+                      <span className="sr-only">Copy</span>
+                      {hasCopied ? <CheckIcon className="size-3.5 text-muted-foreground" /> : <CopyIcon className="size-3.5 text-muted-foreground" />}
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    {hasCopied ? "Copied!" : "Copy theme"}
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               <code data-line-numbers data-language="css">
                 <span data-line className="line">
                   @layer base &#123;

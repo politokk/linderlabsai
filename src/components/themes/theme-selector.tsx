@@ -35,6 +35,16 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
 import { Orb } from "@/components/themes/orb"
+import Image from "next/image"
+import {
+  ORB_SRC,
+  HUE_BY_THEME,
+  NEUTRAL_THEMES_LIST,
+  NEUTRAL_BRIGHTNESS,
+  THEME_OVERRIDES,
+  hasOrbConfig,
+  getOrbPropsForTheme,
+} from "@/lib/theme-hue"
 
 const DEFAULT_THEMES = [{ name: "Default", value: "default" }] as const
 
@@ -68,71 +78,6 @@ const NEUTRAL_THEMES = [
 
 const ALL_THEMES = [...DEFAULT_THEMES, ...NEUTRAL_THEMES, ...COLOR_THEMES]
 
-/** Base orb image (measured base hue ≈ 205°) */
-const ORB_SRC = "/orbs/orb-5.webp"
-
-/** Hue values for all themes (relative to base ≈ 205°) */
-const HUE_BY_THEME: Record<string, number> = {
-  // defaults
-  default: 40,
-  // colors
-  red: 155,
-  orange: 185,
-  amber: 200,
-  yellow: 215,
-  lime: 230,
-  green: 275,
-  emerald: 295,
-  teal: 335,
-  cyan: 345,
-  sky: 355,
-  blue: 5,
-  indigo: 40,
-  violet: 65,
-  purple: 85,
-  fuchsia: 105,
-  pink: 125,
-  rose: 145,
-}
-
-const NEUTRAL_THEMES_LIST = ["slate", "gray", "zinc", "neutral", "stone"]
-
-const NEUTRAL_BRIGHTNESS: Record<string, number> = {
-  slate: 0.85,
-  gray: 1.0,
-  zinc: 0.75,
-  neutral: 1.15,
-  stone: 0.65,
-}
-
-type ThemeOverride = {
-  img?: React.CSSProperties
-  wrapper?: React.CSSProperties
-  src?: string
-}
-
-const THEME_OVERRIDES: Record<string, ThemeOverride> = {
-  emerald: {
-    src: "/orbs/orb-2.webp",
-    img: {
-      color: "transparent",
-      filter: "hue-rotate(316deg) saturate(120%)",
-      transform: "rotate(316deg)",
-      objectFit: "cover",
-      objectPosition: "center center",
-    },
-  },
-  pink: {
-    img: {
-      color: "transparent",
-      filter: "hue-rotate(101deg) saturate(120%)",
-      transform: "rotate(101deg)",
-      objectFit: "cover",
-      objectPosition: "center center",
-    },
-  },
-}
-
 function ColorOrb({
   themeValue,
   size = 18,
@@ -140,41 +85,17 @@ function ColorOrb({
   themeValue: string
   size?: number
 }) {
-  const override = THEME_OVERRIDES[themeValue]
-  const hue = HUE_BY_THEME[themeValue]
-  const isNeutral = NEUTRAL_THEMES_LIST.includes(themeValue)
+  const orbProps = getOrbPropsForTheme(themeValue)
 
-  // Handle neutral themes with desaturation
-  if (isNeutral) {
-    const brightness = NEUTRAL_BRIGHTNESS[themeValue] ?? 1.0
-    return (
-      <Orb
-        src={override?.src ?? ORB_SRC}
-        size={size}
-        hueDeg={0}
-        saturate={0.15}
-        rotateDeg={0}
-        imgStyle={{
-          filter: `saturate(0.15) brightness(${brightness})`,
-          ...override?.img,
-        }}
-        wrapperStyle={override?.wrapper}
-        imgClassName="pointer-events-none select-none"
-      />
-    )
-  }
-
-  // Handle color themes with hue rotation
-  const hasMapping = hue !== undefined || override
   return (
     <Orb
-      src={override?.src ?? ORB_SRC}
+      src={orbProps.src}
       size={size}
-      hueDeg={hasMapping ? (hue ?? 0) : 0}
-      saturate={1.2}
-      rotateDeg={149}
-      imgStyle={override?.img}
-      wrapperStyle={override?.wrapper}
+      hueDeg={orbProps.hueDeg}
+      saturate={orbProps.saturate}
+      rotateDeg={orbProps.rotateDeg}
+      imgStyle={orbProps.imgStyle}
+      wrapperStyle={orbProps.wrapperStyle}
       imgClassName="pointer-events-none select-none"
     />
   )
@@ -191,12 +112,7 @@ export function ThemeSelector({ className }: React.ComponentProps<"div">) {
   }, [])
 
   const selectedTheme = ALL_THEMES.find((t) => t.value === activeTheme)
-  const showOrb =
-    mounted &&
-    activeTheme != null &&
-    (HUE_BY_THEME[activeTheme] !== undefined ||
-      THEME_OVERRIDES[activeTheme] !== undefined ||
-      NEUTRAL_THEMES_LIST.includes(activeTheme))
+  const showOrb = mounted && hasOrbConfig(activeTheme)
 
   const handleThemeSelect = React.useCallback(
     (themeValue: string) => {
@@ -265,7 +181,8 @@ export function ThemeSelector({ className }: React.ComponentProps<"div">) {
           >
             <div className="flex items-center justify-between gap-4">
               <div className="ml-2 flex items-center gap-1.5">
-                <span className="text-muted-foreground text-sm">Themes</span>
+                <span className="text-muted-foreground text-sm flex items-center gap-2">
+                  <Image src="/favicon.ico" alt="Logo" width={16} height={16} /> Themes</span>
               </div>
 
               <TabsList className="bg-transparent">
@@ -302,9 +219,7 @@ export function ThemeSelector({ className }: React.ComponentProps<"div">) {
                           onSelect={() => handleThemeSelect(theme.value)}
                         >
                           <div className="flex items-center gap-2">
-                            {(HUE_BY_THEME[theme.value] !== undefined ||
-                              THEME_OVERRIDES[theme.value] ||
-                              NEUTRAL_THEMES_LIST.includes(theme.value)) && (
+                            {hasOrbConfig(theme.value) && (
                               <ColorOrb themeValue={theme.value} />
                             )}
                             <span>{theme.name}</span>
@@ -332,9 +247,7 @@ export function ThemeSelector({ className }: React.ComponentProps<"div">) {
                           onSelect={() => handleThemeSelect(theme.value)}
                         >
                           <div className="flex items-center gap-2">
-                            {(HUE_BY_THEME[theme.value] !== undefined ||
-                              THEME_OVERRIDES[theme.value] ||
-                              NEUTRAL_THEMES_LIST.includes(theme.value)) && (
+                            {hasOrbConfig(theme.value) && (
                               <ColorOrb themeValue={theme.value} />
                             )}
                             <span>{theme.name}</span>
@@ -362,9 +275,7 @@ export function ThemeSelector({ className }: React.ComponentProps<"div">) {
                           onSelect={() => handleThemeSelect(theme.value)}
                         >
                           <div className="flex items-center gap-2">
-                            {(HUE_BY_THEME[theme.value] !== undefined ||
-                              THEME_OVERRIDES[theme.value] ||
-                              NEUTRAL_THEMES_LIST.includes(theme.value)) && (
+                            {hasOrbConfig(theme.value) && (
                               <ColorOrb themeValue={theme.value} />
                             )}
                             <span>{theme.name}</span>

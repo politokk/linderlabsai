@@ -37,7 +37,6 @@ export function RegistryHeader({ componentTitle, componentIcon }: RegistryHeader
         <RegistrySetup />
         <CopyCodeButton />
         <ModeSwitcher />
-        <ModeToggle />
         <ThemeSelector />
       </div>
     </header>

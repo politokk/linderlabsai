@@ -23,6 +23,32 @@ export default function Home() {
         <div className="space-y-2">
           <div className="flex flex-col gap-3">
             <div className="flex flex-wrap gap-2">
+            <Image
+                src="/favicon.ico"
+                alt="Red"
+                width={32}
+                height={32}
+                className="size-8"
+                style={{ filter: "hue-rotate(150deg) saturate(1.5)" }}
+              />
+            
+              <Image
+                src="/favicon.ico"
+                alt="Orange"
+                width={32}
+                height={32}
+                className="size-8"
+                style={{ filter: "hue-rotate(185deg) saturate(1.5)" }}
+              />
+             
+              <Image
+                src="/favicon.ico"
+                alt="Amber"
+                width={32}
+                height={32}
+                className="size-8"
+                style={{ filter: "hue-rotate(188deg) saturate(1.5)" }}
+              />
               <Image
                 src="/favicon.ico"
                 alt="Red"
@@ -62,46 +88,6 @@ export default function Home() {
                 height={32}
                 className="size-8"
                 style={{ filter: "hue-rotate(90deg) saturate(1.3)" }}
-              />
-              <Image
-                src="/favicon.ico"
-                alt="Green"
-                width={32}
-                height={32}
-                className="size-8"
-                style={{ filter: "hue-rotate(120deg) saturate(1.4)" }}
-              />
-              <Image
-                src="/favicon.ico"
-                alt="Emerald"
-                width={32}
-                height={32}
-                className="size-8"
-                style={{ filter: "hue-rotate(150deg) saturate(1.5)" }}
-              />
-              <Image
-                src="/favicon.ico"
-                alt="Teal"
-                width={32}
-                height={32}
-                className="size-8"
-                style={{ filter: "hue-rotate(180deg) saturate(1.5)" }}
-              />
-              <Image
-                src="/favicon.ico"
-                alt="Cyan"
-                width={32}
-                height={32}
-                className="size-8"
-                style={{ filter: "hue-rotate(190deg) saturate(1.6)" }}
-              />
-              <Image
-                src="/favicon.ico"
-                alt="Sky"
-                width={32}
-                height={32}
-                className="size-8"
-                style={{ filter: "hue-rotate(200deg) saturate(1.5)" }}
               />
               <Image
                 src="/favicon.ico"
@@ -158,6 +144,14 @@ export default function Home() {
                 height={32}
                 className="size-8"
                 style={{ filter: "hue-rotate(340deg) saturate(1.5)" }}
+              />
+               <Image
+                src="/favicon.ico"
+                alt="Green"
+                width={32}
+                height={32}
+                className="size-8"
+                style={{ filter: "hue-rotate(120deg) saturate(1.4)" }}
               />
             </div>
             <h1 className="font-bold text-3xl tracking-tight md:text-4xl">
