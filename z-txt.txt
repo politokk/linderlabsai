@@ -1,5 +1,5 @@
 git add .
-git commit -m "colors-setup"
+git commit -m "pnpmcanary"
 git push origin main    
 git push origin main --force
 
