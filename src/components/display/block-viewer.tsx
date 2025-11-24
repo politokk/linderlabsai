@@ -11,12 +11,6 @@ import {
   Eye,
   File,
   Folder,
-  Fullscreen,
-  Monitor,
-  RotateCw,
-  Smartphone,
-  Tablet,
-  Terminal,
 } from "lucide-react"
 import type { ImperativePanelHandle } from "react-resizable-panels"
 import type { registryItemFileSchema, registryItemSchema } from "shadcn/schema"
@@ -28,6 +22,8 @@ import { cn } from "@/lib/utils"
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 import { getIconForLanguageExtension } from "@/components/icons/icons"
 import { OpenInV0Button } from "@/components/display/open-in-v0-button"
+import { ViewportControls } from "@/components/display/viewport-controls"
+import { NPXInstallButton } from "@/components/display/npx-install-button"
 import { Button } from "@/components/ui/button"
 import {
   Collapsible,
@@ -51,11 +47,6 @@ import {
   SidebarMenuSub,
   SidebarProvider,
 } from "@/components/ui/sidebar"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import {
-  ToggleGroup,
-  ToggleGroupItem,
-} from "@/components/ui/toggle-group"
 import {
   Tooltip,
   TooltipContent,
@@ -148,12 +139,24 @@ type BlockViewerProps = Pick<
 function BlockViewerToolbar({ styleName }: { styleName: Style["name"] }) {
   const { setView, view, item, resizablePanelRef, setIframeKey } =
     useBlockViewer()
-  const { copyToClipboard, isCopied } = useCopyToClipboard()
 
   const views = [
     ["preview", Eye, "Preview"] as const,
     ["code", Code, "Code"] as const,
   ]
+
+  const handleViewportChange = (value: string) => {
+    setView("preview")
+    if (resizablePanelRef?.current) {
+      resizablePanelRef.current.resize(Number.parseInt(value))
+    }
+  }
+
+  const handleRefresh = () => {
+    if (setIframeKey) {
+      setIframeKey((k) => k + 1)
+    }
+  }
 
   return (
     <div className="hidden w-full items-center gap-2 pl-2 md:pr-6 lg:flex">
@@ -188,76 +191,19 @@ function BlockViewerToolbar({ styleName }: { styleName: Style["name"] }) {
         </div>
       </TooltipProvider>
       <Separator orientation="vertical" className="mx-2 !h-4" />
-      <a
-        href={`#${item.name}`}
-        className="flex-1 text-center text-sm font-medium underline-offset-2 hover:underline md:flex-auto md:text-left"
-      >
-      </a>
+      
+      <Link href={`#${item.name}`} className="flex-1 text-center text-sm font-medium underline-offset-2 hover:underline md:flex-auto md:text-left">
+        {item.name}
+      </Link>
       <div className="ml-auto flex items-center gap-2">
-        <div className="h-8 items-center gap-1.5 rounded-md border p-1 shadow-none">
-          <ToggleGroup
-            type="single"
-            defaultValue="100"
-            onValueChange={(value) => {
-              setView("preview")
-              if (resizablePanelRef?.current) {
-                resizablePanelRef.current.resize(Number.parseInt(value))
-              }
-            }}
-            className="gap-1 *:data-[slot=toggle-group-item]:!size-6 *:data-[slot=toggle-group-item]:!rounded-sm"
-          >
-            <ToggleGroupItem value="100" title="Desktop">
-              <Monitor />
-            </ToggleGroupItem>
-            <ToggleGroupItem value="60" title="Tablet">
-              <Tablet />
-            </ToggleGroupItem>
-            <ToggleGroupItem value="30" title="Mobile">
-              <Smartphone />
-            </ToggleGroupItem>
-            <Separator orientation="vertical" className="!h-4" />
-            <Button
-              size="icon"
-              variant="ghost"
-              className="size-6 rounded-sm p-0"
-              asChild
-              title="Open in New Tab"
-            >
-              <Link href={`/view/${styleName}/${item.name}`} target="_blank">
-                <span className="sr-only">Open in New Tab</span>
-                <Fullscreen />
-              </Link>
-            </Button>
-            <Separator orientation="vertical" className="!h-4" />
-            <Button
-              size="icon"
-              variant="ghost"
-              className="size-6 rounded-sm p-0"
-              title="Refresh Preview"
-              onClick={() => {
-                if (setIframeKey) {
-                  setIframeKey((k) => k + 1)
-                }
-              }}
-            >
-              <RotateCw />
-              <span className="sr-only">Refresh Preview</span>
-            </Button>
-          </ToggleGroup>
-        </div>
+        <ViewportControls
+          styleName={styleName}
+          itemName={item.name}
+          onViewportChange={handleViewportChange}
+          onRefresh={handleRefresh}
+        />
         <Separator orientation="vertical" className="mx-1 !h-4" />
-        <Button
-          variant="outline"
-          className="w-fit gap-1 px-2 shadow-none"
-          size="sm"
-          onClick={() => {
-            copyToClipboard(`npx shadcn@latest add ${item.name}`)
-          }}
-        >
-          {isCopied ? <Check /> : <Terminal />}
-          <span>npx shadcn add {item.name}</span>
-        </Button>
-        <Separator orientation="vertical" className="mx-1 !h-4" />
+        <NPXInstallButton itemName={item.name} baseUrl="linderlabsai.vercel.app" />
         <OpenInV0Button name={item.name} />
       </div>
     </div>

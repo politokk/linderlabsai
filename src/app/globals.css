@@ -266,7 +266,7 @@ button:not(:disabled),
   border-radius: var(--radius-xl);
   border-width: 1px;
   border-color: var(--border);
-  margin-top: calc(var(--spacing) * 6);
+  margin-top: 0px;
   overflow: hidden;
   font-size: var(--text-xs);
   outline: none;
