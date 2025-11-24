@@ -113,6 +113,11 @@ export default async function RegistryItemPage({
             </p>
           )}
         </div>
+        <ComponentCard
+          component={component}
+          baseUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL || ''}
+          prompt={getPrompt()}
+        />
         {/* Block Display */}
         <BlockDisplay
           name={component.name}
