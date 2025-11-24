@@ -2,13 +2,10 @@
 
 import * as React from "react"
 import Image from "next/image"
-import Link from "next/link"
 import {
   Check,
   ChevronRight,
   Clipboard,
-  Code,
-  Eye,
   File,
   Folder,
 } from "lucide-react"
@@ -23,6 +20,7 @@ import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 import { getIconForLanguageExtension } from "@/components/icons/icons"
 import { OpenInV0Button } from "@/components/display/open-in-v0-button"
 import { ViewportControls } from "@/components/display/viewport-controls"
+import { CodePreviewToggle } from "@/components/display/code-preview-toggle"
 import { NPXInstallButton } from "@/components/display/npx-install-button"
 import { Button } from "@/components/ui/button"
 import {
@@ -47,12 +45,6 @@ import {
   SidebarMenuSub,
   SidebarProvider,
 } from "@/components/ui/sidebar"
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
 import type { Style } from "@/lib/styles"
 
 type BlockViewerContext = {
@@ -91,7 +83,7 @@ function BlockViewerProvider({
   children: React.ReactNode
 }) {
   const [view, setView] = React.useState<BlockViewerContext["view"]>("preview")
-  const [activeFile, setActiveFile] = React.useState<
+  const [activeFile, setActiveFile] = React.useState <
     BlockViewerContext["activeFile"]
   >(highlightedFiles?.[0].target ?? null)
   const resizablePanelRef = React.useRef<ImperativePanelHandle>(null)
@@ -140,11 +132,6 @@ function BlockViewerToolbar({ styleName }: { styleName: Style["name"] }) {
   const { setView, view, item, resizablePanelRef, setIframeKey } =
     useBlockViewer()
 
-  const views = [
-    ["preview", Eye, "Preview"] as const,
-    ["code", Code, "Code"] as const,
-  ]
-
   const handleViewportChange = (value: string) => {
     setView("preview")
     if (resizablePanelRef?.current) {
@@ -160,41 +147,8 @@ function BlockViewerToolbar({ styleName }: { styleName: Style["name"] }) {
 
   return (
     <div className="hidden w-full items-center gap-2 pl-2 md:pr-6 lg:flex">
-      <TooltipProvider>
-        <div
-          className="inline-flex items-center rounded-lg border p-0 shrink-0"
-          data-view-toggle=""
-        >
-          {views.map(([key, Icon, tooltipText]) => (
-            <Tooltip key={key}>
-              <TooltipTrigger asChild>
-                <Button
-                  size="iconSm"
-                  variant="ghost"
-                  aria-label={tooltipText}
-                  className={cn(
-                    "size-6.5 rounded-full p-1.5",
-                    view === key
-                      ? "bg-primary-foreground text-primary [&_svg]:text-primary"
-                      : "text-muted-foreground"
-                  )}
-                  onClick={() => setView(key)}
-                >
-                  <Icon className="size-full" />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>{tooltipText}</p>
-              </TooltipContent>
-            </Tooltip>
-          ))}
-        </div>
-      </TooltipProvider>
+      <CodePreviewToggle view={view} onViewChange={setView} />
       <Separator orientation="vertical" className="mx-2 !h-4" />
-      
-      <Link href={`#${item.name}`} className="flex-1 text-center text-sm font-medium underline-offset-2 hover:underline md:flex-auto md:text-left">
-        {item.name}
-      </Link>
       <div className="ml-auto flex items-center gap-2">
         <ViewportControls
           styleName={styleName}
