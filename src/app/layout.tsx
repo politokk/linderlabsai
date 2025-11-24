@@ -15,7 +15,7 @@ import "@/app/globals.css";
 export const metadata: Metadata = {
   title: "Linderlabs UI",
   description: "Linderlabs UI is a collection of components and tools for your projects.",
-  icons: [{ rel: "icon", url: "/favicon.ico", type: "image/svg+xml" }],
+  icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
 const GeistSans = Geist({
