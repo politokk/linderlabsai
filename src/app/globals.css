@@ -232,8 +232,7 @@
     border-color: var(--color-border, currentColor);
   }
   ::selection {
-    background-color: var(--color-selection);
-    color: var(--color-selection-foreground);
+    @apply bg-selection text-selection-foreground;
   }
 }
 
