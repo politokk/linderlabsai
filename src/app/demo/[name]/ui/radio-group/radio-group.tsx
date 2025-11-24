@@ -1,5 +1,6 @@
 import RadioGroupDemo from "./radio-group-demo";
 import RadioGroupForm from "./radio-group-form";
+import RadioGroupPlan from "./radio-group-plan";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
@@ -12,6 +13,9 @@ export function radioGroup() {
         </ComponentWrapper>
         <ComponentWrapper name="Radio Group Form" icon="FileText">
           <RadioGroupForm />
+        </ComponentWrapper>
+        <ComponentWrapper name="Radio Group Plan" icon="Star">
+          <RadioGroupPlan />
         </ComponentWrapper>
       </div>
     </div>

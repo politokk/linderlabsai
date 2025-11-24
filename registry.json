@@ -2356,6 +2356,11 @@
             "path": "src/app/demo/[name]/ui/radio-group/radio-group-form.tsx",
             "type": "registry:component",
             "target": "app/radio-group-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/radio-group/radio-group-plan.tsx",
+            "type": "registry:component",
+            "target": "app/radio-group-plan.tsx"
           }
         ]
       },
