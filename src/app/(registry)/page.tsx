@@ -1,4 +1,6 @@
+"use client";
 import { ArrowRight, Blocks, Component, ToyBrick } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { MCPTabs } from "@/components/registry/mcp-tabs";
@@ -18,11 +20,87 @@ const blockItems = getBlocks().slice(0, 5);
 export default function Home() {
   return (
     <main className="container mt-4 p-5 md:mt-8 md:p-10">
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+        @keyframes pulse-glow {
+          0%, 100% {
+            filter: drop-shadow(0 0 2px currentColor);
+          }
+          50% {
+            filter: drop-shadow(0 0 8px currentColor);
+          }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        .animate-float-delay-1 {
+          animation: float 3s ease-in-out 0.2s infinite;
+        }
+        .animate-float-delay-2 {
+          animation: float 3s ease-in-out 0.4s infinite;
+        }
+        .animate-float-delay-3 {
+          animation: float 3s ease-in-out 0.6s infinite;
+        }
+        .animate-float-delay-4 {
+          animation: float 3s ease-in-out 0.8s infinite;
+        }
+      `}</style>
       <div className="mb-8">
         <div className="space-y-2">
-          <h1 className="font-bold text-3xl tracking-tight md:text-4xl">
-            Registry
-          </h1>
+          <div className="flex items-center gap-3">
+            <div className="flex gap-2">
+              <Image
+                src="/favicon.ico"
+                alt="Registry Logo"
+                width={40}
+                height={40}
+                className="size-10 animate-float cursor-pointer transition-all duration-300 hover:scale-125 hover:rotate-12"
+              />
+              <Image
+                src="/favicon.ico"
+                alt="Registry Logo Blue"
+                width={40}
+                height={40}
+                className="size-10 animate-float-delay-1 cursor-pointer transition-all duration-300 hover:scale-125 hover:-rotate-12"
+                style={{ filter: "hue-rotate(180deg) saturate(1.5)" }}
+              />
+              <Image
+                src="/favicon.ico"
+                alt="Registry Logo Green"
+                width={40}
+                height={40}
+                className="size-10 animate-float-delay-2 cursor-pointer transition-all duration-300 hover:scale-125 hover:rotate-12"
+                style={{ filter: "hue-rotate(90deg) saturate(1.3)" }}
+              />
+              <Image
+                src="/favicon.ico"
+                alt="Registry Logo Purple"
+                width={40}
+                height={40}
+                className="size-10 animate-float-delay-3 cursor-pointer transition-all duration-300 hover:scale-125 hover:-rotate-12"
+                style={{ filter: "hue-rotate(270deg) saturate(1.4)" }}
+              />
+              <Image
+                src="/favicon.ico"
+                alt="Registry Logo Orange"
+                width={40}
+                height={40}
+                className="size-10 animate-float-delay-4 cursor-pointer transition-all duration-300 hover:scale-125 hover:rotate-12"
+                style={{ filter: "hue-rotate(30deg) saturate(1.6) brightness(1.1)" }}
+              />
+            </div>
+            <h1 className="font-bold text-3xl tracking-tight md:text-4xl">
+              Registry
+            </h1>
+          </div>
           <p className="text-muted-foreground">
             Distribute your design system tokens, custom components, hooks,
             pages, and other files to any React project.
