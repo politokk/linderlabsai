@@ -3,8 +3,11 @@ import ComboboxDropdownMenu from "./combobox-dropdown-menu";
 import ComboboxForm from "./combobox-form";
 import ComboboxPopover from "./combobox-popover";
 import ComboboxResponsive from "./combobox-responsive";
+import ComboboxUserDemo from "./combobox-user-demo";
+import ComboboxTimezoneDemo from "./combobox-timezone-demo";
+import ComboboxTagsDemo from "./combobox-tags-demo";
+import ComboboxMultiSelectDemo from "./combobox-multi-select-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
-
 
 export function combobox() {
   return (
@@ -24,6 +27,18 @@ export function combobox() {
         </ComponentWrapper>
         <ComponentWrapper name="Combobox Responsive" icon="Monitor">
           <ComboboxResponsive />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox User" icon="User">
+          <ComboboxUserDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Tags" icon="TagsIcon">
+          <ComboboxTagsDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Timezone" icon="Clock">
+          <ComboboxTimezoneDemo />
+        </ComponentWrapper>
+        <ComponentWrapper name="Combobox Multi Select" icon="ListOrdered">
+          <ComboboxMultiSelectDemo />
         </ComponentWrapper>
       </div>
     </div>

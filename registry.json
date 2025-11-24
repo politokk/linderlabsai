@@ -1397,6 +1397,26 @@
             "path": "src/app/demo/[name]/ui/combobox/combobox-responsive.tsx",
             "type": "registry:component",
             "target": "app/combobox-responsive.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-user-demo.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-user-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-timezone-demo.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-timezone-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-tags-demo.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-tags-demo.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/combobox/combobox-multi-select-demo.tsx",
+            "type": "registry:component",
+            "target": "app/combobox-multi-select-demo.tsx"
           }
         ]
       },
