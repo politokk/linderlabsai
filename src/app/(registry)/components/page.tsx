@@ -238,13 +238,20 @@ import AppearanceSettings from "@/app/demo/[name]/ui/form/appearance-settings";
 import ShipRegistrationForm from "@/app/demo/[name]/ui/form/ship-registration-form";
 import ShippingForm from "@/app/demo/[name]/ui/form/shipping-form";
 import NotionPromptForm from "@/app/demo/[name]/ui/form/notion-prompt-form";
-
+import CodeViewer from "@/app/demo/[name]/ui/code/code-viewer";
+import CodeBlockCommandDemo from "@/app/demo/[name]/ui/code/code-block-command";
 export default function ComponentsPage() {
   return (
     <>
       <RegistryHeader componentTitle="Components" />
       <div className="flex flex-1 flex-col gap-4 p-4 mt-15">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <ComponentWrapper name="Code" icon="Code">
+          <CodeViewer />
+        </ComponentWrapper>
+        <ComponentWrapper name="Code Block Command" icon="Code">
+          <CodeBlockCommandDemo />
+        </ComponentWrapper>
         <ComponentWrapper name="Accordion" icon="ChevronDown">
           <AccordionDemo />
         </ComponentWrapper>

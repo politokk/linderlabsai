@@ -98,7 +98,7 @@ export function CodeBlockCommand({
   }, [packageManager, tabs])
 
   return (
-    <div className="relative overflow-x-auto border rounded-3xl">
+    <div className="relative overflow-x-auto border rounded-3xl w-full">
       <Tabs
         value={packageManager}
         className="gap-0"
