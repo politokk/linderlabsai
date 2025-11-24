@@ -4,6 +4,7 @@ import {
   Home,
   Menu,
   Figma,
+  Component,
 } from "lucide-react";
 import { useEffect, useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
@@ -48,6 +49,11 @@ const data = {
       title: "Design Tokens",
       path: "/tokens",
       icon: Figma,
+    },
+    {
+      title: "Components",
+      path: "/components",
+      icon: Component,
     },
   ],
 };

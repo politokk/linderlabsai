@@ -10,6 +10,7 @@ import { ComponentActions } from "@/components/registry/component-actions";
 import { getActiveStyle } from "@/lib/styles";
 import { getPrompt } from "@/lib/utils";
 import { BlockDisplay } from "@/components/display/block-display";
+import { CodePreviewToggle } from "@/components/display/code-preview-toggle"
 
 function getIconComponent(component: { icon?: string; type?: string }): LucideIcon | null {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
@@ -89,7 +90,7 @@ export default async function RegistryItemPage({
       <div className="mb-4 px-2">
           <div className="flex flex-row sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
             <div className="flex items-center gap-3">
-              <h1 className="flex items-center gap-3 text-muted-foreground [&_svg]:text-muted-foreground scroll-m-20 text-2xl font-bold tracking-tight sm:text-2xl xl:text-2xl">
+              <h1 className="flex items-center gap-3 text-muted-foreground [&_svg]:text-muted-foreground scroll-m-20 text-2xl font-semibold tracking-tight sm:text-2xl xl:text-2xl">
                 {IconComponent && <IconComponent className="size-6 text-secondary-foreground" />}
                 {component.title}
               </h1>
@@ -115,9 +116,9 @@ export default async function RegistryItemPage({
         </div>
         {/* Block Display */}
         <BlockDisplay
-          name={component.name}
-          styleName={activeStyle.name}
-        />
+  name={component.name}
+  styleName={activeStyle.name}
+/>
       </div>
 
       {/* Footer navigation - sticky at bottom of content */}

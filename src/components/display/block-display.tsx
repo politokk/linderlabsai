@@ -15,9 +15,13 @@ import type { Style } from "@/lib/styles"
 export async function BlockDisplay({
   name,
   styleName,
+  hideToolbar = false,
+  view,
 }: {
   name: string
   styleName: Style["name"]
+  hideToolbar?: boolean
+  view?: "code" | "preview"
 }) {
   const item = await getCachedRegistryItem(name, styleName)
 
@@ -36,6 +40,8 @@ export async function BlockDisplay({
       tree={tree}
       highlightedFiles={highlightedFiles}
       styleName={styleName}
+      hideToolbar={hideToolbar}
+      initialView={view}
     >
       <ComponentPreview
         name={item.name}
