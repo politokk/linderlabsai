@@ -49,3 +49,9 @@ export function getComponents() {
     (component) => component.type === "registry:component",
   );
 }
+
+export function getAIs() {
+  return getRegistryItems().filter(
+    (component) => component.type === "registry:ai",
+  );
+}

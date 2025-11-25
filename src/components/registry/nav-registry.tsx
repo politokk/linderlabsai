@@ -5,6 +5,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import {
   Blocks,
+  Brain,
   ChevronDown,
   ChevronRight,
   Component,
@@ -51,8 +52,10 @@ function getIconComponent(component: RegistryItem): LucideIcon {
       return Blocks;
     case "registry:component":
       return Component;
-    case "registry:ui":
+    case "registry:ui": 
       return ToyBrick;
+    case "registry:ai":
+      return Brain;
     default:
       return Component;
   }

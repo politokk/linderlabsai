@@ -796,7 +796,6 @@
         "type": "registry:ui",
         "title": "Accordion",
         "icon": "FolderRoot",
-        "category": "ui",
         "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
         "registryDependencies": [
           "https://linderlabsai.vercel.app/r/theme.json"

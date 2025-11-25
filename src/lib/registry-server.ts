@@ -23,6 +23,10 @@ function getFileTarget(file: z.infer<typeof registryItemFileSchema>) {
       target = `components/ui/${fileName}`;
     }
 
+    if (file.type === "registry:ai") {
+      target = `components/ai/${fileName}`;
+    }
+
     if (file.type === "registry:hook") {
       target = `hooks/${fileName}`;
     }
