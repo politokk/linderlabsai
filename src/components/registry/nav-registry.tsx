@@ -9,7 +9,12 @@ import {
   ChevronRight,
   Component,
   ToyBrick,
+  Sparkles,
+  ShoppingCart,
+  LogIn,
+  Layers,
   type LucideIcon,
+  FolderRoot,
 } from "lucide-react"
 import * as LucideIcons from "lucide-react"
 import {
@@ -25,6 +30,9 @@ import {
   SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarMenuSub,
+  SidebarMenuSubButton,
+  SidebarMenuSubItem,
   useSidebar,
 } from "@/components/ui/sidebar"
 
@@ -33,29 +41,116 @@ interface RegistryItem {
   title: string
   icon?: string
   type: string
+  category?: string
   isNew?: boolean
   badge?: {
     text: string
   }
 }
 
+// Category icon mapping
+const categoryIcons: Record<string, LucideIcon> = {
+  brand: Sparkles,
+  auth: LogIn,
+  store: ShoppingCart,
+  ui: ToyBrick,
+  blocks: Blocks,
+}
+
+// Category display names
+const categoryLabels: Record<string, string> = {
+  brand: "Brand",
+  auth: "Authentication",
+  store: "Store",
+  ui: "UI Primitives",
+  blocks: "Blocks",
+}
+
 // Function to get icon component from registry data
 function getIconComponent(component: RegistryItem): LucideIcon {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
-    return LucideIcons[component.icon as keyof typeof LucideIcons] as LucideIcon;
+    return LucideIcons[component.icon as keyof typeof LucideIcons] as LucideIcon
   }
-  
+
   // Fallback icons based on component type
   switch (component.type) {
     case "registry:block":
-      return Blocks;
+      return Blocks
     case "registry:component":
-      return Component;
+      return Component
     case "registry:ui":
-      return ToyBrick;
+      return ToyBrick
     default:
-      return Component;
+      return Component
   }
+}
+
+// Group items by category
+function groupByCategory(items: RegistryItem[]): Record<string, RegistryItem[]> {
+  return items.reduce((acc, item) => {
+    const category = item.category || "uncategorized"
+    if (!acc[category]) {
+      acc[category] = []
+    }
+    acc[category].push(item)
+    return acc
+  }, {} as Record<string, RegistryItem[]>)
+}
+
+interface CategoryGroupProps {
+  category: string
+  items: RegistryItem[]
+  pathname: string
+  onItemClick: () => void
+}
+
+function CategoryGroup({ category, items, pathname, onItemClick }: CategoryGroupProps) {
+  const CategoryIcon = categoryIcons[category] || Layers
+  const label = categoryLabels[category] || category.charAt(0).toUpperCase() + category.slice(1)
+
+  return (
+    <Collapsible defaultOpen className="group/category">
+      <SidebarMenuItem>
+        <CollapsibleTrigger asChild>
+          <SidebarMenuButton className="w-full">
+            <CategoryIcon className="size-4" />
+            <span>{label}</span>
+            <ChevronRight className="ml-auto size-4 transition-transform duration-200 group-data-[state=open]/category:rotate-90" />
+          </SidebarMenuButton>
+        </CollapsibleTrigger>
+        <CollapsibleContent>
+          <SidebarMenuSub>
+            {items.map((item) => {
+              const Icon = getIconComponent(item)
+              return (
+                <SidebarMenuSubItem key={item.name}>
+                  <SidebarMenuSubButton
+                    asChild
+                    isActive={pathname === `/registry/${item.name}`}
+                  >
+                    <Link onClick={onItemClick} href={`/registry/${item.name}`}>
+                      <Icon className="size-3.5" />
+                      <span>{item.title}</span>
+                      {(item.badge || item.isNew) && (
+                        <div className="ml-auto flex items-center gap-1.5">
+                          {item.badge && (
+                            <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                          )}
+                          {item.isNew && (
+                            <span className="flex size-1.5 rounded-full bg-primary" />
+                          )}
+                        </div>
+                      )}
+                    </Link>
+                  </SidebarMenuSubButton>
+                </SidebarMenuSubItem>
+              )
+            })}
+          </SidebarMenuSub>
+        </CollapsibleContent>
+      </SidebarMenuItem>
+    </Collapsible>
+  )
 }
 
 interface NavRegistryProps {
@@ -72,9 +167,28 @@ export function NavRegistry({
   const pathname = usePathname()
   const { setOpenMobile } = useSidebar()
 
+  const handleItemClick = () => setOpenMobile(false)
+
+  // Group components by category
+  const groupedComponents = React.useMemo(
+    () => groupByCategory(filteredComponents),
+    [filteredComponents]
+  )
+
+  // Group UI items by category (most are "ui" category)
+  const groupedUiItems = React.useMemo(
+    () => groupByCategory(filteredUiItems),
+    [filteredUiItems]
+  )
+
+  // Sort categories for consistent ordering
+  const componentCategories = Object.keys(groupedComponents).sort()
+  const uiCategories = Object.keys(groupedUiItems).sort()
+
   return (
     <>
-      <Collapsible defaultOpen={true} className="group/collapsible" id="blocks">
+      {/* Blocks Section */}
+      <Collapsible defaultOpen className="group/collapsible" id="blocks">
         <SidebarGroup>
           <CollapsibleTrigger className="w-full">
             <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
@@ -93,7 +207,7 @@ export function NavRegistry({
             <SidebarGroupContent>
               <SidebarMenu>
                 {filteredBlocks.map((item) => {
-                  const Icon = getIconComponent(item);
+                  const Icon = getIconComponent(item)
                   return (
                     <SidebarMenuItem key={item.name}>
                       <SidebarMenuButton
@@ -101,24 +215,23 @@ export function NavRegistry({
                         isActive={pathname === `/registry/${item.name}`}
                         tooltip={item.title}
                       >
-                        <Link
-                          onClick={() => setOpenMobile(false)}
-                          href={`/registry/${item.name}`}
-                        >
+                        <Link onClick={handleItemClick} href={`/registry/${item.name}`}>
                           <Icon className="size-4" />
                           {item.title}
-                          <div className="flex items-center gap-2 ml-auto">
-  {item.badge && (
-    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-  )}
-  {item.isNew && (
-    <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground" />
-  )}
-</div>
+                          {(item.badge || item.isNew) && (
+                            <div className="ml-auto flex items-center gap-2">
+                              {item.badge && (
+                                <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                              )}
+                              {item.isNew && (
+                                <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground" />
+                              )}
+                            </div>
+                          )}
                         </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
-                  );
+                  )
                 })}
               </SidebarMenu>
             </SidebarGroupContent>
@@ -126,7 +239,8 @@ export function NavRegistry({
         </SidebarGroup>
       </Collapsible>
 
-      <Collapsible defaultOpen={true} className="group/collapsible" id="components">
+      {/* Components Section - Grouped by Category */}
+      <Collapsible defaultOpen className="group/collapsible" id="components">
         <SidebarGroup>
           <CollapsibleTrigger className="w-full">
             <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
@@ -144,41 +258,23 @@ export function NavRegistry({
           <CollapsibleContent>
             <SidebarGroupContent>
               <SidebarMenu>
-                {filteredComponents.map((item) => {
-                  const Icon = getIconComponent(item);
-                  return (
-                    <SidebarMenuItem key={item.name}>
-                      <SidebarMenuButton
-                        asChild
-                        isActive={pathname === `/registry/${item.name}`}
-                        tooltip={item.title}
-                      >
-                        <Link
-                          onClick={() => setOpenMobile(false)}
-                          href={`/registry/${item.name}`}
-                        >
-                          <Icon className="size-4" />
-                          {item.title}
-                          <div className="flex items-center gap-2 ml-auto">
-  {item.badge && (
-    <SidebarMenuBadge className="mr-4">{item.badge.text}</SidebarMenuBadge>
-  )}
-  {item.isNew && (
-    <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground" />
-  )}
-</div>
-                        </Link>
-                      </SidebarMenuButton>
-                    </SidebarMenuItem>
-                  );
-                })}
+                {componentCategories.map((category) => (
+                  <CategoryGroup
+                    key={category}
+                    category={category}
+                    items={groupedComponents[category]}
+                    pathname={pathname}
+                    onItemClick={handleItemClick}
+                  />
+                ))}
               </SidebarMenu>
             </SidebarGroupContent>
           </CollapsibleContent>
         </SidebarGroup>
       </Collapsible>
 
-      <Collapsible defaultOpen={true} className="group/collapsible" id="ui-primitives">
+      {/* UI Primitives Section - Grouped by Category */}
+      <Collapsible defaultOpen className="group/collapsible" id="ui-primitives">
         <SidebarGroup>
           <CollapsibleTrigger className="w-full">
             <SidebarGroupLabel className="flex cursor-pointer items-center justify-between">
@@ -192,37 +288,51 @@ export function NavRegistry({
               </div>
             </SidebarGroupLabel>
           </CollapsibleTrigger>
+
           <CollapsibleContent>
             <SidebarGroupContent>
               <SidebarMenu>
-                {filteredUiItems.map((item) => {
-                  const Icon = getIconComponent(item);
-                  return (
-                    <SidebarMenuItem key={item.name}>
-                      <SidebarMenuButton
-                        asChild
-                        isActive={pathname === `/registry/${item.name}`}
-                        tooltip={item.title}
-                      >
-                        <Link
-                          onClick={() => setOpenMobile(false)}
-                          href={`/registry/${item.name}`}
+                {uiCategories.length > 1 ? (
+                  // If multiple categories, show grouped
+                  uiCategories.map((category) => (
+                    <CategoryGroup
+                      key={category}
+                      category={category}
+                      items={groupedUiItems[category]}
+                      pathname={pathname}
+                      onItemClick={handleItemClick}
+                    />
+                  ))
+                ) : (
+                  // If single category (all "ui"), show flat list
+                  filteredUiItems.map((item) => {
+                    const Icon = getIconComponent(item)
+                    return (
+                      <SidebarMenuItem key={item.name}>
+                        <SidebarMenuButton
+                          asChild
+                          isActive={pathname === `/registry/${item.name}`}
+                          tooltip={item.title}
                         >
-                          <Icon className="size-4" />
-                          {item.title}
-                          <div className="flex items-center gap-2 ml-auto">
-  {item.badge && (
-    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-  )}
-  {item.isNew && (
-    <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground" />
-  )}
-</div>
-                        </Link>
-                      </SidebarMenuButton>
-                    </SidebarMenuItem>
-                  );
-                })}
+                          <Link onClick={handleItemClick} href={`/registry/${item.name}`}>
+                            <Icon className="size-4" />
+                            {item.title}
+                            {(item.badge || item.isNew) && (
+                              <div className="ml-auto flex items-center gap-2">
+                                {item.badge && (
+                                  <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                                )}
+                                {item.isNew && (
+                                  <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground" />
+                                )}
+                              </div>
+                            )}
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                    )
+                  })
+                )}
               </SidebarMenu>
             </SidebarGroupContent>
           </CollapsibleContent>
