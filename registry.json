@@ -3229,6 +3229,49 @@
             "target": "components/demos/ai/checkpoint/checkpoint.tsx"
           }
         ]
+      },
+      {
+        "name": "confirmation",
+        "type": "registry:ui",
+        "title": "Confirmation",
+        "icon": "Check",
+        "category": "ai",
+        "description": "A component for confirming actions before they are executed.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "src/app/demo/[name]/ai/confirmation.tsx",
+            "type": "registry:page",
+            "target": "app/confirmation/page.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/confirmation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/confirmation.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/confirmation/confirmation.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/confirmation/confirmation.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/confirmation/confirmation-request.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/confirmation/confirmation-request.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/confirmation/confirmation-accepted.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/confirmation/confirmation-accepted.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/confirmation/confirmation-rejected.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/confirmation/confirmation-rejected.tsx"
+          }
+        ]
       }
     ]
 }

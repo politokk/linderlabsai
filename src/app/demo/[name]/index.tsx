@@ -76,6 +76,7 @@ import tooltip from "@/app/demo/[name]/ui/tooltip/tooltip";
 // ai
 import chainofthought from "@/app/demo/[name]/ai/chainofthought";
 import checkpoint from "@/app/demo/[name]/ai/checkpoint";
+import confirmation from "@/app/demo/[name]/ai/confirmation";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -159,4 +160,5 @@ export const demos: { [name: string]: Demo } = {
   // ai
   chainofthought,
   checkpoint,
+  confirmation,
 };

@@ -1,5 +1,5 @@
 git add .
-git commit -m "aielements"
+git commit -m "confirmation"
 git push origin main    
 git push origin main --force
 
