@@ -7,42 +7,32 @@ import { useState } from "react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useSidebar } from "@/components/ui/sidebar";
+import { Separator } from "@/components/ui/separator";
+import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 
+import { cn } from "@/lib/utils";
 import { Logo } from "./logo";
 
 export function BrandHeader() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const { state, toggleSidebar } = useSidebar();
-  const isCollapsed = state === "collapsed";
+  const { state } = useSidebar();
 
   return (
-    <header className="fixed z-50 w-full border-border border-b bg-background">
-      <div className="flex h-16 items-center justify-between px-2">
-        <div className="flex items-center space-x-4">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="hidden size-8 md:flex"
-            onClick={toggleSidebar}
-          >
-            {isCollapsed ? (
-              <Menu className="size-4" />
-            ) : (
-              <X className="size-4" />
-            )}
-          </Button>
+    <header
+      className={cn(
+        "fixed top-0 z-50 border-border border-b bg-background/80 backdrop-blur-sm transition-[width,left] duration-200 ease-linear",
+        state === "collapsed"
+          ? "left-[var(--sidebar-width-icon)] w-[calc(100%-var(--sidebar-width-icon))]"
+          : "left-[var(--sidebar-width)] w-[calc(100%-var(--sidebar-width))]",
+        "max-md:left-0 max-md:w-full"
+      )}
+    >
+      <div className="flex h-16 items-center justify-between px-4">
+        <div className="flex items-center gap-2">
+          <SidebarTrigger className="-ml-1" />
+          <Separator orientation="vertical" className="mr-2 h-4" />
 
-          <Button
-            variant="ghost"
-            size="icon"
-            className="size-8 md:hidden"
-            onClick={toggleSidebar}
-          >
-            <Menu className="size-4" />
-          </Button>
-
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center md:hidden">
             <Logo />
           </Link>
         </div>

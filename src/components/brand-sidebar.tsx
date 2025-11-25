@@ -115,7 +115,7 @@ export function BrandSidebar({
   ];
 
   return (
-    <Sidebar variant="sidebar" collapsible="icon" className="mt-16">
+    <Sidebar variant="sidebar" collapsible="icon">
       <SidebarHeader>
         <Logo />
         <div className={cn(isCollapsed ? "py-2" : "p-2")}>
