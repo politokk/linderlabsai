@@ -21,8 +21,6 @@ function getIconName(component: { icon?: string; type?: string }): string | null
         return "Component";
       case "registry:ui":
         return "ToyBrick";
-      case "registry:ai":
-        return "Brain";
     }
   }
   
