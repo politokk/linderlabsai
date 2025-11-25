@@ -22,6 +22,7 @@ import {
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarMenu,
+  SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
@@ -33,6 +34,9 @@ interface RegistryItem {
   icon?: string
   type: string
   isNew?: boolean
+  badge?: {
+    text: string
+  }
 }
 
 // Function to get icon component from registry data
@@ -103,11 +107,14 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
-                          {item.isNew && (
-                            <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
-                          )}
                         </Link>
                       </SidebarMenuButton>
+                      {item.badge && (
+                        <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                      )}
+                      {item.isNew && (
+                        <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
+                      )}
                     </SidebarMenuItem>
                   );
                 })}
@@ -150,11 +157,14 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
-                          {item.isNew && (
-                            <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
-                          )}
                         </Link>
                       </SidebarMenuButton>
+                      {item.badge && (
+                        <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                      )}
+                      {item.isNew && (
+                        <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
+                      )}
                     </SidebarMenuItem>
                   );
                 })}
@@ -196,11 +206,14 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
-                          {item.isNew && (
-                            <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
-                          )}
                         </Link>
                       </SidebarMenuButton>
+                      {item.badge && (
+                        <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                      )}
+                      {item.isNew && (
+                        <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
+                      )}
                     </SidebarMenuItem>
                   );
                 })}

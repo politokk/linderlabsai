@@ -584,6 +584,10 @@
       "type": "registry:component",
       "title": "Brand Logo",
       "icon": "Sparkles",
+      "badge": {
+        "text": "New",
+        "variant": "default"
+      },
       "description": "A styled, simple, reusable logo",
       "registryDependencies": [
         "https://linderlabsai.vercel.app/r/theme.json"
