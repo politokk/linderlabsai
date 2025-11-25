@@ -399,6 +399,11 @@
           "target": "hooks/use-layout.tsx"
         },
         {
+          "path": "src/hooks/use-copy-to-clipboard.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-copy-to-clipboard.ts"
+        },
+        {
           "path": "src/hooks/use-media-query.tsx",
           "type": "registry:hook",
           "target": "hooks/use-media-query.tsx"
