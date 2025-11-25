@@ -26,7 +26,7 @@ const data = {
   user: {
     name: "LinderLabs UI",
     email: "hello@linderlabs.com",
-    avatar: "/linderavatar.png",
+    avatar: "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/linderavatar.png",
   },
   teams: [
     {
