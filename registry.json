@@ -583,7 +583,7 @@
       "name": "logo",
       "type": "registry:component",
       "title": "Brand Logo",
-      "icon": "Package",
+      "icon": "Sparkles",
       "description": "A styled, simple, reusable logo",
       "registryDependencies": [
         "https://linderlabsai.vercel.app/r/theme.json"
