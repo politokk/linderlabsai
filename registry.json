@@ -588,6 +588,7 @@
         "text": "New",
         "variant": "default"
       },
+      "isNew": true,
       "description": "A styled, simple, reusable logo",
       "registryDependencies": [
         "https://linderlabsai.vercel.app/r/theme.json"

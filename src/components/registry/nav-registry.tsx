@@ -107,14 +107,16 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
+                          <div className="flex items-center gap-2 ml-auto">
+  {item.badge && (
+    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+  )}
+  {item.isNew && (
+    <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground" />
+  )}
+</div>
                         </Link>
                       </SidebarMenuButton>
-                      {item.badge && (
-                        <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                      )}
-                      {item.isNew && (
-                        <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
-                      )}
                     </SidebarMenuItem>
                   );
                 })}
@@ -157,14 +159,16 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
+                          <div className="flex items-center gap-2 ml-auto">
+  {item.badge && (
+    <SidebarMenuBadge className="mr-4">{item.badge.text}</SidebarMenuBadge>
+  )}
+  {item.isNew && (
+    <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground" />
+  )}
+</div>
                         </Link>
                       </SidebarMenuButton>
-                      {item.badge && (
-                        <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                      )}
-                      {item.isNew && (
-                        <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
-                      )}
                     </SidebarMenuItem>
                   );
                 })}
@@ -206,14 +210,16 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
+                          <div className="flex items-center gap-2 ml-auto">
+  {item.badge && (
+    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+  )}
+  {item.isNew && (
+    <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground" />
+  )}
+</div>
                         </Link>
                       </SidebarMenuButton>
-                      {item.badge && (
-                        <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                      )}
-                      {item.isNew && (
-                        <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
-                      )}
                     </SidebarMenuItem>
                   );
                 })}
