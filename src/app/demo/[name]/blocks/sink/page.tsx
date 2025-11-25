@@ -1,4 +1,10 @@
+import { Metadata } from "next"
+
+import { componentRegistry } from "@/components/component-registry"
+import { ComponentWrapper } from "@/components/display/component-wrapper"
 import { AppSidebar } from "@/components/sidebar/app-sidebar"
+import { ModeToggle } from "@/components/themes/mode-toggle"
+import { ThemeSelector } from "@/components/themes/theme-selector"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,12 +20,20 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
+export const dynamic = "force-static"
+export const revalidate = false
+
+export const metadata: Metadata = {
+  title: "Kitchen Sink",
+  description: "A page with all components for testing purposes.",
+}
+
 export default function SinkPage() {
   return (
-    <SidebarProvider>
+    <SidebarProvider defaultOpen={true}>
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
+        <header className="bg-background sticky top-0 z-10 flex h-16 shrink-0 items-center gap-2 border-b transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
           <div className="flex items-center gap-2 px-4">
             <SidebarTrigger className="-ml-1" />
             <Separator
@@ -29,25 +43,39 @@ export default function SinkPage() {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
-                  <BreadcrumbLink href="#">
-                    Building Your Application
-                  </BreadcrumbLink>
+                  <BreadcrumbLink href="#">Kitchen Sink</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
-                  <BreadcrumbPage>Data Fetching</BreadcrumbPage>
+                  <BreadcrumbPage>All Components</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
           </div>
-        </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="bg-muted/50 aspect-video rounded-xl" />
-            <div className="bg-muted/50 aspect-video rounded-xl" />
-            <div className="bg-muted/50 aspect-video rounded-xl" />
+          <div className="ml-auto flex items-center gap-2 px-4">
+            <ModeToggle />
+            <ThemeSelector />
           </div>
-          <div className="bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min" />
+        </header>
+        <div className="flex flex-1 flex-col gap-4 p-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {Object.entries(componentRegistry)
+              .filter(([, component]) => {
+                return component.type === "registry:ui"
+              })
+              .map(([key, component]) => {
+                const Component = component.component
+                return (
+                  <ComponentWrapper
+                    key={key}
+                    name={key}
+                    className={component.className || ""}
+                  >
+                    <Component />
+                  </ComponentWrapper>
+                )
+              })}
+          </div>
         </div>
       </SidebarInset>
     </SidebarProvider>
