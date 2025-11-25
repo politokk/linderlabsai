@@ -574,12 +574,6 @@
       "icon": "PanelTop",
       "description": "A styled, simple, reusable header",
       "registryDependencies": [
-        "button",
-        "input",
-        "avatar",
-        "sidebar",
-        "https://linderlabsai.vercel.app/r/sonner.json",
-        "https://linderlabsai.vercel.app/r/logo.json",
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
       "files": [
@@ -621,9 +615,6 @@
       "icon": "Sidebar",
       "description": "A styled, simple, reusable sidebar",
       "registryDependencies": [
-        "badge",
-        "button",
-        "sidebar",
         "https://linderlabsai.vercel.app/r/sonner.json",
         "https://linderlabsai.vercel.app/r/logo.json",
         "https://linderlabsai.vercel.app/r/theme.json"
@@ -727,8 +718,6 @@
       "icon": "RectangleHorizontal",
       "description": "Attention-grabbing section for the top of your landing pages.",
       "registryDependencies": [
-        "badge",
-        "button",
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
       "files": [
