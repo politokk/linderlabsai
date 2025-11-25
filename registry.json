@@ -124,11 +124,6 @@
           "target": "components/themes/mode-switcher.tsx"
         },
         {
-          "path": "src/components/themes/theme-selector.tsx",
-          "type": "registry:component",
-          "target": "components/themes/theme-selector.tsx"
-        },
-        {
           "path": "src/components/themes/orb.tsx",
           "type": "registry:component",
           "target": "components/themes/orb.tsx"
@@ -537,6 +532,21 @@
         {
           "path": "src/components/brand-header.tsx",
           "type": "registry:component"
+        },
+        {
+          "path": "src/components/themes/theme-selector.tsx",
+          "type": "registry:component",
+          "target": "components/themes/theme-selector.tsx"
+        },
+        {
+          "path": "src/components/themes/mode-switcher.tsx",
+          "type": "registry:component",
+          "target": "components/themes/mode-switcher.tsx"
+        },
+        {
+          "path": "src/components/themes/orb.tsx",
+          "type": "registry:component",
+          "target": "components/themes/orb.tsx"
         },
         {
           "path": "src/layouts/shell-layout.tsx",
