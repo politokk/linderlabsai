@@ -27,7 +27,7 @@ export function BrandHeader() {
         "max-md:left-0 max-md:w-full"
       )}
     >
-      <div className="flex h-16 items-center justify-between px-4">
+      <div className="flex h-12 items-center justify-between px-4">
         <div className="flex items-center gap-2">
           <SidebarTrigger className="-ml-1" />
           <Separator orientation="vertical" className="mr-2 h-4" />

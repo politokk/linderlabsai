@@ -1,188 +1,71 @@
-"use client";
+"use client"
 
+import * as React from "react"
+import { usePathname } from "next/navigation"
 import {
-  AlertTriangle,
-  BarChart2,
-  Clock,
-  Database,
-  Home,
-  LayoutGrid,
-  MessageSquareText,
-  MoreHorizontal,
-  Plus,
-  Table,
-} from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import type * as React from "react";
+  Component,
+  Boxes,
+  FileText,
+  Send,
+  LifeBuoy,
+} from "lucide-react"
 
-import { Button } from "@/components/ui/button";
+import { NavMain } from "@/components/sidebar/nav-main"
+import { NavUser } from "@/components/sidebar/nav-user"
 import {
   Sidebar,
   SidebarContent,
-  SidebarGroup,
-  SidebarGroupContent,
+  SidebarFooter,
   SidebarHeader,
-  SidebarMenu,
-  SidebarMenuBadge,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarSeparator,
   SidebarRail,
-  useSidebar,
-} from "@/components/ui/sidebar";
-import { cn } from "@/lib/utils";
-import { Logo } from "@/components/logo";
-interface NavItem {
-  title: string;
-  href: string;
-  icon: React.ReactNode;
-  badge?: {
-    text: string;
-  };
+} from "@/components/ui/sidebar"
+import { Logo } from "@/components/logo"
+
+// This is sample data.
+const data = {
+  user: {
+    name: "LinderLabs UI",
+    email: "hello@linderlabs.com",
+    avatar: "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/linderavatar.png",
+  },
+  teams: [
+    {
+      name: "LinderLabs",
+      accent: "UI",
+      avatar: "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/orbs/orb-2.webp",
+      plan: "Free",
+    }
+  ],
+  navSecondary: [
+    {
+      title: "Support",
+      url: "#",
+      icon: LifeBuoy,
+    },
+    {
+      title: "Feedback",
+      url: "#",
+      icon: Send,
+    },
+  ],
 }
 
-interface SidebarProps {
-  collapsed?: boolean;
-  onToggle?: () => void;
-  className?: string;
-}
-
-export function BrandSidebar({
-  collapsed = false,
-  onToggle,
-  className,
-}: SidebarProps) {
-  const pathname = usePathname();
-  const { state } = useSidebar();
-  const isCollapsed = state === "collapsed";
-
-  const mainNavItems: NavItem[] = [
-    {
-      title: "Home",
-      href: "#",
-      icon: <Home className="size-4" />,
-    },
-    {
-      title: "Projects",
-      href: "#projects",
-      icon: <LayoutGrid className="size-4" />,
-    },
-    {
-      title: "Databases",
-      href: "#databases",
-      icon: <Database className="size-4" />,
-    },
-    {
-      title: "Tables",
-      href: "#tables",
-      icon: <Table className="size-4" />,
-      badge: {
-        text: "Beta",
-      },
-    },
-    {
-      title: "AI",
-      href: "#ai",
-      icon: <MessageSquareText className="size-4" />,
-      badge: {
-        text: "Alpha",
-      },
-    },
-  ];
-
-  const toolsNavItems: NavItem[] = [
-    {
-      title: "Alerts",
-      href: "#alerts",
-      icon: <AlertTriangle className="size-4" />,
-    },
-    {
-      title: "Analytics",
-      href: "#analytics",
-      icon: <BarChart2 className="size-4" />,
-    },
-    {
-      title: "History",
-      href: "#history",
-      icon: <Clock className="size-4" />,
-    },
-    {
-      title: "More",
-      href: "#more",
-      icon: <MoreHorizontal className="size-4" />,
-    },
-  ];
-
+export function BrandSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const pathname = usePathname()
   return (
-    <Sidebar variant="sidebar" collapsible="icon">
+    <Sidebar side="left" collapsible="icon" {...props}>
       <SidebarHeader>
         <Logo />
-        <div className={cn(isCollapsed ? "py-2" : "p-2")}>
-          <Button className={cn(isCollapsed ? "h-8 w-8 p-0" : "w-full")}>
-            <Plus className={cn("size-4", !isCollapsed && "mr-1")} />
-            {!isCollapsed && <span>Create</span>}
-          </Button>
-        </div>
       </SidebarHeader>
-
       <SidebarContent>
-        {/* Main Nav Items */}
-        <SidebarGroup>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {mainNavItems.map((item) => (
-                <SidebarMenuItem key={item.href}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={
-                      pathname === item.href ||
-                      (pathname === "" && item.href === "/")
-                    }
-                    tooltip={item.title}
-                  >
-                    <Link href={item.href}>
-                      {item.icon}
-                      <span>{item.title}</span>
-                    </Link>
-                  </SidebarMenuButton>
-                  {item.badge && (
-                    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                  )}
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
-
-        <SidebarSeparator />
-
-        {/* Tools Nav Items */}
-        <SidebarGroup>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {toolsNavItems.map((item) => (
-                <SidebarMenuItem key={item.href}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={pathname === item.href}
-                    tooltip={item.title}
-                  >
-                    <Link href={item.href}>
-                      {item.icon}
-                      <span>{item.title}</span>
-                    </Link>
-                  </SidebarMenuButton>
-                  {item.badge && (
-                    <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                  )}
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+        <NavMain type="registry:ui" label="Components" icon={Component} />
+        <NavMain type="registry:block" label="Blocks" icon={Boxes} />
+        <NavMain type="registry:page" label="Pages" icon={FileText} />
       </SidebarContent>
+      <SidebarFooter>
+        <NavUser user={data.user} />
+      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  );
+  )
 }
