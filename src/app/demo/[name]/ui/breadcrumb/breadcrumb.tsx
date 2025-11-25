@@ -1,10 +1,10 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper";
-import BreadcrumbDemo from "./breadcrumb-demo";
-import BreadcrumbDropdown from "./breadcrumb-dropdown";
-import BreadcrumbEllipsis from "./breadcrumb-ellipsis";
-import BreadcrumbLink from "./breadcrumb-link";
-import BreadcrumbResponsive from "./breadcrumb-responsive";
-import BreadcrumbSeparator from "./breadcrumb-separator";
+import BreadcrumbDemo from "@/components/demos/breadcrumb/breadcrumb-demo";
+import BreadcrumbDropdown from "@/components/demos/breadcrumb/breadcrumb-dropdown";
+import BreadcrumbEllipsis from "@/components/demos/breadcrumb/breadcrumb-ellipsis";
+import BreadcrumbLink from "@/components/demos/breadcrumb/breadcrumb-link";
+import BreadcrumbResponsive from "@/components/demos/breadcrumb/breadcrumb-responsive";
+import BreadcrumbSeparator from "@/components/demos/breadcrumb/breadcrumb-separator";
 
 export default function breadcrumb() {
   return (

@@ -1,14 +1,14 @@
-import ButtonGroupDemo from "./button-group-demo";
-import ButtonGroupNested from "./button-group-nested";
-import ButtonGroupSize from "./button-group-size";
-import ButtonGroupSeparator from "./button-group-separator";
-import ButtonGroupSplit from "./button-group-split";
-import ButtonGroupInput from "./button-group-input";
-import ButtonGroupDropdown from "./button-group-dropdown";
-import ButtonGroupSelect from "./button-group-select";
-import ButtonGroupPopover from "./button-group-popover";
-import ButtonGroupInputGroup from "./button-group-input-group";
-import ButtonGroupOrientation from "./button-group-orientation";
+import ButtonGroupDemo from "@/components/demos/button-group/button-group-demo";
+import ButtonGroupNested from "@/components/demos/button-group/button-group-nested";
+import ButtonGroupSize from "@/components/demos/button-group/button-group-size";
+import ButtonGroupSeparator from "@/components/demos/button-group/button-group-separator";
+import ButtonGroupSplit from "@/components/demos/button-group/button-group-split";
+import ButtonGroupInput from "@/components/demos/button-group/button-group-input";
+import ButtonGroupDropdown from "@/components/demos/button-group/button-group-dropdown";
+import ButtonGroupSelect from "@/components/demos/button-group/button-group-select";
+import ButtonGroupPopover from "@/components/demos/button-group/button-group-popover";
+import ButtonGroupInputGroup from "@/components/demos/button-group/button-group-input-group";
+import ButtonGroupOrientation from "@/components/demos/button-group/button-group-orientation";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

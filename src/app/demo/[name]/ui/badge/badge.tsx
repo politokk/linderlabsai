@@ -1,8 +1,8 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper";
-import BadgeDemo from "./badge-demo";
-import BadgeDestructive from "./badge-destructive";
-import BadgeOutline from "./badge-outline";
-import BadgeSecondary from "./badge-secondary";
+import BadgeDemo from "@/components/demos/badge/badge-demo";
+import BadgeDestructive from "@/components/demos/badge/badge-destructive";
+import BadgeOutline from "@/components/demos/badge/badge-outline";
+import BadgeSecondary from "@/components/demos/badge/badge-secondary";
 
 export default function badge() {
   return (

@@ -884,27 +884,27 @@
           {
             "path": "src/app/demo/[name]/ui/badge/badge.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/badge/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/badge/badge-demo.tsx",
+            "path": "src/components/demos/badge/badge-demo.tsx",
             "type": "registry:component",
-            "target": "app/badge-demo.tsx"
+            "target": "components/demos/badge/badge-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/badge/badge-destructive.tsx",
+            "path": "src/components/demos/badge/badge-destructive.tsx",
             "type": "registry:component",
-            "target": "app/badge-destructive.tsx"
+            "target": "components/demos/badge/badge-destructive.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/badge/badge-outline.tsx",
+            "path": "src/components/demos/badge/badge-outline.tsx",
             "type": "registry:component",
-            "target": "app/badge-outline.tsx"
+            "target": "components/demos/badge/badge-outline.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/badge/badge-secondary.tsx",
+            "path": "src/components/demos/badge/badge-secondary.tsx",
             "type": "registry:component",
-            "target": "app/badge-secondary.tsx"
+            "target": "components/demos/badge/badge-secondary.tsx"
           }
         ]
       },
@@ -922,37 +922,37 @@
           {
             "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/breadcrumb/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-demo.tsx",
+            "path": "src/components/demos/breadcrumb/breadcrumb-demo.tsx",
             "type": "registry:component",
-            "target": "app/breadcrumb-demo.tsx"
+            "target": "components/demos/breadcrumb/breadcrumb-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-dropdown.tsx",
+            "path": "src/components/demos/breadcrumb/breadcrumb-dropdown.tsx",
             "type": "registry:component",
-            "target": "app/breadcrumb-dropdown.tsx"
+            "target": "components/demos/breadcrumb/breadcrumb-dropdown.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-ellipsis.tsx",
+            "path": "src/components/demos/breadcrumb/breadcrumb-ellipsis.tsx",
             "type": "registry:component",
-            "target": "app/breadcrumb-ellipsis.tsx"
+            "target": "components/demos/breadcrumb/breadcrumb-ellipsis.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-link.tsx",
+            "path": "src/components/demos/breadcrumb/breadcrumb-link.tsx",
             "type": "registry:component",
-            "target": "app/breadcrumb-link.tsx"
+            "target": "components/demos/breadcrumb/breadcrumb-link.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-responsive.tsx",
+            "path": "src/components/demos/breadcrumb/breadcrumb-responsive.tsx",
             "type": "registry:component",
-            "target": "app/breadcrumb-responsive.tsx"
+            "target": "components/demos/breadcrumb/breadcrumb-responsive.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/breadcrumb/breadcrumb-separator.tsx",
+            "path": "src/components/demos/breadcrumb/breadcrumb-separator.tsx",
             "type": "registry:component",
-            "target": "app/breadcrumb-separator.tsx"
+            "target": "components/demos/breadcrumb/breadcrumb-separator.tsx"
           }
         ]
       },
@@ -970,72 +970,72 @@
           {
             "path": "src/app/demo/[name]/ui/button/button.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/button/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-demo.tsx",
+            "path": "src/components/demos/button/button-demo.tsx",
             "type": "registry:component",
-            "target": "app/button-demo.tsx"
+            "target": "components/demos/button/button-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-as-child.tsx",
+            "path": "src/components/demos/button/button-as-child.tsx",
             "type": "registry:component",
-            "target": "app/button-as-child.tsx"
+            "target": "components/demos/button/button-as-child.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-default.tsx",
+            "path": "src/components/demos/button/button-default.tsx",
             "type": "registry:component",
-            "target": "app/button-default.tsx"
+            "target": "components/demos/button/button-default.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-destructive.tsx",
+            "path": "src/components/demos/button/button-destructive.tsx",
             "type": "registry:component",
-            "target": "app/button-destructive.tsx"
+            "target": "components/demos/button/button-destructive.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-ghost.tsx",
+            "path": "src/components/demos/button/button-ghost.tsx",
             "type": "registry:component",
-            "target": "app/button-ghost.tsx"
+            "target": "components/demos/button/button-ghost.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-icon.tsx",
+            "path": "src/components/demos/button/button-icon.tsx",
             "type": "registry:component",
-            "target": "app/button-icon.tsx"
+            "target": "components/demos/button/button-icon.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-link.tsx",
+            "path": "src/components/demos/button/button-link.tsx",
             "type": "registry:component",
-            "target": "app/button-link.tsx"
+            "target": "components/demos/button/button-link.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-loading.tsx",
+            "path": "src/components/demos/button/button-loading.tsx",
             "type": "registry:component",
-            "target": "app/button-loading.tsx"
+            "target": "components/demos/button/button-loading.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-outline.tsx",
+            "path": "src/components/demos/button/button-outline.tsx",
             "type": "registry:component",
-            "target": "app/button-outline.tsx"
+            "target": "components/demos/button/button-outline.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-rounded.tsx",
+            "path": "src/components/demos/button/button-rounded.tsx",
             "type": "registry:component",
-            "target": "app/button-rounded.tsx"
+            "target": "components/demos/button/button-rounded.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-secondary.tsx",
+            "path": "src/components/demos/button/button-secondary.tsx",
             "type": "registry:component",
-            "target": "app/button-secondary.tsx"
+            "target": "components/demos/button/button-secondary.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-size.tsx",
+            "path": "src/components/demos/button/button-size.tsx",
             "type": "registry:component",
-            "target": "app/button-size.tsx"
+            "target": "components/demos/button/button-size.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button/button-with-icon.tsx",
+            "path": "src/components/demos/button/button-with-icon.tsx",
             "type": "registry:component",
-            "target": "app/button-with-icon.tsx"
+            "target": "components/demos/button/button-with-icon.tsx"
           }
         ]
       },
@@ -1055,62 +1055,62 @@
           {
             "path": "src/app/demo/[name]/ui/button-group/button-group.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/button-group/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-demo.tsx",
+            "path": "src/components/demos/button-group/button-group-demo.tsx",
             "type": "registry:component",
-            "target": "app/button-group-demo.tsx"
+            "target": "components/demos/button-group/button-group-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-dropdown.tsx",
+            "path": "src/components/demos/button-group/button-group-dropdown.tsx",
             "type": "registry:component",
-            "target": "app/button-group-dropdown.tsx"
+            "target": "components/demos/button-group/button-group-dropdown.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-input-group.tsx",
+            "path": "src/components/demos/button-group/button-group-input-group.tsx",
             "type": "registry:component",
-            "target": "app/button-group-input-group.tsx"
+            "target": "components/demos/button-group/button-group-input-group.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-input.tsx",
+            "path": "src/components/demos/button-group/button-group-input.tsx",
             "type": "registry:component",
-            "target": "app/button-group-input.tsx"
+            "target": "components/demos/button-group/button-group-input.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-nested.tsx",
+            "path": "src/components/demos/button-group/button-group-nested.tsx",
             "type": "registry:component",
-            "target": "app/button-group-nested.tsx"
+            "target": "components/demos/button-group/button-group-nested.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-orientation.tsx",
+              "path": "src/components/demos/button-group/button-group-orientation.tsx",
             "type": "registry:component",
-            "target": "app/button-group-orientation.tsx"
+            "target": "components/demos/button-group/button-group-orientation.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-popover.tsx",
+            "path": "src/components/demos/button-group/button-group-popover.tsx",
             "type": "registry:component",
-            "target": "app/button-group-popover.tsx"
+            "target": "components/demos/button-group/button-group-popover.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-select.tsx",
+            "path": "src/components/demos/button-group/button-group-select.tsx",
             "type": "registry:component",
-            "target": "app/button-group-select.tsx"
+            "target": "components/demos/button-group/button-group-select.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-separator.tsx",
+            "path": "src/components/demos/button-group/button-group-separator.tsx",
             "type": "registry:component",
-            "target": "app/button-group-separator.tsx"
+            "target": "components/demos/button-group/button-group-separator.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-size.tsx",
+            "path": "src/components/demos/button-group/button-group-size.tsx",
             "type": "registry:component",
-            "target": "app/button-group-size.tsx"
+            "target": "components/demos/button-group/button-group-size.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/button-group/button-group-split.tsx",
+            "path": "src/components/demos/button-group/button-group-split.tsx",
             "type": "registry:component",
-            "target": "app/button-group-split.tsx"
+            "target": "components/demos/button-group/button-group-split.tsx"
           }
         ]
       },

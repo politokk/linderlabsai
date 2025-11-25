@@ -1,5 +1,5 @@
 git add .
-git commit -m "avatar"
+git commit -m "bs"
 git push origin main    
 git push origin main --force
 
