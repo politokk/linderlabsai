@@ -1,10 +1,8 @@
 "use client";
 
 import { Search } from "lucide-react";
-import Link from "next/link";
 import { useState } from "react";
 
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
@@ -12,7 +10,6 @@ import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 import { ThemeSelector } from "@/components/themes/theme-selector";
 import { ModeSwitcher } from "@/components/themes/mode-switcher";
 import { cn } from "@/lib/utils";
-import { Logo } from "@/components/logo";
 
 export function BrandHeader() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -32,10 +29,6 @@ export function BrandHeader() {
         <div className="flex items-center gap-2">
           <SidebarTrigger className="-ml-1" />
           <Separator orientation="vertical" className="mr-2 h-4" />
-
-          <Link href="/" className="flex items-center md:hidden">
-            <Logo />
-          </Link>
         </div>
 
         <div className="hidden items-center space-x-1 md:flex">
@@ -61,19 +54,16 @@ export function BrandHeader() {
               Search
             </Button>
           )}
-<ModeSwitcher />
-<ThemeSelector />
+          <ModeSwitcher />
+          <ThemeSelector />
         </div>
 
         <div className="flex gap-2 md:hidden">
           <Button variant="ghost" size="sm" className="text-foreground">
             <Search className="h-5 w-5" />
           </Button>
-          <Avatar className="size-8">
-            <AvatarFallback className="bg-primary text-primary-foreground">
-              <span className="text-xs">ME</span>
-            </AvatarFallback>
-          </Avatar>
+          <ModeSwitcher />
+          <ThemeSelector />
         </div>
       </div>
     </header>
