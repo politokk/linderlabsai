@@ -2176,32 +2176,32 @@
           {
             "path": "src/app/demo/[name]/ui/kbd/kbd.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/kbd/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/kbd/kbd-demo.tsx",
+            "path": "src/components/demos/kbd/kbd-demo.tsx",
             "type": "registry:component",
-            "target": "app/kbd-demo.tsx"
+            "target": "components/demos/kbd/kbd-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/kbd/kbd-button.tsx",
+            "path": "src/components/demos/kbd/kbd-button.tsx",
             "type": "registry:component",
-            "target": "app/kbd-button.tsx"
+            "target": "components/demos/kbd/kbd-button.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/kbd/kbd-group.tsx",
+            "path": "src/components/demos/kbd/kbd-group.tsx",
             "type": "registry:component",
-            "target": "app/kbd-group.tsx"
+            "target": "components/demos/kbd/kbd-group.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/kbd/kbd-input-group.tsx",
+            "path": "src/components/demos/kbd/kbd-input-group.tsx",
             "type": "registry:component",
-            "target": "app/kbd-input-group.tsx"
+            "target": "components/demos/kbd/kbd-input-group.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/kbd/kbd-tooltip.tsx",
+            "path": "src/components/demos/kbd/kbd-tooltip.tsx",
             "type": "registry:component",
-            "target": "app/kbd-tooltip.tsx"
+            "target": "components/demos/kbd/kbd-tooltip.tsx"
           }
         ]
       },
@@ -2219,12 +2219,12 @@
           {
             "path": "src/app/demo/[name]/ui/label/label.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/label/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/label/label-demo.tsx",
+            "path": "src/components/demos/label/label-demo.tsx",
             "type": "registry:component",
-            "target": "app/label-demo.tsx"
+            "target": "components/demos/label/label-demo.tsx"
           }
         ]
       },
@@ -2242,12 +2242,12 @@
           {
             "path": "src/app/demo/[name]/ui/menu-bar/menu-bar.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/menubar/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/menu-bar/menubar-demo.tsx",
+            "path": "src/components/demos/menu-bar/menubar-demo.tsx",
             "type": "registry:component",
-            "target": "app/menubar-demo.tsx"
+            "target": "components/demos/menu-bar/menubar-demo.tsx"
           }
         ]
       },
