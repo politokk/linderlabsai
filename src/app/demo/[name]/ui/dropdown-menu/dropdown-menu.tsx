@@ -1,7 +1,7 @@
-import DropdownMenuDemo from "./dropdown-menu-demo";
-import DropdownMenuCheckboxes from "./dropdown-menu-checkboxes";
-import DropdownMenuDialog from "./dropdown-menu-dialog";
-import DropdownMenuRadioGroup from "./dropdown-menu-radio-group";
+import DropdownMenuDemo from "@/components/demos/dropdown-menu/dropdown-menu-demo";
+import DropdownMenuCheckboxes from "@/components/demos/dropdown-menu/dropdown-menu-checkboxes";
+import DropdownMenuDialog from "@/components/demos/dropdown-menu/dropdown-menu-dialog";
+import DropdownMenuRadioGroup from "@/components/demos/dropdown-menu/dropdown-menu-radio-group";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

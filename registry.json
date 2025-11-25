@@ -1500,12 +1500,12 @@
           {
             "path": "src/app/demo/[name]/ui/data-table/data-table.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/data-table/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/data-table/data-table-demo.tsx",
+            "path": "src/components/demos/data-table/data-table-demo.tsx",
             "type": "registry:component",
-            "target": "app/data-table-demo.tsx"
+            "target": "components/demos/data-table/data-table-demo.tsx"
           }
         ]
       },
@@ -1523,27 +1523,27 @@
           {
             "path": "src/app/demo/[name]/ui/date-picker/date-picker.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/date-picker/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/date-picker/date-picker-demo.tsx",
+            "path": "src/components/demos/date-picker/date-picker-demo.tsx",
             "type": "registry:component",
-            "target": "app/date-picker-demo.tsx"
+            "target": "components/demos/date-picker/date-picker-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/date-picker/date-picker-form.tsx",
+            "path": "src/components/demos/date-picker/date-picker-form.tsx",
             "type": "registry:component",
-            "target": "app/date-picker-form.tsx"
+            "target": "components/demos/date-picker/date-picker-form.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/date-picker/date-picker-with-presets.tsx",
+            "path": "src/components/demos/date-picker/date-picker-with-presets.tsx",
             "type": "registry:component",
-            "target": "app/date-picker-with-presets.tsx"
+            "target": "components/demos/date-picker/date-picker-with-presets.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/date-picker/date-picker-with-range.tsx",
+            "path": "src/components/demos/date-picker/date-picker-with-range.tsx",
             "type": "registry:component",
-            "target": "app/date-picker-with-range.tsx"
+            "target": "components/demos/date-picker/date-picker-with-range.tsx"
           }
         ]
       },
@@ -1561,22 +1561,22 @@
           {
             "path": "src/app/demo/[name]/ui/dialog/dialog.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/dialog/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/dialog/dialog-demo.tsx",
+              "path": "src/components/demos/dialog/dialog-demo.tsx",
             "type": "registry:component",
-            "target": "app/dialog-demo.tsx"
+            "target": "components/demos/dialog/dialog-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/dialog/dialog-close-button.tsx",
+            "path": "src/components/demos/dialog/dialog-close-button.tsx",
             "type": "registry:component",
-            "target": "app/dialog-close-button.tsx"
+            "target": "components/demos/dialog/dialog-close-button.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/dialog/dialog-scroll.tsx",
+            "path": "src/components/demos/dialog/dialog-scroll.tsx",
             "type": "registry:component",
-            "target": "app/dialog-scroll.tsx"
+            "target": "components/demos/dialog/dialog-scroll.tsx"
           }
         ]
       },
@@ -1594,12 +1594,12 @@
           {
             "path": "src/app/demo/[name]/ui/drawer/drawer.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/drawer/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/drawer/drawer-demo.tsx",
+            "path": "src/components/demos/drawer/drawer-demo.tsx",
             "type": "registry:component",
-            "target": "app/drawer-demo.tsx"
+            "target": "components/demos/drawer/drawer-demo.tsx"
           }
         ]
       },
@@ -1617,27 +1617,27 @@
           {
             "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/dropdown-menu/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu-demo.tsx",
+            "path": "src/components/demos/dropdown-menu/dropdown-menu-demo.tsx",
             "type": "registry:component",
-            "target": "app/dropdown-menu-demo.tsx"
+            "target": "components/demos/dropdown-menu/dropdown-menu-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu-checkboxes.tsx",
+            "path": "src/components/demos/dropdown-menu/dropdown-menu-checkboxes.tsx",
             "type": "registry:component",
-            "target": "app/dropdown-menu-checkboxes.tsx"
+            "target": "components/demos/dropdown-menu/dropdown-menu-checkboxes.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu-dialog.tsx",
+            "path": "src/components/demos/dropdown-menu/dropdown-menu-dialog.tsx",
             "type": "registry:component",
-            "target": "app/dropdown-menu-dialog.tsx"
+            "target": "components/demos/dropdown-menu/dropdown-menu-dialog.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/dropdown-menu/dropdown-menu-radio-group.tsx",
+            "path": "src/components/demos/dropdown-menu/dropdown-menu-radio-group.tsx",
             "type": "registry:component",
-            "target": "app/dropdown-menu-radio-group.tsx"
+            "target": "components/demos/dropdown-menu/dropdown-menu-radio-group.tsx"
           }
         ]
       },

@@ -1,4 +1,4 @@
-import DrawerDemo from "./drawer-demo";
+import DrawerDemo from "@/components/demos/drawer/drawer-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
