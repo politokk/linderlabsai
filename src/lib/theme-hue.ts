@@ -1,5 +1,5 @@
 /** Base orb image (measured base hue ≈ 205°) */
-export const ORB_SRC = "/orbs/orb-2.webp"
+export const ORB_SRC = "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/orbs/orb-2.webp"
 
 /** Hue values for all themes (relative to base ≈ 205°) */
 export const HUE_BY_THEME: Record<string, number> = {
