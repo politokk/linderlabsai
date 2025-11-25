@@ -23,7 +23,7 @@ export default function SpinnerInputGroup() {
         <InputGroupAddon align="block-end">
           <Spinner /> Validating...
           <InputGroupButton className="ml-auto" variant="default">
-            <ArrowUpIcon />
+            <ArrowUpIcon className="text-white"/>
             <span className="sr-only">Send</span>
           </InputGroupButton>
         </InputGroupAddon>
