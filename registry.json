@@ -569,6 +569,21 @@
           "type": "registry:component"
         },
         {
+          "path": "src/components/sidebar/nav-main.tsx",
+          "type": "registry:component",
+          "target": "components/sidebar/nav-main.tsx"
+        },
+        {
+          "path": "src/components/sidebar/nav-user.tsx",
+          "type": "registry:component",
+          "target": "components/sidebar/nav-user.tsx"
+        },
+        {
+          "path": "src/components/sidebar/component-registry.ts",
+          "type": "registry:component",
+          "target": "components/sidebar/component-registry.ts"
+        },
+        {
           "path": "src/layouts/shell-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
