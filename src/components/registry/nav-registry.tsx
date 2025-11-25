@@ -32,6 +32,7 @@ interface RegistryItem {
   title: string
   icon?: string
   type: string
+  isNew?: boolean
 }
 
 // Function to get icon component from registry data
@@ -102,6 +103,9 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
+                          {item.isNew && (
+                            <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
+                          )}
                         </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
@@ -146,6 +150,9 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
+                          {item.isNew && (
+                            <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
+                          )}
                         </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
@@ -189,6 +196,9 @@ export function NavRegistry({
                         >
                           <Icon className="size-4" />
                           {item.title}
+                          {item.isNew && (
+                            <span className="flex size-2 rounded-full bg-primary border-2 border-primary-foreground ml-auto" />
+                          )}
                         </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
