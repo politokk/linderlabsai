@@ -575,6 +575,7 @@
       "title": "Brand Header",
       "icon": "PanelTop",
       "description": "A styled, simple, reusable header",
+      "category": "brand",
       "registryDependencies": [
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
@@ -616,6 +617,7 @@
       "title": "Brand Sidebar",
       "icon": "Sidebar",
       "description": "A styled, simple, reusable sidebar",
+      "category": "brand",
       "registryDependencies": [
         "https://linderlabsai.vercel.app/r/sonner.json",
         "https://linderlabsai.vercel.app/r/logo.json",
@@ -659,6 +661,7 @@
       "title": "Login",
       "icon": "LogIn",
       "description": "Username & password login section with customer quote.",
+      "category": "auth",
       "registryDependencies": [
         "badge",
         "button",
@@ -693,6 +696,7 @@
       },
       "isNew": true,
       "description": "A styled, simple, reusable logo",
+      "category": "brand",
       "registryDependencies": [
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
@@ -719,6 +723,7 @@
       "title": "Hero",
       "icon": "RectangleHorizontal",
       "description": "Attention-grabbing section for the top of your landing pages.",
+      "category": "brand",
       "registryDependencies": [
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
@@ -745,6 +750,7 @@
       "title": "Promo",
       "icon": "BadgeDollarSign",
       "description": "Attention-grabbing section to display the current promotional deal.",
+      "category": "brand",
       "registryDependencies": [
         "button",
         "https://linderlabsai.vercel.app/r/theme.json"
@@ -772,6 +778,7 @@
       "title": "Product Grid",
       "icon": "ShoppingBasket",
       "description": "Product grid displaying all products with API to fetch data",
+      "category": "store",
       "registryDependencies": [
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
@@ -797,6 +804,7 @@
         "title": "Accordion",
         "icon": "FolderRoot",
         "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
+        "category": "ui",
         "registryDependencies": [
           "https://linderlabsai.vercel.app/r/theme.json"
         ],

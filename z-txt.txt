@@ -1,5 +1,5 @@
 git add .
-git commit -m "ai"
+git commit -m "category"
 git push origin main    
 git push origin main --force
 
