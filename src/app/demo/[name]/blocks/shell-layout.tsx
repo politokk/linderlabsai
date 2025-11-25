@@ -4,6 +4,8 @@ import { BrandHeader } from "@/components/brand-header";
 import { BrandSidebar } from "@/components/brand-sidebar";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "@/components/themes/theme-provider";
+import { ActiveThemeProvider } from "@/components/themes/active-theme";
 
 export default function ShellLayout({
   children,
@@ -11,6 +13,8 @@ export default function ShellLayout({
   children: ReactNode;
 }>) {
   return (
+    <ThemeProvider>
+      <ActiveThemeProvider>
     <SidebarProvider>
       <BrandSidebar />
       <SidebarInset>
@@ -21,5 +25,7 @@ export default function ShellLayout({
       </SidebarInset>
       <Toaster />
     </SidebarProvider>
+    </ActiveThemeProvider>
+    </ThemeProvider>
   );
 }

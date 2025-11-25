@@ -4,6 +4,8 @@ import React, { type ReactNode } from "react";
 import { BrandHeader } from "@/components/brand-header";
 import { BrandSidebar } from "@/components/brand-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
+import { ThemeProvider } from "@/components/themes/theme-provider";
+import { ActiveThemeProvider } from "@/components/themes/active-theme";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 
@@ -40,6 +42,8 @@ export default function ShellLayout({
       )}
     >
       <body>
+        <ThemeProvider>
+          <ActiveThemeProvider>
         <SidebarProvider>
           <BrandHeader />
           <BrandSidebar />
@@ -48,6 +52,8 @@ export default function ShellLayout({
           </main>
           <Toaster />
         </SidebarProvider>
+        </ActiveThemeProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
