@@ -1,11 +1,11 @@
-import EmptyDemo from "./empty-demo";
-import EmptyInputGroup from "./empty-input-group";
-import EmptyOutline from "./empty-outline";
-import EmptyIcon from "./empty-icon";
-import EmptyBackground from "./empty-background";
-import EmptyAvatar from "./empty-avatar";
-import EmptyAvatarGroup from "./empty-avatar-group";
-import EmptyPopover from "./empty-popover";
+import EmptyDemo from "@/components/demos/empty/empty-demo";
+import EmptyInputGroup from "@/components/demos/empty/empty-input-group";
+import EmptyOutline from "@/components/demos/empty/empty-outline";
+import EmptyIcon from "@/components/demos/empty/empty-icon";
+import EmptyBackground from "@/components/demos/empty/empty-background";
+import EmptyAvatar from "@/components/demos/empty/empty-avatar";
+import EmptyAvatarGroup from "@/components/demos/empty/empty-avatar-group";
+import EmptyPopover from "@/components/demos/empty/empty-popover";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

@@ -1656,47 +1656,47 @@
           {
             "path": "src/app/demo/[name]/ui/empty/empty.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/empty/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/empty/empty-demo.tsx",
+            "path": "src/components/demos/empty/empty-demo.tsx",
             "type": "registry:component",
-            "target": "app/empty-demo.tsx"
+            "target": "components/demos/empty/empty-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/empty/empty-avatar.tsx",
+            "path": "src/components/demos/empty/empty-avatar.tsx",
             "type": "registry:component",
-            "target": "app/empty-avatar.tsx"
+            "target": "components/demos/empty/empty-avatar.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/empty/empty-avatar-group.tsx",
+            "path": "src/components/demos/empty/empty-avatar-group.tsx",
             "type": "registry:component",
-            "target": "app/empty-avatar-group.tsx"
+            "target": "components/demos/empty/empty-avatar-group.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/empty/empty-background.tsx",
+            "path": "src/components/demos/empty/empty-background.tsx",
             "type": "registry:component",
-            "target": "app/empty-background.tsx"
+            "target": "components/demos/empty/empty-background.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/empty/empty-icon.tsx",
+            "path": "src/components/demos/empty/empty-icon.tsx",
             "type": "registry:component",
-            "target": "app/empty-icon.tsx"
+            "target": "components/demos/empty/empty-icon.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/empty/empty-input-group.tsx",
+            "path": "src/components/demos/empty/empty-input-group.tsx",
             "type": "registry:component",
-            "target": "app/empty-input-group.tsx"
+            "target": "components/demos/empty/empty-input-group.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/empty/empty-outline.tsx",
+            "path": "src/components/demos/empty/empty-outline.tsx",
             "type": "registry:component",
-            "target": "app/empty-outline.tsx"
+            "target": "components/demos/empty/empty-outline.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/empty/empty-popover.tsx",
+            "path": "src/components/demos/empty/empty-popover.tsx",
             "type": "registry:component",
-            "target": "app/empty-popover.tsx"
+            "target": "components/demos/empty/empty-popover.tsx"
           }
         ]
       },
