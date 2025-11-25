@@ -14,7 +14,6 @@ import {
   LogIn,
   Layers,
   type LucideIcon,
-  FolderRoot,
 } from "lucide-react"
 import * as LucideIcons from "lucide-react"
 import {
@@ -27,6 +26,7 @@ import {
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarMenu,
+  SidebarMenuAction,
   SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -62,7 +62,7 @@ const categoryLabels: Record<string, string> = {
   brand: "Brand",
   auth: "Authentication",
   store: "Store",
-  ui: "UI Primitives",
+  ui: "UI",
   blocks: "Blocks",
 }
 
@@ -102,21 +102,43 @@ interface CategoryGroupProps {
   items: RegistryItem[]
   pathname: string
   onItemClick: () => void
+  collapsedCategories: Set<string>
+  onOpenChange: (category: string, open: boolean) => void
 }
 
-function CategoryGroup({ category, items, pathname, onItemClick }: CategoryGroupProps) {
+function CategoryGroup({
+  category,
+  items,
+  pathname,
+  onItemClick,
+  collapsedCategories,
+  onOpenChange,
+}: CategoryGroupProps) {
   const CategoryIcon = categoryIcons[category] || Layers
   const label = categoryLabels[category] || category.charAt(0).toUpperCase() + category.slice(1)
+  const isOpen = !collapsedCategories.has(category)
 
   return (
-    <Collapsible defaultOpen className="group/category">
+    <Collapsible
+      asChild
+      open={isOpen}
+      onOpenChange={(open) => onOpenChange(category, open)}
+      className="group/collapsible"
+    >
       <SidebarMenuItem>
+        <SidebarMenuButton tooltip={label}>
+          <CategoryIcon className="size-4" />
+          <span>{label}</span>
+        </SidebarMenuButton>
+        <SidebarMenuBadge>{items.length}</SidebarMenuBadge>
         <CollapsibleTrigger asChild>
-          <SidebarMenuButton className="w-full">
-            <CategoryIcon className="size-4" />
-            <span>{label}</span>
-            <ChevronRight className="ml-auto size-4 transition-transform duration-200 group-data-[state=open]/category:rotate-90" />
-          </SidebarMenuButton>
+          <SidebarMenuAction
+                        className="left-1.5 bg-sidebar-accent text-sidebar-accent-foreground transition-transform data-[state=open]:opacity-0 data-[state=open]:hover:opacity-100 data-[state=open]:rotate-90"
+                        showOnHover
+            aria-label={`Toggle ${label}`}
+          >
+            <ChevronRight className="size-4" />
+          </SidebarMenuAction>
         </CollapsibleTrigger>
         <CollapsibleContent>
           <SidebarMenuSub>
@@ -132,12 +154,12 @@ function CategoryGroup({ category, items, pathname, onItemClick }: CategoryGroup
                       <Icon className="size-3.5" />
                       <span>{item.title}</span>
                       {(item.badge || item.isNew) && (
-                        <div className="ml-auto flex items-center gap-1.5">
+                        <div className=" flex items-center gap-2">
                           {item.badge && (
                             <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
                           )}
                           {item.isNew && (
-                            <span className="flex size-1.5 rounded-full bg-primary" />
+                            <span className="flex size-2 shrink-0 rounded-full bg-primary border-2 border-primary-foreground" />
                           )}
                         </div>
                       )}
@@ -167,6 +189,37 @@ export function NavRegistry({
   const pathname = usePathname()
   const { setOpenMobile } = useSidebar()
 
+  // Persist collapsed state
+  const [collapsedCategories, setCollapsedCategories] = React.useState<Set<string>>(new Set())
+
+  React.useEffect(() => {
+    try {
+      const stored = localStorage.getItem("sidebar-registry-collapsed")
+      if (stored) {
+        setCollapsedCategories(new Set(JSON.parse(stored)))
+      }
+    } catch {
+      // Ignore localStorage errors
+    }
+  }, [])
+
+  const handleOpenChange = React.useCallback((category: string, open: boolean) => {
+    setCollapsedCategories((prev) => {
+      const next = new Set(prev)
+      if (open) {
+        next.delete(category)
+      } else {
+        next.add(category)
+      }
+      try {
+        localStorage.setItem("sidebar-registry-collapsed", JSON.stringify(Array.from(next)))
+      } catch {
+        // Ignore localStorage errors
+      }
+      return next
+    })
+  }, [])
+
   const handleItemClick = () => setOpenMobile(false)
 
   // Group components by category
@@ -175,7 +228,7 @@ export function NavRegistry({
     [filteredComponents]
   )
 
-  // Group UI items by category (most are "ui" category)
+  // Group UI items by category
   const groupedUiItems = React.useMemo(
     () => groupByCategory(filteredUiItems),
     [filteredUiItems]
@@ -219,7 +272,7 @@ export function NavRegistry({
                           <Icon className="size-4" />
                           {item.title}
                           {(item.badge || item.isNew) && (
-                            <div className="ml-auto flex items-center gap-2">
+                              <div className=" flex items-center gap-2">
                               {item.badge && (
                                 <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
                               )}
@@ -265,6 +318,8 @@ export function NavRegistry({
                     items={groupedComponents[category]}
                     pathname={pathname}
                     onItemClick={handleItemClick}
+                    collapsedCategories={collapsedCategories}
+                    onOpenChange={handleOpenChange}
                   />
                 ))}
               </SidebarMenu>
@@ -301,6 +356,8 @@ export function NavRegistry({
                       items={groupedUiItems[category]}
                       pathname={pathname}
                       onItemClick={handleItemClick}
+                      collapsedCategories={collapsedCategories}
+                      onOpenChange={handleOpenChange}
                     />
                   ))
                 ) : (
@@ -318,7 +375,7 @@ export function NavRegistry({
                             <Icon className="size-4" />
                             {item.title}
                             {(item.badge || item.isNew) && (
-                              <div className="ml-auto flex items-center gap-2">
+                              <div className=" flex items-center gap-2">
                                 {item.badge && (
                                   <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
                                 )}

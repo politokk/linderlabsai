@@ -1,5 +1,5 @@
 git add .
-git commit -m "category"
+git commit -m "sidebar"
 git push origin main    
 git push origin main --force
 
