@@ -3186,6 +3186,44 @@
             "target": "components/demos/ai/chainofthought/chainofthought.tsx"
           }
         ]
+      },
+      {
+        "name": "checkpoint",
+        "type": "registry:ui",
+        "title": "Checkpoint",
+        "icon": "Check",
+        "category": "ai",
+        "description": "A simple component for marking conversation history points and restoring the chat to a previous state.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "src/app/demo/[name]/ai/checkpoint.tsx",
+            "type": "registry:page",
+            "target": "app/checkpoint/page.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/checkpoint.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/checkpoint.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/conversation.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/checkpoint/checkpoint.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/checkpoint/checkpoint.tsx"
+          }
+        ]
       }
     ]
 }
