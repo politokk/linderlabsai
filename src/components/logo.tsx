@@ -2,7 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "@/components/ui/sidebar";
-import { Orb } from "./themes/orb";
+import { Orb } from "@/components/themes/orb";
 
 export function Logo() {
   const { state } = useSidebar();
