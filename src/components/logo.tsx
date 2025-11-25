@@ -8,7 +8,7 @@ export function Logo() {
       <SidebarMenuButton size="lg">
         <div className="flex aspect-square size-8 items-center justify-center rounded-lg overflow-hidden">
           <Image
-            src="/orbs/orb-2.webp"
+            src="https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/orbs/orb-2.webp"
             alt="Logo"
             width={32}
             height={32}

@@ -22,6 +22,12 @@ images: {
     {
       hostname: "avatar.vercel.sh",
     },
+    {
+      hostname: "github.com",
+    },
+    {
+      hostname: "raw.githubusercontent.com",
+    },
   ],
 },
 };
