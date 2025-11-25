@@ -13,6 +13,7 @@
           "registry:block",
           "registry:component",
           "registry:ui",
+          "registry:ai",
           "registry:hook",
           "registry:theme",
           "registry:page",
