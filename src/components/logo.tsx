@@ -3,9 +3,15 @@
 import { Badge } from "@/components/ui/badge";
 import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "@/components/ui/sidebar";
 import { Orb } from "@/components/themes/orb";
+import { useThemeConfig } from "@/components/themes/active-theme";
+import { getOrbPropsForTheme } from "@/lib/theme-hue";
 
 export function Logo() {
   const { state } = useSidebar();
+  const { activeTheme } = useThemeConfig();
+  
+  // Get the orb props based on the active theme
+  const orbProps = getOrbPropsForTheme(activeTheme);
   
   return (
     <SidebarMenu>
@@ -13,10 +19,13 @@ export function Logo() {
         <SidebarMenuButton size="lg" className="group-data-[collapsible=icon]:!p-0 group-data-[collapsible=icon]:!size-8">
           <div className="flex aspect-square size-8 items-center justify-center rounded-lg overflow-hidden">
              <Orb
-                src="/orbs/orb-1.mp4"
+                src={orbProps.src}
                 size={32}
-                hueDeg={40}
-                saturate={2}
+                hueDeg={orbProps.hueDeg}
+                saturate={orbProps.saturate}
+                rotateDeg={orbProps.rotateDeg}
+                imgStyle={orbProps.imgStyle}
+                wrapperStyle={orbProps.wrapperStyle}
                 className="size-8"
               />
           </div>
