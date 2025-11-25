@@ -57,7 +57,7 @@ export default function NavigationMenuDemo() {
   const isMobile = useIsMobile()
 
   return (
-    <NavigationMenu viewport={isMobile}>
+    <NavigationMenu viewport={isMobile} className="relative z-[9999]">
       <NavigationMenuList className="flex-wrap">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Home</NavigationMenuTrigger>

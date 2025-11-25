@@ -10,10 +10,12 @@ export function ComponentWrapper({
   name,
   children,
   icon,
+  allowOverflow = false,
   ...props
 }: React.ComponentPropsWithoutRef<"div"> & {
   name: string
   icon?: string
+  allowOverflow?: boolean
 }) {
   // Dynamically get the icon component from lucide-react
   const IconComponent = icon ? (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[icon] : null
@@ -24,18 +26,22 @@ export function ComponentWrapper({
         id={name}
         data-name={name.toLowerCase()}
         className={cn(
-          "flex w-full scroll-mt-16 flex-col rounded-3xl border overflow-hidden",
+          "flex w-full scroll-mt-16 flex-col rounded-3xl border",
+          allowOverflow ? "overflow-visible" : "overflow-hidden",
           className
         )}
         {...props}
       >
-        <div className="flex-shrink-0 border-b px-4 py-3">
+        <div className="flex-shrink-0 border-b px-4 py-3 bg-background rounded-t-3xl">
           <div className="text-sm flex items-center gap-2 text-muted-foreground">
             {IconComponent && <IconComponent className="h-4 w-4" />}
             {getComponentName(name)}
           </div>
         </div>
-        <div className="flex flex-1 min-h-0 items-center gap-2 p-4 overflow-auto">{children}</div>
+        <div className={cn(
+          "flex flex-1 min-h-0 items-center gap-2 p-4 rounded-b-3xl",
+          allowOverflow ? "overflow-visible" : "overflow-auto"
+        )}>{children}</div>
       </div>
     </ComponentErrorBoundary>
   )
