@@ -1,29 +1,17 @@
 "use client"
 
 import * as React from "react"
+import { usePathname } from "next/navigation"
 import {
-  BookOpen,
-  Bot,
-  Settings2,
-  SquareTerminal,
-  History,
-  Star,
-  Settings,
-  Sparkles,
-  Compass,
-  Zap,
+  Component,
+  Boxes,
   FileText,
-  Rocket,
-  GraduationCap,
-  ScrollText,
-  User,
-  Users,
-  CreditCard,
-  Gauge,
+  Send,
+  LifeBuoy,
 } from "lucide-react"
 
-import { NavMain } from "@/components/sidebar/nav-main"
-import { NavUser } from "@/components/sidebar/nav-user"
+import { NavMain } from "./nav-main"
+import { NavUser } from "./nav-user"
 import {
   Sidebar,
   SidebarContent,
@@ -36,121 +24,43 @@ import { Logo } from "@/components/logo"
 // This is sample data.
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/linderavatar.png",
+    name: "LinderLabs UI",
+    email: "hello@linderlabs.com",
+    avatar: "/linderavatar.png",
   },
-  navMain: [
+  teams: [
     {
-      title: "Playground",
+      name: "LinderLabs",
+      accent: "UI",
+      avatar: "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/orbs/orb-2.webp",
+      plan: "Free",
+    }
+  ],
+  navSecondary: [
+    {
+      title: "Support",
       url: "#",
-      icon: SquareTerminal,
-      isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-          icon: History,
-        },
-        {
-          title: "Starred",
-          url: "#",
-          icon: Star,
-        },
-        {
-          title: "Settings",
-          url: "#",
-          icon: Settings,
-        },
-      ],
+      icon: LifeBuoy,
     },
     {
-      title: "Models",
+      title: "Feedback",
       url: "#",
-      icon: Bot,
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-          icon: Sparkles,
-        },
-        {
-          title: "Explorer",
-          url: "#",
-          icon: Compass,
-        },
-        {
-          title: "Quantum",
-          url: "#",
-          icon: Zap,
-        },
-      ],
-    },
-    {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-          icon: FileText,
-        },
-        {
-          title: "Get Started",
-          url: "#",
-          icon: Rocket,
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-          icon: GraduationCap,
-        },
-        {
-          title: "Changelog",
-          url: "#",
-          icon: ScrollText,
-        },
-      ],
-    },
-    {
-      title: "Settings",
-      url: "#",
-      icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-          icon: User,
-        },
-        {
-          title: "Team",
-          url: "#",
-          icon: Users,
-        },
-        {
-          title: "Billing",
-          url: "#",
-          icon: CreditCard,
-        },
-        {
-          title: "Limits",
-          url: "#",
-          icon: Gauge,
-        },
-      ],
+      icon: Send,
     },
   ],
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const pathname = usePathname()
   return (
-    <Sidebar collapsible="icon" {...props}>
+    <Sidebar side="left" collapsible="icon" {...props}>
       <SidebarHeader>
         <Logo />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
+        <NavMain type="registry:ui" label="Components" icon={Component} />
+        <NavMain type="registry:block" label="Blocks" icon={Boxes} />
+        <NavMain type="registry:page" label="Pages" icon={FileText} />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
