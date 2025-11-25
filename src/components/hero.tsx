@@ -28,12 +28,18 @@ export function Hero({
             {title}
           </h1>
           <p className="mt-6 text-xl">{description}</p>
-          <div className="mt-10">
+          <div className="mt-10 space-x-5">
+          <Button
+              asChild
+              variant="default"
+              size="sm"
+            >
+              <Link href={buttonLink}>{buttonText}</Link>
+            </Button>
             <Button
               asChild
-              variant="secondary"
-              size="lg"
-              className="rounded-md px-8"
+              variant="outline"
+              size="sm"
             >
               <Link href={buttonLink}>{buttonText}</Link>
             </Button>
