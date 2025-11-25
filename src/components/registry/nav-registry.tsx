@@ -14,6 +14,7 @@ import {
   LogIn,
   Layers,
   type LucideIcon,
+  BotMessageSquare,
 } from "lucide-react"
 import * as LucideIcons from "lucide-react"
 import {
@@ -55,6 +56,7 @@ const categoryIcons: Record<string, LucideIcon> = {
   store: ShoppingCart,
   ui: ToyBrick,
   blocks: Blocks,
+  ai: BotMessageSquare,
 }
 
 // Category display names
@@ -64,6 +66,7 @@ const categoryLabels: Record<string, string> = {
   store: "Store",
   ui: "UI",
   blocks: "Blocks",
+  ai: "AI",
 }
 
 // Function to get icon component from registry data

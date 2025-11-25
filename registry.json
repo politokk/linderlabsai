@@ -3160,6 +3160,29 @@
         ]
       },
       {
+        "name": "chainofthought",
+        "type": "registry:ui",
+        "title": "Chain of Thought",
+        "icon": "Brain",
+        "category": "ui",
+        "description": "A collapsible component that visualizes AI reasoning steps with support for search results, images, and step-by-step progress indicators.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "src/app/demo/[name]/ai/chainofthought.tsx",
+            "type": "registry:page",
+            "target": "app/chainofthought/page.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/chainofthought/chainofthought.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/chainofthought/chainofthought.tsx"
+          }
+        ]
+      },
+      {
         "name": "sink",
         "type": "registry:block",
         "title": "Sink",
