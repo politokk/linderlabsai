@@ -702,14 +702,14 @@
             "target": "app/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/accordion/accordion-demo.tsx",
+            "path": "src/components/demos/accordion/accordion-demo.tsx",
             "type": "registry:component",
-            "target": "app/accordion-demo.tsx"
+            "target": "components/demos/accordion/accordion-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/accordion/accordion-extensive.tsx",
+            "path": "src/components/demos/accordion/accordion-extensive.tsx",
             "type": "registry:component",
-            "target": "app/accordion-extensive.tsx"
+            "target": "components/demos/accordion/accordion-extensive.tsx"
           }
         ]
       },
