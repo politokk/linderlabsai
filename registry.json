@@ -750,7 +750,7 @@
       "title": "Promo",
       "icon": "BadgeDollarSign",
       "description": "Attention-grabbing section to display the current promotional deal.",
-      "category": "brand",
+      "category": "store",
       "registryDependencies": [
         "button",
         "https://linderlabsai.vercel.app/r/theme.json"
@@ -3179,49 +3179,6 @@
             "path": "src/components/demos/ai/chainofthought/chainofthought.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/chainofthought/chainofthought.tsx"
-          }
-        ]
-      },
-      {
-        "name": "sink",
-        "type": "registry:block",
-        "title": "Sink",
-        "icon": "Terminal",
-        "category": "blocks",
-        "description": "A blank application with all brand components and code",
-        "registryDependencies": [
-          "https://linderlabsai.vercel.app/r/theme.json"
-        ],
-        "files": [
-          {
-            "path": "src/app/demo/[name]/blocks/sink/page.tsx",
-            "type": "registry:page",
-            "target": "app/sink/page.tsx"
-          },
-          {
-            "path": "src/components/sidebar/app-sidebar.tsx",
-            "type": "registry:component",
-            "target": "components/sidebar/app-sidebar.tsx"
-          },
-          {
-            "path": "src/components/sidebar/nav-main.tsx",
-            "type": "registry:component",
-            "target": "components/sidebar/nav-main.tsx"
-          },
-          {
-            "path": "src/components/sidebar/nav-user.tsx",
-            "type": "registry:component",
-            "target": "components/sidebar/nav-user.tsx"
-          },
-          {
-            "path": "src/components/sidebar/component-registry.ts",
-            "type": "registry:component",
-            "target": "components/sidebar/component-registry.ts"
-          },
-          {
-            "path": "src/components/logo.tsx",
-            "type": "registry:component",
-            "target": "components/logo.tsx"
           }
         ]
       }
