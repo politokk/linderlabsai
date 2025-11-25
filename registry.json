@@ -1715,72 +1715,72 @@
           {
             "path": "src/app/demo/[name]/ui/field/field.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/field/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-demo.tsx",
+            "path": "src/components/demos/field/field-demo.tsx",
             "type": "registry:component",
-            "target": "app/field-demo.tsx"
+            "target": "components/demos/field/field-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-checkbox.tsx",
+            "path": "src/components/demos/field/field-checkbox.tsx",
             "type": "registry:component",
-            "target": "app/field-checkbox.tsx"
+            "target": "components/demos/field/field-checkbox.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-choice-card.tsx",
+            "path": "src/components/demos/field/field-choice-card.tsx",
             "type": "registry:component",
-            "target": "app/field-choice-card.tsx"
+            "target": "components/demos/field/field-choice-card.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-fieldset.tsx",
+            "path": "src/components/demos/field/field-fieldset.tsx",
             "type": "registry:component",
-            "target": "app/field-fieldset.tsx"
+            "target": "components/demos/field/field-fieldset.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-group.tsx",
+            "path": "src/components/demos/field/field-group.tsx",
             "type": "registry:component",
-            "target": "app/field-group.tsx"
+            "target": "components/demos/field/field-group.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-input.tsx",
+            "path": "src/components/demos/field/field-input.tsx",
             "type": "registry:component",
-            "target": "app/field-input.tsx"
+            "target": "components/demos/field/field-input.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-radio.tsx",
+            "path": "src/components/demos/field/field-radio.tsx",
             "type": "registry:component",
-            "target": "app/field-radio.tsx"
+            "target": "components/demos/field/field-radio.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-responsive.tsx",
+            "path": "src/components/demos/field/field-responsive.tsx",
             "type": "registry:component",
-            "target": "app/field-responsive.tsx"
+            "target": "components/demos/field/field-responsive.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-select.tsx",
+            "path": "src/components/demos/field/field-select.tsx",
             "type": "registry:component",
-            "target": "app/field-select.tsx"
+            "target": "components/demos/field/field-select.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-slider.tsx",
+            "path": "src/components/demos/field/field-slider.tsx",
             "type": "registry:component",
-            "target": "app/field-slider.tsx"
+            "target": "components/demos/field/field-slider.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-switch.tsx",
+            "path": "src/components/demos/field/field-switch.tsx",
             "type": "registry:component",
-            "target": "app/field-switch.tsx"
+            "target": "components/demos/field/field-switch.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-textarea.tsx",
+            "path": "src/components/demos/field/field-textarea.tsx",
             "type": "registry:component",
-            "target": "app/field-textarea.tsx"
+            "target": "components/demos/field/field-textarea.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/field/field-hear.tsx",
+            "path": "src/components/demos/field/field-hear.tsx",
             "type": "registry:component",
-            "target": "app/field-hear.tsx"
+            "target": "components/demos/field/field-hear.tsx"
           }
         ]
       },
@@ -1799,102 +1799,102 @@
           {
             "path": "src/app/demo/[name]/ui/form/form.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/form/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-next-complex.tsx",
+            "path": "src/components/demos/form/form-next-complex.tsx",
             "type": "registry:component",
-            "target": "app/form-next-complex.tsx"
+            "target": "components/demos/form/form-next-complex.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-demo.tsx",
+            "path": "src/components/demos/form/form-rhf-demo.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-demo.tsx"
+            "target": "components/demos/form/form-rhf-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-array.tsx",
+            "path": "src/components/demos/form/form-rhf-array.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-array.tsx"
+            "target": "components/demos/form/form-rhf-array.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-checkbox.tsx",
+            "path": "src/components/demos/form/form-rhf-checkbox.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-checkbox.tsx"
+            "target": "components/demos/form/form-rhf-checkbox.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-complex.tsx",
+            "path": "src/components/demos/form/form-rhf-complex.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-complex.tsx"
+            "target": "components/demos/form/form-rhf-complex.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-input.tsx",
+            "path": "src/components/demos/form/form-rhf-input.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-input.tsx"
+            "target": "components/demos/form/form-rhf-input.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-password.tsx",
+            "path": "src/components/demos/form/form-rhf-password.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-password.tsx"
+            "target": "components/demos/form/form-rhf-password.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-radiogroup.tsx",
+            "path": "src/components/demos/form/form-rhf-radiogroup.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-radiogroup.tsx"
+            "target": "components/demos/form/form-rhf-radiogroup.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-select.tsx",
+            "path": "src/components/demos/form/form-rhf-select.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-select.tsx"
+            "target": "components/demos/form/form-rhf-select.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-switch.tsx",
+            "path": "src/components/demos/form/form-rhf-switch.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-switch.tsx"
+            "target": "components/demos/form/form-rhf-switch.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/form-rhf-textarea.tsx",
+            "path": "src/components/demos/form/form-rhf-textarea.tsx",
             "type": "registry:component",
-            "target": "app/form-rhf-textarea.tsx"
+            "target": "components/demos/form/form-rhf-textarea.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/notion-prompt-form.tsx",
+            "path": "src/components/demos/form/notion-prompt-form.tsx",
             "type": "registry:component",
-            "target": "app/notion-prompt-form.tsx"
+            "target": "components/demos/form/notion-prompt-form.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/appearance-settings.tsx",
+            "path": "src/components/demos/form/appearance-settings.tsx",
             "type": "registry:component",
-            "target": "app/appearance-settings.tsx"
+            "target": "components/demos/form/appearance-settings.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/chat-settings.tsx",
+            "path": "src/components/demos/form/chat-settings.tsx",
             "type": "registry:component",
-            "target": "app/chat-settings.tsx"
+            "target": "components/demos/form/chat-settings.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/display-settings.tsx",
+              "path": "src/components/demos/form/display-settings.tsx",
             "type": "registry:component",
-            "target": "app/display-settings.tsx"
+            "target": "components/demos/form/display-settings.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/ship-registration-form.tsx",
+            "path": "src/components/demos/form/ship-registration-form.tsx",
             "type": "registry:component",
-            "target": "app/ship-registration-form.tsx"
+            "target": "components/demos/form/ship-registration-form.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/shipping-form.tsx",
+            "path": "src/components/demos/form/shipping-form.tsx",
             "type": "registry:component",
-            "target": "app/shipping-form.tsx"
+            "target": "components/demos/form/shipping-form.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/actions/form-next-complex-action.ts",
+            "path": "src/components/demos/form/actions/form-next-complex-action.ts",
             "type": "registry:component",
-            "target": "app/actions/form-next-complex-action.tsx"
+            "target": "components/demos/form/actions/form-next-complex-action.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/form/schemas/form-next-complex-schema.ts",
+            "path": "src/components/demos/form/schemas/form-next-complex-schema.ts",
             "type": "registry:component",
-            "target": "app/schemas/form-next-complex-schema.tsx"
+            "target": "components/demos/form/schemas/form-next-complex-schema.tsx"
           }
         ]
       },

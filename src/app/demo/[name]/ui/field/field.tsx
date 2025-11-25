@@ -1,16 +1,16 @@
-import FieldDemo from "./field-demo";
-import FieldInput from "./field-input";
-import FieldTextarea from "./field-textarea";
-import FieldSelect from "./field-select";
-import FieldCheckbox from "./field-checkbox";
-import FieldRadio from "./field-radio";
-import FieldSwitch from "./field-switch";
-import FieldSlider from "./field-slider";
-import FieldFieldset from "./field-fieldset";
-import FieldGroup from "./field-group";
-import FieldChoiceCard from "./field-choice-card";
-import FieldResponsive from "./field-responsive";
-import FieldHear from "./field-hear";
+import FieldDemo from "@/components/demos/field/field-demo";
+import FieldInput from "@/components/demos/field/field-input";
+import FieldTextarea from "@/components/demos/field/field-textarea";
+import FieldSelect from "@/components/demos/field/field-select";
+import FieldCheckbox from "@/components/demos/field/field-checkbox";
+import FieldRadio from "@/components/demos/field/field-radio";
+import FieldSwitch from "@/components/demos/field/field-switch";
+import FieldSlider from "@/components/demos/field/field-slider";
+import FieldFieldset from "@/components/demos/field/field-fieldset";
+import FieldGroup from "@/components/demos/field/field-group";
+import FieldChoiceCard from "@/components/demos/field/field-choice-card";
+import FieldResponsive from "@/components/demos/field/field-responsive";
+import FieldHear from "@/components/demos/field/field-hear";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

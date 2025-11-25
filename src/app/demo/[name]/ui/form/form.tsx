@@ -1,20 +1,20 @@
-import FormNextComplex from "./form-next-complex";
-import FormRhfArray from "./form-rhf-array";
-import FormRhfCheckbox from "./form-rhf-checkbox";
-import FormRhfComplex from "./form-rhf-complex";
-import FormRhfDemo from "./form-rhf-demo";
-import FormRhfInput from "./form-rhf-input";
-import FormRhfPassword from "./form-rhf-password";
-import FormRhfRadiogroup from "./form-rhf-radiogroup";
-import FormRhfSelect from "./form-rhf-select";
-import FormRhfSwitch from "./form-rhf-switch";
-import FormRhfTextarea from "./form-rhf-textarea";
-import AppearanceSettings from "./appearance-settings";
-import ChatSettings from "./chat-settings";
-import DisplaySettings from "./display-settings";
-import ShipRegistrationForm from "./ship-registration-form";
-import ShippingForm from "./shipping-form";
-import NotionPromptForm from "./notion-prompt-form";
+import FormNextComplex from "@/components/demos/form/form-next-complex";
+import FormRhfArray from "@/components/demos/form/form-rhf-array";
+import FormRhfCheckbox from "@/components/demos/form/form-rhf-checkbox";
+import FormRhfComplex from "@/components/demos/form/form-rhf-complex";
+import FormRhfDemo from "@/components/demos/form/form-rhf-demo";
+import FormRhfInput from "@/components/demos/form/form-rhf-input";
+import FormRhfPassword from "@/components/demos/form/form-rhf-password";
+import FormRhfRadiogroup from "@/components/demos/form/form-rhf-radiogroup";
+import FormRhfSelect from "@/components/demos/form/form-rhf-select";
+import FormRhfSwitch from "@/components/demos/form/form-rhf-switch";
+import FormRhfTextarea from "@/components/demos/form/form-rhf-textarea";
+import AppearanceSettings from "@/components/demos/form/appearance-settings";
+import ChatSettings from "@/components/demos/form/chat-settings";
+import DisplaySettings from "@/components/demos/form/display-settings";
+import ShipRegistrationForm from "@/components/demos/form/ship-registration-form";
+import ShippingForm from "@/components/demos/form/shipping-form";
+import NotionPromptForm from "@/components/demos/form/notion-prompt-form";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
