@@ -119,6 +119,16 @@
           "target": "components/themes/theme-provider.tsx"
         },
         {
+          "path": "src/components/themes/mode-switcher.tsx",
+          "type": "registry:component",
+          "target": "components/themes/mode-switcher.tsx"
+        },
+        {
+          "path": "src/components/themes/theme-selector.tsx",
+          "type": "registry:component",
+          "target": "components/themes/theme-selector.tsx"
+        },
+        {
           "path": "src/components/ui/accordion.tsx",
           "type": "registry:component",
           "target": "components/ui/accordion.tsx"
@@ -3086,6 +3096,11 @@
             "path": "src/components/sidebar/nav-user.tsx",
             "type": "registry:component",
             "target": "components/sidebar/nav-user.tsx"
+          },
+          {
+            "path": "src/components/sidebar/component-registry.ts",
+            "type": "registry:component",
+            "target": "components/sidebar/component-registry.ts"
           },
           {
             "path": "src/components/logo.tsx",
