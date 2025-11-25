@@ -1885,6 +1885,16 @@
             "path": "src/app/demo/[name]/ui/form/shipping-form.tsx",
             "type": "registry:component",
             "target": "app/shipping-form.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/actions/form-next-complex-action.ts",
+            "type": "registry:component",
+            "target": "app/actions/form-next-complex-action.tsx"
+          },
+          {
+            "path": "src/app/demo/[name]/ui/form/schemas/form-next-complex-schema.ts",
+            "type": "registry:component",
+            "target": "app/schemas/form-next-complex-schema.tsx"
           }
         ]
       },
