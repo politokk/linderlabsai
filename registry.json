@@ -1912,12 +1912,12 @@
           {
             "path": "src/app/demo/[name]/ui/hover-card/hover-card.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/hover-card/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/hover-card/hover-card-demo.tsx",
+            "path": "src/components/demos/hover-card/hover-card-demo.tsx",
             "type": "registry:component",
-            "target": "app/hover-card-demo.tsx"
+            "target": "components/demos/hover-card/hover-card-demo.tsx"
           }
         ]
       },

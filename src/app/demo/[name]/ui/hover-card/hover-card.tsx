@@ -1,4 +1,4 @@
-import HoverCardDemo from "./hover-card-demo";
+import HoverCardDemo from "@/components/demos/hover-card/hover-card-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
