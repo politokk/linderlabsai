@@ -810,12 +810,12 @@
           {
             "path": "src/app/demo/[name]/ui/alert-dialog/alert-dialog.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/alert-dialog/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert-dialog/alert-dialog-demo.tsx",
+            "path": "src/components/demos/alert-dialog/alert-dialog-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-dialog-demo.tsx"
+            "target": "components/demos/alert-dialog/alert-dialog-demo.tsx"
           }
         ]
       },
