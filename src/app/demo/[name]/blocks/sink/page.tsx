@@ -1,7 +1,4 @@
 import { Metadata } from "next"
-
-import { componentRegistry } from "@/components/component-registry"
-import { ComponentWrapper } from "@/components/display/component-wrapper"
 import { AppSidebar } from "@/components/sidebar/app-sidebar"
 import { ModeToggle } from "@/components/themes/mode-toggle"
 import { ThemeSelector } from "@/components/themes/theme-selector"
@@ -58,24 +55,7 @@ export default function SinkPage() {
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {Object.entries(componentRegistry)
-              .filter(([, component]) => {
-                return component.type === "registry:ui"
-              })
-              .map(([key, component]) => {
-                const Component = component.component
-                return (
-                  <ComponentWrapper
-                    key={key}
-                    name={key}
-                    className={component.className || ""}
-                  >
-                    <Component />
-                  </ComponentWrapper>
-                )
-              })}
-          </div>
+         
         </div>
       </SidebarInset>
     </SidebarProvider>
