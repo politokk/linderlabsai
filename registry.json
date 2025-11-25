@@ -129,6 +129,11 @@
           "target": "components/themes/theme-selector.tsx"
         },
         {
+          "path": "src/components/themes/orb.tsx",
+          "type": "registry:component",
+          "target": "components/themes/orb.tsx"
+        },
+        {
           "path": "src/components/ui/accordion.tsx",
           "type": "registry:component",
           "target": "components/ui/accordion.tsx"
@@ -407,6 +412,11 @@
           "path": "src/lib/utils.ts",
           "type": "registry:lib",
           "target": "lib/utils.ts"
+        },
+        {
+          "path": "src/lib/theme-hue.ts",
+          "type": "registry:lib",
+          "target": "lib/theme-hue.ts"
         },
         {
           "path": "src/hooks/use-layout.tsx",
