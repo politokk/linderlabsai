@@ -6,6 +6,20 @@ import {
   Bot,
   Settings2,
   SquareTerminal,
+  History,
+  Star,
+  Settings,
+  Sparkles,
+  Compass,
+  Zap,
+  FileText,
+  Rocket,
+  GraduationCap,
+  ScrollText,
+  User,
+  Users,
+  CreditCard,
+  Gauge,
 } from "lucide-react"
 
 import { NavMain } from "@/components/sidebar/nav-main"
@@ -18,12 +32,13 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 import { Logo } from "@/components/logo"
+
 // This is sample data.
 const data = {
   user: {
     name: "shadcn",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/linderavatar.png",
   },
   navMain: [
     {
@@ -35,14 +50,17 @@ const data = {
         {
           title: "History",
           url: "#",
+          icon: History,
         },
         {
           title: "Starred",
           url: "#",
+          icon: Star,
         },
         {
           title: "Settings",
           url: "#",
+          icon: Settings,
         },
       ],
     },
@@ -54,14 +72,17 @@ const data = {
         {
           title: "Genesis",
           url: "#",
+          icon: Sparkles,
         },
         {
           title: "Explorer",
           url: "#",
+          icon: Compass,
         },
         {
           title: "Quantum",
           url: "#",
+          icon: Zap,
         },
       ],
     },
@@ -73,18 +94,22 @@ const data = {
         {
           title: "Introduction",
           url: "#",
+          icon: FileText,
         },
         {
           title: "Get Started",
           url: "#",
+          icon: Rocket,
         },
         {
           title: "Tutorials",
           url: "#",
+          icon: GraduationCap,
         },
         {
           title: "Changelog",
           url: "#",
+          icon: ScrollText,
         },
       ],
     },
@@ -96,18 +121,22 @@ const data = {
         {
           title: "General",
           url: "#",
+          icon: User,
         },
         {
           title: "Team",
           url: "#",
+          icon: Users,
         },
         {
           title: "Billing",
           url: "#",
+          icon: CreditCard,
         },
         {
           title: "Limits",
           url: "#",
+          icon: Gauge,
         },
       ],
     },
