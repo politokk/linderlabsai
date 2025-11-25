@@ -3164,7 +3164,7 @@
         "type": "registry:ui",
         "title": "Chain of Thought",
         "icon": "Brain",
-        "category": "ui",
+        "category": "ai",
         "description": "A collapsible component that visualizes AI reasoning steps with support for search results, images, and step-by-step progress indicators.",
         "registryDependencies": [
           "https://linderlabsai.vercel.app/r/theme.json"

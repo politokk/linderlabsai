@@ -11,7 +11,7 @@ import {
   ToyBrick,
   Sparkles,
   ShoppingCart,
-  LogIn,
+  Key,
   Layers,
   type LucideIcon,
   BotMessageSquare,
@@ -52,7 +52,7 @@ interface RegistryItem {
 // Category icon mapping
 const categoryIcons: Record<string, LucideIcon> = {
   brand: Sparkles,
-  auth: LogIn,
+  auth: Key,
   store: ShoppingCart,
   ui: ToyBrick,
   blocks: Blocks,
