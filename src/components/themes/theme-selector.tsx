@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Check, LayoutGrid, List } from "lucide-react"
+import { Check, LayoutGrid, List, PaletteIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useThemeConfig } from "@/components/themes/active-theme"
 import { Label } from "@/components/ui/label"
@@ -178,7 +178,7 @@ export function ThemeSelector({ className }: React.ComponentProps<"div">) {
             <div className="flex items-center justify-between gap-4">
               <div className="ml-2 flex items-center gap-1.5">
                 <span className="text-muted-foreground text-sm flex items-center gap-2">
-                  <Image src="/favicon.ico" alt="Logo" width={16} height={16} /> Themes</span>
+                  <PaletteIcon className="size-4" /> Themes</span>
               </div>
 
               <TabsList className="bg-transparent">

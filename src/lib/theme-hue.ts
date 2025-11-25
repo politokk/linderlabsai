@@ -43,7 +43,7 @@ export type ThemeOverride = {
 
 export const THEME_OVERRIDES: Record<string, ThemeOverride> = {
   emerald: {
-    src: "/orbs/orb-2.webp",
+    src: "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/orbs/orb-2.webp",
     img: {
       color: "transparent",
       filter: "hue-rotate(316deg) saturate(120%)",
