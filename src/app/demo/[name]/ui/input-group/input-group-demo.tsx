@@ -80,7 +80,7 @@ export default function InputGroupDemo() {
             size="icon-xs"
             disabled
           >
-            <ArrowUpIcon />
+            <ArrowUpIcon className="text-white"/>
             <span className="sr-only">Send</span>
           </InputGroupButton>
         </InputGroupAddon>
