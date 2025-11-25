@@ -8,7 +8,7 @@ import {
   ShareIcon,
   TrashIcon,
   UserRoundXIcon,
-  VolumeOffIcon,
+  VolumeXIcon,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -35,7 +35,7 @@ export default function ButtonGroupDropdown() {
         <DropdownMenuContent align="end" className="[--radius:1rem]">
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              <VolumeOffIcon />
+              <VolumeXIcon />
               Mute Conversation
             </DropdownMenuItem>
             <DropdownMenuItem>
