@@ -342,7 +342,7 @@ importers:
         specifier: ^0.5.21
         version: 0.5.21
       streamdown:
-        specifier: ^1.5.1
+        specifier: ^1.6.3
         version: 1.6.3(@types/mdast@4.0.4)(micromark-util-types@2.0.2)(micromark@4.0.2)(react@19.2.0)(unified@11.0.5)
       tailwind-merge:
         specifier: ^3.2.0
