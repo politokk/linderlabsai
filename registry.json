@@ -699,7 +699,7 @@
           {
             "path": "src/app/demo/[name]/ui/accordion/accordion.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/accordion/page.tsx"
           },
           {
             "path": "src/components/demos/accordion/accordion-demo.tsx",
