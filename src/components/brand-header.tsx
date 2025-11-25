@@ -1,6 +1,6 @@
 "use client";
 
-import { HelpCircle, Menu, Search, X } from "lucide-react";
+import { Search } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -9,9 +9,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
-
+import { ThemeSelector } from "@/components/themes/theme-selector";
+import { ModeSwitcher } from "@/components/themes/mode-switcher";
 import { cn } from "@/lib/utils";
-import { Logo } from "./logo";
+import { Logo } from "@/components/logo";
 
 export function BrandHeader() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -60,21 +61,8 @@ export function BrandHeader() {
               Search
             </Button>
           )}
-
-          <Button variant="ghost" size="sm" className="text-foreground">
-            <HelpCircle className="mr-2 size-4" />
-            Support
-          </Button>
-
-          <Button variant="ghost" size="sm" className="text-foreground">
-            Upgrade Trial
-          </Button>
-
-          <Avatar className="size-8">
-            <AvatarFallback className="bg-primary text-primary-foreground">
-              <span className="text-xs">ME</span>
-            </AvatarFallback>
-          </Avatar>
+<ModeSwitcher />
+<ThemeSelector />
         </div>
 
         <div className="flex gap-2 md:hidden">
