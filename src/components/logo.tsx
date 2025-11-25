@@ -1,8 +1,8 @@
 "use client"
 
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "@/components/ui/sidebar";
+import { Orb } from "./themes/orb";
 
 export function Logo() {
   const { state } = useSidebar();
@@ -12,16 +12,13 @@ export function Logo() {
       <SidebarMenuItem>
         <SidebarMenuButton size="lg" className="group-data-[collapsible=icon]:!p-0 group-data-[collapsible=icon]:!size-8">
           <div className="flex aspect-square size-8 items-center justify-center rounded-lg overflow-hidden">
-            <Image
-              src="https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/orbs/orb-2.webp"
-              alt="Logo"
-              width={32}
-              height={32}
-              style={{
-                filter: "hue-rotate(40deg) saturate(1.2)",
-              }}
-              className="size-full object-cover"
-            />
+             <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={40}
+                saturate={2}
+                className="size-8"
+              />
           </div>
           {state !== "collapsed" && (
             <div className="flex flex-col gap-0.5 leading-none">
