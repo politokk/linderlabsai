@@ -727,72 +727,72 @@
           {
             "path": "src/app/demo/[name]/ui/alert/alert.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/alert/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-demo.tsx",
+            "path": "src/components/demos/alert/alert-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-demo.tsx"
+            "target": "components/demos/alert/alert-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-destructive.tsx",
+            "path": "src/components/demos/alert/alert-destructive.tsx",
             "type": "registry:component",
-            "target": "app/alert-destructive.tsx"
+            "target": "components/demos/alert/alert-destructive.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-success-demo.tsx",
+            "path": "src/components/demos/alert/alert-success-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-success-demo.tsx"
+            "target": "components/demos/alert/alert-success-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-description-only-demo.tsx",
+            "path": "src/components/demos/alert/alert-description-only-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-description-only-demo.tsx"
+            "target": "components/demos/alert/alert-description-only-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-minimal-demo.tsx",
+            "path": "src/components/demos/alert/alert-minimal-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-minimal-demo.tsx"
+            "target": "components/demos/alert/alert-minimal-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-title-only-demo.tsx",
+            "path": "src/components/demos/alert/alert-title-only-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-title-only-demo.tsx"
+            "target": "components/demos/alert/alert-title-only-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-long-title-demo.tsx",
+            "path": "src/components/demos/alert/alert-long-title-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-long-title-demo.tsx"
+            "target": "components/demos/alert/alert-long-title-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-long-description-demo.tsx",
+            "path": "src/components/demos/alert/alert-long-description-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-long-description-demo.tsx"
+            "target": "components/demos/alert/alert-long-description-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-extensive-content-demo.tsx",
+            "path": "src/components/demos/alert/alert-extensive-content-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-extensive-content-demo.tsx"
+            "target": "components/demos/alert/alert-extensive-content-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-destructive-demo.tsx",
+            "path": "src/components/demos/alert/alert-destructive-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-destructive-demo.tsx"
+            "target": "components/demos/alert/alert-destructive-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-destructive-list-demo.tsx",
+            "path": "src/components/demos/alert/alert-destructive-list-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-destructive-list-demo.tsx"
+            "target": "components/demos/alert/alert-destructive-list-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-with-action-demo.tsx",
+            "path": "src/components/demos/alert/alert-with-action-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-with-action-demo.tsx"
+            "target": "components/demos/alert/alert-with-action-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/alert/alert-custom-colors-demo.tsx",
+            "path": "src/components/demos/alert/alert-custom-colors-demo.tsx",
             "type": "registry:component",
-            "target": "app/alert-custom-colors-demo.tsx"
+            "target": "components/demos/alert/alert-custom-colors-demo.tsx"
           }
         ]
       },
