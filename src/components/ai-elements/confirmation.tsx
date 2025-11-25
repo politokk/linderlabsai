@@ -89,6 +89,19 @@ export const ConfirmationTitle = ({
   <AlertDescription className={cn("inline", className)} {...props} />
 );
 
+// NEW: ConfirmationContent, as used in your docs
+export type ConfirmationContentProps = ComponentProps<typeof AlertDescription>;
+
+export const ConfirmationContent = ({
+  className,
+  ...props
+}: ConfirmationContentProps) => (
+  <AlertDescription
+    className={cn("flex flex-col gap-2 text-sm", className)}
+    {...props}
+  />
+);
+
 export type ConfirmationRequestProps = {
   children?: ReactNode;
 };

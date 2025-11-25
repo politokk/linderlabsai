@@ -3270,7 +3270,12 @@
             "path": "src/components/demos/ai/confirmation/confirmation-rejected.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/confirmation/confirmation-rejected.tsx"
-          }
+          },
+          {
+            "path": "src/components/demos/ai/confirmation/confirmation-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/confirmation/confirmation-page.tsx"
+          } 
         ]
       }
     ]

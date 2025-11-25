@@ -3,6 +3,7 @@ import Confirmation from "@/components/demos/ai/confirmation/confirmation";
 import ConfirmationRequest from "@/components/demos/ai/confirmation/confirmation-request";
 import ConfirmationAccepted from "@/components/demos/ai/confirmation/confirmation-accepted";
 import ConfirmationRejected from "@/components/demos/ai/confirmation/confirmation-rejected";
+import ConfirmationPage from "@/components/demos/ai/confirmation/confirmation-page";
 export default function confirmation() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
@@ -18,6 +19,9 @@ export default function confirmation() {
         </ComponentWrapper>
         <ComponentWrapper name="Confirmation Rejected" icon="Check" >
           <ConfirmationRejected />
+        </ComponentWrapper>
+        <ComponentWrapper name="Confirmation Page" icon="Check" >
+          <ConfirmationPage />
         </ComponentWrapper>
       </div>
     </div>
