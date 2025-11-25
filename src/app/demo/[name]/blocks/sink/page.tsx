@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import { AppSidebar } from "@/components/sidebar/app-sidebar"
-import { ModeToggle } from "@/components/themes/mode-toggle"
+import { ModeSwitcher } from "@/components/themes/mode-switcher"
 import { ThemeSelector } from "@/components/themes/theme-selector"
 import {
   Breadcrumb,
@@ -50,7 +50,7 @@ export default function SinkPage() {
             </Breadcrumb>
           </div>
           <div className="ml-auto flex items-center gap-2 px-4">
-            <ModeToggle />
+            <ModeSwitcher />
             <ThemeSelector />
           </div>
         </header>
