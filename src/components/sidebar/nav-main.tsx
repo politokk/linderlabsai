@@ -11,6 +11,8 @@ import {
   SidebarGroup,
   SidebarGroupLabel,
   SidebarMenu,
+  SidebarMenuAction,
+  SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarMenuSub,
@@ -60,12 +62,21 @@ export function NavMain({
                 className="group/collapsible"
               >
                 <SidebarMenuItem>
+                  <SidebarMenuButton tooltip={item.title}>
+                    {item.icon && <item.icon />}
+                    <span>{item.title}</span>
+                  </SidebarMenuButton>
+                  <SidebarMenuBadge>
+                    {item.items?.length || 0}
+                  </SidebarMenuBadge>
                   <CollapsibleTrigger asChild>
-                    <SidebarMenuButton tooltip={item.title}>
-                      {item.icon && <item.icon />}
-                      <span>{item.title}</span>
-                      <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
-                    </SidebarMenuButton>
+                    <SidebarMenuAction
+                      className="left-1.5 bg-sidebar-accent text-sidebar-accent-foreground transition-transform data-[state=open]:opacity-0 data-[state=open]:hover:opacity-100 data-[state=open]:rotate-90"
+                      showOnHover
+                      aria-label={`Toggle ${item.title}`}
+                    >
+                      <ChevronRight className="size-4" />
+                    </SidebarMenuAction>
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <SidebarMenuSub>

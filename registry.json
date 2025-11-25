@@ -394,6 +394,11 @@
           "target": "components/display/component-wrapper.tsx"
         },
         {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        },
+        {
           "path": "src/hooks/use-layout.tsx",
           "type": "registry:hook",
           "target": "hooks/use-layout.tsx"
@@ -3083,9 +3088,9 @@
             "target": "components/sidebar/nav-user.tsx"
           },
           {
-            "path": "src/components/sidebar/team-switcher.tsx",
+            "path": "src/components/logo.tsx",
             "type": "registry:component",
-            "target": "components/sidebar/team-switcher.tsx"
+            "target": "components/logo.tsx"
           }
         ]
       }

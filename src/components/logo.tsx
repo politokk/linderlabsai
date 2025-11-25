@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import { Badge } from "./ui/badge";
-import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "./ui/sidebar";
+import { Badge } from "@/components/ui/badge";
+import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "@/components/ui/sidebar";
 
 export function Logo() {
   const { state } = useSidebar();
