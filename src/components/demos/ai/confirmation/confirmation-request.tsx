@@ -34,7 +34,7 @@ const Example = () => (
       <ConfirmationActions>
         <ConfirmationAction
           onClick={() => {
-            // In production, call respondToConfirmationRequest with approved: false
+            // In production, call addToolApprovalResponse with approved: false
           }}
           variant="outline"
         >
@@ -42,7 +42,7 @@ const Example = () => (
         </ConfirmationAction>
         <ConfirmationAction
           onClick={() => {
-            // In production, call respondToConfirmationRequest with approved: true
+            // In production, call addToolApprovalResponse with approved: true
           }}
           variant="default"
         >

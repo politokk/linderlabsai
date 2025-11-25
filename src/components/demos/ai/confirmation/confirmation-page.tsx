@@ -25,7 +25,7 @@ type DeleteFileToolUIPart = ToolUIPart<{
   };
 }>;
 const Example = () => {
-  const { messages, sendMessage, status, respondToConfirmationRequest } = useChat({
+  const { messages, sendMessage, status, addToolApprovalResponse } = useChat({
     transport: new DefaultChatTransport({
       api: '/api/chat',
     }),
@@ -64,8 +64,8 @@ const Example = () => {
               <ConfirmationAction
                 variant="outline"
                 onClick={() =>
-                  respondToConfirmationRequest({
-                    approvalId: deleteTool.approval!.id,
+                  addToolApprovalResponse({
+                    id: deleteTool.approval!.id,
                     approved: false,
                   })
                 }
@@ -75,8 +75,8 @@ const Example = () => {
               <ConfirmationAction
                 variant="default"
                 onClick={() =>
-                  respondToConfirmationRequest({
-                    approvalId: deleteTool.approval!.id,
+                  addToolApprovalResponse({
+                    id: deleteTool.approval!.id,
                     approved: true,
                   })
                 }

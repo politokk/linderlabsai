@@ -3277,6 +3277,34 @@
             "target": "components/demos/ai/confirmation/confirmation-page.tsx"
           } 
         ]
+      },
+      {
+        "name": "context",
+        "type": "registry:ui",
+        "title": "Context",
+        "icon": "Brain",
+        "category": "ai",
+        "description": "A component for displaying context information.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "src/app/demo/[name]/ai/context.tsx",
+            "type": "registry:page",
+            "target": "app/context/page.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/context.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/context.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/context/context.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/context/context.tsx"
+          }
+        ]
       }
     ]
 }
