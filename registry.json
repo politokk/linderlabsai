@@ -833,17 +833,17 @@
           {
             "path": "src/app/demo/[name]/ui/aspect-ratio/aspect-ratio.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/aspect-ratio/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/aspect-ratio/aspect-ratio-wide-demo.tsx",
+            "path": "src/components/demos/aspect-ratio/aspect-ratio-wide-demo.tsx",
             "type": "registry:component",
-            "target": "app/aspect-ratio-wide-demo.tsx"
+            "target": "components/demos/aspect-ratio/aspect-ratio-wide-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/aspect-ratio/aspect-ratio-square-demo.tsx",
+            "path": "src/components/demos/aspect-ratio/aspect-ratio-square-demo.tsx",
             "type": "registry:component",
-            "target": "app/aspect-ratio-square-demo.tsx"
+            "target": "components/demos/aspect-ratio/aspect-ratio-square-demo.tsx"
           }
         ]
       },
@@ -861,12 +861,12 @@
           {
             "path": "src/app/demo/[name]/ui/avatar/avatar.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/avatar/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/avatar/avatar-demo.tsx",
+            "path": "src/components/demos/avatar/avatar-demo.tsx",
             "type": "registry:component",
-            "target": "app/avatar-demo.tsx"
+            "target": "components/demos/avatar/avatar-demo.tsx"
           }
         ]
       },
