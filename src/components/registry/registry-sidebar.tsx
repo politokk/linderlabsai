@@ -37,7 +37,7 @@ const data = {
       name: "LinderLabs",
       accent: "UI",
       plan: "AI",
-      avatar: "/orbs/orb-3.mp4",
+      avatar: "/orbs/orb-1.mp4",
     }
   ],
   navMain: [

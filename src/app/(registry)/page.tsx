@@ -11,6 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { getBlocks, getComponents, getUIPrimitives } from "@/lib/registry";
+import { Orb } from "@/components/themes/orb";
 
 const uiItems = getUIPrimitives().slice(0, 5);
 const componentItems = getComponents().slice(0, 5);
@@ -23,137 +24,535 @@ export default function Home() {
         <div className="space-y-2">
           <div className="flex flex-col gap-3">
             <div className="flex flex-wrap gap-2">
-            <Image
-                src="/favicon.ico"
-                alt="Red"
-                width={32}
-                height={32}
+            <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={0}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(150deg) saturate(1.5)" }}
               />
             
-              <Image
-                src="/favicon.ico"
-                alt="Orange"
-                width={32}
-                height={32}
+            <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={10}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(185deg) saturate(1.5)" }}
               />
-             
-              <Image
-                src="/favicon.ico"
-                alt="Amber"
-                width={32}
-                height={32}
+            <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={20}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(188deg) saturate(1.5)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Red"
-                width={32}
-                height={32}
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={30}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(0deg) saturate(1.5)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Orange"
-                width={32}
-                height={32}
+              
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={40}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(30deg) saturate(1.6)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Amber"
-                width={32}
-                height={32}
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={50}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(45deg) saturate(1.5)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Yellow"
-                width={32}
-                height={32}
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={60}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(60deg) saturate(1.4)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Lime"
-                width={32}
-                height={32}
+           
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={70}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(90deg) saturate(1.3)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Blue"
-                width={32}
-                height={32}
+             <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={80}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(220deg) saturate(1.6)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Indigo"
-                width={32}
-                height={32}
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={90}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(240deg) saturate(1.5)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Violet"
-                width={32}
-                height={32}
+             <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={100}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(260deg) saturate(1.6)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Purple"
-                width={32}
-                height={32}
+            <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={110}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(280deg) saturate(1.5)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Fuchsia"
-                width={32}
-                height={32}
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={120}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(300deg) saturate(1.6)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Pink"
-                width={32}
-                height={32}
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={130}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(320deg) saturate(1.4)" }}
               />
-              <Image
-                src="/favicon.ico"
-                alt="Rose"
-                width={32}
-                height={32}
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={140}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(340deg) saturate(1.5)" }}
               />
-               <Image
-                src="/favicon.ico"
-                alt="Green"
-                width={32}
-                height={32}
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={150}
+                saturate={1.6}
                 className="size-8"
-                style={{ filter: "hue-rotate(120deg) saturate(1.4)" }}
               />
-            </div>
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={160}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={170}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={180}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={190}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={200}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={210}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={220}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={230}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={240}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={250}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={260}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={270}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={280}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={290}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={300}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={310}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={320}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={330}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={340}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={350}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={360}
+                saturate={1.6}
+                className="size-8"
+              />  
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={370}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={380}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={390}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={400}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={410}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={420}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={430}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={440}
+                saturate={1.6}
+                className="size-8"
+              />  
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={450}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={460}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={470}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={480}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={490}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={500}
+                saturate={1.6}
+                className="size-8"
+              />  
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={510}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={520}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={530}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={540}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={550}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={560}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={570}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={580}
+                saturate={1.6}
+                className="size-8"
+              />  
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={590}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={600}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={610}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={620}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={630}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={640}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={650}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={660}
+                saturate={1.6}
+                className="size-8"
+              />  
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={670}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={680}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={690}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={700}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={710}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={720}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={730}
+                saturate={1.6}
+                className="size-8"
+              />
+              <Orb
+                src="/orbs/orb-1.mp4"
+                size={32}
+                hueDeg={740}
+                saturate={1.6}
+                className="size-8"
+              />    
+                </div>
             <h1 className="font-bold text-3xl tracking-tight md:text-4xl">
               Registry
             </h1>

@@ -39,13 +39,13 @@ const THEME_TO_ORB: Record<string, string> = {
   sky: "/orbs/orb-1.mp4",
   teal: "/orbs/orb-1.mp4",
 
-  // orb-2.mp4 - Blue/purple gradient for purples and default
+  // orb-1.mp4 - Blue/purple gradient for purples and default
   default: "/orbs/orb-1.mp4",
   indigo: "/orbs/orb-1.mp4",
   violet: "/orbs/orb-1.mp4",
   purple: "/orbs/orb-1.mp4",
 
-  // orb-3.mp4 - Pink/orange/purple gradient for warm colors
+  // orb-1.mp4 - Pink/orange/purple gradient for warm colors
   pink: "/orbs/orb-1.mp4",
   rose: "/orbs/orb-1.mp4",
   fuchsia: "/orbs/orb-1.mp4",
@@ -59,7 +59,7 @@ const THEME_TO_ORB: Record<string, string> = {
   green: "/orbs/orb-1.mp4",
   emerald: "/orbs/orb-1.mp4",
 
-  // Neutral themes - use orb-2 (subtle default)
+  // Neutral themes - use orb-1 (subtle default)
   slate: "/orbs/orb-1.mp4",
   gray: "/orbs/orb-1.mp4",
   zinc: "/orbs/orb-1.mp4",
@@ -128,13 +128,13 @@ const TeamAvatar = ({
     if (isNeutral) {
       const brightness = NEUTRAL_BRIGHTNESS[activeTheme] ?? 1.0
       videoStyle = {
-        filter: `saturate(0.15) brightness(${brightness})`,
+        filter: `saturate(1.6) brightness(${brightness})`,
       }
     } else {
       const hue = HUE_BY_THEME[activeTheme]
       if (hue !== undefined) {
         videoStyle = {
-          filter: `hue-rotate(${hue}deg) saturate(1.2)`,
+          filter: `hue-rotate(${hue}deg) saturate(1.6)`,
         }
       }
     }
