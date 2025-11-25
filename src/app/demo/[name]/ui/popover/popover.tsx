@@ -1,4 +1,4 @@
-import PopoverDemo from "./popover-demo";
+import PopoverDemo from "@/components/demos/popover/popover-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

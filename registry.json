@@ -2265,12 +2265,12 @@
           {
             "path": "src/app/demo/[name]/ui/navigation-menu/navigation-menu.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/navigation-menu/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/navigation-menu/navigation-menu-demo.tsx",
+            "path": "src/components/demos/navigation-menu/navigation-menu-demo.tsx",
             "type": "registry:component",
-            "target": "app/navigation-menu-demo.tsx"
+            "target": "components/demos/navigation-menu/navigation-menu-demo.tsx"
           }
         ]
       },
@@ -2288,27 +2288,27 @@
           {
             "path": "src/app/demo/[name]/ui/native-select/native-select.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/native-select/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/native-select/native-select-demo.tsx",
+            "path": "src/components/demos/native-select/native-select-demo.tsx",
             "type": "registry:component",
-            "target": "app/native-select-demo.tsx"
+            "target": "components/demos/native-select/native-select-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/native-select/native-select-disabled.tsx",
+            "path": "src/components/demos/native-select/native-select-disabled.tsx",
             "type": "registry:component",
-            "target": "app/native-select-disabled.tsx"
+            "target": "components/demos/native-select/native-select-disabled.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/native-select/native-select-groups.tsx",
+            "path": "src/components/demos/native-select/native-select-groups.tsx",
             "type": "registry:component",
-            "target": "app/native-select-groups.tsx"
+            "target": "components/demos/native-select/native-select-groups.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/native-select/native-select-invalid.tsx",
+            "path": "src/components/demos/native-select/native-select-invalid.tsx",
             "type": "registry:component",
-            "target": "app/native-select-invalid.tsx"
+            "target": "components/demos/native-select/native-select-invalid.tsx"
           }
         ]
       },
@@ -2326,12 +2326,12 @@
           {
             "path": "src/app/demo/[name]/ui/pagination/pagination.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/pagination/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/pagination/pagination-demo.tsx",
+            "path": "src/components/demos/pagination/pagination-demo.tsx",
             "type": "registry:component",
-            "target": "app/pagination-demo.tsx"
+            "target": "components/demos/pagination/pagination-demo.tsx"
           }
         ]
       },
@@ -2349,12 +2349,12 @@
           {
             "path": "src/app/demo/[name]/ui/popover/popover.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/popover/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/popover/popover-demo.tsx",
+            "path": "src/components/demos/popover/popover-demo.tsx",
             "type": "registry:component",
-            "target": "app/popover-demo.tsx"
+            "target": "components/demos/popover/popover-demo.tsx"
           }
         ]
       },
@@ -2372,12 +2372,12 @@
           {
             "path": "src/app/demo/[name]/ui/progress/progress.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/progress/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/progress/progress-demo.tsx",
+            "path": "src/components/demos/progress/progress-demo.tsx",
             "type": "registry:component",
-            "target": "app/progress-demo.tsx"
+            "target": "components/demos/progress/progress-demo.tsx"
           }
         ]
       },

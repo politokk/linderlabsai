@@ -1,4 +1,4 @@
-import NavigationMenuDemo from "./navigation-menu-demo";
+import NavigationMenuDemo from "@/components/demos/navigation-menu/navigation-menu-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

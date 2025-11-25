@@ -1,4 +1,4 @@
-import PaginationDemo from "./pagination-demo";
+import PaginationDemo from "@/components/demos/pagination/pagination-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
