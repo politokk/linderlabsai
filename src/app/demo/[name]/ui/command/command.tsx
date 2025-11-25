@@ -1,5 +1,5 @@
-import CommandDemo from "./command-demo";
-import CommandDialogDemo from "./command-dialog";
+import CommandDemo from "@/components/demos/command/command-demo";
+import CommandDialogDemo from "@/components/demos/command/command-dialog";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

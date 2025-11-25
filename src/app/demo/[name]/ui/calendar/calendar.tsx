@@ -1,8 +1,8 @@
-import MultiCalendar from "./multi-calendar";
-import SingleCalendar from "./single-calendar";
-import CalendarDemo from "./calendar-demo";
-import CalendarForm from "./calendar-form";
-import CalendarHijri from "./calendar-hijri";
+import MultiCalendar from "@/components/demos/calendar/multi-calendar";
+import SingleCalendar from "@/components/demos/calendar/single-calendar";
+import CalendarDemo from "@/components/demos/calendar/calendar-demo";
+import CalendarForm from "@/components/demos/calendar/calendar-form";
+import CalendarHijri from "@/components/demos/calendar/calendar-hijri";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
   export default function calendar() {

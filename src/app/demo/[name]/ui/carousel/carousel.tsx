@@ -1,9 +1,9 @@
-import CarouselDemo from "./carousel-demo";
-import CarouselApiDemo from "./carousel-api";
-import CarouselOrientation from "./carousel-orientation";
-import CarouselPlugin from "./carousel-plugin";
-import CarouselSize from "./carousel-size";
-import CarouselSpacing from "./carousel-spacing";
+import CarouselDemo from "@/components/demos/carousel/carousel-demo";
+import CarouselApiDemo from "@/components/demos/carousel/carousel-api";
+import CarouselOrientation from "@/components/demos/carousel/carousel-orientation";
+import CarouselPlugin from "@/components/demos/carousel/carousel-plugin";
+import CarouselSize from "@/components/demos/carousel/carousel-size";
+import CarouselSpacing from "@/components/demos/carousel/carousel-spacing";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

@@ -1,8 +1,8 @@
-import CheckboxDemo from "./checkbox-demo";
-import CheckboxDisabled from "./checkbox-disabled";
-import CheckboxWithText from "./checkbox-with-text";
-import CheckboxFormMultiple from "./checkbox-form-multiple";
-import CheckboxFormSingle from "./checkbox-form-single";
+import CheckboxDemo from "@/components/demos/checkbox/checkbox-demo";
+import CheckboxDisabled from "@/components/demos/checkbox/checkbox-disabled";
+import CheckboxWithText from "@/components/demos/checkbox/checkbox-with-text";
+import CheckboxFormMultiple from "@/components/demos/checkbox/checkbox-form-multiple";
+import CheckboxFormSingle from "@/components/demos/checkbox/checkbox-form-single";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
