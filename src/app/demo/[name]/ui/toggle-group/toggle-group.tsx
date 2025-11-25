@@ -1,10 +1,10 @@
-import ToggleGroupDemo from "./toggle-group-demo";
-import ToggleGroupDisabled from "./toggle-group-disabled";
-import ToggleGroupLg from "./toggle-group-lg";
-import ToggleGroupOutline from "./toggle-group-outline";
-import ToggleGroupSingle from "./toggle-group-single";
-import ToggleGroupSm from "./toggle-group-sm";
-import ToggleGroupSpacing from "./toggle-group-spacing";
+import ToggleGroupDemo from "@/components/demos/toggle-group/toggle-group-demo";
+import ToggleGroupDisabled from "@/components/demos/toggle-group/toggle-group-disabled";
+import ToggleGroupLg from "@/components/demos/toggle-group/toggle-group-lg";
+import ToggleGroupOutline from "@/components/demos/toggle-group/toggle-group-outline";
+import ToggleGroupSingle from "@/components/demos/toggle-group/toggle-group-single";
+import ToggleGroupSm from "@/components/demos/toggle-group/toggle-group-sm";
+import ToggleGroupSpacing from "@/components/demos/toggle-group/toggle-group-spacing";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 export default function toggleGroup() {

@@ -1,9 +1,9 @@
-import TextareaDemo from "./textarea-demo";
-import TextareaDisabled from "./textarea-disabled";
-import TextareaForm from "./textarea-form";
-import TextareaWithButton from "./textarea-with-button";
-import TextareaWithLabel from "./textarea-with-label";
-import TextareaWithText from "./textarea-with-text";
+import TextareaDemo from "@/components/demos/textarea/textarea-demo";
+import TextareaDisabled from "@/components/demos/textarea/textarea-disabled";
+import TextareaForm from "@/components/demos/textarea/textarea-form";
+import TextareaWithButton from "@/components/demos/textarea/textarea-with-button";
+import TextareaWithLabel from "@/components/demos/textarea/textarea-with-label";
+import TextareaWithText from "@/components/demos/textarea/textarea-with-text";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

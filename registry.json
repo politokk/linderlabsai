@@ -2842,12 +2842,12 @@
           {
             "path": "src/app/demo/[name]/ui/table/table.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/table/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/table/table-demo.tsx",
+            "path": "src/components/demos/table/table-demo.tsx",
             "type": "registry:component",
-            "target": "app/table-demo.tsx"
+            "target": "components/demos/table/table-demo.tsx"
           }
         ]
       },
@@ -2865,12 +2865,12 @@
           {
             "path": "src/app/demo/[name]/ui/tabs/tabs.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/tabs/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/tabs/tabs-demo.tsx",
+            "path": "src/components/demos/tabs/tabs-demo.tsx",
             "type": "registry:component",
-            "target": "app/tabs-demo.tsx"
+            "target": "components/demos/tabs/tabs-demo.tsx"
           }
         ]
       },
@@ -2888,37 +2888,37 @@
           {
             "path": "src/app/demo/[name]/ui/textarea/textarea.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/textarea/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/textarea/textarea-demo.tsx",
+            "path": "src/components/demos/textarea/textarea-demo.tsx",
             "type": "registry:component",
-            "target": "app/textarea-demo.tsx"
+            "target": "components/demos/textarea/textarea-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/textarea/textarea-disabled.tsx",
+            "path": "src/components/demos/textarea/textarea-disabled.tsx",
             "type": "registry:component",
-            "target": "app/textarea-disabled.tsx"
+            "target": "components/demos/textarea/textarea-disabled.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/textarea/textarea-form.tsx",
+            "path": "src/components/demos/textarea/textarea-form.tsx",
             "type": "registry:component",
-            "target": "app/textarea-form.tsx"
+            "target": "components/demos/textarea/textarea-form.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/textarea/textarea-with-button.tsx",
+            "path": "src/components/demos/textarea/textarea-with-button.tsx",
             "type": "registry:component",
-            "target": "app/textarea-with-button.tsx"
+              "target": "components/demos/textarea/textarea-with-button.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/textarea/textarea-with-label.tsx",
+            "path": "src/components/demos/textarea/textarea-with-label.tsx",
             "type": "registry:component",
-            "target": "app/textarea-with-label.tsx"
+            "target": "components/demos/textarea/textarea-with-label.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/textarea/textarea-with-text.tsx",
+            "path": "src/components/demos/textarea/textarea-with-text.tsx",
             "type": "registry:component",
-            "target": "app/textarea-with-text.tsx"
+            "target": "components/demos/textarea/textarea-with-text.tsx"
           }
         ]
       },
@@ -2936,37 +2936,37 @@
           {
             "path": "src/app/demo/[name]/ui/toggle/toggle.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/toggle/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle/toggle-demo.tsx",
+            "path": "src/components/demos/toggle/toggle-demo.tsx",
             "type": "registry:component",
-            "target": "app/toggle-demo.tsx"
+            "target": "components/demos/toggle/toggle-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle/toggle-disabled.tsx",
+            "path": "src/components/demos/toggle/toggle-disabled.tsx",
             "type": "registry:component",
-            "target": "app/toggle-disabled.tsx"
+            "target": "components/demos/toggle/toggle-disabled.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle/toggle-lg.tsx",
+              "path": "src/components/demos/toggle/toggle-lg.tsx",
             "type": "registry:component",
-            "target": "app/toggle-lg.tsx"
+            "target": "components/demos/toggle/toggle-lg.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle/toggle-outline.tsx",
+            "path": "src/components/demos/toggle/toggle-outline.tsx",
             "type": "registry:component",
-            "target": "app/toggle-outline.tsx"
+            "target": "components/demos/toggle/toggle-outline.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle/toggle-sm.tsx",
+            "path": "src/components/demos/toggle/toggle-sm.tsx",
             "type": "registry:component",
-            "target": "app/toggle-sm.tsx"
+            "target": "components/demos/toggle/toggle-sm.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle/toggle-with-text.tsx",
+            "path": "src/components/demos/toggle/toggle-with-text.tsx",
             "type": "registry:component",
-            "target": "app/toggle-with-text.tsx"
+            "target": "components/demos/toggle/toggle-with-text.tsx"
           }
         ]
       },
@@ -2984,42 +2984,42 @@
           {
             "path": "src/app/demo/[name]/ui/toggle-group/toggle-group.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/toggle-group/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-demo.tsx",
+            "path": "src/components/demos/toggle-group/toggle-group-demo.tsx",
             "type": "registry:component",
-            "target": "app/toggle-group-demo.tsx"
+            "target": "components/demos/toggle-group/toggle-group-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-disabled.tsx",
+            "path": "src/components/demos/toggle-group/toggle-group-disabled.tsx",
             "type": "registry:component",
-            "target": "app/toggle-group-disabled.tsx"
+            "target": "components/demos/toggle-group/toggle-group-disabled.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-lg.tsx",
+            "path": "src/components/demos/toggle-group/toggle-group-lg.tsx",
             "type": "registry:component",
-            "target": "app/toggle-group-lg.tsx"
+              "target": "components/demos/toggle-group/toggle-group-lg.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-outline.tsx",
+            "path": "src/components/demos/toggle-group/toggle-group-outline.tsx",
             "type": "registry:component",
-            "target": "app/toggle-group-outline.tsx"
+            "target": "components/demos/toggle-group/toggle-group-outline.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-single.tsx",
+            "path": "src/components/demos/toggle-group/toggle-group-single.tsx",
             "type": "registry:component",
-            "target": "app/toggle-group-single.tsx"
+            "target": "components/demos/toggle-group/toggle-group-single.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-sm.tsx",
+            "path": "src/components/demos/toggle-group/toggle-group-sm.tsx",
             "type": "registry:component",
-            "target": "app/toggle-group-sm.tsx"
+            "target": "components/demos/toggle-group/toggle-group-sm.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/toggle-group/toggle-group-spacing.tsx",
+            "path": "src/components/demos/toggle-group/toggle-group-spacing.tsx",
             "type": "registry:component",
-            "target": "app/toggle-group-spacing.tsx"
+            "target": "components/demos/toggle-group/toggle-group-spacing.tsx"
           }
         ]
       },
@@ -3037,12 +3037,12 @@
           {
             "path": "src/app/demo/[name]/ui/tooltip/tooltip.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/tooltip/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/tooltip/tooltip-demo.tsx",
+            "path": "src/components/demos/tooltip/tooltip-demo.tsx",
             "type": "registry:component",
-            "target": "app/tooltip-demo.tsx"
+            "target": "components/demos/tooltip/tooltip-demo.tsx"
           }
         ]
       }

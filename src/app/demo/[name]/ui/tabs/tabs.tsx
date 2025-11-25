@@ -1,4 +1,4 @@
-import TabsDemo from "./tabs-demo";
+import TabsDemo from "@/components/demos/tabs/tabs-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
