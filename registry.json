@@ -3181,6 +3181,11 @@
             "target": "components/ai-elements/chain-of-thought.tsx"
           },
           {
+            "path": "src/components/ai-elements/image.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/image.tsx"
+          },
+          {
             "path": "src/components/demos/ai/chainofthought/chainofthought.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/chainofthought/chainofthought.tsx"
