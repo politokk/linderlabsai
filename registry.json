@@ -3252,6 +3252,11 @@
             "target": "components/ai-elements/confirmation.tsx"
           },
           {
+            "path": "src/components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
             "path": "src/components/demos/ai/confirmation/confirmation.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/confirmation/confirmation.tsx"
