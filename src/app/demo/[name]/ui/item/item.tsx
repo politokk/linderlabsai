@@ -1,12 +1,12 @@
-import ItemDemo from "./item-demo";
-import ItemVariant from "./item-variant";
-import ItemAvatar from "./item-avatar";
-import ItemDropdown from "./item-dropdown";
-import ItemGroup from "./item-group";
-import ItemHeader from "./item-header";
-import ItemIcon from "./item-icon";
-import ItemImage from "./item-image";
-import ItemLink from "./item-link";
+import ItemDemo from "@/components/demos/item/item-demo";
+import ItemVariant from "@/components/demos/item/item-variant";
+import ItemAvatar from "@/components/demos/item/item-avatar";
+import ItemDropdown from "@/components/demos/item/item-dropdown";
+import ItemGroup from "@/components/demos/item/item-group";
+import ItemHeader from "@/components/demos/item/item-header";
+import ItemIcon from "@/components/demos/item/item-icon";
+import ItemImage from "@/components/demos/item/item-image";
+import ItemLink from "@/components/demos/item/item-link";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 export default function item() {
