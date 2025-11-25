@@ -601,7 +601,7 @@ export default function Home() {
         <Card className="shadow-none">
           <CardHeader className="space-y-1">
             <div className="flex items-center justify-between">
-              <CardTitle>UI Primitives</CardTitle>
+              <CardTitle>UI</CardTitle>
               <div className="rounded-md bg-foreground p-1">
                 <ToyBrick className="size-5 text-primary-foreground" />
               </div>

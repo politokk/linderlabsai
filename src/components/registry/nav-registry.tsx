@@ -187,7 +187,7 @@ export function NavRegistry({
                 <ChevronDown className="absolute size-3 flex-shrink-0 opacity-0 transition-all duration-200 group-hover/collapsible:opacity-100 group-data-[state=open]/collapsible:block group-data-[state=closed]/collapsible:hidden" />
                 <ChevronRight className="absolute size-3 flex-shrink-0 opacity-0 transition-all duration-200 group-hover/collapsible:opacity-100 group-data-[state=open]/collapsible:hidden group-data-[state=closed]/collapsible:block" />
                 <span className="ml-2 transition-all duration-200 group-data-[collapsible=icon]:opacity-0">
-                  UI Primitives
+                  UI
                 </span>
               </div>
             </SidebarGroupLabel>

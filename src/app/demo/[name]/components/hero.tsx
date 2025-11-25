@@ -7,9 +7,12 @@ export const hero = {
       <Hero
         title="Build a Registry"
         description="This starter helps you create a registry so you can distribute your custom components, hooks, pages, and other files to any React project"
-        buttonText="Learn more"
-        buttonLink="#sale"
+        button1Text="Learn more"
+        button1Link="#sale"
+        button2Text="View Docs"
+        button2Link="/docs"
         backgroundImage="/assets/hero.png"
+        badgeText="Coming"
       />
     ),
   },

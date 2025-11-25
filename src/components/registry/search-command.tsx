@@ -165,7 +165,7 @@ export function SearchCommand({
             <CollapsibleTrigger className="flex w-full items-center justify-between gap-2 px-2 py-1.5 text-sm font-medium hover:bg-accent">
               <div className="flex items-center gap-2">
                 <ToyBrick className="size-4" />
-                <span>UI Primitives</span>
+                <span>UI</span>
               </div>
               <ChevronRight 
                 className={`size-4 transition-transform ${openGroups.uiPrimitives ? 'rotate-90' : ''}`}
