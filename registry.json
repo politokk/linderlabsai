@@ -3052,7 +3052,7 @@
         ]
       },
       {
-        "name": "Sink",
+        "name": "sink",
         "type": "registry:block",
         "title": "Sink",
         "icon": "Terminal",
