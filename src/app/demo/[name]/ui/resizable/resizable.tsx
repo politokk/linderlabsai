@@ -1,7 +1,7 @@
-import ResizableDemo from "./resizable-demo";
-import ResizableDemoWithHandle from "./resizable-demo-with-handle";
-import ResizableHandleDemo from "./resizable-handle";
-import ResizableVertical from "./resizable-vertical";
+import ResizableDemo from "@/components/demos/resizable/resizable-demo";
+import ResizableDemoWithHandle from "@/components/demos/resizable/resizable-demo-with-handle";
+import ResizableHandleDemo from "@/components/demos/resizable/resizable-handle";
+import ResizableVertical from "@/components/demos/resizable/resizable-vertical";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

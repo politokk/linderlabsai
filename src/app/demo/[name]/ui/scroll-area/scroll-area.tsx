@@ -1,5 +1,5 @@
-import ScrollAreaDemo from "./scroll-area-demo";  
-import ScrollAreaHorizontalDemo from "./scroll-area-horizontal-demo";
+import ScrollAreaDemo from "@/components/demos/scroll-area/scroll-area-demo";  
+import ScrollAreaHorizontalDemo from "@/components/demos/scroll-area/scroll-area-horizontal-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

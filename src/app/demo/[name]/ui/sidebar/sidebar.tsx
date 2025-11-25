@@ -1,12 +1,12 @@
-import SidebarControlled from "./sidebar-controlled";
-import SidebarDemo from "./sidebar-demo";
-import SidebarFooter from "./sidebar-footer";
-import SidebarGroup from "./sidebar-group";
-import SidebarGroupAction from "./sidebar-group-action";
-import SidebarGroupCollapsible from "./sidebar-group-collapsible";
-import SidebarHeader from "./sidebar-header";
-import SidebarMenu from "./sidebar-menu";
-import SidebarMenuAction from "./sidebar-menu-action";
+import SidebarControlled from "@/components/demos/sidebar/sidebar-controlled";
+import SidebarDemo from "@/components/demos/sidebar/sidebar-demo";
+import SidebarFooter from "@/components/demos/sidebar/sidebar-footer";
+import SidebarGroup from "@/components/demos/sidebar/sidebar-group";
+import SidebarGroupAction from "@/components/demos/sidebar/sidebar-group-action";
+import SidebarGroupCollapsible from "@/components/demos/sidebar/sidebar-group-collapsible";
+import SidebarHeader from "@/components/demos/sidebar/sidebar-header";
+import SidebarMenu from "@/components/demos/sidebar/sidebar-menu";
+import SidebarMenuAction from "@/components/demos/sidebar/sidebar-menu-action";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

@@ -2395,22 +2395,22 @@
           {
             "path": "src/app/demo/[name]/ui/radio-group/radio-group.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/radio-group/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/radio-group/radio-group-demo.tsx",
+            "path": "src/components/demos/radio-group/radio-group-demo.tsx",
             "type": "registry:component",
-            "target": "app/radio-group-demo.tsx"
+            "target": "components/demos/radio-group/radio-group-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/radio-group/radio-group-form.tsx",
+            "path": "src/components/demos/radio-group/radio-group-form.tsx",
             "type": "registry:component",
-            "target": "app/radio-group-form.tsx"
+            "target": "components/demos/radio-group/radio-group-form.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/radio-group/radio-group-plan.tsx",
+            "path": "src/components/demos/radio-group/radio-group-plan.tsx",
             "type": "registry:component",
-            "target": "app/radio-group-plan.tsx"
+            "target": "components/demos/radio-group/radio-group-plan.tsx"
           }
         ]
       },
@@ -2428,27 +2428,27 @@
           {
             "path": "src/app/demo/[name]/ui/resizable/resizable.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/resizable/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/resizable/resizable-demo.tsx",
+            "path": "src/components/demos/resizable/resizable-demo.tsx",
             "type": "registry:component",
-            "target": "app/resizable-demo.tsx"
+            "target": "components/demos/resizable/resizable-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/resizable/resizable-demo-with-handle.tsx",
+            "path": "src/components/demos/resizable/resizable-demo-with-handle.tsx",
             "type": "registry:component",
-            "target": "app/resizable-demo-with-handle.tsx"
+            "target": "components/demos/resizable/resizable-demo-with-handle.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/resizable/resizable-handle.tsx",
+            "path": "src/components/demos/resizable/resizable-handle.tsx",
             "type": "registry:component",
-            "target": "app/resizable-handle.tsx"
+            "target": "components/demos/resizable/resizable-handle.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/resizable/resizable-vertical.tsx",
+            "path": "src/components/demos/resizable/resizable-vertical.tsx",
             "type": "registry:component",
-            "target": "app/resizable-vertical.tsx"
+            "target": "components/demos/resizable/resizable-vertical.tsx"
           }
         ]
       },
@@ -2466,17 +2466,17 @@
           {
             "path": "src/app/demo/[name]/ui/scroll-area/scroll-area.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/scroll-area/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/scroll-area/scroll-area-demo.tsx",
+              "path": "src/components/demos/scroll-area/scroll-area-demo.tsx",
             "type": "registry:component",
-            "target": "app/scroll-area-demo.tsx"
+            "target": "components/demos/scroll-area/scroll-area-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/scroll-area/scroll-area-horizontal-demo.tsx",
+            "path": "src/components/demos/scroll-area/scroll-area-horizontal-demo.tsx",
             "type": "registry:component",
-            "target": "app/scroll-area-horizontal-demo.tsx"
+            "target": "components/demos/scroll-area/scroll-area-horizontal-demo.tsx"
           }
         ]
       },
@@ -2494,22 +2494,22 @@
           {
             "path": "src/app/demo/[name]/ui/select/select.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/select/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/select/select-demo.tsx",
+            "path": "src/components/demos/select/select-demo.tsx",
             "type": "registry:component",
-            "target": "app/select-demo.tsx"
+            "target": "components/demos/select/select-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/select/select-form.tsx",
+            "path": "src/components/demos/select/select-form.tsx",
             "type": "registry:component",
-            "target": "app/select-form.tsx"
+            "target": "components/demos/select/select-form.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/select/select-scrollable.tsx",
+            "path": "src/components/demos/select/select-scrollable.tsx",
             "type": "registry:component",
-            "target": "app/select-scrollable.tsx"
+            "target": "components/demos/select/select-scrollable.tsx"
           }
         ]
       },
@@ -2527,12 +2527,12 @@
           {
             "path": "src/app/demo/[name]/ui/separator/separator.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/separator/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/separator/separator-demo.tsx",
+              "path": "src/components/demos/separator/separator-demo.tsx",
             "type": "registry:component",
-            "target": "app/separator-demo.tsx"
+            "target": "components/demos/separator/separator-demo.tsx"
           }
         ]
       },
@@ -2550,17 +2550,17 @@
           {
             "path": "src/app/demo/[name]/ui/sheet/sheet.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/sheet/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sheet/sheet-demo.tsx",
+            "path": "src/components/demos/sheet/sheet-demo.tsx",
             "type": "registry:component",
-            "target": "app/sheet-demo.tsx"
+            "target": "components/demos/sheet/sheet-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sheet/sheet-side.tsx",
+            "path": "src/components/demos/sheet/sheet-side.tsx",
             "type": "registry:component",
-            "target": "app/sheet-side.tsx"
+            "target": "components/demos/sheet/sheet-side.tsx"
           }
         ]
       },
@@ -2578,72 +2578,72 @@
           {
             "path": "src/app/demo/[name]/ui/sidebar/sidebar.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/sidebar/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-demo.tsx",
+            "path": "src/components/demos/sidebar/sidebar-demo.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-demo.tsx"
+            "target": "components/demos/sidebar/sidebar-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-controlled.tsx",
+            "path": "src/components/demos/sidebar/sidebar-controlled.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-controlled.tsx"
+            "target": "components/demos/sidebar/sidebar-controlled.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-footer.tsx",
+            "path": "src/components/demos/sidebar/sidebar-footer.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-footer.tsx"
+            "target": "components/demos/sidebar/sidebar-footer.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-group.tsx",
+            "path": "src/components/demos/sidebar/sidebar-group.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-group.tsx"
+            "target": "components/demos/sidebar/sidebar-group.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-group-action.tsx",
+            "path": "src/components/demos/sidebar/sidebar-group-action.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-group-action.tsx"
+            "target": "components/demos/sidebar/sidebar-group-action.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-group-collapsible.tsx",
+            "path": "src/components/demos/sidebar/sidebar-group-collapsible.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-group-collapsible.tsx"
+            "target": "components/demos/sidebar/sidebar-group-collapsible.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-header.tsx",
+            "path": "src/components/demos/sidebar/sidebar-header.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-header.tsx"
+            "target": "components/demos/sidebar/sidebar-header.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu.tsx",
+            "path": "src/components/demos/sidebar/sidebar-menu.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-menu.tsx"
+            "target": "components/demos/sidebar/sidebar-menu.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu-action.tsx",
+            "path": "src/components/demos/sidebar/sidebar-menu-action.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-menu-action.tsx"
+            "target": "components/demos/sidebar/sidebar-menu-action.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu-badge.tsx",
+            "path": "src/components/demos/sidebar/sidebar-menu-badge.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-menu-badge.tsx"
+            "target": "components/demos/sidebar/sidebar-menu-badge.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu-collapsible.tsx",
+            "path": "src/components/demos/sidebar/sidebar-menu-collapsible.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-menu-collapsible.tsx"
+            "target": "components/demos/sidebar/sidebar-menu-collapsible.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-menu-sub.tsx",
+            "path": "src/components/demos/sidebar/sidebar-menu-sub.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-menu-sub.tsx"
+            "target": "components/demos/sidebar/sidebar-menu-sub.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sidebar/sidebar-rsc.tsx",
+            "path": "src/components/demos/sidebar/sidebar-rsc.tsx",
             "type": "registry:component",
-            "target": "app/sidebar-rsc.tsx"
+            "target": "components/demos/sidebar/sidebar-rsc.tsx"
           }
         ]
       },
@@ -2661,17 +2661,17 @@
           {
             "path": "src/app/demo/[name]/ui/skeleton/skeleton.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/skeleton/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/skeleton/skeleton-demo.tsx",
+            "path": "src/components/demos/skeleton/skeleton-demo.tsx",
             "type": "registry:component",
-            "target": "app/skeleton-demo.tsx"
+            "target": "components/demos/skeleton/skeleton-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/skeleton/skeleton-card.tsx",
+            "path": "src/components/demos/skeleton/skeleton-card.tsx",
             "type": "registry:component",
-            "target": "app/skeleton-card.tsx"
+            "target": "components/demos/skeleton/skeleton-card.tsx"
           }
         ]
       },
@@ -2689,12 +2689,12 @@
           {
             "path": "src/app/demo/[name]/ui/slider/slider.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/slider/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/slider/slider-demo.tsx",
+              "path": "src/components/demos/slider/slider-demo.tsx",
             "type": "registry:component",
-            "target": "app/slider-demo.tsx"
+            "target": "components/demos/slider/slider-demo.tsx"
           }
         ]
       },
@@ -2712,22 +2712,22 @@
           {
             "path": "src/app/demo/[name]/ui/sonner/sonner.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/sonner/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sonner/sonner-demo.tsx",
+            "path": "src/components/demos/sonner/sonner-demo.tsx",
             "type": "registry:component",
-            "target": "app/sonner-demo.tsx"
+            "target": "components/demos/sonner/sonner-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sonner/sonner-toasts.tsx",
+            "path": "src/components/demos/sonner/sonner-toasts.tsx",
             "type": "registry:component",
-            "target": "app/sonner-toasts.tsx"
+            "target": "components/demos/sonner/sonner-toasts.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/sonner/sonner-types.tsx",
+            "path": "src/components/demos/sonner/sonner-types.tsx",
             "type": "registry:component",
-            "target": "app/sonner-types.tsx"
+            "target": "components/demos/sonner/sonner-types.tsx"
           }
         ]
       },
@@ -2746,57 +2746,57 @@
           {
             "path": "src/app/demo/[name]/ui/spinner/spinner.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/spinner/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-demo.tsx",
+            "path": "src/components/demos/spinner/spinner-demo.tsx",
             "type": "registry:component",
-            "target": "app/spinner-demo.tsx"
+            "target": "components/demos/spinner/spinner-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-badge.tsx",
+              "path": "src/components/demos/spinner/spinner-badge.tsx",
             "type": "registry:component",
-            "target": "app/spinner-badge.tsx"
+            "target": "components/demos/spinner/spinner-badge.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-basic.tsx",
+            "path": "src/components/demos/spinner/spinner-basic.tsx",
             "type": "registry:component",
-            "target": "app/spinner-basic.tsx"
+            "target": "components/demos/spinner/spinner-basic.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-button.tsx",
+            "path": "src/components/demos/spinner/spinner-button.tsx",
             "type": "registry:component",
-            "target": "app/spinner-button.tsx"
+            "target": "components/demos/spinner/spinner-button.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-color.tsx",
+            "path": "src/components/demos/spinner/spinner-color.tsx",
             "type": "registry:component",
-            "target": "app/spinner-color.tsx"
+            "target": "components/demos/spinner/spinner-color.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-custom.tsx",
+            "path": "src/components/demos/spinner/spinner-custom.tsx",
             "type": "registry:component",
-            "target": "app/spinner-custom.tsx"
+            "target": "components/demos/spinner/spinner-custom.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-empty.tsx",
+            "path": "src/components/demos/spinner/spinner-empty.tsx",
             "type": "registry:component",
-            "target": "app/spinner-empty.tsx"
+            "target": "components/demos/spinner/spinner-empty.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-input-group.tsx",
+              "path": "src/components/demos/spinner/spinner-input-group.tsx",
             "type": "registry:component",
-            "target": "app/spinner-input-group.tsx"
+            "target": "components/demos/spinner/spinner-input-group.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-item.tsx",
+            "path": "src/components/demos/spinner/spinner-item.tsx",
             "type": "registry:component",
-            "target": "app/spinner-item.tsx"
+            "target": "components/demos/spinner/spinner-item.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/spinner/spinner-size.tsx",
+            "path": "src/components/demos/spinner/spinner-size.tsx",
             "type": "registry:component",
-            "target": "app/spinner-size.tsx"
+            "target": "components/demos/spinner/spinner-size.tsx"
           }
         ]
       },
@@ -2814,17 +2814,17 @@
           {
             "path": "src/app/demo/[name]/ui/switch/switch.tsx",
             "type": "registry:page",
-            "target": "app/page.tsx"
+            "target": "app/switch/page.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/switch/switch-demo.tsx",
+            "path": "src/components/demos/switch/switch-demo.tsx",
             "type": "registry:component",
-            "target": "app/switch-demo.tsx"
+            "target": "components/demos/switch/switch-demo.tsx"
           },
           {
-            "path": "src/app/demo/[name]/ui/switch/switch-form.tsx",
+            "path": "src/components/demos/switch/switch-form.tsx",
             "type": "registry:component",
-            "target": "app/switch-form.tsx"
+            "target": "components/demos/switch/switch-form.tsx"
           }
         ]
       },

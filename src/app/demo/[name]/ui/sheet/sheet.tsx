@@ -1,5 +1,5 @@
-import SheetDemo from "./sheet-demo";
-import SheetSide from "./sheet-side";
+import SheetDemo from "@/components/demos/sheet/sheet-demo";
+import SheetSide from "@/components/demos/sheet/sheet-side";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

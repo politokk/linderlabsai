@@ -1,6 +1,6 @@
-import SelectDemo from "./select-demo"; 
-import SelectForm from "./select-form";
-import SelectScrollable from "./select-scrollable";
+import SelectDemo from "@/components/demos/select/select-demo"; 
+import SelectForm from "@/components/demos/select/select-form";
+import SelectScrollable from "@/components/demos/select/select-scrollable";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

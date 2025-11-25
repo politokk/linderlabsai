@@ -1,4 +1,4 @@
-import SliderDemo from "./slider-demo";
+import SliderDemo from "@/components/demos/slider/slider-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

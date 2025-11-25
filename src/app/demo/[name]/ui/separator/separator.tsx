@@ -1,4 +1,4 @@
-import SeparatorDemo from "./separator-demo";
+import SeparatorDemo from "@/components/demos/separator/separator-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
