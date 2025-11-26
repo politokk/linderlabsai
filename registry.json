@@ -3173,22 +3173,22 @@
           {
             "path": "src/app/demo/[name]/ai/artifact.tsx",
             "type": "registry:page",
-            "target": "app/artifact/page.tsx"
+            "target": "src/app/artifact/page.tsx"
           },
           {
             "path": "src/components/ai-elements/artifact.tsx",
             "type": "registry:component",
-            "target": "components/ai-elements/artifact.tsx"
+            "target": "src/components/ai-elements/artifact.tsx"
           },
           {
             "path": "src/components/ai-elements/code-block.tsx",
             "type": "registry:component",
-            "target": "components/ai-elements/code-block.tsx"
+            "target": "src/components/ai-elements/code-block.tsx"
           },
           {
             "path": "src/components/demos/ai/artifact/artifact.tsx",
             "type": "registry:component",
-            "target": "components/demos/ai/artifact/artifact.tsx"
+            "target": "src/components/demos/ai/artifact/artifact.tsx"
           }
         ]
       },
