@@ -26,7 +26,7 @@ export function ComponentWrapper({
         id={name}
         data-name={name.toLowerCase()}
         className={cn(
-          "flex w-full scroll-mt-16 flex-col rounded-3xl border",
+          "flex w-full scroll-mt-16 flex-col rounded-3xl border max-h-[350px]",
           allowOverflow ? "overflow-visible" : "overflow-hidden",
           className
         )}

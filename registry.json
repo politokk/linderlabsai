@@ -3310,6 +3310,39 @@
             "target": "components/demos/ai/context/context.tsx"
           }
         ]
+      },
+      {
+        "name": "conversation",
+        "type": "registry:ui",
+        "title": "Conversation",
+        "icon": "MessagesSquare",
+        "category": "ai",
+        "description": "A component for displaying a conversation.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "src/app/demo/[name]/ai/conversation.tsx",
+            "type": "registry:page",
+            "target": "app/conversation/page.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/conversation.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/conversation/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/conversation/conversation.tsx"
+          }
+        ]
       }
     ]
 }

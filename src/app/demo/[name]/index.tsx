@@ -78,6 +78,7 @@ import chainofthought from "@/app/demo/[name]/ai/chainofthought";
 import checkpoint from "@/app/demo/[name]/ai/checkpoint";
 import confirmation from "@/app/demo/[name]/ai/confirmation";
 import context from "@/app/demo/[name]/ai/context";
+import conversation from "@/app/demo/[name]/ai/conversation";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -163,4 +164,5 @@ export const demos: { [name: string]: Demo } = {
   checkpoint,
   confirmation,
   context,
+  conversation,
 };
