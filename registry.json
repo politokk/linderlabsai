@@ -3196,7 +3196,7 @@
         "name": "checkpoint",
         "type": "registry:ui",
         "title": "Checkpoint",
-        "icon": "Check",
+        "icon": "MapPinCheck",
         "category": "ai",
         "description": "A simple component for marking conversation history points and restoring the chat to a previous state.",
         "registryDependencies": [
@@ -3234,7 +3234,7 @@
         "name": "confirmation",
         "type": "registry:ui",
         "title": "Confirmation",
-        "icon": "Check",
+        "icon": "Vote",
         "category": "ai",
         "description": "A component for confirming actions before they are executed.",
         "registryDependencies": [
@@ -3287,7 +3287,7 @@
         "name": "context",
         "type": "registry:ui",
         "title": "Context",
-        "icon": "Brain",
+        "icon": "Info",
         "category": "ai",
         "description": "A component for displaying context information.",
         "registryDependencies": [
