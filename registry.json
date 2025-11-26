@@ -3801,6 +3801,64 @@
             "target": "components/demos/ai/plan/plan.tsx"
           }
         ]
+      },
+      {
+        "name": "prompt-input",
+        "type": "registry:ui",
+        "title": "Prompt Input",
+        "icon": "MessageSquareQuote",
+        "category": "ai",
+        "description": "A component for displaying a prompt input.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/prompt-input.tsx",
+            "type": "registry:page",
+            "target": "app/prompt-input/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
+            "path": "components/ai-elements/model-selector.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/model-selector.tsx"
+          },
+          {
+            "path": "components/ai-elements/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/conversation.tsx"
+          },
+          {
+            "path": "components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "components/demos/ai/prompt-input/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/prompt-input/prompt-input.tsx"
+          },
+          {
+            "path": "components/demos/ai/prompt-input/prompt-input-cursor.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/prompt-input/prompt-input-cursor.tsx"
+          },
+          {
+            "path": "components/demos/ai/prompt-input/prompt-input-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/prompt-input/prompt-input-page.tsx"
+          },
+          {
+            "path": "app/api/chat/route.ts",
+            "type": "registry:component",
+            "target": "app/api/chat/route.ts"
+          }
+        ]
       }
     ]
 }

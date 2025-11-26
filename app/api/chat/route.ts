@@ -5,10 +5,18 @@ import { z } from 'zod';
 export const maxDuration = 30;
 
 export async function POST(req: Request) {
-  const { messages }: { messages: UIMessage[] } = await req.json();
+  const { 
+    messages,
+    model,
+    webSearch,
+  }: { 
+    messages: UIMessage[];
+    model?: string;
+    webSearch?: boolean;
+  } = await req.json();
 
   const result = streamText({
-    model: 'openai/gpt-4o',
+    model: webSearch ? 'perplexity/sonar' : (model || 'openai/gpt-4o'),
     messages: convertToModelMessages(messages),
     tools: {
       // Confirmation component - delete file tool
