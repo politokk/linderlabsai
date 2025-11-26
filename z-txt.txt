@@ -1,5 +1,5 @@
 git add .
-git commit -m "image page"
+git commit -m "model selector"
 git push origin main    
 git push origin main --force
 
