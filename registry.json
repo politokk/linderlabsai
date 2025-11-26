@@ -469,6 +469,16 @@
           "target": "lib/theme-hue.ts"
         },
         {
+          "path": "lib/registry-server.ts",
+          "type": "registry:lib",
+          "target": "lib/registry-server.ts"
+        },
+        {
+          "path": "lib/styles.ts",
+          "type": "registry:lib",
+          "target": "lib/styles.ts"
+        },
+        {
           "path": "hooks/use-layout.tsx",
           "type": "registry:hook",
           "target": "hooks/use-layout.tsx"
@@ -492,6 +502,11 @@
           "path": "postcss.config.mjs",
           "type": "registry:file",
           "target": "postcss.config.mjs"
+        },
+        {
+          "path": "registry.json",
+          "type": "registry:file",
+          "target": "registry.json"
         }
       ]
     },
