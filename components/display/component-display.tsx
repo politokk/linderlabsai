@@ -10,6 +10,7 @@ export type Component = {
   name: string
   code: string
   highlightedCode: string
+  registryName: string
 }
 
 export async function ComponentDisplay({
@@ -54,11 +55,15 @@ const getComponentByPath = React.cache(async (path: string): Promise<Component |
 
     // Extract just the filename for display (e.g., "alert/alert-dialog-demo" -> "alert-dialog-demo")
     const name = path.split("/").pop() || path
+    
+    // Extract the registry name (first part of path, e.g., "alert/alert-dialog-demo" -> "alert")
+    const registryName = path.split("/")[0]
 
     return {
       name,
       code,
       highlightedCode,
+      registryName,
     }
   } catch (error) {
     console.error(`Failed to load component at path: ${path}`, error)
