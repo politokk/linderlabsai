@@ -3419,6 +3419,11 @@
             "path": "components/demos/ai/code-block/code-block-page.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/code-block/code-block-page.tsx"
+          },
+          {
+            "path": "app/api/codegen/route.ts",
+            "type": "registry:component",
+            "target": "app/api/codegen/route.ts"
           }
         ]
       },
