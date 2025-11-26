@@ -4061,7 +4061,7 @@
         "name": "suggestions",
         "type": "registry:ui",
         "title": "Suggestions",
-        "icon": "BookOpen",
+        "icon": "Lightbulb",
         "category": "ai",
         "description": "A component for displaying a suggestions.",
         "registryDependencies": [
@@ -4102,6 +4102,44 @@
             "path": "app/api/chat/route.ts",
             "type": "registry:component",
             "target": "app/api/chat/route.ts"
+          }
+        ]
+      },
+      {
+        "name": "task",
+        "type": "registry:ui",
+        "title": "Task",
+        "icon": "CalendarCheck",
+        "category": "ai",
+        "description": "A component for displaying a task.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/task.tsx",
+            "type": "registry:page",
+            "target": "app/task/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/task.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/task.tsx"
+          },
+          {
+            "path": "components/demos/ai/task/task.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/task/task.tsx"
+          },
+          {
+            "path": "components/demos/ai/task/task-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/task/task-page.tsx"
+          },
+          {
+            "path": "app/api/task/route.ts",
+            "type": "registry:component",
+            "target": "app/api/task/route.ts"
           }
         ]
       }

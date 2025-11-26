@@ -94,6 +94,7 @@ import reasoning from "@/app/demo/[name]/ai/reasoning";
 import shimmer from "@/app/demo/[name]/ai/shimmer";
 import sources from "@/app/demo/[name]/ai/sources";
 import suggestions from "@/app/demo/[name]/ai/suggestions";
+import task from "@/app/demo/[name]/ai/task";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -195,4 +196,5 @@ export const demos: { [name: string]: Demo } = {
   shimmer,
   sources,
   suggestions,
+  task,
 };
