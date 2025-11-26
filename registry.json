@@ -3338,6 +3338,11 @@
             "target": "components/ai-elements/message.tsx"
           },
           {
+            "path": "src/components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
             "path": "src/components/demos/ai/conversation/conversation.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/conversation/conversation.tsx"
