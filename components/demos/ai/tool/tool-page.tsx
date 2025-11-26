@@ -42,7 +42,7 @@ const Example = () => {
     (part) => part.type === 'tool-fetch_weather_data',
   ) as WeatherToolUIPart | undefined;
   return (
-    <div className="max-w-4xl mx-auto p-6 relative size-full rounded-lg border h-[full]">
+    <div className="max-w-4xl mx-auto p-6 relative size-full rounded-lg h-[full]">
       <div className="flex flex-col h-full">
         <div className="space-y-4">
           <Button onClick={handleWeatherClick} disabled={status !== 'ready'}>
