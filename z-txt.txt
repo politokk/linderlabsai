@@ -1,5 +1,5 @@
 git add .
-git commit -m "icons"
+git commit -m "package.json"
 git push origin main    
 git push origin main --force
 
