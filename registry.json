@@ -3568,6 +3568,11 @@
             "target": "components/ai-elements/image.tsx"
           },
           {
+            "path": "components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
             "path": "components/demos/ai/image/image.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/image/image.tsx"
