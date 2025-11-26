@@ -12,7 +12,7 @@ import { hero } from "@/app/demo/[name]/components/hero";
 import { login } from "@/app/demo/[name]/components/login";
 import { logo } from "@/app/demo/[name]/components/logo";
 import { productGrid } from "@/app/demo/[name]/components/product-grid";
-import { promo } from "@/app/demo/[name]/components/promo";
+import promo from "@/app/demo/[name]/components/promo";
 
 // ui
 import accordion from "@/app/demo/[name]/ui/accordion/accordion";

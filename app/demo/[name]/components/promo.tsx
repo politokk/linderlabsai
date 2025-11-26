@@ -1,16 +1,13 @@
-import { Promo } from "@/components/promo";
+import { Promo } from "@/components/promo"
 
-export const promo = {
-  name: "promo",
-  components: {
-    Default: (
-      <Promo
-        title="Get up to 50% off"
-        description="All products on sale until April 15th."
-        buttonText="Shop now"
-        buttonLink="#promo"
-        backgroundImage="/assets/promo.png"
-      />
-    ),
-  },
-};
+export default function promo() {
+  return (
+    <Promo
+      title="Get up to 50% off"
+      description="All products on sale until April 15th."
+      buttonText="Shop now"
+      buttonLink="#promo"
+      backgroundImage="/assets/promo.png"
+    />
+  )
+}
