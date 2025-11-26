@@ -3353,6 +3353,34 @@
             "target": "components/demos/ai/conversation/conversation-page.tsx"
           }
         ]
+      },
+      {
+        "name": "inline-citation",
+        "type": "registry:ui",
+        "title": "Inline Citation",
+        "icon": "Quote",
+        "category": "ai",
+        "description": "A component for displaying a inline citation.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "src/app/demo/[name]/ai/inline-citation.tsx",
+            "type": "registry:page",
+            "target": "app/inline-citation/page.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/inline-citation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/inline-citation.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/inline-citation/inline-citation.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/inline-citation/inline-citation.tsx"
+          }
+        ]
       }
     ]
 }
