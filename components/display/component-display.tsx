@@ -1,29 +1,34 @@
 import * as React from "react"
-import { readFile } from "fs/promises"
-import { join } from "path"
+import { registryItemSchema } from "shadcn/schema"
+import { z } from "zod"
 
 import { highlightCode } from "@/lib/highlight-code"
+import { getRegistryItem } from "@/lib/registry-server"
 import { cn } from "@/lib/utils"
+import { type Style } from "@/lib/styles"
 import { ComponentToolbar } from "@/components/display/component-toolbar"
 
-export type Component = {
-  name: string
-  code: string
+export type Component = z.infer<typeof registryItemSchema> & {
   highlightedCode: string
 }
 
 export async function ComponentDisplay({
-  path,
+  name,
+  styleName,
   children,
   className,
   icon,
 }: {
-  path: string
+  name: string
+  styleName: Style["name"]
   icon?: React.ReactNode
 } & React.ComponentProps<"div">) {
-  const component = await getComponentByPath(path)
+  const component = await getCachedRegistryItem(name, styleName)
+  const highlightedCode = await getComponentHighlightedCode(
+    component?.files?.[0]?.content ?? ""
+  )
 
-  if (!component) {
+  if (!component || !highlightedCode) {
     return null
   }
 
@@ -35,7 +40,7 @@ export async function ComponentDisplay({
       )}
     >
       <ComponentToolbar
-        component={component}
+        component={{ ...component as Component, highlightedCode }}
         icon={icon}
         className="bg-card text-card-foreground relative z-20 flex justify-end border-b px-3 py-2.5"
       >
@@ -48,27 +53,12 @@ export async function ComponentDisplay({
   )
 }
 
-const getComponentByPath = React.cache(async (path: string): Promise<Component | null> => {
-  try {
-    // Support nested folder structure: components/demos/{category}/{demo-name}.tsx
-    // e.g., path = "accordion/accordion-demo" or "alert/alert-success-demo"
-    const code = await readFile(
-      join(process.cwd(), "components", "demos", `${path}.tsx`),
-      "utf-8"
-    )
-
-    const highlightedCode = await highlightCode(code)
-
-    // Extract just the filename for display (e.g., "alert/alert-dialog-demo" -> "alert-dialog-demo")
-    const name = path.split("/").pop() || path
-
-    return {
-      name,
-      code,
-      highlightedCode,
-    }
-  } catch (error) {
-    console.error(`Failed to load component at path: ${path}`, error)
-    return null
+const getCachedRegistryItem = React.cache(
+  async (name: string, styleName: Style["name"]) => {
+    return await getRegistryItem(name, styleName)
   }
+)
+
+const getComponentHighlightedCode = React.cache(async (content: string) => {
+  return await highlightCode(content)
 })

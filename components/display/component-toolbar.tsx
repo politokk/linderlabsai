@@ -1,9 +1,9 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { ComponentCodeViewer } from "@/components/display/component-code-viewer"
-import { ComponentCopyButton } from "@/components/display/component-copy-button"
-import { Component } from "@/components/display/component-display"
+import { ComponentCodeViewer } from "./component-code-viewer"
+import { ComponentCopyButton } from "./component-copy-button"
+import { Component } from "./component-display"
 import { Separator } from "@/components/ui/separator"
 
 export function ComponentToolbar({
@@ -28,7 +28,7 @@ export function ComponentToolbar({
         />
         <ComponentCopyButton
           name={component.name}
-          code={component.code}
+          code={component.files?.[0]?.content ?? ""}
         />
         <ComponentCodeViewer component={component} icon={icon}>
           {children}
