@@ -419,6 +419,31 @@
           "target": "components/code/code-block-tabs.tsx"
         },
         {
+          "path": "components/display/component-display.tsx",
+          "type": "registry:component",
+          "target": "components/display/component-display.tsx"
+        },
+        {
+          "path": "components/display/component-toolbar.tsx",
+          "type": "registry:component",
+          "target": "components/display/component-toolbar.tsx"
+        },
+        {
+          "path": "components/display/component-code-viewer.tsx",
+          "type": "registry:component",
+          "target": "components/display/component-code-viewer.tsx"
+        },
+        {
+          "path": "components/display/component-copy-button.tsx",
+          "type": "registry:component",
+          "target": "components/display/component-copy-button.tsx"
+        },
+        {
+          "path": "components/display/open-in-v0-button.tsx",
+          "type": "registry:component",
+          "target": "components/display/open-in-v0-button.tsx"
+        },
+        {
           "path": "lib/utils.ts",
           "type": "registry:lib",
           "target": "lib/utils.ts"
