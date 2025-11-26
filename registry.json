@@ -858,6 +858,24 @@
         }
       ]
     },
+    {
+      "name": "accordion-demo",
+      "type": "registry:ui",
+      "title": "Accordion Demo",
+      "icon": "FolderRoot",
+      "description": "A demo of the Accordion component.",
+      "category": "accordion",
+      "registryDependencies": [
+        "https://linderlabsai.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "components/demos/accordion/accordion-demo.tsx",
+          "type": "registry:component",
+          "target": "components/demos/accordion/accordion-demo.tsx"
+        }
+      ]
+    },
       {
         "name": "accordion",
         "type": "registry:ui",
@@ -866,7 +884,8 @@
         "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
         "category": "ui",
         "registryDependencies": [
-          "https://linderlabsai.vercel.app/r/theme.json"
+          "https://linderlabsai.vercel.app/r/theme.json",
+          "accordion-demo"
         ],
         "files": [
           {

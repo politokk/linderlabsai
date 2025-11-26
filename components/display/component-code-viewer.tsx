@@ -51,7 +51,7 @@ export function ComponentCodeViewer({
             {component.name}
             <div className="ml-auto flex items-center gap-2">
               <ComponentCopyButton name={component.name} code={component.code} />
-              <OpenInV0Button name={component.registryName} className="rounded-sm" variant="icon" />
+              <OpenInV0Button name={component.name} className="rounded-sm" variant="icon" />
             </div>
           </figcaption>
           <div
