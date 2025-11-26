@@ -29,7 +29,7 @@ export function ComponentCopyButton({
     <Tooltip>
       <TooltipTrigger asChild>
         <Button
-          size="iconSm"
+          size="iconXs"
           variant="ghost"
           onClick={() => {
             navigator.clipboard.writeText(code)

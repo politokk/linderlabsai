@@ -479,6 +479,11 @@
           "target": "lib/styles.ts"
         },
         {
+          "path": "lib/schema.ts",
+          "type": "registry:lib",
+          "target": "lib/schema.ts"
+        },
+        {
           "path": "hooks/use-layout.tsx",
           "type": "registry:hook",
           "target": "hooks/use-layout.tsx"
