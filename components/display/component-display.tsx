@@ -31,15 +31,19 @@ export async function ComponentDisplay({
     <div
       className={cn(
         "themes-wrapper group relative flex flex-col overflow-hidden rounded-xl border transition-all duration-200 ease-in-out hover:z-30",
-        className,
+        className
       )}
     >
       <ComponentToolbar
         component={component}
         icon={icon}
         className="bg-card text-card-foreground relative z-20 flex justify-end border-b px-3 py-2.5"
-      />
-      <div className="relative z-10 flex flex-1 min-h-0 items-center gap-2 p-4 overflow-auto">{children}</div>
+      >
+        {children}
+      </ComponentToolbar>
+      <div className="relative z-10 flex flex-1 min-h-0 items-center gap-2 p-4 overflow-auto">
+        {children}
+      </div>
     </div>
   )
 }
@@ -48,7 +52,10 @@ const getComponentByPath = React.cache(async (path: string): Promise<Component |
   try {
     // Support nested folder structure: components/demos/{category}/{demo-name}.tsx
     // e.g., path = "accordion/accordion-demo" or "alert/alert-success-demo"
-    const code = await readFile(join(process.cwd(), "components", "demos", `${path}.tsx`), "utf-8")
+    const code = await readFile(
+      join(process.cwd(), "components", "demos", `${path}.tsx`),
+      "utf-8"
+    )
 
     const highlightedCode = await highlightCode(code)
 
