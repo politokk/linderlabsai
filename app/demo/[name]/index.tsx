@@ -76,6 +76,7 @@ import tooltip from "@/app/demo/[name]/ui/tooltip/tooltip";
 // ai
 import actions from "@/app/demo/[name]/ai/actions";
 import artifact from "@/app/demo/[name]/ai/artifact";
+import branch from "@/app/demo/[name]/ai/branch";
 import chainofthought from "@/app/demo/[name]/ai/chainofthought";
 import checkpoint from "@/app/demo/[name]/ai/checkpoint";
 import codeBlock from "@/app/demo/[name]/ai/code-block";
@@ -181,6 +182,7 @@ export const demos: { [name: string]: Demo } = {
   // ai
   actions,
   artifact,
+  branch,
   chainofthought,
   checkpoint,
   "code-block": codeBlock,
