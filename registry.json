@@ -4142,6 +4142,79 @@
             "target": "app/api/task/route.ts"
           }
         ]
+      },
+      {
+        "name": "tool",
+        "type": "registry:ui",
+        "title": "Tool",
+        "icon": "Wrench",
+        "category": "ai",
+        "description": "A component for displaying a tool.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/tool.tsx",
+            "type": "registry:page",
+            "target": "app/tool/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/tool.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/tool.tsx"
+          },
+          {
+            "path": "components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "components/ai-elements/code-block.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/code-block.tsx"
+          },
+          {
+            "path": "components/ai-elements/confirmation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/confirmation.tsx"
+          },
+          {
+            "path": "components/demos/ai/tool/tool.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/tool/tool.tsx"
+          },
+          {
+            "path": "components/demos/ai/tool/tool-input-available.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/tool/tool-input-available.tsx"
+          },
+          {
+            "path": "components/demos/ai/tool/tool-input-streaming.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/tool/tool-input-streaming.tsx"
+          },
+          {
+            "path": "components/demos/ai/tool/tool-output-available.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/tool/tool-output-available.tsx"
+          },
+          {
+            "path": "components/demos/ai/tool/tool-output-error.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/tool/tool-output-error.tsx"
+          },
+          {
+            "path": "components/demos/ai/tool/tool-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/tool/tool-page.tsx"
+          },
+          {
+            "path": "app/api/weather/route.ts",
+            "type": "registry:component",
+            "target": "app/api/weather/route.ts"
+          }
+        ]
       }
     ]
-}
+  }
