@@ -449,6 +449,11 @@
           "target": "lib/utils.ts"
         },
         {
+          "path": "lib/highlight-code.ts",
+          "type": "registry:lib",
+          "target": "lib/highlight-code.ts"
+        },
+        {
           "path": "lib/theme-hue.ts",
           "type": "registry:lib",
           "target": "lib/theme-hue.ts"

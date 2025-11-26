@@ -1,5 +1,5 @@
 git add .
-git commit -m "preview and code block tabs"
+git commit -m "highlight code"
 git push origin main    
 git push origin main --force
 
