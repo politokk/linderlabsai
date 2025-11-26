@@ -3859,6 +3859,11 @@
             "target": "components/ai-elements/plan.tsx"
           },
           {
+            "path": "components/ai-elements/shimmer.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/shimmer.tsx"
+          },
+          {
             "path": "components/demos/ai/plan/plan.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/plan/plan.tsx"
