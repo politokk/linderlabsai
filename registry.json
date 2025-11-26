@@ -404,6 +404,21 @@
           "target": "components/display/component-wrapper.tsx"
         },
         {
+          "path": "components/code/preview.tsx",
+          "type": "registry:component",
+          "target": "components/code/preview.tsx"
+        },
+        {
+          "path": "components/code/preview-code-block.tsx",
+          "type": "registry:component",
+          "target": "components/code/preview-code-block.tsx"
+        },
+        {
+          "path": "components/code/code-block-tabs.tsx",
+          "type": "registry:component",
+          "target": "components/code/code-block-tabs.tsx"
+        },
+        {
           "path": "lib/utils.ts",
           "type": "registry:lib",
           "target": "lib/utils.ts"
