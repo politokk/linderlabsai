@@ -1,17 +1,16 @@
 "use client"
 
-import type React from "react"
-
 import { cn } from "@/lib/utils"
 import { ComponentCodeViewer } from "@/components/display/component-code-viewer"
 import { ComponentCopyButton } from "@/components/display/component-copy-button"
-import type { Component } from "@/components/display/component-display"
+import { Component } from "@/components/display/component-display"
 import { Separator } from "@/components/ui/separator"
 
 export function ComponentToolbar({
   component,
   className,
   icon,
+  children,
 }: {
   component: Component
   icon?: React.ReactNode
@@ -23,9 +22,17 @@ export function ComponentToolbar({
         {getComponentTitle(component.name)}
       </div>
       <div className="ml-auto flex items-center gap-1 [&>form]:flex">
-        <Separator orientation="vertical" className="mx-0 hidden !h-4 md:flex" />
-        <ComponentCopyButton name={component.name} code={component.code} />
-        <ComponentCodeViewer component={component} icon={icon} />
+        <Separator
+          orientation="vertical"
+          className="mx-0 hidden !h-4 md:flex"
+        />
+        <ComponentCopyButton
+          name={component.name}
+          code={component.code}
+        />
+        <ComponentCodeViewer component={component} icon={icon}>
+          {children}
+        </ComponentCodeViewer>
       </div>
     </div>
   )
