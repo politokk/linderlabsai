@@ -3573,6 +3573,11 @@
             "target": "components/ai-elements/prompt-input.tsx"
           },
           {
+            "path": "components/ai-elements/loader.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/loader.tsx"
+          },
+          {
             "path": "components/demos/ai/image/image.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/image/image.tsx"
@@ -3581,6 +3586,11 @@
             "path": "components/demos/ai/image/image-page.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/image/image-page.tsx"
+          },
+          {
+            "path": "app/api/image/route.ts",
+            "type": "registry:component",
+            "target": "app/api/image/route.ts"
           }
         ]
       },
@@ -3735,7 +3745,7 @@
         "name": "open-in-chat",
         "type": "registry:ui",
         "title": "Open in Chat",
-        "icon": "Bot",
+        "icon": "MessageSquareShare",
         "category": "ai",
         "description": "A component for displaying a open in chat.",
         "registryDependencies": [

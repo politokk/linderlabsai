@@ -236,9 +236,9 @@ export type OpenInTriggerProps = ComponentProps<typeof DropdownMenuTrigger>;
 export const OpenInTrigger = ({ children, ...props }: OpenInTriggerProps) => (
   <DropdownMenuTrigger {...props} asChild>
     {children ?? (
-      <Button type="button" variant="outline">
+      <Button type="button" variant="outline" size="sm">
         Open in chat
-        <ChevronDownIcon className="size-4" />
+        <ChevronDownIcon className="size-3.5" />
       </Button>
     )}
   </DropdownMenuTrigger>
