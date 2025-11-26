@@ -38,7 +38,7 @@ const Example = () => {
     (part) => part.type === 'tool-delete_file'
   ) as DeleteFileToolUIPart | undefined;
   return (
-    <div className="max-w-4xl mx-auto p-6 relative size-full rounded-lg border h-[600px]">
+    <div className="max-w-4xl mx-auto p-6 relative size-full rounded-lg border h-[full]">
       <div className="flex flex-col h-full space-y-4">
         <Button onClick={handleDeleteFile} disabled={status !== 'ready'}>
           Delete Example File
