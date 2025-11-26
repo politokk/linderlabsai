@@ -444,6 +444,16 @@
           "target": "components/display/open-in-v0-button.tsx"
         },
         {
+          "path": "components/icons/icons.tsx",
+          "type": "registry:component",
+          "target": "components/icons/icons.tsx"
+        },
+        {
+          "path": "components/icons/icon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/icon.tsx"
+        },
+        {
           "path": "lib/utils.ts",
           "type": "registry:lib",
           "target": "lib/utils.ts"

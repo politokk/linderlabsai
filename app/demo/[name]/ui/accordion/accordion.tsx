@@ -4,6 +4,8 @@ import AccordionExtensive from "@/components/demos/accordion/accordion-extensive
 import { Preview } from "@/components/code/preview";
 import { ComponentDisplay } from "@/components/display/component-display";
 import { FolderRootIcon, ScrollTextIcon } from "lucide-react";
+export const dynamic = "force-dynamic"
+
 export default function accordion() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
