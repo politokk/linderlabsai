@@ -3960,6 +3960,44 @@
             "target": "app/api/chat/route.ts"
           }
         ]
+      },
+      {
+        "name": "shimmer",
+        "type": "registry:ui",
+        "title": "Shimmer",
+        "icon": "Sparkles",
+        "category": "ai",
+        "description": "A component for displaying a shimmer.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/shimmer.tsx",
+            "type": "registry:page",
+            "target": "app/shimmer/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/shimmer.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/shimmer.tsx"
+          },
+          {
+            "path": "components/demos/ai/shimmer/shimmer.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/shimmer/shimmer.tsx"
+          },
+          {
+            "path": "components/demos/ai/shimmer/shimmer-duration.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/shimmer/shimmer-duration.tsx"
+          },
+          {
+            "path": "components/demos/ai/shimmer/shimmer-elements.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/shimmer/shimmer-elements.tsx"
+          }
+        ]
       }
     ]
 }
