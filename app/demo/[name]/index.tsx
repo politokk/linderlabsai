@@ -89,6 +89,7 @@ import modelSelector from "@/app/demo/[name]/ai/model-selector";
 import openInChat from "@/app/demo/[name]/ai/open-in-chat";
 import plan from "@/app/demo/[name]/ai/plan";
 import promptInput from "@/app/demo/[name]/ai/prompt-input";
+import queue from "@/app/demo/[name]/ai/queue";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -185,4 +186,5 @@ export const demos: { [name: string]: Demo } = {
   "open-in-chat": openInChat,
   plan,
   "prompt-input": promptInput,
+  queue,
 };

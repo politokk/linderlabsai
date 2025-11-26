@@ -3859,6 +3859,49 @@
             "target": "app/api/chat/route.ts"
           }
         ]
+      },
+      {
+        "name": "queue",
+        "type": "registry:ui",
+        "title": "Queue",
+        "icon": "ListEnd",
+        "category": "ai",
+        "description": "A component for displaying a queue.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/queue.tsx",
+            "type": "registry:page",
+            "target": "app/queue/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/queue.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/queue.tsx"
+          },
+          {
+            "path": "components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
+            "path": "components/ai-elements/model-selector.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/model-selector.tsx"
+          },
+          {
+            "path": "components/demos/ai/queue/queue.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/queue/queue.tsx"
+          },
+          {
+            "path": "components/demos/ai/queue/queue-prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/queue/queue-prompt-input.tsx"
+          }
+        ]
       }
     ]
 }
