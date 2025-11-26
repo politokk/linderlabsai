@@ -903,8 +903,8 @@
         "category": "ui",
         "registryDependencies": [
           "https://linderlabsai.vercel.app/r/theme.json",
-          "accordion-demo",
-          "accordion-extensive"
+          "https://linderlabsai.vercel.app/r/accordion-demo.json",
+          "https://linderlabsai.vercel.app/r/accordion-extensive.json"
         ],
         "files": [
           {
