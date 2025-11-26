@@ -4,7 +4,8 @@ import { cn } from "@/lib/utils"
 import { ComponentCodeViewer } from "./component-code-viewer"
 import { ComponentCopyButton } from "./component-copy-button"
 import { Component } from "./component-display"
-import { Separator } from "@/components/ui/separator"
+import { OpenInV0Button } from "./open-in-v0-button"
+import { Separator } from "../ui/separator"
 
 export function ComponentToolbar({
   component,
@@ -33,6 +34,7 @@ export function ComponentToolbar({
         <ComponentCodeViewer component={component} icon={icon}>
           {children}
         </ComponentCodeViewer>
+        <OpenInV0Button name={component.name} variant="icon"/>
       </div>
     </div>
   )

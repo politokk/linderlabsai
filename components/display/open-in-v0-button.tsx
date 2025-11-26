@@ -28,9 +28,9 @@ export function OpenInV0Button({
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
-              size="icon"
-              variant="outline"
-              className="size-6.5 rounded-full p-1 bg-primary text-primary-foreground"
+              size="iconXs"
+              variant="foreground"
+              className="rounded-full"
               asChild
               {...props}
             >
