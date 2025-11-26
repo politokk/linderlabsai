@@ -1,5 +1,5 @@
 git add .
-git commit -m "image"
+git commit -m "prompt input"
 git push origin main    
 git push origin main --force
 
