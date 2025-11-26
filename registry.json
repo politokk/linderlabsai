@@ -3652,6 +3652,11 @@
             "path": "components/demos/ai/inline-citation/inline-citation-page.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/inline-citation/inline-citation-page.tsx"
+          },
+          {
+            "path": "app/api/citation/route.ts",
+            "type": "registry:component",
+            "target": "app/api/citation/route.ts"
           }
         ]   
       },
