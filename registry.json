@@ -807,14 +807,27 @@
       "description": "Attention-grabbing section to display the current promotional deal.",
       "category": "store",
       "registryDependencies": [
-        "button",
         "https://linderlabsai.vercel.app/r/theme.json"
       ],
       "files": [
         {
           "path": "components/promo.tsx",
           "type": "registry:component"
-        },
+        }
+      ]
+    },
+    {
+      "name": "promo-demo",
+      "type": "registry:component",
+      "title": "Promo Demo",
+      "icon": "BadgeDollarSign",
+      "description": "Attention-grabbing section to display the current promotional deal.",
+      "category": "store",
+      "registryDependencies": [
+        "https://linderlabsai.vercel.app/r/theme.json",
+        "https://linderlabsai.vercel.app/r/promo.json"
+      ],
+      "files": [
         {
           "path": "layouts/minimal-layout.tsx",
           "type": "registry:file",
