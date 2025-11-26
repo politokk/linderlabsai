@@ -876,6 +876,24 @@
         }
       ]
     },
+    {
+      "name": "accordion-extensive",
+      "type": "registry:ui",
+      "title": "Accordion Extensive",
+      "icon": "ScrollText",
+      "description": "A extensive demo of the Accordion component.",
+      "category": "accordion",
+      "registryDependencies": [
+        "https://linderlabsai.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "components/demos/accordion/accordion-extensive.tsx",
+          "type": "registry:component",
+          "target": "components/demos/accordion/accordion-extensive.tsx"
+        }
+      ]
+    },
       {
         "name": "accordion",
         "type": "registry:ui",
@@ -885,23 +903,14 @@
         "category": "ui",
         "registryDependencies": [
           "https://linderlabsai.vercel.app/r/theme.json",
-          "accordion-demo"
+          "accordion-demo",
+          "accordion-extensive"
         ],
         "files": [
           {
             "path": "app/demo/[name]/ui/accordion/accordion.tsx",
             "type": "registry:page",
             "target": "app/accordion/page.tsx"
-          },
-          {
-            "path": "components/demos/accordion/accordion-demo.tsx",
-            "type": "registry:component",
-            "target": "components/demos/accordion/accordion-demo.tsx"
-          },
-          {
-            "path": "components/demos/accordion/accordion-extensive.tsx",
-            "type": "registry:component",
-            "target": "components/demos/accordion/accordion-extensive.tsx"
           }
         ]
       },
