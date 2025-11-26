@@ -3902,6 +3902,64 @@
             "target": "components/demos/ai/queue/queue-prompt-input.tsx"
           }
         ]
+      },
+      {
+        "name": "reasoning",
+        "type": "registry:ui",
+        "title": "Reasoning",
+        "icon": "Brain",
+        "category": "ai",
+        "description": "A component for displaying a reasoning.",
+        "registryDependencies": [ 
+          "https://linderlabsai.vercel.app/r/theme.json"  
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/reasoning.tsx",
+            "type": "registry:page",
+            "target": "app/reasoning/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/reasoning.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/reasoning.tsx"
+          },
+          {
+            "path": "components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
+            "path": "components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "components/ai-elements/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/conversation.tsx"
+          },
+          {
+            "path": "components/ai-elements/loader.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/loader.tsx"
+          },
+          {
+            "path": "components/demos/ai/reasoning/reasoning.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/reasoning/reasoning.tsx"
+          },
+          {
+            "path": "components/demos/ai/reasoning/reasoning-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/reasoning/reasoning-page.tsx"
+          },
+          {
+            "path": "app/api/chat/route.ts",
+            "type": "registry:component",
+            "target": "app/api/chat/route.ts"
+          }
+        ]
       }
     ]
 }

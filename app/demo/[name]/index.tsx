@@ -90,6 +90,7 @@ import openInChat from "@/app/demo/[name]/ai/open-in-chat";
 import plan from "@/app/demo/[name]/ai/plan";
 import promptInput from "@/app/demo/[name]/ai/prompt-input";
 import queue from "@/app/demo/[name]/ai/queue";
+import reasoning from "@/app/demo/[name]/ai/reasoning";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -187,4 +188,5 @@ export const demos: { [name: string]: Demo } = {
   plan,
   "prompt-input": promptInput,
   queue,
+  reasoning,
 };

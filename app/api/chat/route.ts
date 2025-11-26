@@ -16,7 +16,7 @@ export async function POST(req: Request) {
   } = await req.json();
 
   const result = streamText({
-    model: webSearch ? 'perplexity/sonar' : (model || 'openai/gpt-4o'),
+    model: webSearch ? 'perplexity/sonar' : (model || 'deepseek/deepseek-r1'),
     messages: convertToModelMessages(messages),
     tools: {
       // Confirmation component - delete file tool
@@ -52,5 +52,7 @@ export async function POST(req: Request) {
     },
   });
 
-  return result.toUIMessageStreamResponse();
+  return result.toUIMessageStreamResponse({
+    sendReasoning: true,
+  });
 }
