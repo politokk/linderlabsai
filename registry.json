@@ -4215,6 +4215,54 @@
             "target": "app/api/weather/route.ts"
           }
         ]
+      },
+      {
+        "name": "web-preview",
+        "type": "registry:ui",
+        "title": "Web Preview",
+        "icon": "Globe",
+        "category": "ai",
+        "description": "A component for displaying a web preview.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/web-preview.tsx",
+            "type": "registry:page",
+            "target": "app/web-preview/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/web-preview.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/web-preview.tsx"
+          },
+          {
+            "path": "components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
+            "path": "components/ai-elements/loader.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/loader.tsx"
+          },
+          {
+            "path": "components/demos/ai/web-preview/web-preview.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/web-preview/web-preview.tsx"
+          },
+          {
+            "path": "components/demos/ai/web-preview/web-preview-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/web-preview/web-preview-page.tsx"
+          },
+          {
+            "path": "app/api/v0/route.ts",
+            "type": "registry:component",
+            "target": "app/api/v0/route.ts"
+          }
+        ]
       }
     ]
   }

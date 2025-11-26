@@ -96,6 +96,7 @@ import sources from "@/app/demo/[name]/ai/sources";
 import suggestions from "@/app/demo/[name]/ai/suggestions";
 import task from "@/app/demo/[name]/ai/task";
 import tool from "@/app/demo/[name]/ai/tool";
+import webPreview from "@/app/demo/[name]/ai/web-preview";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -199,4 +200,5 @@ export const demos: { [name: string]: Demo } = {
   suggestions,
   task,
   tool,
+  "web-preview": webPreview,
 };
