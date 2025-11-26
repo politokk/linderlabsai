@@ -139,7 +139,7 @@ const ActionsDemo = () => {
     const message = messages.find((m) => m.id === messageId)
     if (message) {
       const messageText = message.parts
-        .filter((part) => part.type === "text")
+        .filter((part): part is Extract<typeof part, { type: "text" }> => part.type === "text")
         .map((part) => part.text)
         .join("")
       setEditText(messageText)
