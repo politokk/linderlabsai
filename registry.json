@@ -3380,6 +3380,44 @@
             "type": "registry:component",
             "target": "components/demos/ai/inline-citation/inline-citation.tsx"
           }
+        ]   
+      },
+      {
+        "name": "message",
+        "type": "registry:ui",
+        "title": "Message",
+        "icon": "MessageSquareDot",
+        "category": "ai",
+        "description": "A component for displaying a message.",
+          "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "src/app/demo/[name]/ai/message.tsx",
+            "type": "registry:page",
+            "target": "app/message/page.tsx"
+          },
+          {
+            "path": "src/components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/message/message.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/message/message.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/message/message-flat.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/message/message-flat.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/message/message-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/message/message-page.tsx"
+          }
         ]
       }
     ]

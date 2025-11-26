@@ -80,6 +80,7 @@ import confirmation from "@/app/demo/[name]/ai/confirmation";
 import context from "@/app/demo/[name]/ai/context";
 import conversation from "@/app/demo/[name]/ai/conversation";
 import inlineCitation from "@/app/demo/[name]/ai/inline-citation";
+import message from "@/app/demo/[name]/ai/message";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -167,4 +168,5 @@ export const demos: { [name: string]: Demo } = {
   context,
   conversation,
   "inline-citation": inlineCitation,
+  message,
 };
