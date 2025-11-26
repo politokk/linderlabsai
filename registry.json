@@ -3341,6 +3341,11 @@
             "path": "src/components/demos/ai/conversation/conversation.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/conversation/conversation.tsx"
+          },
+          {
+            "path": "src/components/demos/ai/conversation/conversation-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/conversation/conversation-page.tsx"
           }
         ]
       }
