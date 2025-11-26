@@ -24,7 +24,6 @@ export const Preview = async ({ path, className }: ComponentPreviewProps) => {
   const code = await readFile(
     join(
       process.cwd(),
-      "src",
       "components",
       "demos",
       `${path}.tsx`
