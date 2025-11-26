@@ -3672,6 +3672,11 @@
             "target": "components/ai-elements/message.tsx"
           },
           {
+            "path": "components/ai-elements/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/conversation.tsx"
+          },
+          {
             "path": "components/demos/ai/message/message.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/message/message.tsx"
