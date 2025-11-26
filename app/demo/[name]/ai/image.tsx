@@ -1,5 +1,6 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper"
 import ImageDemo from "@/components/demos/ai/image/image";
+import ImagePage from "@/components/demos/ai/image/image-page";
 export default function Image() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
@@ -7,7 +8,9 @@ export default function Image() {
         <ComponentWrapper name="Image" icon="Image" >
           <ImageDemo />
         </ComponentWrapper>
-
+        <ComponentWrapper name="Image Page" icon="WandSparkles" >  
+          <ImagePage /> 
+          </ComponentWrapper>
       </div>
     </div>
   )

@@ -3571,6 +3571,11 @@
             "path": "components/demos/ai/image/image.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/image/image.tsx"
+          },
+          {
+            "path": "components/demos/ai/image/image-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/image/image-page.tsx"
           }
         ]
       },
@@ -3637,6 +3642,11 @@
             "path": "components/demos/ai/inline-citation/inline-citation.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/inline-citation/inline-citation.tsx"
+          },
+          {
+            "path": "components/demos/ai/inline-citation/inline-citation-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/inline-citation/inline-citation-page.tsx"
           }
         ]   
       },
