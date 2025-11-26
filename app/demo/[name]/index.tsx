@@ -82,6 +82,7 @@ import confirmation from "@/app/demo/[name]/ai/confirmation";
 import context from "@/app/demo/[name]/ai/context";
 import conversation from "@/app/demo/[name]/ai/conversation";
 import image from "@/app/demo/[name]/ai/image";
+import loader from "@/app/demo/[name]/ai/loader";
 import inlineCitation from "@/app/demo/[name]/ai/inline-citation";
 import message from "@/app/demo/[name]/ai/message";
 interface Demo {
@@ -173,6 +174,7 @@ export const demos: { [name: string]: Demo } = {
   context,
   conversation,
   image,
+  loader,
   "inline-citation": inlineCitation,
   message,
 };

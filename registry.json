@@ -3575,6 +3575,44 @@
         ]
       },
       {
+        "name": "loader",
+        "type": "registry:ui",
+        "title": "Loader",
+        "icon": "Loader",
+        "category": "ai",
+        "description": "A component for displaying a loader.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/loader.tsx",
+            "type": "registry:page",
+            "target": "app/loader/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/loader.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/loader.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-custom.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-custom.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-sizes.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-sizes.tsx"
+          }
+        ]
+      },
+      {
         "name": "inline-citation",
         "type": "registry:ui",
         "title": "Inline Citation",
