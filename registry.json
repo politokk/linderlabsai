@@ -3998,6 +3998,112 @@
             "target": "components/demos/ai/shimmer/shimmer-elements.tsx"
           }
         ]
+      },
+      {
+        "name": "sources",
+        "type": "registry:ui",
+        "title": "Sources",
+        "icon": "BookOpen",
+        "category": "ai",
+        "description": "A component for displaying a sources.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/sources.tsx",
+            "type": "registry:page",
+            "target": "app/sources/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/sources.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/sources.tsx"
+          },
+          {
+            "path": "components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
+            "path": "components/ai-elements/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/conversation.tsx"
+          },
+          {
+            "path": "components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "components/demos/ai/sources/sources.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/sources/sources.tsx"
+          },
+          {
+            "path": "components/demos/ai/sources/sources-custom.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/sources/sources-custom.tsx"
+          },
+          {
+            "path": "components/demos/ai/sources/sources-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/sources/sources-page.tsx"
+          },
+          {
+            "path": "app/api/chat/route.ts",
+            "type": "registry:component",
+            "target": "app/api/chat/route.ts"
+          }
+        ]
+      },
+      {
+        "name": "suggestions",
+        "type": "registry:ui",
+        "title": "Suggestions",
+        "icon": "BookOpen",
+        "category": "ai",
+        "description": "A component for displaying a suggestions.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/suggestions.tsx",
+            "type": "registry:page",
+            "target": "app/suggestions/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/suggestion.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/suggestion.tsx"
+          },
+          {
+            "path": "components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "components/demos/ai/suggestion/suggestion.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/suggestion/suggestion.tsx"
+          },
+          {
+            "path": "components/demos/ai/suggestion/suggestion-input.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/suggestion/suggestion-input.tsx"
+          },
+          {
+            "path": "components/demos/ai/suggestion/suggestion-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/suggestion/suggestion-page.tsx"
+          },
+          {
+            "path": "app/api/chat/route.ts",
+            "type": "registry:component",
+            "target": "app/api/chat/route.ts"
+          }
+        ]
       }
     ]
 }

@@ -92,6 +92,8 @@ import promptInput from "@/app/demo/[name]/ai/prompt-input";
 import queue from "@/app/demo/[name]/ai/queue";
 import reasoning from "@/app/demo/[name]/ai/reasoning";
 import shimmer from "@/app/demo/[name]/ai/shimmer";
+import sources from "@/app/demo/[name]/ai/sources";
+import suggestions from "@/app/demo/[name]/ai/suggestions";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -191,4 +193,6 @@ export const demos: { [name: string]: Demo } = {
   queue,
   reasoning,
   shimmer,
+  sources,
+  suggestions,
 };

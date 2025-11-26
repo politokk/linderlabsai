@@ -17,6 +17,9 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: webSearch ? 'perplexity/sonar' : (model || 'deepseek/deepseek-r1'),
+    system: webSearch 
+      ? 'You are a helpful assistant. Keep your responses short (< 100 words) unless you are asked for more details. ALWAYS USE SEARCH.'
+      : undefined,
     messages: convertToModelMessages(messages),
     tools: {
       // Confirmation component - delete file tool
@@ -54,5 +57,6 @@ export async function POST(req: Request) {
 
   return result.toUIMessageStreamResponse({
     sendReasoning: true,
+    sendSources: webSearch ? true : false,
   });
 }
