@@ -14,12 +14,13 @@ import { Button } from "@/components/ui/button";
 import { FileText } from "lucide-react";
 
 const Example = () => (
-  <Plan defaultOpen={false}>
+  <div className="max-w-4xl mx-auto h-[full] mt-60">
+  <Plan defaultOpen={true}>
     <PlanHeader>
       <div>
         <div className="mb-4 flex items-center gap-2">
           <FileText className="size-4" />
-          <PlanTitle>Rewrite AI Elements to SolidJS</PlanTitle>
+          <PlanTitle className="truncate">Rewrite AI Elements to SolidJS</PlanTitle>
         </div>
         <PlanDescription>
           Rewrite the AI Elements component library from React to SolidJS while
@@ -60,6 +61,7 @@ const Example = () => (
       </PlanAction>
     </PlanFooter>
   </Plan>
+  </div>
 );
 
 export default Example;
