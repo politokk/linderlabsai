@@ -3730,6 +3730,34 @@
             "target": "components/demos/ai/model-selector/model-selector.tsx"
           }
         ]
+      },
+      {
+        "name": "open-in-chat",
+        "type": "registry:ui",
+        "title": "Open in Chat",
+        "icon": "Bot",
+        "category": "ai",
+        "description": "A component for displaying a open in chat.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/open-in-chat.tsx",
+            "type": "registry:page",
+            "target": "app/open-in-chat/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/open-in-chat.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/open-in-chat.tsx"
+          },
+          {
+            "path": "components/demos/ai/open-in-chat/open-in-chat.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/open-in-chat/open-in-chat.tsx"
+          }
+        ]
       }
     ]
 }

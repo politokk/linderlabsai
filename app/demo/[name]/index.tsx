@@ -86,6 +86,7 @@ import loader from "@/app/demo/[name]/ai/loader";
 import inlineCitation from "@/app/demo/[name]/ai/inline-citation";
 import message from "@/app/demo/[name]/ai/message";
 import modelSelector from "@/app/demo/[name]/ai/model-selector";
+import openInChat from "@/app/demo/[name]/ai/open-in-chat";
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -179,4 +180,5 @@ export const demos: { [name: string]: Demo } = {
   "inline-citation": inlineCitation,
   message,
   "model-selector": modelSelector,
+  "open-in-chat": openInChat,
 };
