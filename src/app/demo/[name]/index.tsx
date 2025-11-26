@@ -74,6 +74,7 @@ import toggle from "@/app/demo/[name]/ui/toggle/toggle";
 import tooltip from "@/app/demo/[name]/ui/tooltip/tooltip";
 
 // ai
+import artifact from "@/app/demo/[name]/ai/artifact";
 import chainofthought from "@/app/demo/[name]/ai/chainofthought";
 import checkpoint from "@/app/demo/[name]/ai/checkpoint";
 import confirmation from "@/app/demo/[name]/ai/confirmation";
@@ -162,6 +163,7 @@ export const demos: { [name: string]: Demo } = {
   tooltip,
    
   // ai
+  artifact,
   chainofthought,
   checkpoint,
   confirmation,
