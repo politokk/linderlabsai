@@ -4157,6 +4157,16 @@
             "target": "components/ai-elements/message.tsx"
           },
           {
+            "path": "components/ai-elements/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/conversation.tsx"
+          },
+          {
+            "path": "components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
             "path": "components/demos/ai/suggestion/suggestion.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/suggestion/suggestion.tsx"
