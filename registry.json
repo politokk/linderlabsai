@@ -4083,6 +4083,34 @@
         ]
       },
       {
+        "name": "response",
+        "type": "registry:ui",
+        "title": "Response",
+        "icon": "Markdown",
+        "category": "ai",
+        "description": "A component for displaying a response.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/response.tsx",
+            "type": "registry:page",
+            "target": "app/response/page.tsx"
+          },
+          {
+            "path": "components/ai-elements/response.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/response.tsx"
+          },
+          {
+            "path": "components/demos/ai/response/response.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/response/response.tsx"
+          }
+        ]
+      },
+      {
         "name": "shimmer",
         "type": "registry:ui",
         "title": "Shimmer",

@@ -93,6 +93,7 @@ import plan from "@/app/demo/[name]/ai/plan";
 import promptInput from "@/app/demo/[name]/ai/prompt-input";
 import queue from "@/app/demo/[name]/ai/queue";
 import reasoning from "@/app/demo/[name]/ai/reasoning";
+import response from "@/app/demo/[name]/ai/response"; 
 import shimmer from "@/app/demo/[name]/ai/shimmer";
 import sources from "@/app/demo/[name]/ai/sources";
 import suggestions from "@/app/demo/[name]/ai/suggestions";
@@ -199,6 +200,7 @@ export const demos: { [name: string]: Demo } = {
   "prompt-input": promptInput,
   queue,
   reasoning,
+  response,
   shimmer,
   sources,
   suggestions,
