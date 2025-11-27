@@ -254,13 +254,13 @@ export default function AIPage() {
         <ComponentDisplay path="/ai/sources/sources-custom" icon={<BookOpenIcon />}>
           <SourcesCustom />
         </ComponentDisplay>
-        <ComponentDisplay path="/ai/suggestions/suggestions" icon={<BookOpenIcon />}>
+        <ComponentDisplay path="/ai/suggestion/suggestion" icon={<BookOpenIcon />}>
           <Suggestions />
         </ComponentDisplay>
-        <ComponentDisplay path="/ai/suggestions/suggestions-input" icon={<BookOpenIcon />}>
+        <ComponentDisplay path="/ai/suggestion/suggestion-input" icon={<BookOpenIcon />}>
           <SuggestionsInput />
         </ComponentDisplay>
-        <ComponentDisplay path="/ai/suggestions/suggestions-page" icon={<BookOpenIcon />}>
+        <ComponentDisplay path="/ai/suggestion/suggestion-page" icon={<BookOpenIcon />}>
           <SuggestionsPage />
         </ComponentDisplay>
         <ComponentDisplay path="/ai/task/task" icon={<CalendarCheckIcon />}>
