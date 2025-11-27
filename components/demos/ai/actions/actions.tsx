@@ -31,7 +31,7 @@ const messages: {
     key: nanoid(),
     from: "user",
     content: "Can you explain how React hooks work?",
-    avatar: "/images/authors/linderlabs/linderlabs.jpg",
+    avatar: "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/linderavatar.png",
     name: "LinderLabs",
   },
   {
@@ -239,7 +239,7 @@ const Example = () => {
                         <AvatarImage
                           src={
                             message.avatar ||
-                            "/images/authors/linderlabs/linderlabs.jpg"
+                            "https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/linderavatar.png"
                           }
                           alt="User"
                         />

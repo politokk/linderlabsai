@@ -170,7 +170,7 @@ const Example = () => {
                   <div className="flex flex-row-reverse gap-3">
                     <Avatar className="h-7 w-7 flex-shrink-0">
                       <AvatarImage
-                        src="/images/authors/linderlabs/linderlabs.jpg"
+                        src="https://raw.githubusercontent.com/politokk/linderlabsai/refs/heads/main/public/linderavatar.png"
                         alt="User"
                       />
                       <AvatarFallback>
