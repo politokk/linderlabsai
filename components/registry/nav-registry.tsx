@@ -15,6 +15,7 @@ import {
   Layers,
   type LucideIcon,
   Wand,
+  Code,
 } from "lucide-react"
 import * as LucideIcons from "lucide-react"
 import {
@@ -57,6 +58,7 @@ const categoryIcons: Record<string, LucideIcon> = {
   ui: Component,
   blocks: Blocks,
   ai: Wand,
+  code: Code,
 }
 
 // Category display names
@@ -67,6 +69,7 @@ const categoryLabels: Record<string, string> = {
   ui: "UI",
   blocks: "Blocks",
   ai: "AI",
+  code: "Code",
 }
 
 // Function to get icon component from registry data

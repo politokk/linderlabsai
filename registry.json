@@ -4525,6 +4525,75 @@
             "target": "app/api/v0/route.ts"
           }
         ]
+      },
+      {
+        "name": "code-viewer",
+        "type": "registry:ui",
+        "title": "Code Viewer",
+        "icon": "Eye",
+        "category": "code",
+        "description": "A component for displaying a code.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/code/code-viewer/code-viewer.tsx",
+            "type": "registry:page",
+            "target": "app/code-viewer/page.tsx"
+          },
+          {
+            "path": "components/demos/code/code-viewer/code-viewer.tsx",
+            "type": "registry:component",
+            "target": "components/demos/code/code-viewer/code-viewer.tsx"
+          }
+        ]
+      },
+      {
+        "name": "code-block-command",
+        "type": "registry:ui",
+        "title": "Code Block Command",
+        "icon": "Command",
+        "category": "code",
+        "description": "A component for displaying a code block command.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/code/code-block-command/code-block-command.tsx",
+            "type": "registry:page",
+            "target": "app/code-block-command/page.tsx"
+          },
+          {
+            "path": "components/demos/code/code-block-command/code-block-command.tsx",
+            "type": "registry:component",
+            "target": "components/demos/code/code-block-command/code-block-command.tsx"
+          }
+        ]
+      },
+      {
+        "name": "registry-setup",
+        "type": "registry:ui",
+        "title": "Registry Setup",
+        "icon": "Settings",
+        "category": "code",
+        "description": "A component for displaying a registry setup.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/code/registry-setup/registry-setup.tsx",
+            "type": "registry:page",
+            "target": "app/registry-setup/page.tsx"
+          },
+          {
+            "path": "components/demos/code/registry-setup/registry-setup.tsx",
+            "type": "registry:component",
+            "target": "components/demos/code/registry-setup/registry-setup.tsx"
+          }
+        ]
       }
     ]
   }

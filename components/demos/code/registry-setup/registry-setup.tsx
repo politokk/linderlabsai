@@ -96,7 +96,7 @@ function RegistryIcon({ className }: { className?: string }) {
   )
 }
 
-export function RegistrySetup({
+export default function RegistrySetupDemo({
   className,
 }: React.ComponentProps<typeof Button>) {
   return (
