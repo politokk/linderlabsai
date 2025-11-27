@@ -3634,6 +3634,11 @@
             "target": "app/feedbackbar/page.tsx"
           },
           {
+            "path": "components/ai-elements/feedback-bar.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/feedback-bar.tsx"
+          },
+          {
             "path": "components/demos/ai/feedbackbar/feedbackbar.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/feedbackbar/feedbackbar.tsx"
