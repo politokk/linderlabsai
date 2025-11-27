@@ -7,6 +7,8 @@ import {
   Blocks,
   ChevronDown,
   ChevronRight,
+  ChevronsUpDown,
+  Check,
   Component,
   ToyBrick,
   Sparkles,
@@ -24,6 +26,19 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command"
+import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
@@ -37,6 +52,7 @@ import {
   SidebarMenuSubItem,
   useSidebar,
 } from "@/components/ui/sidebar"
+import { cn } from "@/lib/utils"
 
 interface RegistryItem {
   name: string
@@ -106,6 +122,9 @@ interface CategoryGroupProps {
   onItemClick: () => void
   collapsedCategories: Set<string>
   onOpenChange: (category: string, open: boolean) => void
+  sidebarState: "expanded" | "collapsed"
+  openCombobox: string | null
+  setOpenCombobox: (category: string | null) => void
 }
 
 function CategoryGroup({
@@ -115,6 +134,9 @@ function CategoryGroup({
   onItemClick,
   collapsedCategories,
   onOpenChange,
+  sidebarState,
+  openCombobox,
+  setOpenCombobox,
 }: CategoryGroupProps) {
   const config = categoryConfig[category] || { 
     icon: Layers, 
@@ -126,13 +148,6 @@ function CategoryGroup({
   const isOpen = !collapsedCategories.has(category)
   const isCategoryActive = categoryUrl ? pathname === categoryUrl : false
 
-  const buttonContent = (
-    <>
-      <CategoryIcon className="size-4" />
-      <span>{label}</span>
-    </>
-  )
-
   return (
     <Collapsible
       asChild
@@ -141,61 +156,135 @@ function CategoryGroup({
       className="group/collapsible"
     >
       <SidebarMenuItem>
-        {categoryUrl ? (
-          <SidebarMenuButton 
-            asChild 
-            tooltip={label}
-            isActive={isCategoryActive}
+        {sidebarState === "collapsed" ? (
+          <Popover
+            open={openCombobox === category}
+            onOpenChange={(open) => setOpenCombobox(open ? category : null)}
           >
-            <Link href={categoryUrl} onClick={onItemClick}>
-              {buttonContent}
-            </Link>
-          </SidebarMenuButton>
-        ) : (
-          <SidebarMenuButton tooltip={label}>
-            {buttonContent}
-          </SidebarMenuButton>
-        )}
-        <SidebarMenuBadge>{items.length}</SidebarMenuBadge>
-        <CollapsibleTrigger asChild>
-          <SidebarMenuAction
-            className="left-1.5 bg-sidebar-accent text-sidebar-accent-foreground transition-transform data-[state=open]:opacity-0 data-[state=open]:hover:opacity-100 data-[state=open]:rotate-90"
-            showOnHover
-            aria-label={`Toggle ${label}`}
-          >
-            <ChevronRight className="size-4" />
-          </SidebarMenuAction>
-        </CollapsibleTrigger>
-        <CollapsibleContent>
-          <SidebarMenuSub>
-            {items.map((item) => {
-              const Icon = getIconComponent(item)
-              return (
-                <SidebarMenuSubItem key={item.name}>
-                  <SidebarMenuSubButton
-                    asChild
-                    isActive={pathname === `/registry/${item.name}`}
-                  >
-                    <Link onClick={onItemClick} href={`/registry/${item.name}`}>
-                      <Icon className="size-3.5" />
-                      <span>{item.title}</span>
-                      {(item.badge || item.isNew) && (
-                        <div className="flex items-center gap-2">
-                          {item.badge && (
-                            <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
-                          )}
+            <PopoverTrigger asChild>
+              <SidebarMenuButton
+                tooltip={label}
+                role="combobox"
+                aria-expanded={openCombobox === category}
+                className="justify-between"
+                isActive={isCategoryActive}
+              >
+                <CategoryIcon className="size-4" />
+                <span>{label}</span>
+                <ChevronsUpDown className="ml-auto size-4 shrink-0 opacity-50" />
+              </SidebarMenuButton>
+            </PopoverTrigger>
+            <PopoverContent side="right" align="start" className="w-64 p-0">
+              <Command>
+                <CommandInput placeholder={`Search ${label.toLowerCase()}...`} className="h-9" />
+                <CommandList>
+                  <CommandEmpty>No component found.</CommandEmpty>
+                  <CommandGroup heading={label}>
+                    {categoryUrl && (
+                      <CommandItem
+                        value={`view-all-${category}`}
+                        onSelect={() => {
+                          setOpenCombobox(null)
+                          onItemClick()
+                          window.location.href = categoryUrl
+                        }}
+                        className="font-medium"
+                      >
+                        <CategoryIcon className="size-4" />
+                        <span>View All {label}</span>
+                        <Check className={cn("ml-auto size-4", isCategoryActive ? "opacity-100" : "opacity-0")} />
+                      </CommandItem>
+                    )}
+                    {items.map((item) => {
+                      const Icon = getIconComponent(item)
+                      const itemPath = `/registry/${item.name}`
+                      return (
+                        <CommandItem
+                          key={item.name}
+                          value={item.title}
+                          onSelect={() => {
+                            setOpenCombobox(null)
+                            onItemClick()
+                            window.location.href = itemPath
+                          }}
+                        >
+                          <Icon className="size-4" />
+                          <span>{item.title}</span>
                           {item.isNew && (
-                            <span className="flex size-2 shrink-0 rounded-full bg-primary border-2 border-primary-foreground" />
+                            <span className="ml-auto size-2 rounded-full bg-primary border-primary-foreground border-2" />
                           )}
-                        </div>
-                      )}
-                    </Link>
-                  </SidebarMenuSubButton>
-                </SidebarMenuSubItem>
-              )
-            })}
-          </SidebarMenuSub>
-        </CollapsibleContent>
+                          <Check
+                            className={cn("ml-auto size-4", pathname === itemPath ? "opacity-100" : "opacity-0")}
+                          />
+                        </CommandItem>
+                      )
+                    })}
+                  </CommandGroup>
+                </CommandList>
+              </Command>
+            </PopoverContent>
+          </Popover>
+        ) : (
+          <>
+            {categoryUrl ? (
+              <SidebarMenuButton 
+                asChild 
+                tooltip={label}
+                isActive={isCategoryActive}
+              >
+                <Link href={categoryUrl} onClick={onItemClick}>
+                  <CategoryIcon className="size-4" />
+                  <span>{label}</span>
+                </Link>
+              </SidebarMenuButton>
+            ) : (
+              <SidebarMenuButton tooltip={label}>
+                <CategoryIcon className="size-4" />
+                <span>{label}</span>
+              </SidebarMenuButton>
+            )}
+            <SidebarMenuBadge>{items.length}</SidebarMenuBadge>
+            <CollapsibleTrigger asChild>
+              <SidebarMenuAction
+                className="left-1.5 bg-sidebar-accent text-sidebar-accent-foreground transition-transform data-[state=open]:opacity-0 data-[state=open]:hover:opacity-100 data-[state=open]:rotate-90"
+                showOnHover
+                aria-label={`Toggle ${label}`}
+              >
+                <ChevronRight className="size-4" />
+              </SidebarMenuAction>
+            </CollapsibleTrigger>
+            <CollapsibleContent>
+              <SidebarMenuSub>
+                {items.map((item) => {
+                  const Icon = getIconComponent(item)
+                  return (
+                    <SidebarMenuSubItem key={item.name}>
+                      <SidebarMenuSubButton
+                        asChild
+                        isActive={pathname === `/registry/${item.name}`}
+                      >
+                        <Link onClick={onItemClick} href={`/registry/${item.name}`}>
+                          <Icon className="size-3.5" />
+                          <span>{item.title}</span>
+                          {(item.badge || item.isNew) && (
+                            <div className="flex items-center gap-2">
+                              {item.badge && (
+                                <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
+                              )}
+                              {item.isNew && (
+                                <span className="flex size-2 shrink-0 rounded-full bg-primary border-2 border-primary-foreground" />
+                              )}
+                            </div>
+                          )}
+                        </Link>
+                      </SidebarMenuSubButton>
+                    </SidebarMenuSubItem>
+                  )
+                })}
+              </SidebarMenuSub>
+            </CollapsibleContent>
+          </>
+        )}
       </SidebarMenuItem>
     </Collapsible>
   )
@@ -213,10 +302,11 @@ export function NavRegistry({
   filteredUiItems,
 }: NavRegistryProps) {
   const pathname = usePathname()
-  const { setOpenMobile } = useSidebar()
+  const { setOpenMobile, state } = useSidebar()
 
   // Persist collapsed state
   const [collapsedCategories, setCollapsedCategories] = React.useState<Set<string>>(new Set())
+  const [openCombobox, setOpenCombobox] = React.useState<string | null>(null)
 
   React.useEffect(() => {
     try {
@@ -346,6 +436,9 @@ export function NavRegistry({
                     onItemClick={handleItemClick}
                     collapsedCategories={collapsedCategories}
                     onOpenChange={handleOpenChange}
+                    sidebarState={state}
+                    openCombobox={openCombobox}
+                    setOpenCombobox={setOpenCombobox}
                   />
                 ))}
               </SidebarMenu>
@@ -384,6 +477,9 @@ export function NavRegistry({
                       onItemClick={handleItemClick}
                       collapsedCategories={collapsedCategories}
                       onOpenChange={handleOpenChange}
+                      sidebarState={state}
+                      openCombobox={openCombobox}
+                      setOpenCombobox={setOpenCombobox}
                     />
                   ))
                 ) : (
