@@ -18,6 +18,7 @@ import {
   type LucideIcon,
   Wand,
   Code,
+  Pencil,
 } from "lucide-react"
 import * as LucideIcons from "lucide-react"
 import {
@@ -82,6 +83,7 @@ const categoryConfig: Record<string, CategoryConfig> = {
   blocks: { icon: Blocks, label: "Blocks" },
   ai: { icon: Wand, label: "AI", url: "/registry/ai" },
   code: { icon: Code, label: "Code" },
+  editor: { icon: Pencil, label: "Editor" },
 }
 
 // Function to get icon component from registry data

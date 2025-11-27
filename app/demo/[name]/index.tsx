@@ -107,6 +107,8 @@ import webPreview from "@/app/demo/[name]/ai/web-preview";
 import codeViewer from "@/app/demo/[name]/code/code-viewer/code-viewer";
 import codeBlockCommand from "@/app/demo/[name]/code/code-block-command/code-block-command";
 import registrySetup from "@/app/demo/[name]/code/registry-setup/registry-setup";
+
+
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
