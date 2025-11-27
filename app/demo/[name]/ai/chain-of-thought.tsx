@@ -1,5 +1,5 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper"
-import ChainOfThought from "@/components/demos/ai/chainofthought/chainofthought";
+import ChainOfThought from "@/components/demos/ai/chain-of-thought/chain-of-thought";
 export default function chainofthought() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">

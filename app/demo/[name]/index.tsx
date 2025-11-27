@@ -77,7 +77,7 @@ import tooltip from "@/app/demo/[name]/ui/tooltip/tooltip";
 import actions from "@/app/demo/[name]/ai/actions";
 import artifact from "@/app/demo/[name]/ai/artifact";
 import branch from "@/app/demo/[name]/ai/branch";
-import chainofthought from "@/app/demo/[name]/ai/chainofthought";
+import chainofthought from "@/app/demo/[name]/ai/chain-of-thought";
 import checkpoint from "@/app/demo/[name]/ai/checkpoint";
 import codeBlock from "@/app/demo/[name]/ai/code-block";
 import confirmation from "@/app/demo/[name]/ai/confirmation";
@@ -186,7 +186,7 @@ export const demos: { [name: string]: Demo } = {
   actions,
   artifact,
   branch,
-  chainofthought,
+  "chain-of-thought": chainofthought,
   checkpoint,
   "code-block": codeBlock,
   confirmation,

@@ -3400,7 +3400,7 @@
         ]
       },
       {
-        "name": "chainofthought",
+        "name": "chain-of-thought",
         "type": "registry:ui",
         "title": "Chain of Thought",
         "icon": "Brain",
@@ -3411,9 +3411,9 @@
         ],
         "files": [
           {
-            "path": "app/demo/[name]/ai/chainofthought.tsx",
+            "path": "app/demo/[name]/ai/chain-of-thought.tsx",
             "type": "registry:page",
-            "target": "app/chainofthought/page.tsx"
+            "target": "app/chain-of-thought/page.tsx"
           },
           {
             "path": "components/ai-elements/chain-of-thought.tsx",
@@ -3426,9 +3426,9 @@
             "target": "components/ai-elements/image.tsx"
           },
           {
-            "path": "components/demos/ai/chainofthought/chainofthought.tsx",
+            "path": "components/demos/ai/chain-of-thought/chain-of-thought.tsx",
             "type": "registry:component",
-            "target": "components/demos/ai/chainofthought/chainofthought.tsx"
+            "target": "components/demos/ai/chain-of-thought/chain-of-thought.tsx"
           }
         ]
       },
