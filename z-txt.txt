@@ -1,5 +1,5 @@
 git add .
-git commit -m "add feedbackbar component"
+git commit -m "add loader message component"
 git push origin main    
 git push origin main --force
 
