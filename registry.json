@@ -4146,7 +4146,7 @@
         "name": "response",
         "type": "registry:ui",
         "title": "Response",
-        "icon": "Markdown",
+        "icon": "TextCursorInput",
         "category": "ai",
         "description": "A component for displaying a response.",
         "registryDependencies": [
