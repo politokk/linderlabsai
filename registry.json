@@ -602,6 +602,7 @@
         "https://linderlabsai.vercel.app/r/toggle-group.json",
         "https://linderlabsai.vercel.app/r/tooltip.json",
         "https://linderlabsai.vercel.app/r/actions.json",
+        "https://linderlabsai.vercel.app/r/artifact.json",
         "https://linderlabsai.vercel.app/r/branch.json",
         "https://linderlabsai.vercel.app/r/chain-of-thought.json",
         "https://linderlabsai.vercel.app/r/checkpoint.json",
