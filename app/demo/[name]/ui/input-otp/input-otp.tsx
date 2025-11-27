@@ -1,9 +1,9 @@
-import InputOTPDemo from "@/components/demos/input-otp/input-otp-demo";
-import InputOTPControlled from "@/components/demos/input-otp/input-otp-controlled";
-import InputOTPPattern from "@/components/demos/input-otp/input-otp-pattern";
-import InputOTPWithSeparator from "@/components/demos/input-otp/input-otp-separator";
-import InputOTPForm from "@/components/demos/input-otp/input-otp-form";
-import InputOTPSpacing from "@/components/demos/input-otp/input-spacing";
+import InputOTPDemo from "@/components/demos/ui/input-otp/input-otp-demo";
+import InputOTPControlled from "@/components/demos/ui/input-otp/input-otp-controlled";
+import InputOTPPattern from "@/components/demos/ui/input-otp/input-otp-pattern";
+import InputOTPWithSeparator from "@/components/demos/ui/input-otp/input-otp-separator";
+import InputOTPForm from "@/components/demos/ui/input-otp/input-otp-form";
+import InputOTPSpacing from "@/components/demos/ui/input-otp/input-spacing";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

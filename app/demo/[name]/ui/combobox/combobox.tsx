@@ -1,12 +1,12 @@
-import ComboboxDemo from "@/components/demos/combobox/combobox-demo";
-import ComboboxDropdownMenu from "@/components/demos/combobox/combobox-dropdown-menu";
-import ComboboxForm from "@/components/demos/combobox/combobox-form";
-import ComboboxPopover from "@/components/demos/combobox/combobox-popover";
-import ComboboxResponsive from "@/components/demos/combobox/combobox-responsive";
-import ComboboxUserDemo from "@/components/demos/combobox/combobox-user-demo";
-import ComboboxTimezoneDemo from "@/components/demos/combobox/combobox-timezone-demo";
-import ComboboxTagsDemo from "@/components/demos/combobox/combobox-tags-demo";
-import ComboboxMultiSelectDemo from "@/components/demos/combobox/combobox-multi-select-demo";
+import ComboboxDemo from "@/components/demos/ui/combobox/combobox-demo";
+import ComboboxDropdownMenu from "@/components/demos/ui/combobox/combobox-dropdown-menu";
+import ComboboxForm from "@/components/demos/ui/combobox/combobox-form";
+import ComboboxPopover from "@/components/demos/ui/combobox/combobox-popover";
+import ComboboxResponsive from "@/components/demos/ui/combobox/combobox-responsive";
+import ComboboxUserDemo from "@/components/demos/ui/combobox/combobox-user-demo";
+import ComboboxTimezoneDemo from "@/components/demos/ui/combobox/combobox-timezone-demo";
+import ComboboxTagsDemo from "@/components/demos/ui/combobox/combobox-tags-demo";
+import ComboboxMultiSelectDemo from "@/components/demos/ui/combobox/combobox-multi-select-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 export default function combobox() {

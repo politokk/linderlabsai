@@ -1,13 +1,9 @@
-import { AreaChartComponent } from "@/components/demos/chart/area-chart";
-import { BarChartComponent } from "@/components/demos/chart/bar-chart";
-import { PieChartComponent } from "@/components/demos/chart/pie-chart";
-
-import ChartBarDemo from "@/components/demos/chart/chart-bar-demo";
-import ChartBarDemoAxis from "@/components/demos/chart/chart-bar-demo-axis";
-import ChartBarDemoGrid from "@/components/demos/chart/chart-bar-demo-grid";
-import ChartBarDemoLegend from "@/components/demos/chart/chart-bar-demo-legend";
-import ChartBarDemoTooltip from "@/components/demos/chart/chart-bar-demo-tooltip";
-import ChartTooltipDemo from "@/components/demos/chart/chart-tooltip-demo";
+import ChartBarDemo from "@/components/demos/ui/chart/chart-bar-demo";
+import ChartBarDemoAxis from "@/components/demos/ui/chart/chart-bar-demo-axis";
+import ChartBarDemoGrid from "@/components/demos/ui/chart/chart-bar-demo-grid";
+import ChartBarDemoLegend from "@/components/demos/ui/chart/chart-bar-demo-legend";
+import ChartBarDemoTooltip from "@/components/demos/ui/chart/chart-bar-demo-tooltip";
+import ChartTooltipDemo from "@/components/demos/ui/chart/chart-tooltip-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

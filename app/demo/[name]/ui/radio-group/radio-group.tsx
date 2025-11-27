@@ -1,6 +1,6 @@
-import RadioGroupDemo from "@/components/demos/radio-group/radio-group-demo";
-import RadioGroupForm from "@/components/demos/radio-group/radio-group-form";
-import RadioGroupPlan from "@/components/demos/radio-group/radio-group-plan";
+import RadioGroupDemo from "@/components/demos/ui/radio-group/radio-group-demo";
+import RadioGroupForm from "@/components/demos/ui/radio-group/radio-group-form";
+import RadioGroupPlan from "@/components/demos/ui/radio-group/radio-group-plan";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

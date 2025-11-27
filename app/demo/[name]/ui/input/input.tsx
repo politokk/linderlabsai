@@ -1,10 +1,10 @@
-import InputDemo from "@/components/demos/input/input-demo";
-import InputDisabled from "@/components/demos/input/input-disabled";
-import InputFile from "@/components/demos/input/input-file";
-import InputForm from "@/components/demos/input/input-form";
-import InputWithButton from "@/components/demos/input/input-with-button";
-import InputWithLabel from "@/components/demos/input/input-with-label";
-import InputWithText from "@/components/demos/input/input-with-text";
+import InputDemo from "@/components/demos/ui/input/input-demo";
+import InputDisabled from "@/components/demos/ui/input/input-disabled";
+import InputFile from "@/components/demos/ui/input/input-file";
+import InputForm from "@/components/demos/ui/input/input-form";
+import InputWithButton from "@/components/demos/ui/input/input-with-button";
+import InputWithLabel from "@/components/demos/ui/input/input-with-label";
+import InputWithText from "@/components/demos/ui/input/input-with-text";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

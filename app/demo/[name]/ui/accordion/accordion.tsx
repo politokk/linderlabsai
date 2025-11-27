@@ -1,6 +1,6 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper"
-import AccordionDemo from "@/components/demos/accordion/accordion-demo";
-import AccordionExtensive from "@/components/demos/accordion/accordion-extensive";
+import AccordionDemo from "@/components/demos/ui/accordion/accordion-demo";
+import AccordionExtensive from "@/components/demos/ui/accordion/accordion-extensive";
 export default function accordion() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">

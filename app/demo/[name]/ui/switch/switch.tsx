@@ -1,5 +1,5 @@
-import SwitchDemo from "@/components/demos/switch/switch-demo";
-import SwitchForm from "@/components/demos/switch/switch-form";
+import SwitchDemo from "@/components/demos/ui/switch/switch-demo";
+import SwitchForm from "@/components/demos/ui/switch/switch-form";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

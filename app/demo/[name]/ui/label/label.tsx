@@ -1,4 +1,4 @@
-import LabelDemo from "@/components/demos/label/label-demo";
+import LabelDemo from "@/components/demos/ui/label/label-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

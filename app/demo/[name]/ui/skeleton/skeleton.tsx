@@ -1,5 +1,5 @@
-import SkeletonDemo from "@/components/demos/skeleton/skeleton-demo";
-import SkeletonCard from "@/components/demos/skeleton/skeleton-card";
+import SkeletonDemo from "@/components/demos/ui/skeleton/skeleton-demo";
+import SkeletonCard from "@/components/demos/ui/skeleton/skeleton-card";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

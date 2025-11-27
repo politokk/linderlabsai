@@ -1,6 +1,6 @@
-import DialogDemo from "@/components/demos/dialog/dialog-demo";
-import DialogCloseButton from "@/components/demos/dialog/dialog-close-button";
-import DialogScroll from "@/components/demos/dialog/dialog-scroll";
+import DialogDemo from "@/components/demos/ui/dialog/dialog-demo";
+import DialogCloseButton from "@/components/demos/ui/dialog/dialog-close-button";
+import DialogScroll from "@/components/demos/ui/dialog/dialog-scroll";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

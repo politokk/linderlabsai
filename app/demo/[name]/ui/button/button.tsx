@@ -1,15 +1,15 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper";
-import ButtonDemo from "@/components/demos/button/button-demo";
-import ButtonDestructive from "@/components/demos/button/button-destructive";
-import ButtonGhost from "@/components/demos/button/button-ghost";
-import ButtonIcon from "@/components/demos/button/button-icon";
-import ButtonLink from "@/components/demos/button/button-link";
-import ButtonLoading from "@/components/demos/button/button-loading";
-import ButtonOutline from "@/components/demos/button/button-outline";
-import ButtonRounded from "@/components/demos/button/button-rounded";
-import ButtonSecondary from "@/components/demos/button/button-secondary";
-import ButtonSize from "@/components/demos/button/button-size";
-import ButtonWithIcon from "@/components/demos/button/button-with-icon";
+import ButtonDemo from "@/components/demos/ui/button/button-demo";
+import ButtonDestructive from "@/components/demos/ui/button/button-destructive";
+import ButtonGhost from "@/components/demos/ui/button/button-ghost";
+import ButtonIcon from "@/components/demos/ui/button/button-icon";
+import ButtonLink from "@/components/demos/ui/button/button-link";
+import ButtonLoading from "@/components/demos/ui/button/button-loading";
+import ButtonOutline from "@/components/demos/ui/button/button-outline";
+import ButtonRounded from "@/components/demos/ui/button/button-rounded";
+import ButtonSecondary from "@/components/demos/ui/button/button-secondary";
+import ButtonSize from "@/components/demos/ui/button/button-size";
+import ButtonWithIcon from "@/components/demos/ui/button/button-with-icon";
 
 export default function button() {
   return (

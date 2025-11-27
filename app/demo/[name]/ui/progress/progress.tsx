@@ -1,4 +1,4 @@
-import ProgressDemo from "@/components/demos/progress/progress-demo";
+import ProgressDemo from "@/components/demos/ui/progress/progress-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

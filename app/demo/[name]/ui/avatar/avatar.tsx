@@ -1,5 +1,5 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper";
-import AvatarDemo from "@/components/demos/avatar/avatar-demo";
+import AvatarDemo from "@/components/demos/ui/avatar/avatar-demo";
 
 export default function avatar() {
   return (

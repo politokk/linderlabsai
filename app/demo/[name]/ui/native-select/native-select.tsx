@@ -1,7 +1,7 @@
-import NativeSelectDemo from "@/components/demos/native-select/native-select-demo";
-import NativeSelectDisabled from "@/components/demos/native-select/native-select-disabled";
-import NativeSelectGroups from "@/components/demos/native-select/native-select-groups";
-import NativeSelectInvalid from "@/components/demos/native-select/native-select-invalid";
+import NativeSelectDemo from "@/components/demos/ui/native-select/native-select-demo";
+import NativeSelectDisabled from "@/components/demos/ui/native-select/native-select-disabled";
+import NativeSelectGroups from "@/components/demos/ui/native-select/native-select-groups";
+import NativeSelectInvalid from "@/components/demos/ui/native-select/native-select-invalid";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

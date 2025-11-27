@@ -1,5 +1,5 @@
 import { ComponentWrapper } from "@/components/display/component-wrapper";
-import AlertDialogDemo from "@/components/demos/alert-dialog/alert-dialog-demo";
+import AlertDialogDemo from "@/components/demos/ui/alert-dialog/alert-dialog-demo";
 
 export default function alertDialog() {
   return (

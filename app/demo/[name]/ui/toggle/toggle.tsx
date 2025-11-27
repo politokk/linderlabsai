@@ -1,9 +1,9 @@
-import ToggleDemo from "@/components/demos/toggle/toggle-demo";
-import ToggleDisabled from "@/components/demos/toggle/toggle-disabled";
-import ToggleLg from "@/components/demos/toggle/toggle-lg";
-import ToggleOutline from "@/components/demos/toggle/toggle-outline";
-import ToggleSm from "@/components/demos/toggle/toggle-sm";
-import ToggleWithText from "@/components/demos/toggle/toggle-with-text";
+import ToggleDemo from "@/components/demos/ui/toggle/toggle-demo";
+import ToggleDisabled from "@/components/demos/ui/toggle/toggle-disabled";
+import ToggleLg from "@/components/demos/ui/toggle/toggle-lg";
+import ToggleOutline from "@/components/demos/ui/toggle/toggle-outline";
+import ToggleSm from "@/components/demos/ui/toggle/toggle-sm";
+import ToggleWithText from "@/components/demos/ui/toggle/toggle-with-text";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

@@ -1,4 +1,4 @@
-import ContextMenuDemo from "@/components/demos/context-menu/context-menu-demo";
+import ContextMenuDemo from "@/components/demos/ui/context-menu/context-menu-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

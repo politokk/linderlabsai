@@ -1,7 +1,7 @@
-import CardDemo from "@/components/demos/card/card-demo";
-import CardWithForm from "@/components/demos/card/card-with-form";
-import CardMeetingNotesDemo from "@/components/demos/card/card-meeting-notes-demo";
-import CardImageDemo from "@/components/demos/card/card-image-demo";
+import CardDemo from "@/components/demos/ui/card/card-demo";
+import CardWithForm from "@/components/demos/ui/card/card-with-form";
+import CardMeetingNotesDemo from "@/components/demos/ui/card/card-meeting-notes-demo";
+import CardImageDemo from "@/components/demos/ui/card/card-image-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

@@ -1,13 +1,13 @@
-import SpinnerDemo from "@/components/demos/spinner/spinner-demo";
-import SpinnerBasic from "@/components/demos/spinner/spinner-basic";
-import SpinnerButton from "@/components/demos/spinner/spinner-button";
-import SpinnerBadge from "@/components/demos/spinner/spinner-badge";
-import SpinnerInputGroup from "@/components/demos/spinner/spinner-input-group";
-import SpinnerEmpty from "@/components/demos/spinner/spinner-empty";
-import SpinnerColor from "@/components/demos/spinner/spinner-color";
-import SpinnerCustom from "@/components/demos/spinner/spinner-custom";
-import SpinnerSize from "@/components/demos/spinner/spinner-size";
-import SpinnerItem from "@/components/demos/spinner/spinner-item";
+import SpinnerDemo from "@/components/demos/ui/spinner/spinner-demo";
+import SpinnerBasic from "@/components/demos/ui/spinner/spinner-basic";
+import SpinnerButton from "@/components/demos/ui/spinner/spinner-button";
+import SpinnerBadge from "@/components/demos/ui/spinner/spinner-badge";
+import SpinnerInputGroup from "@/components/demos/ui/spinner/spinner-input-group";
+import SpinnerEmpty from "@/components/demos/ui/spinner/spinner-empty";
+import SpinnerColor from "@/components/demos/ui/spinner/spinner-color";
+import SpinnerCustom from "@/components/demos/ui/spinner/spinner-custom";
+import SpinnerSize from "@/components/demos/ui/spinner/spinner-size";
+import SpinnerItem from "@/components/demos/ui/spinner/spinner-item";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

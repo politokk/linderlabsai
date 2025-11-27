@@ -1,7 +1,7 @@
-import DatePickerDemo from "@/components/demos/date-picker/date-picker-demo";
-import DatePickerWithPresets from "@/components/demos/date-picker/date-picker-with-presets";
-import DatePickerWithRange from "@/components/demos/date-picker/date-picker-with-range";
-import DatePickerForm from "@/components/demos/date-picker/date-picker-form";
+import DatePickerDemo from "@/components/demos/ui/date-picker/date-picker-demo";
+import DatePickerWithPresets from "@/components/demos/ui/date-picker/date-picker-with-presets";
+import DatePickerWithRange from "@/components/demos/ui/date-picker/date-picker-with-range";
+import DatePickerForm from "@/components/demos/ui/date-picker/date-picker-form";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

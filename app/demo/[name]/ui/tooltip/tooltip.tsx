@@ -1,4 +1,4 @@
-import TooltipDemo from "@/components/demos/tooltip/tooltip-demo";
+import TooltipDemo from "@/components/demos/ui/tooltip/tooltip-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

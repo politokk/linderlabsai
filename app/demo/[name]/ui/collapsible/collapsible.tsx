@@ -1,4 +1,4 @@
-import CollapsibleDemo from "@/components/demos/collapsible/collapsible-demo";
+import CollapsibleDemo from "@/components/demos/ui/collapsible/collapsible-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 export default function collapsible() {

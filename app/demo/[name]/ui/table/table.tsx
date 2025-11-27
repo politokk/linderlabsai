@@ -1,4 +1,4 @@
-import TableDemo from "@/components/demos/table/table-demo";
+import TableDemo from "@/components/demos/ui/table/table-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

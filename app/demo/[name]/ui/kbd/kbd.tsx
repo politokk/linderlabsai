@@ -1,8 +1,8 @@
-import KbdGroupExample from "@/components/demos/kbd/kbd-group";
-import KbdInputGroup from "@/components/demos/kbd/kbd-input-group";
-import KbdTooltip from "@/components/demos/kbd/kbd-tooltip";
-import KbdButton from "@/components/demos/kbd/kbd-button";
-import KbdDemo from "@/components/demos/kbd/kbd-demo";
+import KbdGroupExample from "@/components/demos/ui/kbd/kbd-group";
+import KbdInputGroup from "@/components/demos/ui/kbd/kbd-input-group";
+import KbdTooltip from "@/components/demos/ui/kbd/kbd-tooltip";
+import KbdButton from "@/components/demos/ui/kbd/kbd-button";
+import KbdDemo from "@/components/demos/ui/kbd/kbd-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

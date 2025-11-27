@@ -1,4 +1,4 @@
-import MenubarDemo from "@/components/demos/menu-bar/menubar-demo";
+import MenubarDemo from "@/components/demos/ui/menu-bar/menubar-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

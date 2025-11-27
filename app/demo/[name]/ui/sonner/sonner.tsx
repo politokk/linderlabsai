@@ -1,5 +1,5 @@
-import SonnerDemo from "@/components/demos/sonner/sonner-demo";
-import SonnerTypes from "@/components/demos/sonner/sonner-types";
+import SonnerDemo from "@/components/demos/ui/sonner/sonner-demo";
+import SonnerTypes from "@/components/demos/ui/sonner/sonner-types";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

@@ -1,20 +1,20 @@
-import FormNextComplex from "@/components/demos/form/form-next-complex";
-import FormRhfArray from "@/components/demos/form/form-rhf-array";
-import FormRhfCheckbox from "@/components/demos/form/form-rhf-checkbox";
-import FormRhfComplex from "@/components/demos/form/form-rhf-complex";
-import FormRhfDemo from "@/components/demos/form/form-rhf-demo";
-import FormRhfInput from "@/components/demos/form/form-rhf-input";
-import FormRhfPassword from "@/components/demos/form/form-rhf-password";
-import FormRhfRadiogroup from "@/components/demos/form/form-rhf-radiogroup";
-import FormRhfSelect from "@/components/demos/form/form-rhf-select";
-import FormRhfSwitch from "@/components/demos/form/form-rhf-switch";
-import FormRhfTextarea from "@/components/demos/form/form-rhf-textarea";
-import AppearanceSettings from "@/components/demos/form/appearance-settings";
-import ChatSettings from "@/components/demos/form/chat-settings";
-import DisplaySettings from "@/components/demos/form/display-settings";
-import ShipRegistrationForm from "@/components/demos/form/ship-registration-form";
-import ShippingForm from "@/components/demos/form/shipping-form";
-import NotionPromptForm from "@/components/demos/form/notion-prompt-form";
+import FormNextComplex from "@/components/demos/ui/form/form-next-complex";
+import FormRhfArray from "@/components/demos/ui/form/form-rhf-array";
+import FormRhfCheckbox from "@/components/demos/ui/form/form-rhf-checkbox";
+import FormRhfComplex from "@/components/demos/ui/form/form-rhf-complex";
+import FormRhfDemo from "@/components/demos/ui/form/form-rhf-demo";
+import FormRhfInput from "@/components/demos/ui/form/form-rhf-input";
+import FormRhfPassword from "@/components/demos/ui/form/form-rhf-password";
+import FormRhfRadiogroup from "@/components/demos/ui/form/form-rhf-radiogroup";
+import FormRhfSelect from "@/components/demos/ui/form/form-rhf-select";
+import FormRhfSwitch from "@/components/demos/ui/form/form-rhf-switch";
+import FormRhfTextarea from "@/components/demos/ui/form/form-rhf-textarea";
+import AppearanceSettings from "@/components/demos/ui/form/appearance-settings";
+import ChatSettings from "@/components/demos/ui/form/chat-settings";
+import DisplaySettings from "@/components/demos/ui/form/display-settings";
+import ShipRegistrationForm from "@/components/demos/ui/form/ship-registration-form";
+import ShippingForm from "@/components/demos/ui/form/shipping-form";
+import NotionPromptForm from "@/components/demos/ui/form/notion-prompt-form";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 

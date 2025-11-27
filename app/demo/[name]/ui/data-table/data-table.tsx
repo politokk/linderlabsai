@@ -1,4 +1,4 @@
-import DataTableDemo from "@/components/demos/data-table/data-table-demo";
+import DataTableDemo from "@/components/demos/ui/data-table/data-table-demo";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
