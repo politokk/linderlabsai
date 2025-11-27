@@ -1,5 +1,5 @@
 git add .
-git commit -m "old accordion and promo demo"
+git commit -m "add feedbackbar component"
 git push origin main    
 git push origin main --force
 

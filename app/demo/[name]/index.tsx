@@ -83,6 +83,7 @@ import codeBlock from "@/app/demo/[name]/ai/code-block";
 import confirmation from "@/app/demo/[name]/ai/confirmation";
 import context from "@/app/demo/[name]/ai/context";
 import conversation from "@/app/demo/[name]/ai/conversation";
+import feedbackbar from "@/app/demo/[name]/ai/feedbackbar";
 import image from "@/app/demo/[name]/ai/image";
 import loader from "@/app/demo/[name]/ai/loader";
 import links from "@/app/demo/[name]/ai/links";
@@ -191,6 +192,7 @@ export const demos: { [name: string]: Demo } = {
   confirmation,
   context,
   conversation,
+  feedbackbar,
   image,
   loader,
   links,

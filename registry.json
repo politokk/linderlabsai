@@ -3618,6 +3618,29 @@
         ]
       },
       {
+        "name": "feedbackbar",
+        "type": "registry:ui",
+        "title": "Feedback Bar",
+        "icon": "Info",
+        "category": "ai",
+        "description": "A component for displaying a feedback bar.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
+          {
+            "path": "app/demo/[name]/ai/feedbackbar.tsx",
+            "type": "registry:page",
+            "target": "app/feedbackbar/page.tsx"
+          },
+          {
+            "path": "components/demos/ai/feedbackbar/feedbackbar.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/feedbackbar/feedbackbar.tsx"
+          }
+        ]
+      },
+      {
         "name": "image",
         "type": "registry:ui",
         "title": "Image",
