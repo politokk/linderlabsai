@@ -1,5 +1,5 @@
 git add .
-git commit -m "data-table"
+git commit -m "sidebar-display"
 git push origin main    
 git push origin main --force
 

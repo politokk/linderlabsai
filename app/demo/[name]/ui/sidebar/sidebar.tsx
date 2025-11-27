@@ -7,6 +7,7 @@ import SidebarGroupCollapsible from "@/components/demos/sidebar/sidebar-group-co
 import SidebarHeader from "@/components/demos/sidebar/sidebar-header";
 import SidebarMenu from "@/components/demos/sidebar/sidebar-menu";
 import SidebarMenuAction from "@/components/demos/sidebar/sidebar-menu-action";
+import { ComponentDisplay } from "@/components/display/component-display";
 import { ComponentWrapper } from "@/components/display/component-wrapper";
 
 
@@ -14,33 +15,33 @@ export default function sidebar() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentWrapper name="Sidebar Controlled" icon="Gamepad2">
+        <ComponentDisplay name="Sidebar Controlled" styleName="new-york-v4" icon="Gamepad2">
           <SidebarControlled />
-        </ComponentWrapper>
-        <ComponentWrapper name="Sidebar Demo" icon="PanelLeft">
+        </ComponentDisplay>
+        <ComponentDisplay name="Sidebar Demo" styleName="new-york-v4" icon="PanelLeft">
           <SidebarDemo />
-        </ComponentWrapper>
-        <ComponentWrapper name="Sidebar Footer" icon="PanelBottom">
+        </ComponentDisplay>
+        <ComponentDisplay name="Sidebar Footer" styleName="new-york-v4" icon="PanelBottom">
           <SidebarFooter />
-        </ComponentWrapper>
-        <ComponentWrapper name="Sidebar Group" icon="Group">
+        </ComponentDisplay>
+        <ComponentDisplay name="Sidebar Group" styleName="new-york-v4" icon="Group">
           <SidebarGroup />
-        </ComponentWrapper>
-        <ComponentWrapper name="Sidebar Group Action" icon="MousePointerClick">
+        </ComponentDisplay>
+        <ComponentDisplay name="Sidebar Group Action" styleName="new-york-v4" icon="MousePointerClick">
           <SidebarGroupAction />
-        </ComponentWrapper>
-        <ComponentWrapper name="Sidebar Group Collapsible" icon="ChevronsUpDown">
+        </ComponentDisplay>
+        <ComponentDisplay name="Sidebar Group Collapsible" styleName="new-york-v4" icon="ChevronsUpDown">
           <SidebarGroupCollapsible />
-        </ComponentWrapper>
-        <ComponentWrapper name="Sidebar Header" icon="PanelTop">
+        </ComponentDisplay>
+        <ComponentDisplay name="Sidebar Header" styleName="new-york-v4" icon="PanelTop">
           <SidebarHeader />
-        </ComponentWrapper>
-        <ComponentWrapper name="Sidebar Menu" icon="Menu">
+        </ComponentDisplay>
+        <ComponentDisplay name="Sidebar Menu" styleName="new-york-v4" icon="Menu">
           <SidebarMenu />
-        </ComponentWrapper>
-        <ComponentWrapper name="Sidebar Menu Action" icon="MoreVertical">
+        </ComponentDisplay>
+        <ComponentDisplay name="Sidebar Menu Action" styleName="new-york-v4" icon="MoreVertical">
           <SidebarMenuAction />
-        </ComponentWrapper>
+        </ComponentDisplay>
       </div>
     </div>
   )
