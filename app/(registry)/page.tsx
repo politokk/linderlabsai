@@ -1,8 +1,7 @@
 import { ArrowRight, Blocks, Component, ToyBrick } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
-import { MCPTabs } from "@/components/registry/mcp-tabs";
+import { MCPSetup } from "@/components/registry/mcp-tabs";
 import {
   Card,
   CardContent,
@@ -161,7 +160,7 @@ export default function Home() {
             <code className="inline text-sm tabular-nums">tokens.css</code>
           </p>
 
-          <MCPTabs rootUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ""} />
+          <MCPSetup rootUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ""} />
         </div>
       </div>
 

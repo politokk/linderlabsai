@@ -6,6 +6,7 @@ import { RegistryBreadcrumb } from "@/components/registry/registry-breadcrumb"
 import { ThemeSelector } from "@/components/themes/theme-selector"
 import { ModeSwitcher } from "@/components/themes/mode-switcher"
 import { RegistrySetup } from "@/components/registry/registry-setup"
+import { MCPSetup } from "@/components/registry/mcp-tabs"
 import { CopyCodeButton } from "@/components/themes/theme-customizer"
 import { GithubButton } from "@/components/github-button"
 import { ThemesCustomize } from "@/components/themes/themes-customize"
@@ -35,6 +36,7 @@ export function RegistryHeader({ componentTitle, componentIcon }: RegistryHeader
       <div className="ml-auto flex items-center gap-2">
         <GithubButton />
         <RegistrySetup />
+        <MCPSetup rootUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ""} />
         <CopyCodeButton />
         <ModeSwitcher />
         <ThemeSelector />
