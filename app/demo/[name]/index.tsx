@@ -86,6 +86,7 @@ import conversation from "@/app/demo/[name]/ai/conversation";
 import image from "@/app/demo/[name]/ai/image";
 import loader from "@/app/demo/[name]/ai/loader";
 import inlineCitation from "@/app/demo/[name]/ai/inline-citation";
+import links from "@/app/demo/[name]/ai/links";
 import message from "@/app/demo/[name]/ai/message";
 import modelSelector from "@/app/demo/[name]/ai/model-selector";
 import openInChat from "@/app/demo/[name]/ai/open-in-chat";
@@ -193,6 +194,7 @@ export const demos: { [name: string]: Demo } = {
   image,
   loader,
   "inline-citation": inlineCitation,
+  links,
   message,
   "model-selector": modelSelector,
   "open-in-chat": openInChat,
