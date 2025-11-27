@@ -4,8 +4,8 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 import { useMediaQuery } from "@/hooks/use-media-query"
-import { ComponentCopyButton } from "./component-copy-button"
-import { Component } from "./component-display"
+import { ComponentCopyButton } from "@/components/display/component-copy-button"
+import { Component } from "@/components/display/component-display"
 import { getIconForLanguageExtension } from "@/components/icons/icons"
 import { Button } from "@/components/ui/button"
 import {
@@ -76,7 +76,7 @@ export function ComponentCodeViewer({
             <div className="ml-auto flex items-center gap-2">
               <ComponentCopyButton
                 name={component.name}
-                code={component.files?.[0]?.content ?? ""}
+                code={component.code}
               />
               <OpenInV0Button
                 name={component.name}

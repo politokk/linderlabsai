@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Clipboard, Check } from "lucide-react"
+import { Copy, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Tooltip,
@@ -29,7 +29,7 @@ export function ComponentCopyButton({
     <Tooltip>
       <TooltipTrigger asChild>
         <Button
-          size="iconXs"
+          size="iconSm"
           variant="ghost"
           onClick={() => {
             navigator.clipboard.writeText(code)
@@ -42,7 +42,7 @@ export function ComponentCopyButton({
           {hasCopied ? (
             <Check className="size-3.5 text-muted-foreground" />
           ) : (
-            <Clipboard className="size-3.5 text-muted-foreground" />
+            <Copy className="size-3.5 text-muted-foreground" />
           )}
         </Button>
       </TooltipTrigger>

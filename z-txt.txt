@@ -1,5 +1,5 @@
 git add .
-git commit -m "sidebar-display"
+git commit -m "component-display"
 git push origin main    
 git push origin main --force
 
