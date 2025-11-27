@@ -5,7 +5,7 @@ import { ComponentCodeViewer } from "@/components/display/component-code-viewer"
 import { ComponentCopyButton } from "@/components/display/component-copy-button"
 import { Component } from "@/components/display/component-display"
 import { Separator } from "@/components/ui/separator"
-
+import { OpenInV0Button } from "@/components/display/open-in-v0-button"
 export function ComponentToolbar({
   component,
   className,
@@ -33,6 +33,11 @@ export function ComponentToolbar({
         <ComponentCodeViewer component={component} icon={icon}>
           {children}
         </ComponentCodeViewer>
+        <OpenInV0Button
+                name={component.name}
+                className="rounded-sm"
+                variant="icon"
+              />
       </div>
     </div>
   )

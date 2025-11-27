@@ -38,7 +38,7 @@ export function ComponentCodeViewer({
   const isDesktop = useMediaQuery("(min-width: 768px)")
 
   const button = (
-    <Button size="iconSm" variant="ghost">
+    <Button size="iconXs" variant="ghost">
       <Code className="size-3.5 text-muted-foreground" />
     </Button>
   )
@@ -68,7 +68,7 @@ export function ComponentCodeViewer({
           className="mt-0 flex h-full min-w-0 flex-col overflow-hidden"
         >
           <figcaption
-            className="text-foreground [&>svg]:text-foreground flex h-12 shrink-0 items-center gap-2 border-b py-2 pr-2 pl-4 [&>svg]:size-4 [&>svg]:opacity-70"
+            className="text-foreground [&>svg]:text-foreground [&>svg]:rounded-xs flex h-12 shrink-0 items-center gap-2 border-b py-2 pr-2 pl-4 [&>svg]:size-4 [&>svg]:opacity-70"
             data-language="tsx"
           >
             {getIconForLanguageExtension("tsx")}
