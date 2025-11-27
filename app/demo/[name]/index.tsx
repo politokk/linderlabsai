@@ -48,7 +48,7 @@ import input from "@/app/demo/[name]/ui/input/input";
 import item from "@/app/demo/[name]/ui/item/item";
 import kbd from "@/app/demo/[name]/ui/kbd/kbd";
 import label from "@/app/demo/[name]/ui/label/label";
-  import menuBar from "@/app/demo/[name]/ui/menu-bar/menu-bar";
+import menuBar from "@/app/demo/[name]/ui/menu-bar/menu-bar";
 import navigationMenu from "@/app/demo/[name]/ui/navigation-menu/navigation-menu";
 import nativeSelect from "@/app/demo/[name]/ui/native-select/native-select";
 import pagination from "@/app/demo/[name]/ui/pagination/pagination";
@@ -85,8 +85,8 @@ import context from "@/app/demo/[name]/ai/context";
 import conversation from "@/app/demo/[name]/ai/conversation";
 import image from "@/app/demo/[name]/ai/image";
 import loader from "@/app/demo/[name]/ai/loader";
-import inlineCitation from "@/app/demo/[name]/ai/inline-citation";
 import links from "@/app/demo/[name]/ai/links";
+import inlineCitation from "@/app/demo/[name]/ai/inline-citation";
 import message from "@/app/demo/[name]/ai/message";
 import modelSelector from "@/app/demo/[name]/ai/model-selector";
 import openInChat from "@/app/demo/[name]/ai/open-in-chat";
@@ -193,8 +193,8 @@ export const demos: { [name: string]: Demo } = {
   conversation,
   image,
   loader,
-  "inline-citation": inlineCitation,
   links,
+  "inline-citation": inlineCitation,
   message,
   "model-selector": modelSelector,
   "open-in-chat": openInChat,
