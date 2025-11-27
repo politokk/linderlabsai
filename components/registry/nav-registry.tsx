@@ -14,7 +14,7 @@ import {
   Key,
   Layers,
   type LucideIcon,
-  BotMessageSquare,
+  Wand,
 } from "lucide-react"
 import * as LucideIcons from "lucide-react"
 import {
@@ -55,8 +55,8 @@ const categoryIcons: Record<string, LucideIcon> = {
   auth: Key,
   store: ShoppingCart,
   ui: ToyBrick,
-  blocks: Blocks,
-  ai: BotMessageSquare,
+  blocks: Component,
+  ai: Wand,
 }
 
 // Category display names
