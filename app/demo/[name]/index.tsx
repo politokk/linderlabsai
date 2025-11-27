@@ -85,8 +85,8 @@ import context from "@/app/demo/[name]/ai/context";
 import conversation from "@/app/demo/[name]/ai/conversation";
 import feedbackbar from "@/app/demo/[name]/ai/feedbackbar";
 import image from "@/app/demo/[name]/ai/image";
-import loader from "@/app/demo/[name]/ai/loader";
 import links from "@/app/demo/[name]/ai/links";
+import loader from "@/app/demo/[name]/ai/loader";
 import inlineCitation from "@/app/demo/[name]/ai/inline-citation";
 import message from "@/app/demo/[name]/ai/message";
 import modelSelector from "@/app/demo/[name]/ai/model-selector";
@@ -199,8 +199,8 @@ export const demos: { [name: string]: Demo } = {
   conversation,
   feedbackbar,
   image,
-  loader,
   links,
+  loader,
   "inline-citation": inlineCitation,
   message,
   "model-selector": modelSelector,

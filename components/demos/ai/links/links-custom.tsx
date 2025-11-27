@@ -7,9 +7,6 @@ export default function LinksCustomDemo() {
     <div className="space-y-6 p-6">
       {/* Numbered Links */}
       <div className="space-y-2">
-        <p className="text-muted-foreground text-sm font-medium">
-            Numbered Links
-        </p>
         <div className="flex gap-2">
           <Link href="https://arxiv.org/abs/2103.00020">
             <LinkTrigger showFavicon label={1} />
@@ -37,9 +34,6 @@ export default function LinksCustomDemo() {
 
       {/* Custom Labels */}
       <div className="space-y-2">
-        <p className="text-muted-foreground text-sm font-medium">
-          Custom Labels
-        </p>
         <div className="flex gap-2">
           <Link href="https://docs.python.org">
             <LinkTrigger showFavicon label="Python" />
@@ -67,9 +61,6 @@ export default function LinksCustomDemo() {
 
       {/* Mixed Styles */}
       <div className="space-y-2">
-        <p className="text-muted-foreground text-sm font-medium">
-          Mixed Styles
-        </p>
         <div className="flex flex-wrap gap-2">
           <Link href="https://github.com">
                 <LinkTrigger showFavicon label="GitHub" />
@@ -109,10 +100,7 @@ export default function LinksCustomDemo() {
       </div>
 
       {/* Custom Hover Colors */}
-      <div className="space-y-2">
-        <p className="text-muted-foreground text-sm font-medium">
-          Custom Hover Effects
-        </p>
+      <div className="space-y-2"> 
         <div className="flex gap-2">
           <Link href="https://twitter.com">
                 <LinkTrigger
