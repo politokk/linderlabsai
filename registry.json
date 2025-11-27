@@ -3849,6 +3849,11 @@
             "path": "components/demos/ai/model-selector/model-selector.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/model-selector/model-selector.tsx"
+          },
+          {
+            "path": "components/demos/ai/model-selector/model-dropdown.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/model-selector/model-dropdown.tsx"
           }
         ]
       },
