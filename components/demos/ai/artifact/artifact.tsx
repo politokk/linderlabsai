@@ -52,7 +52,7 @@ def dijkstra(graph, start):
 print(dijkstra(graph, 'A'))`;
 
 const Example = () => (
-  <Artifact>
+  <Artifact >
     <ArtifactHeader>
       <div>
         <ArtifactTitle>Dijkstra&apos;s Algorithm Implementation</ArtifactTitle>

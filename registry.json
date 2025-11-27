@@ -3722,21 +3722,6 @@
             "target": "components/ai-elements/loader.tsx"
           },
           {
-            "path": "components/demos/ai/loader/loader.tsx",
-            "type": "registry:component",
-            "target": "components/demos/ai/loader/loader.tsx"
-          },
-          {
-            "path": "components/demos/ai/loader/loader-custom.tsx",
-            "type": "registry:component",
-            "target": "components/demos/ai/loader/loader-custom.tsx"
-          },
-          {
-            "path": "components/demos/ai/loader/loader-sizes.tsx",
-            "type": "registry:component",
-            "target": "components/demos/ai/loader/loader-sizes.tsx"
-          },
-          {
             "path": "components/demos/ai/loader/loader-circular.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/loader/loader-circular.tsx"
