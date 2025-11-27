@@ -833,21 +833,7 @@
         {
           "path": "components/promo.tsx",
           "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "promo-demo",
-      "type": "registry:component",
-      "title": "Promo Demo",
-      "icon": "BadgeDollarSign",
-      "description": "Attention-grabbing section to display the current promotional deal.",
-      "category": "store",
-      "registryDependencies": [
-        "https://linderlabsai.vercel.app/r/theme.json",
-        "https://linderlabsai.vercel.app/r/promo.json"
-      ],
-      "files": [
+        },
         {
           "path": "layouts/minimal-layout.tsx",
           "type": "registry:file",
@@ -886,42 +872,6 @@
         }
       ]
     },
-    {
-      "name": "accordion-demo",
-      "type": "registry:ui",
-      "title": "Accordion Demo",
-      "icon": "FolderRoot",
-      "description": "A demo of the Accordion component.",
-      "category": "accordion",
-      "registryDependencies": [
-        "https://linderlabsai.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "components/demos/accordion/accordion-demo.tsx",
-          "type": "registry:component",
-          "target": "components/demos/accordion/accordion-demo.tsx"
-        }
-      ]
-    },
-    {
-      "name": "accordion-extensive",
-      "type": "registry:ui",
-      "title": "Accordion Extensive",
-      "icon": "ScrollText",
-      "description": "A extensive demo of the Accordion component.",
-      "category": "accordion",
-      "registryDependencies": [
-        "https://linderlabsai.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "components/demos/accordion/accordion-extensive.tsx",
-          "type": "registry:component",
-          "target": "components/demos/accordion/accordion-extensive.tsx"
-        }
-      ]
-    },
       {
         "name": "accordion",
         "type": "registry:ui",
@@ -939,6 +889,16 @@
             "path": "app/demo/[name]/ui/accordion/accordion.tsx",
             "type": "registry:page",
             "target": "app/accordion/page.tsx"
+          },
+          {
+            "path": "components/demos/accordion/accordion-demo.tsx",
+            "type": "registry:component",
+            "target": "components/demos/accordion/accordion-demo.tsx"
+          },
+          {
+            "path": "components/demos/accordion/accordion-extensive.tsx",
+            "type": "registry:component",
+            "target": "components/demos/accordion/accordion-extensive.tsx"
           }
         ]
       },

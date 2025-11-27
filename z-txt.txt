@@ -1,5 +1,5 @@
 git add .
-git commit -m "add links component"
+git commit -m "old accordion and promo demo"
 git push origin main    
 git push origin main --force
 
