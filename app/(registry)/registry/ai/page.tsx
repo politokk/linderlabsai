@@ -1,4 +1,5 @@
-import { ActivityIcon, FolderRootIcon, GitBranchIcon, BrainIcon, MessagesSquareIcon, WandSparklesIcon, ImageIcon, CheckIcon, CodeIcon, MoonIcon, InfoIcon, QuoteIcon, LinkIcon, MessageCircleIcon, LoaderIcon, LoaderCircleIcon, TriangleIcon, CircleIcon, MoreHorizontalIcon, CircleDotIcon, TerminalIcon, BarChart3Icon, AudioLinesIcon, TypeIcon, SparklesIcon, EllipsisIcon } from "lucide-react";
+import { ActivityIcon, FolderRootIcon, GitBranchIcon, BrainIcon, MessagesSquareIcon, WandSparklesIcon, ImageIcon, CheckIcon, CodeIcon, MoonIcon, InfoIcon, QuoteIcon, LinkIcon, MessageCircleIcon, LoaderIcon, LoaderCircleIcon, TriangleIcon, CircleIcon, MoreHorizontalIcon, CircleDotIcon, TerminalIcon, BarChart3Icon, AudioLinesIcon, TypeIcon, SparklesIcon, EllipsisIcon, MessageSquareIcon, BotIcon, CalendarDaysIcon, MousePointerClickIcon, ListEndIcon, ListOrderedIcon, TextCursorInputIcon, HourglassIcon, SparkleIcon, BookOpenIcon, CalendarCheckIcon, WrenchIcon, GlobeIcon } from "lucide-react";
+import { RegistryHeader } from "@/components/registry/registry-header";
 
 import { ComponentDisplay } from "@/components/display/component-display"
 import Actions from "@/components/demos/ai/actions/actions";
@@ -39,7 +40,38 @@ import LoaderTextBlink from "@/components/demos/ai/loader/loader-text-blink"
 import LoaderTextShimmer from "@/components/demos/ai/loader/loader-text-shimmer"
 import LoaderLoadingDots from "@/components/demos/ai/loader/loader-loading-dots"
 import LoaderMessage from "@/components/demos/ai/loader/loader-message"
-import { RegistryHeader } from "@/components/registry/registry-header";
+import MessagePage from "@/components/demos/ai/message/message-page";
+import Message from "@/components/demos/ai/message/message";
+import MessageFlat from "@/components/demos/ai/message/message-flat";
+import ModelDropdown from "@/components/demos/ai/model-selector/model-dropdown";
+import ModelSelector from "@/components/demos/ai/model-selector/model-selector";
+import OpenInChat from "@/components/demos/ai/open-in-chat/open-in-chat";
+import Plan from "@/components/demos/ai/plan/plan";
+import PromptInputCursor from "@/components/demos/ai/prompt-input/prompt-input-cursor";
+import PromptInput from "@/components/demos/ai/prompt-input/prompt-input";
+import PromptInputPage from "@/components/demos/ai/prompt-input/prompt-input-page";
+import Queue from "@/components/demos/ai/queue/queue";
+import QueuePromptInput from "@/components/demos/ai/queue/queue-prompt-input";
+import Reasoning from "@/components/demos/ai/reasoning/reasoning";
+import ReasoningPage from "@/components/demos/ai/reasoning/reasoning-page";
+import Response from "@/components/demos/ai/response/response";
+import Shimmer from "@/components/demos/ai/shimmer/shimmer";
+import ShimmerDuration from "@/components/demos/ai/shimmer/shimmer-duration";
+import ShimmerElements from "@/components/demos/ai/shimmer/shimmer-elements";
+import Sources from "@/components/demos/ai/sources/sources";
+import SourcesCustom from "@/components/demos/ai/sources/sources-custom";
+import Suggestions from "@/components/demos/ai/suggestion/suggestion";
+import SuggestionsInput from "@/components/demos/ai/suggestion/suggestion-input";
+import SuggestionsPage from "@/components/demos/ai/suggestion/suggestion-page";
+import Task from "@/components/demos/ai/task/task";
+import Tool from "@/components/demos/ai/tool/tool";
+import ToolInputAvailable from "@/components/demos/ai/tool/tool-input-available";
+import ToolInputStreaming from "@/components/demos/ai/tool/tool-input-streaming";
+import ToolOutputAvailable from "@/components/demos/ai/tool/tool-output-available";
+import ToolOutputError from "@/components/demos/ai/tool/tool-output-error";
+import ToolPage from "@/components/demos/ai/tool/tool-page";
+import WebPreview from "@/components/demos/ai/web-preview/web-preview";
+import WebPreviewPage from "@/components/demos/ai/web-preview/web-preview-page";
 
 export default function AIPage() {
   return (
@@ -160,6 +192,103 @@ export default function AIPage() {
         </ComponentDisplay>
         <ComponentDisplay path="/ai/loader/loader-loading-dots" icon={<EllipsisIcon />}>
           <LoaderLoadingDots />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/message/message" icon={<MessageSquareIcon />}>
+          <Message />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/message/message-flat" icon={<MessageSquareIcon />}>
+          <MessageFlat />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/message/message-page" icon={<MessageSquareIcon />}>
+          <MessagePage />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/plan/plan" icon={<CalendarDaysIcon />}>
+            <Plan />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/model-selector/model-selector" icon={<BotIcon />}>
+            <ModelSelector />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/model-selector/model-dropdown" icon={<BotIcon />}>
+          <ModelDropdown />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/open-in-chat/open-in-chat" icon={<MessageSquareIcon />}>
+            <OpenInChat />
+        </ComponentDisplay>
+        
+        <ComponentDisplay path="/ai/prompt-input/prompt-input" icon={<MessageSquareIcon />}>
+          <PromptInput />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/prompt-input/prompt-input-cursor" icon={<MousePointerClickIcon />}>
+          <PromptInputCursor />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/prompt-input/prompt-input-page" icon={<MessageSquareIcon />}>
+          <PromptInputPage />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/queue/queue" icon={<ListOrderedIcon />}>
+          <Queue />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/queue/queue-prompt-input" icon={<ListEndIcon />}>
+          <QueuePromptInput />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/reasoning/reasoning" icon={<BrainIcon />}>
+          <Reasoning />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/reasoning/reasoning-page" icon={<BrainIcon />}>
+          <ReasoningPage />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/response/response" icon={<TextCursorInputIcon />}>
+          <Response />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/shimmer/shimmer" icon={<SparklesIcon />}>
+          <Shimmer />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/shimmer/shimmer-duration" icon={<HourglassIcon />}>
+          <ShimmerDuration />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/shimmer/shimmer-elements" icon={<SparkleIcon />}>
+          <ShimmerElements />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/sources/sources" icon={<BookOpenIcon />}>
+          <Sources />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/sources/sources-custom" icon={<BookOpenIcon />}>
+          <SourcesCustom />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/suggestions/suggestions" icon={<BookOpenIcon />}>
+          <Suggestions />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/suggestions/suggestions-input" icon={<BookOpenIcon />}>
+          <SuggestionsInput />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/suggestions/suggestions-page" icon={<BookOpenIcon />}>
+          <SuggestionsPage />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/task/task" icon={<CalendarCheckIcon />}>
+          <Task />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/tool/tool" icon={<WrenchIcon />}>
+          <Tool />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/tool/tool-input-available" icon={<WrenchIcon />}>
+          <ToolInputAvailable />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/tool/tool-input-streaming" icon={<WrenchIcon />}>
+          <ToolInputStreaming />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/tool/tool-output-available" icon={<WrenchIcon />}>
+          <ToolOutputAvailable />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/tool/tool-output-error" icon={<WrenchIcon />}>
+          <ToolOutputError />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/tool/tool-page" icon={<WrenchIcon />}>
+          <ToolPage />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/web-preview/web-preview" icon={<GlobeIcon />}>
+          <WebPreview />
+        </ComponentDisplay>
+        <ComponentDisplay path="/ai/web-preview/web-preview-page" icon={<GlobeIcon />}>
+          <WebPreviewPage />
         </ComponentDisplay>
       </div>
       </div>

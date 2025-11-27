@@ -1,5 +1,5 @@
 git add .
-git commit -m "navreg combobox"
+git commit -m "navreg ai"
 git push origin main    
 git push origin main --force
 
