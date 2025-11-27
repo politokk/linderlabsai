@@ -907,9 +907,7 @@
         "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
         "category": "ui",
         "registryDependencies": [
-          "https://linderlabsai.vercel.app/r/theme.json",
-          "https://linderlabsai.vercel.app/r/accordion-demo.json",
-          "https://linderlabsai.vercel.app/r/accordion-extensive.json"
+          "https://linderlabsai.vercel.app/r/theme.json"
         ],
         "files": [
           {
