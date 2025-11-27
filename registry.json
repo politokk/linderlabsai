@@ -3312,6 +3312,11 @@
             "target": "components/ai-elements/message.tsx"
           },
           {
+            "path": "components/ai-elements/message-2.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message-2.tsx"
+          },
+          {
             "path": "components/ai-elements/prompt-input.tsx",
             "type": "registry:component",
             "target": "components/ai-elements/prompt-input.tsx"
@@ -3393,9 +3398,9 @@
             "target": "components/ai-elements/actions.tsx"
           },
           {
-            "path": "components/ai-elements/message.tsx",
+            "path": "components/ai-elements/message-2.tsx",
             "type": "registry:component",
-            "target": "components/ai-elements/message.tsx"
+            "target": "components/ai-elements/message-2.tsx"
           },
           {
             "path": "components/demos/ai/branch/branch.tsx",

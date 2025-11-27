@@ -28,7 +28,7 @@ import {
 } from "@/components/ui/avatar"
 import { Textarea } from "@/components/ui/textarea"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { ThumbsUpIcon, ThumbsDownIcon, UserIcon, RefreshCcwIcon, CheckIcon, CopyIcon, EditIcon, XIcon, Volume2Icon, AudioLinesIcon } from "lucide-react"
+import { ThumbsUpIcon, ThumbsDownIcon, UserIcon, RefreshCcwIcon, CheckIcon, CopyIcon, Pencil, XIcon, Volume2Icon, AudioLinesIcon } from "lucide-react"
 
 const ActionsDemo = () => {
   const [input, setInput] = useState("")
@@ -422,7 +422,7 @@ const ActionsDemo = () => {
                                               }
                                               tooltip="Edit"
                                             >
-                                              <EditIcon className="text-muted-foreground h-3.5 w-3.5" />
+                                              <Pencil className="text-muted-foreground h-3.5 w-3.5" />
                                             </Action>
 
                                             <Action

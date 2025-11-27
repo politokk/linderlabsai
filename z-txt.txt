@@ -1,5 +1,5 @@
 git add .
-git commit -m "add loader message"
+git commit -m "update message"
 git push origin main    
 git push origin main --force
 

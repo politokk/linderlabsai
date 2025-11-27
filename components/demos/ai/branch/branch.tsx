@@ -14,7 +14,7 @@ import {
   BranchPrevious,
   BranchSelector,
 } from "@/components/ai-elements/branch"
-import { Message, MessageContent } from "@/components/ai-elements/message"
+import { Message, MessageContent } from "@/components/ai-elements/message-2"
 import {
   Avatar,
   AvatarFallback,
@@ -22,7 +22,7 @@ import {
 } from "@/components/ui/avatar"
 import { Textarea } from "@/components/ui/textarea"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { RefreshCcwIcon, UserIcon, CheckIcon, CopyIcon, EditIcon, XIcon } from "lucide-react"
+import { RefreshCcwIcon, UserIcon, CheckIcon, CopyIcon, Pencil, XIcon } from "lucide-react"
 
 type MessageBranch = {
   id: string
@@ -260,7 +260,7 @@ const Example = () => {
                             }
                             tooltip="Edit"
                           >
-                            <EditIcon className="text-muted-foreground h-3.5 w-3.5" />
+                            <Pencil className="text-muted-foreground h-3.5 w-3.5" />
                           </Action>
 
                           <Action

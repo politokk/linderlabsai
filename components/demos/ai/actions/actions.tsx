@@ -10,7 +10,7 @@ import {
   Conversation,
   ConversationContent,
 } from "@/components/ai-elements/conversation"
-import { Message, MessageContent } from "@/components/ai-elements/message"
+import { Message, MessageContent } from "@/components/ai-elements/message-2"
 import {
   Avatar,
   AvatarFallback,
@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/avatar"
 import { Textarea } from "@/components/ui/textarea"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { CheckIcon, Volume2,CopyIcon, ThumbsUpIcon, ThumbsDownIcon, EditIcon, RefreshCcwIcon, UserIcon, AudioLinesIcon, XIcon } from "lucide-react"
+import { CheckIcon, Volume2,CopyIcon, ThumbsUpIcon, ThumbsDownIcon, Pencil, RefreshCcwIcon, UserIcon, AudioLinesIcon, XIcon } from "lucide-react"
 
 const messages: {
   key: string
@@ -163,7 +163,7 @@ const Example = () => {
                 {message.from === "assistant" ? (
                   <>
                     <Message from={message.from}>
-                      <MessageContent>{message.content}</MessageContent>
+                      <MessageContent >{message.content}</MessageContent>
                     </Message>
 
                     {/* Actions for assistant messages */}
@@ -330,7 +330,7 @@ const Example = () => {
                               }
                               tooltip="Edit"
                             >
-                              <EditIcon className="text-muted-foreground h-3.5 w-3.5" />
+                              <Pencil className="text-muted-foreground h-3.5 w-3.5" />
                             </Action>
 
                             <Action
