@@ -27,7 +27,7 @@ const InlineCitationPage = () => {
     submit({ prompt: topic });
   };
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-6 h-[full]">
+    <div className="max-w-4xl mx-auto p-6 space-y-6 h-[300px]">
       <div className="flex gap-2 mb-6">
         <Button
           onClick={() => handleSubmit('artificial intelligence')}

@@ -174,7 +174,7 @@ const Example = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4 h-[full]">
+    <div className="flex flex-col gap-4 h-[400px]">
       {messages.map((message) => (
         <Message from={message.from} key={message.key}>
           {message.versions?.length && message.versions.length > 1 ? (

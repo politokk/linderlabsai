@@ -39,7 +39,7 @@ export function ComponentWrapper({
           </div>
         </div>
         <div className={cn(
-          "flex flex-1 min-h-0 items-center gap-2 p-4 max-h-[350px] rounded-b-3xl overflow-scroll",
+          "flex flex-1 min-h-0 items-center gap-2 p-4 rounded-b-3xl overflow-scroll",
           allowOverflow ? "overflow-visible" : "overflow-auto"
         )}>{children}</div>
       </div>

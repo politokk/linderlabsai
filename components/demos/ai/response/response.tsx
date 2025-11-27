@@ -244,7 +244,7 @@ const Example = () => {
     return () => clearInterval(interval)
   }, [])
 
-  return <Response className="h-[500px]">{content}</Response>
+  return <Response className="h-[400px]">{content}</Response>
 }
 
 export default Example

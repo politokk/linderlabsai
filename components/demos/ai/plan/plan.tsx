@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { FileText } from "lucide-react";
 
 const Example = () => (
-  <div className="max-w-4xl mx-auto h-[full] mt-60">
+  <div className="max-w-4xl mx-auto h-[full]">
   <Plan defaultOpen={true}>
     <PlanHeader>
       <div>

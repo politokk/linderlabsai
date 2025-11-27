@@ -44,7 +44,7 @@ const messages: {
 ];
 
 const Example = () => (
-  <div className="space-y-2 pt-20">
+  <div className="space-y-2">
     {messages.map(({ content, ...message }) => (
       <Message from={message.from} key={message.key}>
         <MessageContent>{content}</MessageContent>

@@ -23,6 +23,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
+  SidebarRail
 } from "@/components/ui/sidebar"
 
 const projects = [
@@ -78,6 +79,7 @@ export default function AppSidebar() {
             </SidebarGroupContent>
           </SidebarGroup>
         </SidebarContent>
+        <SidebarRail />
       </Sidebar>
       <SidebarInset>
         <header className="flex h-12 items-center justify-between px-4">
