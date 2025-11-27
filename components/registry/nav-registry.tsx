@@ -54,8 +54,8 @@ const categoryIcons: Record<string, LucideIcon> = {
   brand: Sparkles,
   auth: Key,
   store: ShoppingCart,
-  ui: ToyBrick,
-  blocks: Component,
+  ui: Component,
+  blocks: Blocks,
   ai: Wand,
 }
 
