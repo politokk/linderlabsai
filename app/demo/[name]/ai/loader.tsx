@@ -19,6 +19,9 @@ export default function Loader() {
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <ComponentWrapper name="Circular" icon="LoaderCircle">
+        <ComponentWrapper name="Message" icon="MessageCircle">
+          <LoaderMessage />
+        </ComponentWrapper>
           <LoaderCircular />
         </ComponentWrapper>
         <ComponentWrapper name="Classic" icon="Loader">
@@ -56,9 +59,6 @@ export default function Loader() {
         </ComponentWrapper>
         <ComponentWrapper name="Loading Dots" icon="Ellipsis">
           <LoaderLoadingDots />
-        </ComponentWrapper>
-        <ComponentWrapper name="Message" icon="MessageCircle">
-          <LoaderMessage />
         </ComponentWrapper>
       </div>
     </div>
