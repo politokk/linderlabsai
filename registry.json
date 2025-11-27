@@ -507,11 +507,6 @@
           "path": "postcss.config.mjs",
           "type": "registry:file",
           "target": "postcss.config.mjs"
-        },
-        {
-          "path": "registry.json",
-          "type": "registry:file",
-          "target": "registry.json"
         }
       ]
     },
