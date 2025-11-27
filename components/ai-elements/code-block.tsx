@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { CheckIcon, CopyIcon } from "lucide-react";
+import { CheckIcon, ClipboardIcon } from "lucide-react";
 import {
   type ComponentProps,
   createContext,
@@ -152,7 +152,7 @@ export const CodeBlockCopyButton = ({
       return;
     }
 
-    try {
+    try { 
       await navigator.clipboard.writeText(code);
       setIsCopied(true);
       onCopy?.();
@@ -162,13 +162,13 @@ export const CodeBlockCopyButton = ({
     }
   };
 
-  const Icon = isCopied ? CheckIcon : CopyIcon;
+  const Icon = isCopied ? CheckIcon : ClipboardIcon;
 
   return (
     <Button
       className={cn("shrink-0", className)}
       onClick={copyToClipboard}
-      size="icon"
+      size="iconXs"
       variant="ghost"
       {...props}
     >
