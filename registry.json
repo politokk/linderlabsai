@@ -3735,6 +3735,76 @@
             "path": "components/demos/ai/loader/loader-sizes.tsx",
             "type": "registry:component",
             "target": "components/demos/ai/loader/loader-sizes.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-circular.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-circular.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-classic.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-classic.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-vercel.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-vercel.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-pulse.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-pulse.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-pulse-dot.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-pulse-dot.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-dots.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-dots.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-typing.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-typing.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-wave.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-wave.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-bars.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-bars.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-terminal.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-terminal.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-text-blink.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-text-blink.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-text-shimmer.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-text-shimmer.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-loading-dots.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-loading-dots.tsx"
+          },
+          {
+            "path": "components/demos/ai/loader/loader-message.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/loader/loader-message.tsx"
           }
         ]
       },

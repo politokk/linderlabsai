@@ -2,10 +2,10 @@
 
 import { Loader } from "@/components/ai-elements/loader"
 
-export default function LoaderCircularDemo() {
+export default function LoaderClassicDemo() {
   return (
     <div className="flex items-center justify-center p-4">
-      <Loader variant="circular" />
+      <Loader variant="classic" />
     </div>
   )
 }

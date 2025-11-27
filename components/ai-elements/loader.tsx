@@ -1,10 +1,13 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-export interface LoaderProps {
+import type { HTMLAttributes } from "react"
+
+export interface LoaderProps extends HTMLAttributes<HTMLDivElement> {
   variant?:
     | "circular"
     | "classic"
+    | "vercel"
     | "pulse"
     | "pulse-dot"
     | "dots"
@@ -15,9 +18,118 @@ export interface LoaderProps {
     | "text-blink"
     | "text-shimmer"
     | "loading-dots"
-  size?: "sm" | "md" | "lg"
+  size?: "sm" | "md" | "lg" | number
   text?: string
+}
+
+const sizeMap = {
+  sm: 16,
+  md: 20,
+  lg: 24,
+}
+
+function getNumericSize(size: "sm" | "md" | "lg" | number): number {
+  return typeof size === "number" ? size : sizeMap[size]
+}
+
+function VercelLoaderIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg
+      height={size}
+      strokeLinejoin="round"
+      style={{ color: "currentcolor" }}
+      viewBox="0 0 16 16"
+      width={size}
+    >
+      <title>Loading</title>
+      <g clipPath="url(#clip0_2393_1490)">
+        <path d="M8 0V4" stroke="currentColor" strokeWidth="1.5" />
+        <path
+          d="M8 16V12"
+          opacity="0.5"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M3.29773 1.52783L5.64887 4.7639"
+          opacity="0.9"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M12.7023 1.52783L10.3511 4.7639"
+          opacity="0.1"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M12.7023 14.472L10.3511 11.236"
+          opacity="0.4"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M3.29773 14.472L5.64887 11.236"
+          opacity="0.6"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M15.6085 5.52783L11.8043 6.7639"
+          opacity="0.2"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M0.391602 10.472L4.19583 9.23598"
+          opacity="0.7"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M15.6085 10.4722L11.8043 9.2361"
+          opacity="0.3"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M0.391602 5.52783L4.19583 6.7639"
+          opacity="0.8"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2393_1490">
+          <rect fill="white" height="16" width="16" />
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+
+export function VercelLoader({
+  className,
+  size = "md",
+  ...props
+}: {
   className?: string
+  size?: "sm" | "md" | "lg" | number
+} & HTMLAttributes<HTMLDivElement>) {
+  const numericSize = getNumericSize(size)
+
+  return (
+    <div
+      className={cn(
+        "inline-flex animate-spin items-center justify-center",
+        className
+      )}
+      {...props}
+    >
+      <VercelLoaderIcon size={numericSize} />
+      <span className="sr-only">Loading</span>
+    </div>
+  )
 }
 
 export function CircularLoader({
@@ -453,34 +565,57 @@ function Loader({
   size = "md",
   text,
   className,
+  ...props
 }: LoaderProps) {
+  // Normalize size for components that only accept string sizes
+  const stringSize =
+    typeof size === "number"
+      ? size <= 16
+        ? "sm"
+        : size <= 20
+          ? "md"
+          : "lg"
+      : size
+
   switch (variant) {
     case "circular":
-      return <CircularLoader size={size} className={className} />
+      return <CircularLoader size={stringSize} className={className} />
     case "classic":
-      return <ClassicLoader size={size} className={className} />
+      return <ClassicLoader size={stringSize} className={className} />
+    case "vercel":
+      return <VercelLoader size={size} className={className} {...props} />
     case "pulse":
-      return <PulseLoader size={size} className={className} />
+      return <PulseLoader size={stringSize} className={className} />
     case "pulse-dot":
-      return <PulseDotLoader size={size} className={className} />
+      return <PulseDotLoader size={stringSize} className={className} />
     case "dots":
-      return <DotsLoader size={size} className={className} />
+      return <DotsLoader size={stringSize} className={className} />
     case "typing":
-      return <TypingLoader size={size} className={className} />
+      return <TypingLoader size={stringSize} className={className} />
     case "wave":
-      return <WaveLoader size={size} className={className} />
+      return <WaveLoader size={stringSize} className={className} />
     case "bars":
-      return <BarsLoader size={size} className={className} />
+      return <BarsLoader size={stringSize} className={className} />
     case "terminal":
-      return <TerminalLoader size={size} className={className} />
+      return <TerminalLoader size={stringSize} className={className} />
     case "text-blink":
-      return <TextBlinkLoader text={text} size={size} className={className} />
+      return (
+        <TextBlinkLoader text={text} size={stringSize} className={className} />
+      )
     case "text-shimmer":
-      return <TextShimmerLoader text={text} size={size} className={className} />
+      return (
+        <TextShimmerLoader
+          text={text}
+          size={stringSize}
+          className={className}
+        />
+      )
     case "loading-dots":
-      return <TextDotsLoader text={text} size={size} className={className} />
+      return (
+        <TextDotsLoader text={text} size={stringSize} className={className} />
+      )
     default:
-      return <CircularLoader size={size} className={className} />
+      return <CircularLoader size={stringSize} className={className} />
   }
 }
 
