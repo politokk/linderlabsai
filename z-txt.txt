@@ -1,5 +1,5 @@
 git add .
-git commit -m "add chain of thought component"
+git commit -m "homepage"
 git push origin main    
 git push origin main --force
 
