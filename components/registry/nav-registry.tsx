@@ -50,26 +50,22 @@ interface RegistryItem {
   }
 }
 
-// Category icon mapping
-const categoryIcons: Record<string, LucideIcon> = {
-  brand: Sparkles,
-  auth: Key,
-  store: ShoppingCart,
-  ui: Component,
-  blocks: Blocks,
-  ai: Wand,
-  code: Code,
+// Category configuration with icon, label, and optional URL
+interface CategoryConfig {
+  icon: LucideIcon
+  label: string
+  url?: string
 }
 
-// Category display names
-const categoryLabels: Record<string, string> = {
-  brand: "Brand",
-  auth: "Authentication",
-  store: "Store",
-  ui: "UI",
-  blocks: "Blocks",
-  ai: "AI",
-  code: "Code",
+// Category configuration mapping
+const categoryConfig: Record<string, CategoryConfig> = {
+  brand: { icon: Sparkles, label: "Brand" },
+  auth: { icon: Key, label: "Authentication" },
+  store: { icon: ShoppingCart, label: "Store"},
+  ui: { icon: Component, label: "UI" },
+  blocks: { icon: Blocks, label: "Blocks" },
+  ai: { icon: Wand, label: "AI", url: "/registry/ai" },
+  code: { icon: Code, label: "Code" },
 }
 
 // Function to get icon component from registry data
@@ -120,9 +116,22 @@ function CategoryGroup({
   collapsedCategories,
   onOpenChange,
 }: CategoryGroupProps) {
-  const CategoryIcon = categoryIcons[category] || Layers
-  const label = categoryLabels[category] || category.charAt(0).toUpperCase() + category.slice(1)
+  const config = categoryConfig[category] || { 
+    icon: Layers, 
+    label: category.charAt(0).toUpperCase() + category.slice(1) 
+  }
+  const CategoryIcon = config.icon
+  const label = config.label
+  const categoryUrl = config.url
   const isOpen = !collapsedCategories.has(category)
+  const isCategoryActive = categoryUrl ? pathname === categoryUrl : false
+
+  const buttonContent = (
+    <>
+      <CategoryIcon className="size-4" />
+      <span>{label}</span>
+    </>
+  )
 
   return (
     <Collapsible
@@ -132,15 +141,26 @@ function CategoryGroup({
       className="group/collapsible"
     >
       <SidebarMenuItem>
-        <SidebarMenuButton tooltip={label}>
-          <CategoryIcon className="size-4" />
-          <span>{label}</span>
-        </SidebarMenuButton>
+        {categoryUrl ? (
+          <SidebarMenuButton 
+            asChild 
+            tooltip={label}
+            isActive={isCategoryActive}
+          >
+            <Link href={categoryUrl} onClick={onItemClick}>
+              {buttonContent}
+            </Link>
+          </SidebarMenuButton>
+        ) : (
+          <SidebarMenuButton tooltip={label}>
+            {buttonContent}
+          </SidebarMenuButton>
+        )}
         <SidebarMenuBadge>{items.length}</SidebarMenuBadge>
         <CollapsibleTrigger asChild>
           <SidebarMenuAction
-                        className="left-1.5 bg-sidebar-accent text-sidebar-accent-foreground transition-transform data-[state=open]:opacity-0 data-[state=open]:hover:opacity-100 data-[state=open]:rotate-90"
-                        showOnHover
+            className="left-1.5 bg-sidebar-accent text-sidebar-accent-foreground transition-transform data-[state=open]:opacity-0 data-[state=open]:hover:opacity-100 data-[state=open]:rotate-90"
+            showOnHover
             aria-label={`Toggle ${label}`}
           >
             <ChevronRight className="size-4" />
@@ -160,7 +180,7 @@ function CategoryGroup({
                       <Icon className="size-3.5" />
                       <span>{item.title}</span>
                       {(item.badge || item.isNew) && (
-                        <div className=" flex items-center gap-2">
+                        <div className="flex items-center gap-2">
                           {item.badge && (
                             <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
                           )}
@@ -278,7 +298,7 @@ export function NavRegistry({
                           <Icon className="size-4" />
                           {item.title}
                           {(item.badge || item.isNew) && (
-                              <div className=" flex items-center gap-2">
+                            <div className="flex items-center gap-2">
                               {item.badge && (
                                 <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
                               )}
@@ -381,7 +401,7 @@ export function NavRegistry({
                             <Icon className="size-4" />
                             {item.title}
                             {(item.badge || item.isNew) && (
-                              <div className=" flex items-center gap-2">
+                              <div className="flex items-center gap-2">
                                 {item.badge && (
                                   <SidebarMenuBadge>{item.badge.text}</SidebarMenuBadge>
                                 )}
