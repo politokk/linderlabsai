@@ -23,7 +23,7 @@ export function RegistryHeader({ componentTitle, componentIcon }: RegistryHeader
   return (
     <header
      className={cn(
-       "px-3 py-2 border-b fixed bg-background/80 backdrop-blur-sm flex items-center transition-[width] duration-200 ease-linear",
+       "px-3 py-2 border-b fixed bg-background/80 backdrop-blur-lg flex items-center transition-[width] duration-200 ease-linear",
        "w-full",
        state === "collapsed" 
          ? "md:w-[calc(100%-var(--sidebar-width-icon))]" 

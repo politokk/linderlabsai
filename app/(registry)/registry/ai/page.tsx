@@ -39,10 +39,13 @@ import LoaderTextBlink from "@/components/demos/ai/loader/loader-text-blink"
 import LoaderTextShimmer from "@/components/demos/ai/loader/loader-text-shimmer"
 import LoaderLoadingDots from "@/components/demos/ai/loader/loader-loading-dots"
 import LoaderMessage from "@/components/demos/ai/loader/loader-message"
+import { RegistryHeader } from "@/components/registry/registry-header";
 
 export default function AIPage() {
   return (
-    <div className="flex flex-1 flex-col gap-4 p-4">
+    <div className="flex flex-col min-h-full w-full">
+      <RegistryHeader componentTitle="AI Page" componentIcon="BrainIcon" />
+    <div className="flex flex-1 flex-col gap-4 p-4 mt-15">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <ComponentDisplay path="/ai/actions/actions" icon={<ActivityIcon />}>
           <Actions />
@@ -158,6 +161,7 @@ export default function AIPage() {
         <ComponentDisplay path="/ai/loader/loader-loading-dots" icon={<EllipsisIcon />}>
           <LoaderLoadingDots />
         </ComponentDisplay>
+      </div>
       </div>
     </div>
   )
