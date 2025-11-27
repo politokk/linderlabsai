@@ -15,31 +15,31 @@ export default function sidebar() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ComponentDisplay name="Sidebar Controlled" styleName="new-york-v4" icon="Gamepad2">
+        <ComponentDisplay path="sidebar/sidebar-controlled" icon="Gamepad2">
           <SidebarControlled />
         </ComponentDisplay>
-        <ComponentDisplay name="Sidebar Demo" styleName="new-york-v4" icon="PanelLeft">
+        <ComponentDisplay path="sidebar/sidebar-demo" icon="PanelLeft">
           <SidebarDemo />
         </ComponentDisplay>
-        <ComponentDisplay name="Sidebar Footer" styleName="new-york-v4" icon="PanelBottom">
+        <ComponentDisplay path="sidebar/sidebar-footer" icon="PanelBottom">
           <SidebarFooter />
         </ComponentDisplay>
-        <ComponentDisplay name="Sidebar Group" styleName="new-york-v4" icon="Group">
+        <ComponentDisplay path="sidebar/sidebar-group" icon="Group">
           <SidebarGroup />
         </ComponentDisplay>
-        <ComponentDisplay name="Sidebar Group Action" styleName="new-york-v4" icon="MousePointerClick">
+        <ComponentDisplay path="sidebar/sidebar-group-action" icon="MousePointerClick">
           <SidebarGroupAction />
         </ComponentDisplay>
-        <ComponentDisplay name="Sidebar Group Collapsible" styleName="new-york-v4" icon="ChevronsUpDown">
+        <ComponentDisplay path="sidebar/sidebar-group-collapsible" icon="ChevronsUpDown">
           <SidebarGroupCollapsible />
         </ComponentDisplay>
-        <ComponentDisplay name="Sidebar Header" styleName="new-york-v4" icon="PanelTop">
+        <ComponentDisplay path="sidebar/sidebar-header" icon="PanelTop">
           <SidebarHeader />
         </ComponentDisplay>
-        <ComponentDisplay name="Sidebar Menu" styleName="new-york-v4" icon="Menu">
+        <ComponentDisplay path="sidebar/sidebar-menu" icon="Menu">
           <SidebarMenu />
         </ComponentDisplay>
-        <ComponentDisplay name="Sidebar Menu Action" styleName="new-york-v4" icon="MoreVertical">
+        <ComponentDisplay path="sidebar/sidebar-menu-action" icon="MoreVertical">
           <SidebarMenuAction />
         </ComponentDisplay>
       </div>
