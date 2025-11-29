@@ -1,5 +1,5 @@
 git add .
-git commit -m "aicom"
+git commit -m "aicomactions"
 git push origin main    
 git push origin main --force
 
