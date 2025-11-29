@@ -11,7 +11,7 @@ import { ThemeSelector } from "@/components/themes/theme-selector";
 import { ModeSwitcher } from "@/components/themes/mode-switcher";
 import { cn } from "@/lib/utils";
 
-export function BrandHeader() {
+export default function BrandHeader() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { state } = useSidebar();
 

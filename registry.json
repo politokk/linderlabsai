@@ -3263,6 +3263,7 @@
         "title": "Actions",
         "icon": "Activity",
         "category": "ai",
+        "id": "actions",
         "description": "A component for displaying actions.",
         "registryDependencies": [
           "https://linderlabsai.vercel.app/r/theme.json"
@@ -3273,6 +3274,65 @@
             "type": "registry:page",
             "target": "app/actions/page.tsx"
           },
+          {
+            "path": "components/ai-elements/actions.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/actions.tsx"
+          },
+          {
+            "path": "components/ai-elements/response.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/response.tsx"
+          },
+          {
+            "path": "components/ai-elements/conversation.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/conversation.tsx"
+          },
+          {
+            "path": "components/ai-elements/message.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message.tsx"
+          },
+          {
+            "path": "components/ai-elements/message-2.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/message-2.tsx"
+          },
+          {
+            "path": "components/ai-elements/prompt-input.tsx",
+            "type": "registry:component",
+            "target": "components/ai-elements/prompt-input.tsx"
+          },
+          {
+            "path": "components/demos/ai/actions/actions.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/actions/actions.tsx"
+          },
+          {
+            "path": "components/demos/ai/actions/actions-page.tsx",
+            "type": "registry:component",
+            "target": "components/demos/ai/actions/actions-page.tsx"
+          },
+          {
+            "path": "app/api/chat/route.ts",
+            "type": "registry:component",
+            "target": "app/api/chat/route.ts"
+          }
+        ]
+      },
+      {
+        "name": "actions-page",
+        "type": "registry:ui",
+        "title": "Actions Page",
+        "icon": "Activity",
+        "category": "ai",
+        "id": "actions",
+        "description": "A page for displaying actions.",
+        "registryDependencies": [
+          "https://linderlabsai.vercel.app/r/theme.json"
+        ],
+        "files": [
           {
             "path": "components/ai-elements/actions.tsx",
             "type": "registry:component",

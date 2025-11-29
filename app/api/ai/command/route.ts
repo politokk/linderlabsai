@@ -6,7 +6,6 @@ import type { NextRequest } from 'next/server';
 
 import { createGateway } from '@ai-sdk/gateway';
 import {
-  type LanguageModel,
   type UIMessageStreamWriter,
   createUIMessageStream,
   createUIMessageStreamResponse,
@@ -70,7 +69,7 @@ export async function POST(req: NextRequest) {
             enum: isSelecting
               ? ['generate', 'edit', 'comment']
               : ['generate', 'comment'],
-            model: gatewayProvider(model || 'google/gemini-2.5-flash'),
+            model: gatewayProvider(model || 'google/gemini-2.5-flash') as any,
             output: 'enum',
             prompt: getChooseToolPrompt(messagesRaw),
           });
@@ -85,13 +84,13 @@ export async function POST(req: NextRequest) {
 
         const stream = streamText({
           experimental_transform: markdownJoinerTransform(),
-          model: gatewayProvider(model || 'openai/gpt-4o-mini'),
+          model: gatewayProvider(model || 'openai/gpt-4o-mini') as any,
           // Not used
           prompt: '',
           tools: {
             comment: getCommentTool(editor, {
               messagesRaw,
-              model: gatewayProvider(model || 'google/gemini-2.5-flash'),
+              model: gatewayProvider(model || 'google/gemini-2.5-flash') as any,
               writer,
             }),
           },
@@ -135,7 +134,7 @@ export async function POST(req: NextRequest) {
                     role: 'user',
                   },
                 ],
-                model: gatewayProvider(model || 'openai/gpt-4o-mini'),
+                model: gatewayProvider(model || 'openai/gpt-4o-mini') as any,
               };
             }
           },
@@ -162,7 +161,7 @@ const getCommentTool = (
     writer,
   }: {
     messagesRaw: ChatMessage[];
-    model: LanguageModel;
+    model: ReturnType<ReturnType<typeof createGateway>>;
     writer: UIMessageStreamWriter<ChatMessage>;
   }
 ) =>
@@ -171,7 +170,7 @@ const getCommentTool = (
     inputSchema: z.object({}),
     execute: async () => {
       const { elementStream } = streamObject({
-        model,
+        model: model as any,
         output: 'array',
         prompt: getCommentPrompt(editor, {
           messages: messagesRaw,
